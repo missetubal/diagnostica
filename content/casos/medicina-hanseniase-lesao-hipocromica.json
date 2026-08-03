@@ -1,0 +1,77 @@
+{
+  "id": "mancha-hipocromica-sensibilidade-alterada-braco",
+  "title": "Mancha esbranquiçada no braço com alteração de sensibilidade",
+  "objective": "Identificar a hipótese diagnóstica mais provável para lesão hipocrômica cutânea associada a alteração de sensibilidade local",
+  "professions": ["medicina"],
+  "area": "infectologia",
+  "difficulty": "medio",
+  "patient": {
+    "age": 62,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 62 anos procura a unidade básica de saúde com queixa de mancha branca no braço direito."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Relata lesão hipocrômica de cerca de 3 cm no braço direito, com diminuição da sensibilidade tátil e dolorosa à palpação. Não identifica fatores de melhora ou piora."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Hipertensão arterial sistêmica e depressão, em uso de anlodipino e sertralina associada a trazodona. Histerectomia total prévia."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Lesão hipocrômica no braço direito, com diminuição da sensibilidade tátil e dolorosa à palpação. Nervo ulnar direito levemente espessado, porém indolor. Anidrose e rarefação de pelos na área da lesão. Diminuição discreta da força muscular no membro superior direito. Demais sistemas sem alterações relevantes."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Hemograma com leve anemia (hemoglobina 9,9 g/dL). Demais exames laboratoriais de rotina (glicemia, função renal, perfil lipídico) dentro da normalidade. Avaliação de sensibilidade com estesiômetro confirmando hipoestesia local. Baciloscopia de raspado intradérmico negativa."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "hanseníase paucibacilar (forma indeterminada)",
+    "accepted_terms": ["hanseníase", "hanseníase forma indeterminada/paucibacilar"],
+    "partial_terms": ["vitiligo", "pitiríase versicolor", "hanseníase multibacilar"]
+  },
+  "differentials": [
+    {
+      "name": "vitiligo",
+      "explanation": "Também causa mancha hipocrômica, mas tipicamente sem alteração de sensibilidade local nem espessamento de nervo periférico associado — achados centrais neste caso."
+    },
+    {
+      "name": "pitiríase versicolor (micose superficial)",
+      "explanation": "Pode causar manchas hipocrômicas, mas geralmente múltiplas, descamativas e sem comprometimento de sensibilidade ou de nervo periférico."
+    },
+    {
+      "name": "hanseníase multibacilar",
+      "explanation": "Menos provável, dado que há apenas uma lesão cutânea (critério para forma paucibacilar) e a baciloscopia é negativa."
+    }
+  ],
+  "explanation": "A combinação de mancha hipocrômica única com alteração de sensibilidade tátil e dolorosa (achado que diferencia a hanseníase da maioria das outras dermatoses hipocrômicas), associada a espessamento de nervo periférico (ulnar), sustenta a hipótese de hanseníase. A baciloscopia negativa e a presença de lesão única classificam o caso como forma paucibacilar (indeterminada), quadro clínico ainda inicial da doença.",
+  "learning_points": [
+    "Reconhecer a alteração de sensibilidade como o principal sinal que diferencia a hanseníase de outras dermatoses hipocromiantes.",
+    "Entender a classificação operacional paucibacilar (até 5 lesões) versus multibacilar (mais de 5 lesões).",
+    "Saber que a baciloscopia negativa não exclui hanseníase, sendo o diagnóstico essencialmente clínico."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico de hanseníase; queixa de lesão epitelial — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-hanseniase-ligas"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "ATENÇÃO — reformulação mais extensa que o usual: o título e a seção de 'suspeitas diagnósticas' da fonte original já revelavam o diagnóstico diretamente ('Hanseníase paucibacilar, com nervo ulnar espessado'), sem apresentar alternativas. O título deste caso foi reescrito para não entregar a resposta, e os diferenciais (vitiligo, pitiríase versicolor, hanseníase multibacilar) foram formulados com base em conhecimento clínico padrão sobre diagnóstico diferencial de manchas hipocrômicas com alteração de sensibilidade, não extraídos literalmente da fonte. Revisor deve validar clinicamente esses diferenciais antes de publicar."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

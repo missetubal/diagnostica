@@ -1,0 +1,69 @@
+{
+  "id": "atelectasia-pediatrica-hipoventilacao-localizada",
+  "title": "Criança com hipersecreção pulmonar recorrente e murmúrio vesicular assimétrico",
+  "objective": "A partir dos achados da avaliação fisioterapêutica (ausculta e padrão respiratório), identificar a condição pulmonar mais provável antes da confirmação radiológica",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-cardiorrespiratoria",
+  "difficulty": "facil",
+  "patient": {
+    "age": 4,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Menina de 4 anos, sem intercorrências na gestação ou no nascimento, é encaminhada para atendimento fisioterapêutico ambulatorial por quadro respiratório recorrente."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Desde os seis meses de vida apresenta quadro recorrente de hipersecreção pulmonar, com tosse e dispneia; aos dois anos, recebeu diagnóstico de bronquite. Recentemente, apresentou piora com hipersecreção e consequente obstrução brônquica."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Ausculta pulmonar revela murmúrio vesicular presente, porém diminuído em hemitórax direito. Observa-se tipo respiratório diafragmático, padrão 1:2, ritmo respiratório normal, porém com amplitude superficial."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Radiografia de tórax confirma velamento parcial em lobo médio direito, com sinais de hiperinsuflação compensatória adjacente."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "atelectasia em lobo médio direito por obstrução brônquica secretiva",
+    "accepted_terms": ["atelectasia lobar direita de reabsorção", "colapso do lobo médio direito por plugue de secreção"],
+    "partial_terms": ["bronquite isolada sem colapso pulmonar", "pneumonia localizada"]
+  },
+  "differentials": [
+    {
+      "name": "bronquite isolada, sem colapso pulmonar associado",
+      "explanation": "Explicaria a hipersecreção crônica, mas não a redução localizada e assimétrica do murmúrio vesicular em hemitórax direito, que sugere perda de volume pulmonar localizada, e não apenas inflamação difusa das vias aéreas."
+    },
+    {
+      "name": "pneumonia localizada",
+      "explanation": "Também cursaria com redução localizada do murmúrio vesicular, mas o contexto de hipersecreção crônica recorrente desde os seis meses, sem relato de febre associada a este episódio, torna a obstrução por plugue de secreção com colapso (atelectasia) a hipótese mais coerente com a história pregressa."
+    }
+  ],
+  "explanation": "A redução localizada e assimétrica do murmúrio vesicular em hemitórax direito, associada a um padrão respiratório superficial em uma criança com história de hipersecreção pulmonar crônica desde os seis meses de idade, é um achado consistente com atelectasia por obstrução brônquica secretiva — confirmada pela radiografia de tórax evidenciando velamento em lobo médio direito. O diagnóstico cinético-funcional orienta a escolha de técnicas de reexpansão pulmonar (inspirômetro de incentivo, PEEP subaquática) associadas a manobras de higiene brônquica.",
+  "learning_points": [
+    "Reconhecer a redução localizada e assimétrica do murmúrio vesicular como sinal de alerta para colapso pulmonar (atelectasia), e não apenas de obstrução difusa das vias aéreas.",
+    "Entender a atelectasia lobar de reabsorção como consequência comum de hipersecreção crônica mal resolvida em pediatria.",
+    "Conhecer as técnicas fisioterapêuticas específicas para reexpansão pulmonar (inspirometria de incentivo, PEEP subaquática) versus técnicas de higiene brônquica."
+  ],
+  "references": [
+    {
+      "title": "Gonçalves RM, Albuquerque YP, Ferreira LG, Assumpção MS, Bobbio TG, Schivinski CIS. Relato de caso: Intervenção fisioterapêutica na atelectasia. Rev. Ciênc. Méd. Biol., Salvador, v.12, n.2, p.253-256, mai./ago. 2013",
+      "url": "https://repositorio.ufba.br/bitstream/ri/23084/1/20_v.12_2.pdf"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: relato de caso publicado em revista científica universitária (Rev. Ciênc. Méd. Biol., UDESC/UFBA), com ISSN e processo de submissão/aceite formal — risco de direitos autorais moderado-baixo.",
+    "A fonte original já revelava o diagnóstico de atelectasia (confirmado por radiografia) antes mesmo do encaminhamento para fisioterapia. Para preservar o raciocínio diagnóstico progressivo, a ordem dos estágios foi reorganizada: o achado radiográfico confirmatório foi movido para o final (exames complementares), e o estágio de exame físico foi construído a partir dos achados de ausculta e padrão respiratório efetivamente descritos na fonte, sem inventar dados. Revisor deve validar se essa reorganização manteve fidelidade ao caso original.",
+    "Padrão estrutural similar ao caso de ICC: diagnóstico fisioterapêutico como alvo do raciocínio, com o diagnóstico médico/radiológico servindo como confirmação final."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

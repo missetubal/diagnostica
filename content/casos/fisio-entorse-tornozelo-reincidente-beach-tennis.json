@@ -1,0 +1,81 @@
+{
+  "id": "entorse-tornozelo-reincidente-beach-tennis",
+  "title": "Instabilidade de tornozelo após dois entorses em jogadora de beach tennis",
+  "objective": "Identificar o quadro funcional predominante em um tornozelo com entorses recorrentes, já com fratura descartada por imagem",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "facil",
+  "patient": {
+    "age": 27,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 27 anos, praticante de beach tennis, relata insegurança e instabilidade no tornozelo esquerdo, diminuição de equilíbrio e dor após períodos prolongados em pé."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Sofreu um primeiro entorse do tornozelo esquerdo durante um jogo, com dor, edema e hematoma, mas não buscou tratamento na época. Cerca de um mês depois, sofreu um segundo entorse no mesmo tornozelo após uma queda em uma escada, com sintomas semelhantes. Só procurou fisioterapia após o segundo episódio, quando já havia interrompido a prática esportiva e a musculação."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Exames de imagem realizados após o segundo entorse não identificaram fratura, apenas mínimo derrame articular na região tibiotalar, com elementos ósseos íntegros."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Sem edema no momento da avaliação; leve valgo de tornozelo. Dor à palpação logo abaixo do maléolo lateral esquerdo. Força muscular manual (MRC): dorsiflexão e plantiflexão de tornozelo grau 5 à direita e grau 4 à esquerda."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Equilíbrio unipodal de olhos fechados: 30 segundos à direita versus apenas 8 segundos à esquerda. Lunge Test: 34° à direita e 33° à esquerda (simétrico). Questionário FAAM: 84%, indicando incapacidade funcional leve."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "instabilidade crônica funcional de tornozelo pós-entorses recorrentes",
+    "accepted_terms": ["instabilidade funcional de tornozelo", "fraqueza e déficit proprioceptivo pós-entorse recorrente de tornozelo"],
+    "partial_terms": ["lesão ligamentar aguda de tornozelo", "fratura de tornozelo"]
+  },
+  "differentials": [
+    {
+      "name": "fratura de tornozelo",
+      "explanation": "Já foi descartada por exames de imagem (ultrassonografia e tomografia computadorizada), que mostraram elementos ósseos íntegros."
+    },
+    {
+      "name": "lesão ligamentar aguda em fase inflamatória",
+      "explanation": "É menos provável neste momento pela ausência de edema atual e pelo tempo já decorrido desde o segundo entorse, embora a história de dois episódios recentes deva ser considerada na gravidade da lesão ligamentar de base."
+    },
+    {
+      "name": "síndrome do impacto anterior do tornozelo",
+      "explanation": "Pode causar dor e limitação após entorses recorrentes, mas o quadro predominante aqui é de fraqueza muscular e déficit de equilíbrio, mais do que dor mecânica localizada ao movimento de dorsiflexão."
+    }
+  ],
+  "explanation": "A história de dois entorses recorrentes no mesmo tornozelo, sem tratamento adequado após o primeiro episódio, associada à fraqueza muscular assimétrica (grau 4/5 à esquerda) e ao déficit importante de equilíbrio unipodal de olhos fechados no lado afetado, é compatível com instabilidade crônica funcional de tornozelo — uma consequência comum de entorses mal reabilitados, mesmo na ausência de lesão óssea.",
+  "learning_points": [
+    "Reconhecer a instabilidade crônica funcional como uma consequência comum de entorses de tornozelo não tratados adequadamente.",
+    "Usar testes de equilíbrio unipodal (com e sem visão) para quantificar déficit proprioceptivo.",
+    "Entender a importância da reabilitação completa após o primeiro entorse para prevenir recidivas."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 18: Fisioterapia em entorse de tornozelo subagudo reincidente em atleta amadora de beach tennis (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    },
+    {
+      "title": "Wagemans et al. Exercise-based rehabilitation reduces reinjury following acute lateral ankle sprain: A systematic review update with meta-analysis. PLoS One, 2022",
+      "url": "https://doi.org/10.1371/journal.pone.0262023"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Profissão e detalhes de estilo de vida (uso de salto alto no trabalho) foram omitidos por não serem essenciais ao raciocínio clínico principal.",
+    "Baixa adesão da paciente ao tratamento (5 de 10 sessões) mencionada na fonte foi omitida do caso por não ser relevante ao raciocínio diagnóstico."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

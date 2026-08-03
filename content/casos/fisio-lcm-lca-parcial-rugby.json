@@ -1,0 +1,84 @@
+{
+  "id": "lesao-lcm-lca-parcial-jogador-rugby",
+  "title": "Instabilidade e dor no joelho após reentorse em jogador de rugby",
+  "objective": "Identificar o quadro cinético-funcional predominante após lesão ligamentar combinada de joelho, tratada de forma conservadora",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 27,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 27 anos, jogador de rugby, relata dor no joelho direito ao ajoelhar, descrita como uma pontada, além de instabilidade ao caminhar ou tentar correr alguns metros."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Sofreu duas entorses do joelho direito em meses diferentes, ambas com o pé fixo no chão e movimento de torção do joelho. Após a segunda entorse, testes clínicos e ressonância magnética confirmaram uma lesão ligamentar; por razões pessoais, optou-se por tratamento conservador em vez de cirurgia, com uso de órtese em tempo integral."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Histórico de múltiplas entorses de tornozelo ao longo da vida, o que o levou a se afastar de outro esporte, e dores recorrentes no ombro. Refere sensação de instabilidade no tornozelo já antes da lesão atual no joelho."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Edema no joelho direito, com aumento de 1,5 cm na perimetria em relação ao esquerdo. Fraqueza de quadríceps, tibial anterior, extensor longo dos dedos e tríceps sural (grau 3/5). Teste de Romberg modificado em posição tandem positivo, indicando déficit proprioceptivo. Apoio unipodal reduzido no lado direito (24 segundos) em relação ao esquerdo (1 minuto)."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Teste de Step Down positivo bilateralmente para valgo dinâmico, mais acentuado à direita. Hop Test inicial mostrando potência da perna lesionada entre 80% e 98% em relação à perna saudável, conforme a variação do salto avaliado."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "instabilidade funcional de joelho por lesão ligamentar combinada (LCM e LCA parcial) tratada conservadoramente",
+    "accepted_terms": [
+      "déficit funcional pós-lesão ligamentar de joelho (LCM completo e LCA parcial)",
+      "instabilidade de joelho com déficit de força e propriocepção pós-entorse"
+    ],
+    "partial_terms": ["instabilidade crônica de tornozelo isolada", "fraqueza muscular generalizada de membro inferior"]
+  },
+  "differentials": [
+    {
+      "name": "instabilidade de tornozelo como causa primária dos sintomas",
+      "explanation": "O paciente tem histórico relevante de entorses de tornozelo e instabilidade prévia, que pode contribuir para o valgo dinâmico observado, mas os achados de imagem e os testes ligamentares específicos do joelho confirmam uma lesão combinada de LCM e LCA como causa principal do quadro atual."
+    },
+    {
+      "name": "lesão meniscal associada não diagnosticada",
+      "explanation": "Deve sempre ser considerada em entorses de joelho com mecanismo rotacional; os testes específicos para menisco realizados na avaliação inicial ajudam a orientar essa investigação."
+    },
+    {
+      "name": "descondicionamento muscular isolado (sem lesão ligamentar residual)",
+      "explanation": "Não explica isoladamente a instabilidade relatada nem os achados de imagem confirmando lesão ligamentar estrutural."
+    }
+  ],
+  "explanation": "A combinação de mecanismo de entorse rotacional, confirmação por ressonância magnética de lesão ligamentar, fraqueza muscular assimétrica, déficit proprioceptivo no teste de Romberg modificado e assimetria funcional no Hop Test sustenta um quadro de instabilidade funcional do joelho decorrente da lesão combinada de LCM e LCA parcial, tratada de forma conservadora com órtese e fisioterapia.",
+  "learning_points": [
+    "Reconhecer a possibilidade de lesões ligamentares combinadas (LCM e LCA) em entorses de joelho com mecanismo rotacional.",
+    "Usar o Hop Test como critério objetivo e comparativo entre membros para orientar decisões de alta fisioterapêutica.",
+    "Considerar o histórico de instabilidade em outras articulações (como o tornozelo) ao planejar o treino proprioceptivo."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 17: Tratamento conservador no rompimento total do ligamento colateral medial e parcial do ligamento cruzado anterior (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    },
+    {
+      "title": "De Farias Neto, Manso, Batista. Comparação Entre o Hop Test e Outros Testes Utilizados na Alta de Pacientes com Lesão de LCA. Ciência em Movimento, 2017",
+      "url": "https://doi.org/10.15602/1983-9480/cm.v19n38p11-16"
+    }
+  ],
+  "avisos_para_revisor": [
+    "O caso-fonte menciona um procedimento específico (aspiração de medula óssea/terapia com células-tronco) associado ao tratamento — removido deste caso por ser um detalhe de conduta médica avançada e pouco padronizada, que poderia gerar expectativas inadequadas se apresentado sem contexto; revisor deve confirmar se deve ser reincluído.",
+    "Caso combina duas lesões e dois episódios de entorse — revisor deve avaliar se a complexidade está adequada ao nível 'difícil'."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

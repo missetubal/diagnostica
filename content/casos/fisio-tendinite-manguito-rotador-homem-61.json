@@ -1,0 +1,78 @@
+{
+  "id": "tendinite-manguito-rotador-homem-61",
+  "title": "Dor no ombro e dificuldade para vestir a camisa",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor bilateral em ombros com limitação funcional em atividades de vida diária",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "facil",
+  "patient": {
+    "age": 61,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 61 anos relata dor profunda em ambos os ombros, mais intensa à esquerda, com dificuldade para vestir a camisa, coçar as costas e lavar o cabelo."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "A dor teve início insidioso nos ombros e por vezes se irradia para os braços. Refere piora do sono por dificuldade de mudar de posição durante a noite. Está atualmente afastado de suas atividades laborais habituais."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Sem histórico de trauma agudo relatado no ombro."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Redução de amplitude de movimento em ambos os ombros, mais evidente à esquerda. Aumento do contorno anatômico na região do ombro esquerdo à perimetria. Dor à palpação em região do sulco bicipital e crepitação na articulação glenoumeral esquerda. Testes especiais positivos, sugerindo comprometimento do tendão do supraespinhal e da cabeça longa do bíceps."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Força muscular globalmente grau 4/5 em ambos os ombros nos movimentos testados (flexão, extensão, abdução, adução)."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "tendinite do manguito rotador (supraespinhal) e da cabeça longa do bíceps",
+    "accepted_terms": ["tendinopatia do manguito rotador e do bíceps", "tendinite do supraespinhal e do bíceps", "tendinopatia bilateral de ombro"],
+    "partial_terms": ["síndrome do impacto no ombro", "bursite subacromial", "capsulite adesiva"]
+  },
+  "differentials": [
+    {
+      "name": "capsulite adesiva",
+      "explanation": "Causaria perda de amplitude mais global e progressiva, geralmente com fase de dor intensa seguida de rigidez marcante; o quadro aqui é mais localizado a estruturas tendíneas específicas."
+    },
+    {
+      "name": "ruptura completa do manguito rotador",
+      "explanation": "Tenderia a causar perda de força mais acentuada e sinais como Drop Arm Test positivo; a força apenas levemente reduzida (grau 4/5) torna uma ruptura completa menos provável."
+    },
+    {
+      "name": "artrose glenoumeral",
+      "explanation": "Pode causar dor e crepitação, mas costuma vir acompanhada de maior rigidez articular global e é mais comum em faixas etárias ainda mais avançadas ou com histórico articular prévio."
+    }
+  ],
+  "explanation": "A combinação de dor bilateral de padrão insidioso, limitação funcional específica para atividades acima da cabeça, dor à palpação do sulco bicipital, crepitação glenoumeral e testes especiais positivos para supraespinhal e bíceps sustenta o diagnóstico de tendinite do manguito rotador e da cabeça longa do bíceps, mais evidente no ombro esquerdo.",
+  "learning_points": [
+    "Reconhecer o padrão de limitação funcional em atividades acima da cabeça como sugestivo de comprometimento do manguito rotador.",
+    "Usar testes especiais combinados (queda do braço, Apley, Neer-Hawkins, Speed, Yergason) para localizar a estrutura tendínea mais afetada.",
+    "Entender que o tratamento conservador com cinesioterapia e agentes físicos pode evitar a necessidade de tratamento cirúrgico em muitos casos."
+  ],
+  "references": [
+    {
+      "title": "ROMEIRO, T. C.; GOLIAS, A. R. C. Estudo de caso: abordagem fisioterapêutica em paciente com lesão de manguito rotador. Revista UningÁ, Maringá, n. 12, p. 107-115, abr./jun. 2007.",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte é um artigo de 2007; revisor deve confirmar se a nomenclatura e a abordagem descritas ainda refletem a prática clínica atual antes de publicar.",
+    "Profissão/ocupação do paciente foi omitida por não ser essencial ao raciocínio clínico.",
+    "Não foi possível confirmar uma URL pública estável para o artigo; adicionar se disponível."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

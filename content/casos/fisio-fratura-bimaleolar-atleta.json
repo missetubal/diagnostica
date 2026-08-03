@@ -1,0 +1,83 @@
+{
+  "id": "fratura-bimaleolar-tornozelo-atleta-universitaria",
+  "title": "Instabilidade e edema no tornozelo após fratura e imobilização",
+  "objective": "Identificar o quadro clínico e os principais déficits funcionais decorrentes de fratura de tornozelo e período de imobilização",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 21,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 21 anos, atleta universitária, relata perda de equilíbrio, sensação de instabilidade ao caminhar e edema significativo no tornozelo direito, que piora ao final do dia após períodos prolongados em pé."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Sofreu fratura bimaleolar do tornozelo direito durante uma partida esportiva, submetida a cirurgia de fixação interna (pinos e parafusos), seguida de cerca de um mês de imobilização completa do membro. Já iniciou fisioterapia após a imobilização, mas ainda apresenta dificuldade para subir e descer escadas."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Sem uso de medicação para dor. Nega outras lesões musculoesqueléticas anteriores."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Edema visível no tornozelo direito, com aderência de tecido cicatricial mais rígido à palpação. Na análise da marcha, observa-se redução da dorsiflexão, com manutenção do pé em posição neutra na transição de apoio para balanço."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Lunge Test (amplitude de dorsiflexão com inclinômetro): 16° no tornozelo direito versus 36° no esquerdo. Teste de Romberg em posição tandem: oscilações e desequilíbrio frequentes, principalmente de olhos fechados — teste positivo para déficit de equilíbrio."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "rigidez articular e déficit de equilíbrio pós-imobilização por fratura bimaleolar de tornozelo",
+    "accepted_terms": [
+      "sequela funcional pós-fratura e imobilização de tornozelo",
+      "déficit proprioceptivo e de amplitude de movimento pós-fratura de tornozelo"
+    ],
+    "partial_terms": [
+      "instabilidade crônica de tornozelo",
+      "edema pós-cirúrgico"
+    ]
+  },
+  "differentials": [
+    {
+      "name": "instabilidade ligamentar residual (lesão ligamentar associada)",
+      "explanation": "Pode causar sensação de instabilidade, mas o padrão aqui é mais consistente com perda de amplitude e déficit proprioceptivo por imobilização prolongada do que com frouxidão ligamentar."
+    },
+    {
+      "name": "síndrome dolorosa regional complexa",
+      "explanation": "Deve ser considerada em quadros de edema e dor desproporcional após imobilização, mas a ausência de alterações de cor, temperatura e dor intensa a repouso torna esse diagnóstico menos provável."
+    },
+    {
+      "name": "tromboembolismo venoso",
+      "explanation": "Edema após período de imobilização é um sinal de alerta que sempre deve ser investigado para descartar TVP antes de atribuir o quadro apenas a causas musculoesqueléticas."
+    }
+  ],
+  "explanation": "O histórico de fratura bimaleolar com fixação cirúrgica e imobilização prolongada, associado à redução objetiva de amplitude de dorsiflexão (Lunge Test) e ao déficit de equilíbrio (Romberg positivo), é compatível com as consequências funcionais esperadas da imobilização: rigidez articular, aderência de tecido cicatricial e déficit proprioceptivo.",
+  "learning_points": [
+    "Reconhecer os efeitos funcionais esperados da imobilização prolongada (rigidez, atrofia, déficit proprioceptivo).",
+    "Usar testes objetivos (Lunge Test, Romberg) para quantificar déficits de amplitude e equilíbrio.",
+    "Considerar sinais de alerta (como edema desproporcional) mesmo em quadros aparentemente musculoesqueléticos."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 3: Recuperação de equilíbrio e amplitude de movimento do tornozelo após fratura bimaleolar em atleta universitária (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Este caso é de reabilitação pós-cirúrgica, não de diagnóstico inicial — o 'diagnóstico' foi reformulado como o quadro funcional a ser reconhecido, não como a fratura em si (já conhecida). Revisor deve confirmar se essa adaptação do modo Diagnóstico Progressivo faz sentido pedagogicamente.",
+      "Datas específicas do caso-fonte foram removidas."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

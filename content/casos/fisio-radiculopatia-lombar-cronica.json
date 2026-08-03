@@ -1,0 +1,73 @@
+{
+  "id": "radiculopatia-lombar-cronica-dona-de-casa",
+  "title": "Dor lombar recorrente com irradiação para a perna",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor lombar crônica com irradiação e sinais de comprometimento neural",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 40,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 40 anos relata dor lombar recorrente há 7 anos, com episódio atual iniciado há 3 semanas após uma atividade doméstica que exigiu permanecer curvada por um tempo. Refere dor difusa que vai da região sacroilíaca esquerda, passando pela nádega, até a região posterior do tornozelo, junto com formigamento na lateral do pé esquerdo."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Há cerca de um ano teve um episódio semelhante, com dor 'cansada' na perna esquerda, resolvido em poucas sessões de mobilização. A dor na panturrilha e o formigamento no pé pioram quando permanece curvada por mais de 30 minutos ou sentada por mais de uma hora."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Amplitude de movimento lombar completa, mas com dor na nádega esquerda em extensão e inclinação lateral esquerda. À avaliação segmentar, observa-se hipomobilidade intervertebral em L4-L5 e L5-S1; uma pressão póstero-anterior sobre L5 (com a coluna posicionada em extensão e inclinação lateral esquerda) reproduz a dor na nádega."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Teste de Elevação da Perna Estendida (TEPE/SLR) completo bilateralmente, mas com sensação de final de movimento mais rígida à esquerda. Teste Slump positivo à esquerda, com déficit de extensão de joelho de cerca de 30° e dor na panturrilha, aliviada pela extensão cervical. Leve fraqueza da musculatura da panturrilha esquerda, sem outros déficits neurológicos."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "radiculopatia lombar por comprometimento discal (provável hérnia de disco em L4-L5/L5-S1)",
+    "accepted_terms": ["lombociatalgia", "síndrome radicular lombar", "ciática de origem discal"],
+    "partial_terms": ["lombalgia mecânica simples", "disfunção da articulação sacroilíaca"]
+  },
+  "differentials": [
+    {
+      "name": "lombalgia mecânica simples, sem comprometimento radicular",
+      "explanation": "Não explica os testes neurodinâmicos positivos (Slump, sensação de final de movimento mais rígida no TEPE) nem a parestesia distal relatada pela paciente."
+    },
+    {
+      "name": "disfunção da articulação sacroilíaca",
+      "explanation": "Pode causar dor referida para nádega e coxa, mas não costuma produzir sinais neurais positivos que respondem a movimentos à distância, como a melhora do Slump com extensão cervical."
+    },
+    {
+      "name": "síndrome do piriforme",
+      "explanation": "Pode comprimir estruturas neurais e causar dor irradiada, mas a origem segmentar identificada na coluna (hipomobilidade em L4-L5/L5-S1 reproduzindo a dor na nádega) e a resposta ao tratamento centrado na coluna tornam a origem discal/radicular mais provável."
+    }
+  ],
+  "explanation": "A combinação de achados mecânicos segmentares (hipomobilidade localizada em L4-L5 e L5-S1 que reproduz a dor na nádega), testes neurodinâmicos positivos (Slump, TEPE com final de movimento mais rígido), parestesia em dermátomo compatível e leve fraqueza da panturrilha sustenta uma origem radicular, mais provavelmente discal, dado o padrão de evolução lenta e recorrente ao longo de anos.",
+  "learning_points": [
+    "Reconhecer sinais de tensão neural (Slump, TEPE) como parte essencial da avaliação de dor lombar com irradiação.",
+    "Diferenciar hipomobilidade articular segmentar pura de comprometimento neural associado, combinando testes mecânicos e neurodinâmicos.",
+    "Entender que a melhora de um teste neurodinâmico com um movimento à distância (ex.: extensão cervical aliviando dor no Slump) é um forte indicativo de envolvimento do sistema nervoso, e não apenas de uma estrutura local."
+  ],
+  "references": [
+    {
+      "title": "Caso clínico 'Dor Radicular Crônica (Lombar)' — Grupo Terapia Manual",
+      "url": "https://www.terapiamanual.com.br/site/casos_clinicos/?id=50&c=3"
+    }
+  ],
+  "avisos_para_revisor": [
+    "ATENÇÃO — risco de direitos autorais maior que nas fontes anteriores: este caso vem de um site comercial de cursos de terapia manual (conteúdo pago/assinatura), sem licença aberta de reuso indicada na página, diferente do e-book acadêmico com licença de remix usado anteriormente. O texto foi reescrito e não copiado, mas revisor deve avaliar se convém contato prévio com a fonte antes de publicar, ou usar o caso apenas como referência interna de estudo.",
+    "O estilo do caso (didático, com foco em raciocínio de terapia manual/Maitland) sugere que pode ser adaptado de literatura internacional clássica de terapia manual; não foi possível confirmar a fonte primária original.",
+    "Diagnóstico foi mantido como sugerido no texto original ('parece implicar em uma desordem discal') — não há confirmação por imagem no caso-fonte; mantido como hipótese clínica, não certeza diagnóstica."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

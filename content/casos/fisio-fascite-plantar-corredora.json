@@ -1,0 +1,78 @@
+{
+  "id": "fascite-plantar-corredora-01",
+  "title": "Dor no calcanhar em corredora",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor no calcanhar relacionada à corrida",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "facil",
+  "patient": {
+    "age": 34,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 34 anos relata dor no calcanhar direito há duas semanas, mais intensa ao dar os primeiros passos pela manhã, com leve melhora ao longo do dia."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Corredora recreativa há cerca de dois anos, aumentou recentemente a frequência e o volume de treino (em torno de 4 vezes por semana, somando cerca de 40 km semanais). A dor também aparece durante a corrida, especialmente em treinos mais longos."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Usou palmilhas ortopédicas na adolescência por queda do médio-pé, mas abandonou o uso há vários anos. Tem diagnóstico prévio de encurtamento da musculatura da panturrilha (tríceps sural), mais evidente do lado esquerdo."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Dor à palpação no calcâneo direito, proeminência do osso navicular, retificação flexível do arco medial e contratura da panturrilha direita. Leve instabilidade ao apoio unipodal. Dor referida como 8/10 (EVA) ao primeiro passo do dia e 5/10 ao longo do dia."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Amplitude de dorsiflexão de tornozelo: 36° à direita e 32° à esquerda — redução leve e simétrica em relação ao esperado."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "fascite plantar",
+    "accepted_terms": ["fasceíte plantar", "fascite plantar direita", "fasceíte plantar direita"],
+    "partial_terms": ["tendinopatia do calcâneo", "dor no calcanhar de causa mecânica", "talalgia"]
+  },
+  "differentials": [
+    {
+      "name": "tendinopatia do tendão de Aquiles",
+      "explanation": "Também causa dor no calcanhar relacionada à corrida, mas tipicamente na região posterior/inserção do tendão, e não segue o padrão característico de piora abrupta ao primeiro passo pela manhã."
+    },
+    {
+      "name": "síndrome do túnel do tarso",
+      "explanation": "Compressão do nervo tibial posterior pode causar dor no calcanhar, mas costuma vir acompanhada de sintomas neuropáticos como queimação ou formigamento, ausentes neste caso."
+    },
+    {
+      "name": "fratura por estresse do calcâneo",
+      "explanation": "Deve ser considerada em corredoras com aumento recente de carga de treino, mas costuma causar dor mais difusa e positiva ao teste de compressão do calcâneo, não descrito neste caso."
+    }
+  ],
+  "explanation": "O padrão de dor ao primeiro passo da manhã com melhora parcial ao longo do dia, associado aos achados de palpação no calcâneo, aos fatores biomecânicos predisponentes (pé plano flexível, encurtamento de tríceps sural) e ao aumento recente do volume de treino, favorece o diagnóstico de fascite plantar.",
+  "learning_points": [
+    "Reconhecer o padrão de dor 'ao primeiro passo' como característico de fascite plantar.",
+    "Identificar fatores de risco biomecânicos (pé plano flexível, encurtamento de tríceps sural) e de carga de treino.",
+    "Diferenciar fascite plantar de outras causas de dor no calcanhar (talalgia)."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 1: O manejo da fascite plantar em atleta de corrida (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso adaptado de um relato de caso publicado em e-book produzido em disciplina de graduação (UFPel, 2024), não em periódico revisado por pares — confirmar adequação como fonte de conteúdo educacional antes de publicar.",
+    "Não foi possível confirmar uma URL pública para a fonte original; adicionar se disponível.",
+    "Alguns detalhes não essenciais ao raciocínio clínico foram levemente adaptados em relação à fonte original."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

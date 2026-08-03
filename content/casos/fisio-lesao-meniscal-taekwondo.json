@@ -1,0 +1,82 @@
+{
+  "id": "lesao-meniscal-atleta-taekwondo",
+  "title": "Dor lateral no joelho após chute com giro em treino de luta",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor lateral de joelho após trauma rotacional, descartando lesões ligamentares associadas",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 19,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 19 anos, atleta de taekwondo, relata dor na região lateral do joelho esquerdo há 3 meses, com perda de amplitude de movimento em flexão como principal limitação."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "A dor iniciou após um movimento de chute com giro na perna de apoio, durante treino de luta, com intensidade inicial de 8/10. No dia da avaliação, a dor estava em 3/10 em repouso, aumentando para 6/10 durante atividades de vida diária."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Realizou avaliação fisioterapêutica prévia em outra instituição, onde já havia sido levantada a hipótese de ruptura meniscal com base no mecanismo de lesão e nos sintomas."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Edema peripatelar leve e dor à palpação na interlinha lateral do joelho esquerdo. Redução de amplitude de movimento ativa de rotação interna e externa de quadril, extensão e flexão de quadril à esquerda, com dor associada aos movimentos. Fraqueza leve de flexores de quadril (grau 4/5 bilateral). Dor na interlinha articular durante agachamento e Step-Down."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Testes de Lachman, gaveta anterior e posterior, e testes de estresse em varo e valgo: todos negativos, descartando lesão ligamentar associada. Testes de McMurray e Appley (menisco): ambos positivos. Teste de compressão femoropatelar: gerou dor, mas não reproduziu a sintomatologia principal do paciente."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "lesão meniscal (suspeita clínica de ruptura de menisco lateral)",
+    "accepted_terms": ["ruptura meniscal lateral", "lesão de menisco lateral do joelho", "lesão meniscal pós-trauma rotacional"],
+    "partial_terms": ["síndrome da dor femoropatelar", "lesão ligamentar de joelho"]
+  },
+  "differentials": [
+    {
+      "name": "lesão ligamentar do joelho (LCA, LCP ou colaterais)",
+      "explanation": "Foi ativamente investigada e descartada pelos testes de Lachman, gaveta anterior/posterior e estresse em varo/valgo, todos negativos."
+    },
+    {
+      "name": "síndrome da dor femoropatelar",
+      "explanation": "Foi considerada devido à dor com o agachamento, mas o teste de compressão femoropatelar não reproduziu a sintomatologia característica do paciente, e a dor manteve-se localizada na interlinha lateral, não na região anterior/patelar."
+    },
+    {
+      "name": "lesão condral isolada",
+      "explanation": "Pode cursar com dor mecânica e edema após trauma rotacional; deve ser considerada, mas o padrão de dor na interlinha articular associado a testes meniscais positivos é mais específico para lesão de menisco."
+    }
+  ],
+  "explanation": "O mecanismo de trauma rotacional típico ('twisting injury'), a dor localizada na interlinha lateral do joelho, os testes específicos para menisco positivos (McMurray e Appley) e a exclusão de lesão ligamentar por testes negativos sustentam a hipótese clínica de lesão meniscal, mesmo reconhecendo que nenhum teste isolado tem alta precisão diagnóstica para essa condição.",
+  "learning_points": [
+    "Reconhecer o mecanismo de trauma rotacional ('twisting injury') como típico de lesões meniscais.",
+    "Entender que testes clínicos para menisco (McMurray, Appley) têm precisão limitada isoladamente, exigindo raciocínio clínico combinado com outros achados.",
+    "Valorizar a exclusão sistemática de lesões ligamentares antes de firmar a hipótese de lesão meniscal isolada.",
+    "Conhecer o tratamento conservador como primeira escolha atual para lesões meniscais, mesmo em atletas jovens."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 15: Abordagens fisioterapêuticas no tratamento conservador de lesão de menisco (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    },
+    {
+      "title": "Kopf et al. Management of traumatic meniscus tears: the 2019 ESSKA meniscus consensus. Knee Surgery, Sports Traumatology, Arthroscopy, 2020",
+      "url": "https://doi.org/10.1007/s00167-020-05847-3"
+    }
+  ],
+  "avisos_para_revisor": [
+    "O caso-fonte é claro sobre a limitação diagnóstica dos testes meniscais isolados — mantido no texto para reforçar raciocínio crítico, não apenas 'decorar' testes.",
+    "Diversos valores numéricos de goniometria foram sintetizados; revisor pode optar por simplificar ainda mais para o nível de dificuldade 'difícil'."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

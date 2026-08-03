@@ -1,0 +1,81 @@
+{
+  "id": "lesao-muscular-isquiotibiais-corredora",
+  "title": "Dor súbita na parte posterior da coxa durante sprint",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor aguda na coxa posterior desencadeada durante corrida de alta velocidade",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "facil",
+  "patient": {
+    "age": 44,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 44 anos, maratonista, sentiu dor súbita e sensação de distensão na região posterior da coxa esquerda durante um treino de sprint, com dor que permanece latente durante os treinos seguintes e ao sentar."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Corre diariamente cerca de 5 km e faz reforço muscular em academia duas vezes por semana. A dor surgiu de forma aguda durante um exercício de sprint, diferente de desconfortos musculares leves que já vinha sentindo antes desse episódio."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Já havia sido atendida na clínica de fisioterapia recentemente por queixa de dor na região glútea e instabilidade durante a corrida, quadro que havia sido resolvido antes deste novo episódio."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "À palpação, identifica-se área muscular sensível logo abaixo da dobra glútea, com suspeita de estiramento no músculo bíceps femoral. O teste de força em isquiotibiais reproduz a mesma dor sentida no momento da lesão."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Amplitude de movimento e força reduzidas no membro inferior esquerdo, associadas à dor aguda à contração muscular."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "lesão muscular (estiramento) de isquiotibiais grau I",
+    "accepted_terms": ["estiramento de isquiotibiais", "lesão do bíceps femoral grau I", "distensão muscular de isquiotibiais"],
+    "partial_terms": ["contratura muscular de isquiotibiais", "síndrome do piriforme"]
+  },
+  "differentials": [
+    {
+      "name": "síndrome do piriforme",
+      "explanation": "Também pode causar dor na região glútea/posterior da coxa, mas o início súbito durante o sprint e a dor reproduzida especificamente pela contração dos isquiotibiais favorecem uma lesão muscular direta."
+    },
+    {
+      "name": "tendinopatia proximal de isquiotibiais",
+      "explanation": "Tende a ter início mais insidioso, relacionado a sobrecarga repetitiva, diferente do início súbito e agudo descrito neste episódio."
+    },
+    {
+      "name": "lesão nervosa ciática",
+      "explanation": "Poderia explicar dor irradiada, mas a ausência de sintomas neurológicos (formigamento, dormência) e a dor reproduzida por teste de força muscular tornam essa hipótese menos provável."
+    }
+  ],
+  "explanation": "O início súbito de dor na parte posterior da coxa durante atividade de alta velocidade, a dor reproduzida à contração/alongamento da musculatura isquiotibial e a maior sensibilidade à palpação na junção miotendínea são achados característicos de lesão muscular aguda de isquiotibiais, conforme critérios amplamente utilizados na literatura de fisioterapia esportiva.",
+  "learning_points": [
+    "Reconhecer os critérios clínicos clássicos de lesão muscular de isquiotibiais: início súbito, dor à contração/alongamento, perda de função e sensibilidade à palpação.",
+    "Entender a importância de graduar a lesão muscular (grau I, II ou III) para orientar o tempo de tratamento e retorno ao esporte.",
+    "Reconhecer exercícios excêntricos (como o protocolo de Askling) como parte de diretrizes de prática clínica baseadas em evidência para essa lesão."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 10: Tratamento de lesão muscular de isquiotibiais em corredora (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    },
+    {
+      "title": "Martin et al. Hamstring Strain Injury in Athletes: Clinical Practice Guidelines. Journal of Orthopaedic & Sports Physical Therapy, 2022",
+      "url": "https://www.jospt.org/doi/10.2519/jospt.2022.0301"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Profissão da paciente foi mantida por ser um detalhe secundário, mas pode ser removida se necessário para reduzir identificabilidade.",
+    "Este caso combina dois episódios do relato original (queixa em piriforme resolvida, seguida de nova lesão); simplificado para focar apenas no episódio de lesão de isquiotibiais."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

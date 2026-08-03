@@ -1,0 +1,67 @@
+{
+  "id": "dor-cervical-cronica-atividade-manual-repetitiva",
+  "title": "Dor cervical crônica relacionada a atividade manual repetitiva",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor cervical crônica desencadeada por atividade manual sustentada, sem sinais neurais",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 53,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 53 anos apresenta história de 10 anos de dor cervical à esquerda, geralmente provocada por períodos prolongados de tricô, podendo se estender até o ombro. Não há formigamento ou dor no braço."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "A dor inicia depois de 20 minutos de tricô e pode permanecer por todo o dia. Também é provocada ao tentar olhar sobre o ombro esquerdo. Tem dificuldade para dormir por causa da dor. Notou aumento da dor há cerca de dois meses, após um movimento cervical brusco."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Cifose acentuada e protrusão de cabeça à inspeção. ADM cervical limitada por dor em extensão, inclinação e rotação à esquerda. O movimento combinado de extensão e inclinação à esquerda provoca dor intensa. O movimento passivo intervertebral de C4-C5 é hipomóvel em inclinação lateral e rotação à esquerda. O movimento passivo acessório antero-posterior em C4 e C5 causa espasmo e dor."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Sensibilidade cinestésica pobre e pouca contração dos músculos estabilizadores cervicais. Testes de provocação neural negativos."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "disfunção articular cervical crônica (C4-C5) com déficit de controle motor cervical",
+    "accepted_terms": ["dor cervical mecânica crônica por hipomobilidade C4-C5", "instabilidade funcional cervical com hipomobilidade segmentar associada"],
+    "partial_terms": ["radiculopatia cervical", "cefaleia cervicogênica"]
+  },
+  "differentials": [
+    {
+      "name": "radiculopatia cervical",
+      "explanation": "Testes de provocação neural negativos e ausência de formigamento ou dor no braço tornam essa hipótese pouco provável."
+    },
+    {
+      "name": "lesão discal aguda",
+      "explanation": "O padrão crônico de 10 anos, com piora mecânica previsível por atividade sustentada específica, é mais compatível com disfunção articular e de controle motor do que com uma lesão discal aguda."
+    }
+  ],
+  "explanation": "A história crônica com padrão mecânico claro (piora com atividade sustentada específica), a hipomobilidade articular localizada em C4-C5 que reproduz os sintomas, e o déficit de controle motor cervical (sensibilidade cinestésica pobre, contração pobre dos estabilizadores) sustentam uma disfunção articular crônica mantida por déficit de controle motor, sem evidência de comprometimento neural.",
+  "learning_points": [
+    "Reconhecer que dor cervical crônica de longa data pode ter componente articular e de controle motor associados.",
+    "Usar testes de provocação neural para descartar comprometimento radicular antes de focar no componente articular.",
+    "Entender a importância de exercícios de estabilização cervical após o ganho de mobilidade articular, para evitar recidivas."
+  ],
+  "references": [
+    {
+      "title": "Caso clínico 'Caso 6: Dor cervical crônica' — Grupo Terapia Manual",
+      "url": "https://www.terapiamanual.com.br/site/casos_clinicos/?id=61&c=3"
+    }
+  ],
+  "avisos_para_revisor": [
+    "ATENÇÃO — mesmo risco de direitos autorais já sinalizado nos casos anteriores desta fonte."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

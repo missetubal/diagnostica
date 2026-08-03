@@ -1,0 +1,77 @@
+{
+  "id": "ave-hemorragico-vs-isquemico-nihss",
+  "title": "Cefaleia súbita intensa com rebaixamento do nível de consciência",
+  "objective": "Diferenciar clinicamente entre acidente vascular cerebral hemorrágico e isquêmico antes da confirmação por imagem",
+  "professions": ["medicina"],
+  "area": "neurologia",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 69,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 69 anos é admitido na emergência com dor de cabeça, rigidez de nuca, vômitos e dificuldade de fala, iniciados há três horas."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "A esposa relata que o paciente acordou com cefaleia em região occipital (7/10), de origem súbita, associada a vômitos, rigidez de nuca e dificuldade de fala. Fez uso de analgésico comum sem sucesso. Ao chegar à emergência, já apresentava comprometimento do nível de consciência."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Hipertensão arterial sistêmica há 22 anos (uso irregular de captopril), infarto agudo do miocárdio há 10 anos, aneurisma cerebral diagnosticado há 2 anos. Ex-tabagista (parou há 9 anos). Pai falecido de infarto agudo do miocárdio."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Paciente comatoso, Glasgow 7 (O:4, V:2, M:1), com apneia intermitente durante a respiração. PA 194/110 mmHg, FC 100 bpm. Paresia facial central, desvio do olhar conjugado para a direita, disartria, hemiparesia e heminegligência à direita."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Hematócrito 39%, hemoglobina 10 mg/dL, plaquetas 141.000/mm³, RNI 2, TTPa 20 segundos. Tomografia computadorizada de crânio revelando área hiperdensa sugestiva de sangramento encefálico em hemisfério esquerdo."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "acidente vascular cerebral hemorrágico (intraparenquimatoso)",
+    "accepted_terms": ["AVC hemorrágico", "hemorragia intraparenquimatosa"],
+    "partial_terms": ["AVC isquêmico", "ataque isquêmico transitório", "hemorragia subaracnóidea isolada"]
+  },
+  "differentials": [
+    {
+      "name": "AVC isquêmico",
+      "explanation": "Hipótese inicial plausível dado o déficit focal, mas a apresentação com cefaleia intensa de início súbito, rebaixamento rápido do nível de consciência e a área hiperdensa (e não hipodensa) na tomografia são mais compatíveis com sangramento do que com isquemia."
+    },
+    {
+      "name": "ataque isquêmico transitório",
+      "explanation": "Descartado pela persistência e gravidade dos déficits, incompatíveis com resolução em menos de 24 horas."
+    },
+    {
+      "name": "hemorragia subaracnóidea isolada",
+      "explanation": "Hipótese razoável considerando o aneurisma cerebral prévio, mas a tomografia evidenciou área hiperdensa compatível com sangramento intraparenquimatoso, e não restrita aos espaços subaracnóideos."
+    }
+  ],
+  "explanation": "Fatores de risco importantes para AVC hemorrágico (HAS de longa data mal controlada, uso irregular de anti-hipertensivo), apresentação clínica clássica (cefaleia súbita intensa, rebaixamento rápido do nível de consciência, déficits focais) e confirmação por tomografia de crânio evidenciando área hiperdensa sustentam o diagnóstico de AVC hemorrágico.",
+  "learning_points": [
+    "Diferenciar clinicamente AVC hemorrágico de isquêmico pela apresentação (início e gravidade dos sintomas) antes da confirmação por imagem.",
+    "Aplicar a escala NIHSS para quantificar a gravidade do déficit neurológico.",
+    "Reconhecer a hipertensão arterial mal controlada como principal fator de risco para hemorragia intraparenquimatosa."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico: Uso da Escala NIHSS em Paciente com AVE — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-uso-da-escala-nihss-em-paciente-com-ave-ligas"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "Nenhuma reformulação estrutural foi necessária; o caso já apresenta 3 suspeitas diagnósticas antes da tomografia confirmatória."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

@@ -1,0 +1,83 @@
+{
+  "id": "fratura-maleolar-lateral-atleta-futsal",
+  "title": "Instabilidade postural e desconforto no tornozelo após cirurgia de tornozelo",
+  "objective": "Identificar o quadro clínico e os principais déficits funcionais decorrentes de fratura maleolar lateral operada e imobilização prolongada",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 32,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 32 anos, atleta universitário de futsal, relata instabilidade postural e déficit de mobilidade no tornozelo direito, além de desconforto na região operada."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Realizou cirurgia de fixação de fratura no maléolo lateral do tornozelo direito há cerca de 15 semanas (placa de compressão e pinos). Retomou a academia sem descarga de peso no membro após cerca de 6 semanas, e a corrida cerca de 2 meses após a cirurgia, com desconforto nos minutos iniciais e alteração perceptível na marcha. Não realizou acompanhamento fisioterapêutico estruturado até o momento."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Praticava musculação e futsal regularmente antes da lesão. Sem lesões prévias relatadas ou uso de medicamentos. Refere edema ao final do dia, especialmente após períodos prolongados em pé."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Edema no tornozelo direito com assimetria de perimetria em relação ao lado esquerdo. Tecido cicatricial com aderência e maior rigidez à palpação. Na marcha, observa-se manutenção do pé plano na transição da fase de apoio para a fase de balanço, sugerindo redução de dorsiflexão."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Lunge Test: 34° no tornozelo direito versus 39° no esquerdo. Y Balance Test com redução nos alcances do membro direito em relação ao esquerdo e uso de movimentos compensatórios durante o teste."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "déficit de amplitude de dorsiflexão e instabilidade dinâmica pós-fratura maleolar operada",
+    "accepted_terms": [
+      "sequela funcional pós-cirúrgica de fratura de tornozelo",
+      "instabilidade crônica funcional de tornozelo pós-imobilização"
+    ],
+    "partial_terms": [
+      "tendinopatia do tornozelo",
+      "edema pós-cirúrgico isolado"
+    ]
+  },
+  "differentials": [
+    {
+      "name": "síndrome de dor complexa regional",
+      "explanation": "Deve ser considerada em edema persistente pós-cirúrgico, mas a ausência de dor desproporcional, alterações de cor e temperatura reduz a probabilidade."
+    },
+    {
+      "name": "pseudoartrose ou consolidação inadequada da fratura",
+      "explanation": "Deve ser descartada por exame de imagem em pacientes com dor persistente e limitação funcional significativa após o período esperado de consolidação."
+    },
+    {
+      "name": "lesão ligamentar associada não identificada no pós-operatório",
+      "explanation": "Pode contribuir para instabilidade, mas o padrão de déficit simétrico de ADM e equilíbrio é mais compatível com sequela de imobilização do que com lesão ligamentar isolada."
+    }
+  ],
+  "explanation": "O tempo de evolução (15 semanas de pós-operatório), a redução objetiva de dorsiflexão no Lunge Test e a redução do equilíbrio dinâmico no Y Balance Test, associados à ausência de retorno fisioterapêutico estruturado até o momento, sustentam um quadro de déficit funcional esperado após fratura maleolar operada e período de restrição de carga.",
+  "learning_points": [
+    "Reconhecer os déficits de amplitude e equilíbrio dinâmico esperados após fratura maleolar operada.",
+    "Utilizar testes funcionais (Lunge Test, Y Balance Test, Hop Test) para quantificar assimetrias entre membros antes do retorno ao esporte.",
+    "Entender a importância de um programa estruturado de reabilitação mesmo após liberação para atividades gerais."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 4: Reabilitação da instabilidade de tornozelo no pós-operatório de fratura maleolar lateral (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso semelhante em estrutura ao capítulo 3 do mesmo e-book (outra fratura de tornozelo) — revisor deve avaliar se ambos devem entrar no mesmo lote de publicação ou se um deles deve ser adaptado para reduzir repetição de padrão.",
+    "'Diagnóstico' foi reformulado como o quadro funcional a ser reconhecido, já que a fratura em si já era conhecida pelo paciente."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

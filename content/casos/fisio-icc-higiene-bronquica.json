@@ -1,0 +1,69 @@
+{
+  "id": "icc-diagnostico-fisioterapeutico-hipersecrecao-bronquica",
+  "title": "Idosa internada por insuficiência cardíaca com piora respiratória",
+  "objective": "A partir da avaliação fisioterapêutica de uma paciente já internada com diagnóstico médico de insuficiência cardíaca congestiva, identificar o diagnóstico cinético-funcional (fisioterapêutico) que deve orientar a conduta",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-cardiorrespiratoria",
+  "difficulty": "medio",
+  "patient": {
+    "age": 83,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 83 anos tem admissão hospitalar com diagnóstico clínico de insuficiência cardíaca congestiva (ICC), sendo encaminhada para avaliação fisioterapêutica."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Uma semana antes da internação, apresentou taquipneia e tosse seca, mantendo-se afebril. Há cinco anos apresenta dificuldade para respirar, com internações frequentes para tratamento medicamentoso e uso de oxigenoterapia. Em uso de Antak, Liquemine, Rocefin e Omeprazol."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Inspeção geral: paciente em regular estado geral, sonolenta, pouco colaborativa, em oxigenoterapia 3 l/min. Padrão respiratório misto, uso de musculatura acessória, tiragens supraesternais. Tosse produtiva ineficaz. Classificação NYHA IV (sintomas em repouso) e estágio D da AHA/ACC (disfunção cardíaca avançada com sintomas em repouso). Na ausculta pulmonar inicial: roncos, estertores crepitantes e sibilos inspiratórios e expiratórios difusos. Sinais vitais iniciais: FR 22 ipm, FC 89 bpm, PA 120x70 mmHg, SatO2 92%."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Radiografia de tórax (1º dia): infiltrados perihilares difusos, acentuação da trama peribroncovascular, silhueta cardíaca aumentada e aorta torácica ateromatosa. Hemograma sem alterações relevantes."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "diagnóstico fisioterapêutico de hipersecreção brônquica com alteração da mecânica diafragmática e risco de imobilismo",
+    "accepted_terms": ["disfunção cinético-funcional respiratória por hipersecreção e padrão restritivo, com risco de complicações do imobilismo", "quadro de retenção de secreções associado a uso de musculatura acessória e alto risco de imobilismo"],
+    "partial_terms": ["apenas congestão pulmonar cardiogênica (sem diagnóstico fisioterapêutico específico)", "apenas fraqueza muscular respiratória"]
+  },
+  "differentials": [
+    {
+      "name": "quadro respiratório dominado apenas por broncoespasmo",
+      "explanation": "Os sibilos estão presentes, mas a combinação com roncos, estertores, tosse produtiva ineficaz e padrão respiratório misto com tiragens indica um quadro mais amplo de hipersecreção e comprometimento da mecânica ventilatória do que broncoespasmo isolado."
+    },
+    {
+      "name": "comprometimento respiratório restrito à troca gasosa, sem repercussão em via aérea",
+      "explanation": "A SatO2 reduzida (92%) reflete comprometimento de troca gasosa, mas a ausculta com secreções difusas e a tosse ineficaz mostram que há também um componente obstrutivo/secretivo de via aérea a ser tratado, não apenas um problema de difusão."
+    }
+  ],
+  "explanation": "Embora o diagnóstico médico de admissão seja insuficiência cardíaca congestiva, o papel da fisioterapia não é redefinir esse diagnóstico, mas construir o diagnóstico cinético-funcional a partir da avaliação: paciente classe funcional NYHA IV, com tosse produtiva ineficaz, ausculta com secreções difusas, uso de musculatura acessória e tiragens, associada a sonolência/pouca colaboração (risco de hipomobilidade no leito). Esse diagnóstico fisioterapêutico — hipersecreção brônquica com alteração da mecânica diafragmática e risco de imobilismo — é o que orienta a escolha de manobras de higiene brônquica (AFE, shaking, vibrocompressão, estímulo de tosse), posicionamento no leito e exercícios metabólicos/caminhada leve, distintos do tratamento farmacológico da causa cardíaca de base.",
+  "learning_points": [
+    "Diferenciar diagnóstico médico (etiológico) de diagnóstico fisioterapêutico (cinético-funcional) na prática hospitalar.",
+    "Reconhecer os sinais de retenção de secreções e comprometimento da mecânica respiratória que orientam a escolha de manobras de higiene brônquica.",
+    "Identificar a classificação funcional NYHA/AHA-ACC como ferramenta de estratificação de gravidade relevante para o planejamento fisioterapêutico."
+  ],
+  "references": [
+    {
+      "title": "Sties SW, Leandro RC, Perão C. Fisioterapia respiratória na insuficiência cardíaca congestiva. Relato de caso. EFDeportes, Ano 15, Nº 144, 2010",
+      "url": "https://www.efdeportes.com/efd144/fisioterapia-respiratoria-na-insuficiencia-cardiaca.htm"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Padrão estrutural diferente dos casos musculoesqueléticos anteriores: aqui o diagnóstico médico (ICC) já é conhecido no encaminhamento — é a prática real da fisioterapia hospitalar. Por decisão de escopo (aprovada por Michelle), o main_answer foi construído em torno do diagnóstico fisioterapêutico/cinético-funcional (achados de avaliação: ausculta, mecânica respiratória, classificação funcional), e não em torno do diagnóstico médico já revelado.",
+    "Fonte: relato de caso publicado em revista digital de acesso aberto (EFDeportes, Buenos Aires) — sem indicação clara de revisão por pares; recomenda-se validação clínica do raciocínio fisioterapêutico antes de publicar.",
+    "Encoding de caracteres da fonte original estava corrompido (acentuação); conteúdo foi reconstruído com base no contexto clínico, preservando fielmente os valores numéricos e achados clínicos relatados."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

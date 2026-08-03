@@ -1,0 +1,68 @@
+{
+  "id": "leptospirose-choque-hipovolemico-diferencial-dengue",
+  "title": "Síndrome febril com choque em área endêmica após enchente",
+  "objective": "Diferenciar leptospirose de dengue grave em paciente com síndrome febril e choque, em contexto epidemiológico de alagamento",
+  "professions": ["medicina"],
+  "area": "infectologia",
+  "difficulty": "medio",
+  "patient": {
+    "age": 32,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 32 anos, procedente de Ji-Paraná (RO), é transferido a centro de referência em medicina tropical já em uso de droga vasoativa, após quadro de síndrome febril com 5 dias de duração."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Segundo a evolução médica de origem, o quadro febril de 5 dias veio associado a náuseas, vômito, cefaleia e prostração. Refere também cefaleia associada a fotofobia, epigastralgia e náuseas. Relata contato com área de alagamento recente."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Orientado em tempo e espaço, Glasgow 15, pupilas isocóricas e fotorreagentes, sem déficits focais. Respiração espontânea em ar ambiente, saturação acima de 94%, FR 16 ipm, sem sinais de esforço respiratório. Em uso de noradrenalina para manter pressão arterial média acima de 70 mmHg; FC 70 bpm. Afebril no momento da admissão, diurese preservada."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Exames da origem mostravam leucopenia e trombocitopenia, com elevação de CPK, sem alteração de função renal. Antígeno NS1 para dengue negativo. Iniciada ressuscitação volêmica e antibioticoterapia empírica com ceftriaxona. Sorologia IgM para dengue não reagente; sorologia IgM para leptospirose reagente."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "leptospirose com choque hipovolêmico",
+    "accepted_terms": ["leptospirose grave (forma com comprometimento hemodinâmico)", "síndrome de Weil sem icterícia predominante"],
+    "partial_terms": ["dengue grupo D (dengue grave)", "sepse de foco indeterminado"]
+  },
+  "differentials": [
+    {
+      "name": "dengue grave (grupo D)",
+      "explanation": "Era a principal suspeita inicial, dado o quadro febril com choque em área endêmica, mas o antígeno NS1 negativo e a sorologia IgM não reagente para dengue afastaram essa hipótese; a sorologia IgM reagente para leptospirose confirmou o diagnóstico alternativo."
+    },
+    {
+      "name": "sepse de foco indeterminado",
+      "explanation": "Hipótese razoável diante do choque com necessidade de droga vasoativa, mas o contexto epidemiológico específico (contato com área de alagamento) e a elevação de CPK direcionaram a suspeita para leptospirose desde o início."
+    }
+  ],
+  "explanation": "Em regiões endêmicas durante período chuvoso, dengue e leptospirose podem apresentar manifestações clínicas iniciais semelhantes (febre, cefaleia, mialgia, prostração), tornando o diagnóstico diferencial um desafio antes da confirmação laboratorial. Neste caso, o contato com área de alagamento recente, a elevação de CPK (mais típica de leptospirose, refletindo acometimento muscular) e o antígeno NS1 negativo para dengue orientaram o início precoce de antibioticoterapia empírica para leptospirose antes mesmo da confirmação sorológica, o que se mostrou acertado com a evolução favorável do paciente.",
+  "learning_points": [
+    "Reconhecer a sobreposição de sintomas entre dengue e leptospirose em áreas endêmicas durante períodos chuvosos.",
+    "Valorizar o contexto epidemiológico (contato com água de enchente) na construção da hipótese diagnóstica de leptospirose.",
+    "Entender a importância de iniciar tratamento empírico diante de suspeita clínica forte, sem aguardar confirmação laboratorial em quadros potencialmente graves."
+  ],
+  "references": [
+    {
+      "title": "Toledo TF, Lima MKS, Flórez LFC, Mazza RS, Souza IJ, Tonhá VCA, Soares MCF, Basano SA, Pereira EGB, Pereira FR. Diagnóstico diferencial entre dengue e leptospirose: relato de caso. Braz J Infect Dis. 2022;26 Supl 2:102445",
+      "url": "https://www.bjid.org.br/en-diagnostico-diferencial-entre-dengue-e-articulo-S1413867022001325"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: resumo de caso clínico apresentado em congresso, publicado em acesso aberto (Open Access) na The Brazilian Journal of Infectious Diseases (Elsevier), indexada e revisada por pares — risco de direitos autorais baixo.",
+    "Fonte original já apresentava explicitamente a suspeita de dengue grupo D como hipótese de trabalho antes da confirmação — main_answer e differentials mantidos fiéis a essa estrutura de raciocínio."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

@@ -1,0 +1,72 @@
+{
+  "id": "insuficiencia-cardiaca-idoso-dispneia-esforco",
+  "title": "Dificuldade para andar de bicicleta e subir escada",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dispneia progressiva aos esforços em idoso com múltiplos fatores de risco cardiovascular",
+  "professions": ["medicina"],
+  "area": "cardiologia",
+  "difficulty": "medio",
+  "patient": {
+    "age": 73,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 73 anos relata dificuldade para andar de bicicleta e subir escadas."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Relata cansaço há 3 dias, acompanhado de dispneia que piora com esforço e melhora ao repouso, além de dispneia paroxística noturna. Nega dor precordial, febre, tontura, tabagismo e etilismo atuais."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Diabetes mellitus tipo 2, hipertensão arterial e episódio prévio de acidente vascular encefálico. Foi tabagista e etilista por muitos anos. Em uso de hidralazina, furosemida, AAS infantil, sinvastatina e insulina."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Bom estado geral, lúcido, afebril. Ausculta cardíaca com bulhas normofonéticas em 2 tempos, sem sopro. Murmúrio vesicular presente bilateralmente com estertores crepitantes discretos nas bases. FC 63 bpm, saturação de O2 97%. Edema de membros inferiores (2+/4+), pulso pedioso filiforme, dermatite ocre presente."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "insuficiência cardíaca (descompensação)",
+    "accepted_terms": ["insuficiência cardíaca congestiva", "IC descompensada"],
+    "partial_terms": ["DPOC exacerbado", "insuficiência venosa crônica isolada"]
+  },
+  "differentials": [
+    {
+      "name": "DPOC exacerbado",
+      "explanation": "Poderia explicar a dispneia, mas não explica o edema de membros inferiores com dermatite ocre nem a dispneia paroxística noturna, mais típicos de congestão cardíaca."
+    },
+    {
+      "name": "insuficiência venosa crônica isolada",
+      "explanation": "Explicaria o edema e a dermatite ocre, mas não explicaria a dispneia aos esforços e a dispneia paroxística noturna."
+    },
+    {
+      "name": "síndrome coronariana crônica",
+      "explanation": "Fatores de risco presentes (HAS, DM, AVE prévio) tornam essa hipótese relevante para investigação etiológica, mas a ausência de dor precordial torna-a menos central para explicar o quadro agudo atual."
+    }
+  ],
+  "explanation": "A combinação de dispneia progressiva aos esforços, dispneia paroxística noturna, estertores crepitantes pulmonares basais e edema de membros inferiores em paciente com múltiplos fatores de risco cardiovascular (HAS, DM, AVE prévio) é compatível com os critérios de Framingham para insuficiência cardíaca.",
+  "learning_points": [
+    "Reconhecer sinais e sintomas de congestão pulmonar e sistêmica na insuficiência cardíaca.",
+    "Aplicar os critérios de Framingham para diagnóstico de IC.",
+    "Entender a insuficiência cardíaca como síndrome multifatorial em pacientes com múltiplas comorbidades cardiovasculares."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico: Insuficiência Cardíaca em Idoso — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-insuficiencia-cardiaca-ligas-3"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "Caso-fonte é sucinto na etapa de exames complementares (apenas lista os exames solicitados, sem laudos); main_answer mantido genérico ('insuficiência cardíaca') já que a fonte não especifica fração de ejeção ou etiologia exata neste caso específico."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

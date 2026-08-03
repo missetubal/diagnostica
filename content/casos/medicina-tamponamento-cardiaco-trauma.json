@@ -1,0 +1,72 @@
+{
+  "id": "tamponamento-cardiaco-trauma-toracico",
+  "title": "Instabilidade hemodinâmica após acidente automobilístico",
+  "objective": "Identificar a causa mais provável de instabilidade hemodinâmica refratária em paciente politraumatizado",
+  "professions": ["medicina"],
+  "area": "emergencia",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 33,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 33 anos, vítima de acidente automobilístico com colisão frontal entre dois veículos há cerca de 2 horas, trazido pelo SAMU com rebaixamento do nível de consciência."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Não estava com cinto de segurança e o carro não possuía airbag. Fotos do veículo evidenciam mecânica de trauma compatível com projeção contra o para-brisa (sinal do 'olho de boi'). Apresenta rebaixamento do nível de consciência atribuído a trauma em crânio e cervical."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Mau estado geral, trauma facial, pupilas isocóricas e fotorreagentes, taquicárdico (FC 112 bpm), taquipneico (FR 20 ipm), saturação de O2 88% em ar ambiente, PA 88x46 mmHg com nova queda após reposição volêmica inicial de 500 ml de cristaloide. Escala de coma de Glasgow 8. Sem turgência jugular visível nem desvio de traqueia. Pulsos filiformes. Ausculta cardíaca com bulhas normofonéticas, taquicárdicas, sem sopros. Sangramento em via aérea superior."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Protocolo E-FAST realizado à beira do leito evidenciando presença de líquido no saco pericárdico. Monitorização cardíaca mostrando complexos QRS de amplitude variável entre os batimentos. Radiografia de tórax e tomografia de crânio solicitadas para exclusão de outras lesões associadas."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "tamponamento cardíaco pós-trauma torácico fechado",
+    "accepted_terms": ["tamponamento cardíaco traumático", "hemopericárdio com tamponamento"],
+    "partial_terms": ["pneumotórax hipertensivo", "hemotórax maciço", "choque hipovolêmico por hemorragia isolada"]
+  },
+  "differentials": [
+    {
+      "name": "pneumotórax hipertensivo",
+      "explanation": "Também causa instabilidade hemodinâmica pós-trauma torácico, mas tipicamente com desvio de traqueia e ausência unilateral de murmúrio vesicular, achados não descritos neste paciente; o E-FAST direcionou o raciocínio para o pericárdio."
+    },
+    {
+      "name": "hemotórax maciço",
+      "explanation": "Consideração válida em trauma torácico com choque, mas o E-FAST evidenciou líquido pericárdico, e não pleural, direcionando o diagnóstico."
+    },
+    {
+      "name": "choque hipovolêmico por hemorragia isolada",
+      "explanation": "A queda persistente da pressão arterial apesar da reposição volêmica e as alterações do complexo QRS na monitorização reforçam uma causa obstrutiva associada (tamponamento), e não apenas perda volêmica isolada."
+    }
+  ],
+  "explanation": "Em um paciente politraumatizado com instabilidade hemodinâmica refratária à reposição volêmica inicial, sem sinais claros de pneumotórax, e com evidência de líquido pericárdico ao E-FAST associada a alterações do complexo QRS na monitorização, a hipótese de tamponamento cardíaco deve ser priorizada e investigada com urgência, dado seu potencial risco de vida imediato.",
+  "learning_points": [
+    "Aplicar o ABCDE do trauma e reconhecer sinais de instabilidade hemodinâmica pós-trauma torácico.",
+    "Usar o E-FAST como ferramenta rápida à beira do leito para direcionar hipóteses diagnósticas no trauma.",
+    "Reconhecer sinais sugestivos de tamponamento cardíaco (hipotensão refratária, alterações de monitorização) mesmo quando a tríade clássica está incompleta clinicamente."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico: Tamponamento Cardíaco — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-tamponamento-cardiaco-ligas"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "Caso-fonte inclui extenso interrogatório sistemático e história psicossocial (uso de anfetamina prescrita, crises de ansiedade, disfunção sexual) não essenciais ao raciocínio do trauma agudo — foram omitidos deste caso por não serem centrais à hipótese diagnóstica principal; revisor deve confirmar se algum desses detalhes deveria ser reincluído como distrator."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

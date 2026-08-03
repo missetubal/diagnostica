@@ -1,0 +1,81 @@
+{
+  "id": "hidrocefalia-pressao-normal-triade-hakim-adams",
+  "title": "Esquecimentos progressivos, dificuldade para andar e urgência urinária",
+  "objective": "Identificar a hipótese diagnóstica mais provável para declínio cognitivo associado a alteração de marcha e urgência urinária em idoso",
+  "professions": ["medicina"],
+  "area": "neurologia",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 63,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 63 anos apresenta esquecimentos recorrentes e progressivos há cerca de 2 anos, como deixar o fogão aceso, não lembrar onde deixou a chave e esquecer de pagar contas."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Relata também dificuldade para andar há 4 anos, descrevendo que seus pés parecem estar 'grudados no chão'. Há cerca de 6 meses, não consegue chegar ao banheiro antes de urinar."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Diabético e hipertenso. Sem intercorrências relevantes na infância e adolescência. Nega tremores, alterações do sono, hospitalizações, hemotransfusões, alergias, traumatismo, alucinações, histórico de infecções do SNC, AVC ou TCE prévios."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Marcha magnética, de base alargada, lenta, com aumento do número de passos (9 passos) para rotação em 180 graus. Teste neuropsicológico com lentificação cognitiva e déficits leves a moderados em funções executivas. Mini exame do estado mental com pontuação 22. Reflexo fotomotor presente, nervos cranianos sem alterações. Motricidade, reflexos e sensibilidade preservados."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Hemograma sem alterações. Sorologias para sífilis e HIV não reagentes. Vitaminas B12 e B1 normais. Punção liquórica com contagem de células, proteína e glicose normais, e pressão de abertura normal. Tomografia de crânio evidenciando ventriculomegalia e hidrocefalia comunicante, com atrofia cortical leve, sem sinais de isquemia ou hematoma subdural crônico."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "hidrocefalia de pressão normal (síndrome de Hakim-Adams)",
+    "accepted_terms": ["hidrocefalia de pressão normal", "hidrocefalia comunicante idiopática (Hakim-Adams)"],
+    "partial_terms": ["demência de Alzheimer", "demência vascular", "parkinsonismo"]
+  },
+  "differentials": [
+    {
+      "name": "demência de Alzheimer",
+      "explanation": "Explicaria a alteração cognitiva isolada, mas não explica a tríade completa (marcha + urgência urinária) nem os achados de imagem (ventriculomegalia desproporcional à atrofia, sem atrofia hipocampal proeminente)."
+    },
+    {
+      "name": "demência vascular",
+      "explanation": "Descartada pela ausência de lesões isquêmicas na tomografia de crânio."
+    },
+    {
+      "name": "parkinsonismo",
+      "explanation": "Poderia explicar a alteração de marcha, mas não a tríade completa nem os achados de imagem; ausência de tremor e outros sinais extrapiramidais clássicos."
+    },
+    {
+      "name": "hematoma subdural crônico",
+      "explanation": "Descartado pela tomografia de crânio."
+    }
+  ],
+  "explanation": "A presença da tríade clássica (declínio cognitivo, distúrbio de marcha e incontinência urinária), a ventriculomegalia desproporcional à atrofia cortical na tomografia, a pressão de abertura normal na punção liquórica e a exclusão de outras causas (infecciosas, vasculares, degenerativas) sustentam o diagnóstico de hidrocefalia de pressão normal — uma causa potencialmente reversível de declínio cognitivo em idosos.",
+  "learning_points": [
+    "Reconhecer a tríade de Hakim-Adams (alteração cognitiva, distúrbio de marcha, urgência urinária).",
+    "Entender por que a pressão de abertura do LCR é 'normal' apesar da hidrocefalia comunicante.",
+    "Saber investigar e excluir diagnósticos diferenciais de declínio cognitivo em idosos antes de firmar o diagnóstico."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico: Hidrocefalia de Pressão Normal — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-hidrocefalia-de-pressao-normal-ligas"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "Nenhuma reformulação estrutural foi necessária; a fonte já apresentava suspeitas diagnósticas explícitas antes da confirmação por exames."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

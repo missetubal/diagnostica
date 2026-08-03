@@ -1,0 +1,83 @@
+{
+  "id": "lesao-menisco-medial-pre-operatorio",
+  "title": "Instabilidade no joelho e receio de atividade física",
+  "objective": "Identificar o quadro clínico e os principais déficits funcionais relacionados a uma lesão meniscal conhecida, antes de tratamento cirúrgico",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 38,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 38 anos relata instabilidade no joelho esquerdo e receio de realizar atividades físicas, principalmente exercícios com descarga de peso no membro."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Teve lesão parcial do menisco do joelho esquerdo há alguns anos, praticando futebol, e mais recentemente sofreu rompimento total do menisco medial praticando vôlei. Desde então, interrompeu musculação e caminhada por medo de sobrecarregar o membro. Ainda não iniciou tratamento fisioterapêutico."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Possui diagnóstico associado de ruptura completa e crônica do ligamento cruzado anterior e condropatia patelar grau I no mesmo joelho. Não relata dor, edema ou uso de medicamentos no momento."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Ausência de sinais de edema e de dor à palpação. Teste de McMurray negativo, mesmo com lesão meniscal conhecida. Teste de equilíbrio estático unipodal por 30 segundos evidenciou maior instabilidade no membro esquerdo em comparação ao direito."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Lunge Test (amplitude de dorsiflexão): 40° no membro esquerdo versus 52° no direito — diferença expressiva entre os lados."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "instabilidade funcional e déficit proprioceptivo de joelho relacionados a lesão meniscal e ligamentar crônica",
+    "accepted_terms": [
+      "instabilidade de joelho pós-lesão meniscal e ligamentar",
+      "déficit sensório-motor de joelho associado a lesão meniscal crônica"
+    ],
+    "partial_terms": [
+      "osteoartrose de joelho",
+      "fraqueza muscular isolada de quadríceps"
+    ]
+  },
+  "differentials": [
+    {
+      "name": "lesão meniscal aguda em atividade",
+      "explanation": "A ausência de dor, edema e teste de McMurray negativo tornam uma lesão aguda ativa menos provável — o quadro é mais compatível com sequela funcional de lesão já conhecida e crônica."
+    },
+    {
+      "name": "osteoartrose secundária de joelho",
+      "explanation": "É uma consequência de médio/longo prazo relevante em lesões meniscais e ligamentares não tratadas, mas não há, neste momento, relato de dor ou rigidez matinal que sustente esse diagnóstico como quadro atual predominante."
+    },
+    {
+      "name": "instabilidade puramente ligamentar (sem componente meniscal)",
+      "explanation": "A ruptura crônica do LCA contribui para a instabilidade, mas a diferença assimétrica de amplitude e o histórico específico de lesão meniscal reforçam que o componente meniscal também é relevante no quadro funcional."
+    }
+  ],
+  "explanation": "A combinação de instabilidade percebida, evitação de atividade física, assimetria de amplitude de dorsiflexão e maior instabilidade em apoio unipodal no membro afetado — mesmo sem dor ou edema ativos — é compatível com um quadro de instabilidade funcional e déficit proprioceptivo secundário à lesão meniscal e ligamentar crônica já diagnosticada.",
+  "learning_points": [
+    "Reconhecer que lesões meniscais crônicas podem cursar sem dor ou edema, mas ainda gerar instabilidade funcional significativa.",
+    "Entender o papel do medo/receio de movimento (kinesiofobia) na redução de atividade física após lesão articular.",
+    "Valorizar testes funcionais e de equilíbrio, além de testes clínicos clássicos (McMurray), na avaliação de instabilidade de joelho."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 5: Um tratamento pré-operatório em paciente com lesão de menisco (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Diagnóstico principal já era conhecido pela paciente (menisco, LCA, condropatia) — a pergunta do caso foi reformulada para o quadro funcional/instabilidade, não para nomear as lesões estruturais em si.",
+    "Confirmar se citar three diagnósticos associados (menisco, LCA, condropatia) na mesma paciente não torna o caso confuso para o nível de dificuldade proposto."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

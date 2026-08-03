@@ -1,0 +1,77 @@
+{
+  "id": "dispepsia-funcional-criterios-roma-iv",
+  "title": "Sensação de estômago cheio após pequenas refeições",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dispepsia crônica sem achados estruturais",
+  "professions": ["medicina"],
+  "area": "gastroenterologia",
+  "difficulty": "medio",
+  "patient": {
+    "age": 62,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 62 anos relata sensação de estômago cheio após pequenas refeições há 10 meses, não conseguindo terminar algumas refeições. Os episódios, que ocorriam cerca de 2 vezes por semana, se intensificaram há 6 meses para cerca de 4 vezes por semana."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Associado a isso, refere plenitude pós-prandial, náuseas e, eventualmente, dor em queimação no epigástrio (4/10, sem irradiação). Refere melhora em jejum e piora ao se alimentar. Relata perda de peso não quantificada. Nega uso de medicamentos para os sintomas e não procurou atendimento médico anteriormente."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Nega diabetes, hipertensão, dislipidemia, hepatite, tuberculose ou HIV. Tabagista (30 anos-maço) e uso recreativo de álcool aos finais de semana. Alimentação rica em gordura e açúcar, sedentarismo. Relata período de estresse importante (dificuldades financeiras e luto pela morte da mãe há 1 ano)."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Bom estado geral e nutricional, IMC 22,5 kg/m², sinais vitais normais. Abdome levemente distendido e indolor à palpação, sem massas palpáveis, fígado não palpável. Demais sistemas sem alterações."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Hemograma, perfil tireoidiano, glicemia/HbA1c, amilase, lipase, pesquisa de doença celíaca, função hepática e parasitológico de fezes sem alterações. Endoscopia digestiva alta (EDA) com esôfago, estômago e duodeno de mucosa íntegra, sem alterações estruturais. Teste de urease negativo para H. pylori."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "dispepsia funcional (critérios de Roma IV)",
+    "accepted_terms": ["dispepsia funcional", "síndrome do desconforto pós-prandial (dispepsia funcional)"],
+    "partial_terms": ["úlcera péptica", "gastroparesia"]
+  },
+  "differentials": [
+    {
+      "name": "úlcera péptica",
+      "explanation": "Seria esperado um achado estrutural (úlcera) na EDA, que se mostrou normal, tornando essa hipótese menos provável."
+    },
+    {
+      "name": "gastroparesia",
+      "explanation": "Cursa com sintomas semelhantes, mas costuma estar associada a causas identificáveis (diabetes de longa data, cirurgia gástrica prévia) ausentes neste caso; exames metabólicos normais também tornam essa hipótese menos provável."
+    },
+    {
+      "name": "doença do refluxo gastroesofágico",
+      "explanation": "A paciente não relata pirose típica nem regurgitação como sintoma predominante, e a EDA não mostra esofagite."
+    }
+  ],
+  "explanation": "Sintomas dispépticos recorrentes (plenitude pós-prandial, saciedade precoce, queimação epigástrica leve) presentes há mais de 6 meses, sem achados estruturais na EDA e com exames laboratoriais normais, preenchem os critérios de Roma IV para dispepsia funcional. Fatores psicossociais (estresse, luto) e hábitos de vida (tabagismo, dieta gordurosa, álcool) são reconhecidos contribuintes para o quadro.",
+  "learning_points": [
+    "Reconhecer os critérios de Roma IV para dispepsia funcional.",
+    "Saber quando solicitar EDA em pacientes com sintomas dispépticos (idade, sinais de alarme).",
+    "Considerar fatores psicossociais e hábitos de vida na fisiopatologia da dispepsia funcional."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico: Dispepsia Funcional — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-dispepsia-funcional-ligas"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "Caso já apresentava raciocínio diagnóstico genuíno na fonte (suspeitas diagnósticas → exames → diagnóstico); nenhuma reformulação estrutural foi necessária."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

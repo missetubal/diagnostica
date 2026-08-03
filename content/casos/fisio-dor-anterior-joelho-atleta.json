@@ -1,0 +1,80 @@
+{
+  "id": "dor-femoropatelar-atleta-multiesportiva",
+  "title": "Dor nos joelhos em atleta após quedas",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor anterior no joelho após trauma leve, com exames de imagem normais",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "facil",
+  "patient": {
+    "age": 34,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Atleta de 34 anos, praticante de vôlei e handebol, relata dor em ambos os joelhos, mais intensa no esquerdo, na região medial e anterior, descrita como 'agulhadas' e graduada em 5/10 na escala visual analógica."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Refere duas quedas em uma escada com intervalo de dois dias: na primeira, bateu apenas o joelho esquerdo; na segunda, ambos os joelhos sofreram impacto. Faz uso eventual de relaxante muscular/analgésico quando a dor é mais intensa."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Realizou radiografia dos joelhos após o evento, sem alterações identificadas."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Redução leve da amplitude de flexão do joelho esquerdo, com dor referida na região anterior da patela durante o movimento ativo. Testes de agachamento livre e agachamento unipodal em plano inclinado reproduzem dor na parte anterior e lateral dos joelhos."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Teste de Thessaly (menisco) negativo bilateralmente. Testes de McMurray (menisco medial e lateral) negativos. Teste da gaveta (ligamento cruzado anterior/posterior) negativo."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "dor femoropatelar (síndrome da dor patelofemoral)",
+    "accepted_terms": ["síndrome femoropatelar", "condromalácia patelar", "dor anterior no joelho de origem patelofemoral"],
+    "partial_terms": ["tendinopatia patelar", "sobrecarga de joelho pós-trauma"]
+  },
+  "differentials": [
+    {
+      "name": "lesão meniscal",
+      "explanation": "Testes específicos para menisco (Thessaly, McMurray) foram negativos bilateralmente, tornando essa hipótese menos provável, apesar do mecanismo de trauma direto no joelho."
+    },
+    {
+      "name": "lesão ligamentar (LCA/LCP)",
+      "explanation": "O teste da gaveta negativo bilateralmente reduz a probabilidade de lesão ligamentar significativa como causa principal da dor."
+    },
+    {
+      "name": "fratura ou lesão óssea oculta",
+      "explanation": "Deve sempre ser considerada após trauma direto no joelho, mas a radiografia sem alterações torna essa hipótese pouco provável neste momento."
+    }
+  ],
+  "explanation": "A dor localizada na região anterior do joelho, reproduzida por testes de agachamento (sensíveis para dor femoropatelar), associada a testes negativos para lesões meniscais e ligamentares e exame de imagem sem alterações, favorece o diagnóstico de dor femoropatelar desencadeada pelo trauma direto na região anterior do joelho.",
+  "learning_points": [
+    "Reconhecer o teste de agachamento como um teste sensível para dor femoropatelar.",
+    "Usar testes específicos (Thessaly, McMurray, gaveta) para descartar lesões meniscais e ligamentares antes de firmar um diagnóstico de sobrecarga femoropatelar.",
+    "Entender que exames de imagem normais não excluem quadros dolorosos funcionais significativos."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 6: Avaliação e tratamento de dor no joelho em atleta multiesportiva (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    },
+    {
+      "title": "Duong et al. Evaluation and treatment of knee pain: a review. JAMA, 2023",
+      "url": "https://doi.org/10.1001/jama.2023.19675"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Nome da medicação de uso eventual (relaxante muscular/analgésico combinado) foi generalizado por não ser essencial ao raciocínio clínico."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

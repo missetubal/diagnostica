@@ -1,0 +1,77 @@
+{
+  "id": "diverticulite-aguda-fossa-iliaca-esquerda",
+  "title": "Dor abdominal intensa em fossa ilíaca esquerda com febre",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor abdominal aguda localizada em fossa ilíaca esquerda",
+  "professions": ["medicina"],
+  "area": "gastroenterologia",
+  "difficulty": "medio",
+  "patient": {
+    "age": 61,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 61 anos apresenta dor em fossa ilíaca esquerda há 3 dias, em cólica, com piora à defecação, de intensidade 7/10."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Refere náuseas e vômitos intermitentes, febre de 38°C há 1 dia (cessada com dipirona). Relata ser obstipada cronicamente e ter tido episódio de enterorragia há 4 meses, sem causa esclarecida. Alimentação pobre em fibras. Tabagista."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Diabetes mellitus tipo 2 em uso de metformina. Mãe falecida de câncer de cólon."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Febril (38°C), taquipneica. Postura antálgica, com mão cerrada sobre a fossa ilíaca esquerda. Dor à palpação profunda da fossa ilíaca esquerda, com descompressão brusca positiva. Ausência de massas palpáveis."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Hemograma completo com leucocitose. Sumário de urina normal, afastando infecção urinária. Tomografia de abdome e pelve evidenciando espessamento de parede do cólon sigmoide, com presença de divertículos."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "diverticulite aguda não complicada",
+    "accepted_terms": ["diverticulite aguda do cólon sigmoide"],
+    "partial_terms": ["apendicite aguda", "doença inflamatória intestinal", "carcinoma de cólon"]
+  },
+  "differentials": [
+    {
+      "name": "apendicite aguda",
+      "explanation": "Localização típica em fossa ilíaca direita, não esquerda, tornando essa hipótese menos provável neste caso."
+    },
+    {
+      "name": "doença inflamatória intestinal",
+      "explanation": "Diagnóstico diferencial possível para dor abdominal com alteração do hábito intestinal, mas o achado tomográfico específico de divertículos com espessamento parietal sigmoide direciona para diverticulite."
+    },
+    {
+      "name": "carcinoma de cólon",
+      "explanation": "Preocupação legítima dado o histórico familiar (mãe com câncer de cólon) e o episódio prévio de enterorragia; deve ser investigado com colonoscopia após a resolução do quadro agudo, mas o quadro atual (febre, leucocitose, dor localizada com piora à defecação) é mais compatível com um processo inflamatório agudo."
+    }
+  ],
+  "explanation": "Idade acima de 40 anos, constipação crônica, dieta pobre em fibras e dor localizada em fossa ilíaca esquerda com sinais de irritação peritoneal localizada, febre e leucocitose, confirmados por tomografia evidenciando espessamento do cólon sigmoide com divertículos, sustentam o diagnóstico de diverticulite aguda não complicada.",
+  "learning_points": [
+    "Reconhecer a localização típica da diverticulite (fossa ilíaca esquerda, cólon sigmoide) e seus fatores de risco.",
+    "Entender a tomografia de abdome/pelve como exame padrão-ouro para diverticulite aguda.",
+    "Saber que a colonoscopia deve ser adiada para 1 a 3 meses após a resolução do quadro agudo, para excluir malignidade."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico: Diverticulite — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-diverticulite-ligas"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "Nenhuma reformulação estrutural foi necessária."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

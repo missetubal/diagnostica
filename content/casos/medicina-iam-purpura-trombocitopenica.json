@@ -1,0 +1,67 @@
+{
+  "id": "iam-sem-supra-purpura-trombocitopenica-idiopatica",
+  "title": "Dor precordial recorrente em paciente com plaquetas baixas",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor precordial em paciente idosa com trombocitopenia crônica, e reconhecer os desafios de manejo dessa associação",
+  "professions": ["medicina"],
+  "area": "cardiologia",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 76,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 76 anos, com história prévia de doença renal crônica por agenesia de rim direito, hipertensão e púrpura trombocitopênica idiopática (PTI) em tratamento de manutenção com corticoterapia em doses baixas (prednisona 20 mg), apresentava bom controle laboratorial em exames de rotina."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Paciente evolui com quadro de dor precordial. Investigação direcionada para síndrome coronariana aguda."
+    },
+    {
+      "order": 3,
+      "type": "exames_complementares",
+      "content": "Exames de rotina prévios mostravam hemoglobina 15,1 g/dL, 11.120/mm³ leucócitos e 90 mil/mm³ plaquetas. Eletrocardiograma e marcadores de necrose miocárdica confirmam infarto agudo do miocárdio sem supradesnivelamento do segmento ST, de parede ínfero-lateral. Contagem de plaquetas no momento do evento revela plaquetopenia (45 mil/mm³), postergando a angioplastia por 10 dias."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "infarto agudo do miocárdio sem supradesnivelamento do segmento ST em paciente com púrpura trombocitopênica idiopática",
+    "accepted_terms": ["IAMSSST em paciente com PTI", "síndrome coronariana aguda sem supra de ST associada a trombocitopenia imune"],
+    "partial_terms": ["angina instável", "trombocitopenia induzida por heparina isolada", "síndrome coronariana aguda com supra de ST"]
+  },
+  "differentials": [
+    {
+      "name": "angina instável",
+      "explanation": "Diagnóstico diferencial relevante em dor precordial sem supra de ST, mas a elevação de marcadores de necrose miocárdica confirma infarto (dano miocárdico estabelecido), e não apenas isquemia sem necrose."
+    },
+    {
+      "name": "síndrome coronariana aguda com supradesnivelamento de ST",
+      "explanation": "Descartada pelo eletrocardiograma, que não evidenciou supradesnivelamento — determinante para a escolha da estratégia terapêutica e o tempo até a intervenção."
+    },
+    {
+      "name": "trombocitopenia induzida por heparina (HIT) como causa isolada do quadro",
+      "explanation": "Tornou-se uma hipótese relevante apenas posteriormente, após início de enoxaparina no pós-procedimento, quando houve nova queda plaquetária — mas não explica o evento coronariano inicial, que precedeu o uso de heparina."
+    }
+  ],
+  "explanation": "O manejo do infarto agudo do miocárdio em pacientes com PTI é complexo: a angioplastia, indicada pelo quadro coronariano, precisa ser balanceada contra o risco hemorrágico da trombocitopenia grave (45 mil/mm³), levando ao adiamento do procedimento por 10 dias. A evolução com nova queda plaquetária após uso de enoxaparina no pós-operatório levanta a suspeita adicional de trombocitopenia induzida por heparina, ilustrando como condições hematológicas de base modificam significativamente a estratégia de tratamento cardiológico.",
+  "learning_points": [
+    "Reconhecer que a plaquetopenia grave é fator limitante para procedimentos invasivos em síndrome coronariana aguda, exigindo balanceamento entre risco isquêmico e hemorrágico.",
+    "Suspeitar de trombocitopenia induzida por heparina diante de queda plaquetária após início de heparina/enoxaparina em paciente com plaquetopenia de base.",
+    "Entender a raridade e a complexidade do manejo de eventos tromboembólicos cardíacos em pacientes com púrpura trombocitopênica idiopática."
+  ],
+  "references": [
+    {
+      "title": "Pacheco CB, Bellaver G, Silva WF, Santos LPD, Castralli HA, Sagrilo MR, Zago A, Salvador JC. Relato de caso de infarto agudo do miocárdio em paciente com púrpura trombocitopênica idiopática. Hematol Transfus Cell Ther. 2022;44 Supl 2:S292",
+      "url": "https://www.htct.com.br/en-relato-de-caso-de-infarto-articulo-resumen-S2531137922006101"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: resumo de caso clínico apresentado em congresso, publicado em acesso aberto na Hematology, Transfusion and Cell Therapy (Elsevier/ABHH), indexada e revisada por pares — risco de direitos autorais baixo.",
+    "Caso original é predominantemente hematológico/hospitalar, com poucos detalhes de exame físico cardiovascular; o estágio de exame físico foi omitido por não estar descrito na fonte, evitando invenção de achados. Complicações tardias do caso (ruptura arterial, tamponamento cardíaco pós-cateterismo) foram omitidas por ocorrerem após o ponto de raciocínio diagnóstico central deste caso; revisor pode considerar criar um segundo caso avançado só com essa complicação."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

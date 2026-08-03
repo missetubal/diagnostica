@@ -1,0 +1,72 @@
+{
+  "id": "dor-lateral-joelho-disfuncao-pe-tornozelo",
+  "title": "Dor lateral no joelho durante a corrida",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor lateral do joelho em corredor, com exames locais do joelho negativos",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 27,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 27 anos apresenta início insidioso de dor na face lateral do joelho direito, identificando o cooper como atividade provocativa. O problema começou há 4 semanas, durante sua corrida usual de 30 minutos. Inicialmente a dor aparecia após 20 minutos de corrida, mas atualmente aparece após 5 minutos, impedindo-o de correr mais que 20 minutos. A dor também é notada ao subir ou descer escadas e ao se levantar de uma cadeira."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Boa saúde geral, sem história de trauma no membro inferior. Sem sintomas de formigamento, fraqueza ou crepitação."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Inspeção: postura desleixada, extensão bilateral de quadris, rotação interna excessiva de quadris com rotação externa tibial compensatória; ambos os pés pronados, sendo o direito mais que o esquerdo. Análise da marcha: controle pélvico pobre na fase de apoio, com rotação interna rápida do quadril no toque do calcanhar; tamanho do passo e tempo de apoio diminuídos à direita; pronação excessiva e prolongada do pé direito na fase de apoio."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Quadril direito sem alterações, exceto leve encurtamento do reto femoral. Contração estática do glúteo máximo reduzida; glúteo médio com recrutamento pobre. Joelho sem desalinhamento patelar nem disfunções do movimento articular tíbio-femoral. Testes de menisco, ligamento e trato iliotibial negativos. Tecido neural do membro inferior com boa mobilidade e negativo à palpação. Pé e tornozelo com os maiores desvios: redução significante de dorsiflexão talocrural, valgo de calcâneo de 5°, primeiro metatarso em plantiflexão."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "dor lateral do joelho por sobrecarga biomecânica secundária a disfunção do pé e tornozelo (pronação excessiva e restrição de dorsiflexão)",
+    "accepted_terms": ["síndrome de dor lateral do joelho de origem biomecânica distal (pé/tornozelo)", "sobrecarga do compartimento lateral do joelho por alteração de marcha"],
+    "partial_terms": ["síndrome da banda iliotibial isolada", "lesão meniscal lateral"]
+  },
+  "differentials": [
+    {
+      "name": "síndrome da banda iliotibial por overuse isolado do joelho",
+      "explanation": "Os testes específicos do joelho (menisco, ligamento, trato iliotibial) foram negativos e o exame local não revelou disfunção estrutural, direcionando o raciocínio para uma causa biomecânica mais distal."
+    },
+    {
+      "name": "lesão meniscal lateral",
+      "explanation": "Descartada por teste de menisco negativo."
+    },
+    {
+      "name": "disfunção do quadril como causa primária",
+      "explanation": "Há achados no quadril (encurtamento do reto femoral, recrutamento pobre de glúteos), mas o exame de pé e tornozelo mostrou os desvios mais significativos, e o tratamento dirigido a essa região produziu a resposta mais rápida."
+    }
+  ],
+  "explanation": "A ausência de achados estruturais positivos no joelho, associada a alterações claras de marcha e a desvios biomecânicos mais acentuados no pé e tornozelo (pronação excessiva, dorsiflexão talocrural reduzida), sustenta a hipótese de que a dor lateral do joelho é secundária a uma cadeia cinética alterada com origem distal, confirmada pela resposta favorável ao tratamento direcionado ao pé e tornozelo.",
+  "learning_points": [
+    "Aplicar raciocínio de cadeia cinética ao avaliar dor no joelho sem achados estruturais locais.",
+    "Usar taping como ferramenta diagnóstica e terapêutica para testar hipóteses biomecânicas.",
+    "Considerar quadril, joelho e pé/tornozelo de forma integrada na avaliação de dor lateral do joelho em corredores."
+  ],
+  "references": [
+    {
+      "title": "Caso clínico 'Caso 8: Dor em joelho' — Grupo Terapia Manual",
+      "url": "https://www.terapiamanual.com.br/site/casos_clinicos/?id=63&c=3"
+    }
+  ],
+  "avisos_para_revisor": [
+    "ATENÇÃO — mesmo risco de direitos autorais já sinalizado nos casos anteriores desta fonte.",
+    "O caso-fonte foi cedido por um fisioterapeuta identificado nominalmente; o nome foi omitido do corpo do caso por não ser essencial ao raciocínio clínico. Revisor deve confirmar se prefere creditar a fonte apenas na referência bibliográfica."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

@@ -1,0 +1,81 @@
+{
+  "id": "luxacao-anterior-ombro-pos-trauma",
+  "title": "Dor e restrição de movimento no ombro após queda",
+  "objective": "Identificar o quadro clínico mais provável associado a um evento traumático agudo de ombro, com base no mecanismo de trauma e nos achados do exame físico",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 27,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 27 anos apresenta dor e importante restrição de movimento no ombro direito, com início há cerca de 10 dias. Mantém o braço em posição de proteção, com o cotovelo fletido e o ombro em rotação interna."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Relata queda com apoio da mão espalmada e braço estendido diretamente no chão. Buscou atendimento de urgência no mesmo dia, onde foi realizado um procedimento de redução articular no ombro, seguido de uso de tipoia. Não fez uso de medicação analgésica desde então."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Pratica musculação regularmente (cerca de 5 vezes por semana) e futebol recreativo uma vez por semana. Sem histórico de episódios semelhantes prévios no mesmo ombro."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Sem sinais de edema, hematoma ou alteração de temperatura à inspeção e palpação. Amplitude de movimento passiva reduzida: abdução 30°, rotação externa 30°, flexão 80°. Força muscular preservada (grau 5/5) em todos os movimentos testados. Dor grau 5/10 durante a rotação externa e ao final dos movimentos de flexão e abdução."
+    },
+    {
+      "order": 5,
+      "type": "evolucao",
+      "content": "O paciente relata dificuldade para retomar atividades cotidianas e receio de que o ombro volte a se deslocar."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "luxação anterior traumática do ombro (pós-redução)",
+    "accepted_terms": ["luxação glenoumeral anterior", "instabilidade anterior do ombro pós-traumática", "luxação anterior do ombro"],
+    "partial_terms": ["lesão do manguito rotador", "capsulite adesiva", "síndrome do impacto no ombro"]
+  },
+  "differentials": [
+    {
+      "name": "lesão isolada do manguito rotador",
+      "explanation": "Poderia explicar dor e limitação, mas não o mecanismo de trauma com deslocamento articular evidente nem a necessidade de um procedimento de redução na urgência."
+    },
+    {
+      "name": "fratura do úmero proximal",
+      "explanation": "Deve sempre ser considerada em traumas com esse mecanismo; a ausência de sinais de fratura na avaliação médica inicial e o procedimento de redução já realizado tornam essa hipótese menos provável neste ponto, mas reforça a importância de exames de imagem na fase aguda."
+    },
+    {
+      "name": "capsulite adesiva",
+      "explanation": "Cursa com perda de amplitude ativa e passiva de instalação mais insidiosa, não associada a um evento traumático agudo com necessidade de redução articular."
+    }
+  ],
+  "explanation": "O mecanismo de trauma típico (queda com apoio de mão espalmada e braço estendido), a necessidade de redução em atendimento de urgência e o padrão de restrição de amplitude em abdução, rotação externa e flexão com força preservada são compatíveis com um quadro pós-luxação anterior traumática do ombro, ainda em fase de restrição protetora.",
+  "learning_points": [
+    "Reconhecer o mecanismo de trauma típico da luxação anterior do ombro (queda com braço em abdução e rotação externa).",
+    "Diferenciar a restrição de amplitude por proteção/dor pós-luxação de outras causas de rigidez de ombro.",
+    "Entender a importância de uma reabilitação estruturada para reduzir o risco de recidiva, especialmente em pacientes jovens e ativos."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 7: Reabilitação após luxação traumática anterior do ombro (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    },
+    {
+      "title": "Khiami, Gérometta, Loriaut. Management of recent first-time anterior shoulder dislocations. Orthopaedics & Traumatology: Surgery & Research, 2015",
+      "url": "https://doi.org/10.1016/j.otsr.2014.06.027"
+    }
+  ],
+  "avisos_para_revisor": [
+    "No caso-fonte, a luxação e a redução já haviam ocorrido antes do primeiro atendimento fisioterapêutico. A queixa_principal foi reescrita para não revelar o evento imediatamente, deixando o mecanismo de trauma para a etapa de história — revisor deve confirmar se essa progressão está clara o suficiente para o modo Diagnóstico Progressivo.",
+      "Ocupação e atividades específicas do paciente foram generalizadas em relação à fonte."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

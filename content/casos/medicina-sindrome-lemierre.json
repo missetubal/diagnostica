@@ -1,0 +1,72 @@
+{
+  "id": "sindrome-lemierre-tromboflebite-jugular-septica",
+  "title": "Dor de garganta que evolui para massa cervical e falta de ar",
+  "objective": "Identificar a hipótese diagnóstica mais provável para infecção de vias aéreas superiores que evolui com massa cervical e comprometimento pulmonar bilateral",
+  "professions": ["medicina"],
+  "area": "infectologia",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 42,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 42 anos, portadora de hipotireoidismo, inicia quadro de odinofagia, tratada com penicilina benzatina, prednisona e nimesulida, com melhora clínica parcial."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Cerca de 14 dias após o tratamento inicial, apresenta piora do quadro álgico com surgimento de hiperemia e massa palpável em região cervical. Nega febre no momento da avaliação."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Hiperemia em orofaringe sem exsudação. Edema endurecido que se estende da região tireoidiana até a região clavicular à direita."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Leucocitose (22.600/mm³) com proteína C reativa elevada (29,8 mg/dL). Tomografia de pescoço com intenso borramento da veia jugular interna e imagem sugestiva de abscesso cervical, com trombose secundária da veia jugular interna, inflamação do esternocleidomastóideo e sialoadenite. Drenagem do abscesso realizada, material enviado para cultura (sem crescimento bacteriano). Um dia após o procedimento, paciente evolui com dessaturação; tomografia de tórax mostra extensas consolidações bilaterais, de distribuição perihilar e em lobos inferiores. Hemocultura isola Fusobacterium necrophorum."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "síndrome de Lemierre (tromboflebite séptica da veia jugular interna com embolia pulmonar séptica)",
+    "accepted_terms": ["síndrome de Lemierre", "tromboflebite jugular séptica por Fusobacterium necrophorum com êmbolos pulmonares"],
+    "partial_terms": ["abscesso cervical isolado", "pneumonia adquirida na comunidade", "tireoidite supurativa"]
+  },
+  "differentials": [
+    {
+      "name": "abscesso cervical isolado (sem complicação sistêmica)",
+      "explanation": "Explicaria a massa cervical e a hiperemia, mas não a piora respiratória súbita com consolidações pulmonares bilaterais que surgiram logo após a drenagem, sugerindo disseminação séptica a distância."
+    },
+    {
+      "name": "pneumonia adquirida na comunidade",
+      "explanation": "Poderia explicar o quadro pulmonar isoladamente, mas não explica a massa cervical com trombose de veia jugular interna que precedeu o quadro respiratório — a sequência temporal aponta para uma origem cervical comum às duas manifestações."
+    },
+    {
+      "name": "tireoidite supurativa",
+      "explanation": "Considerada dado o antecedente de hipotireoidismo e a localização inicial do edema próxima à tireoide, mas a tomografia caracterizou o processo como centrado na veia jugular interna (tromboflebite), e não na glândula tireoide."
+    }
+  ],
+  "explanation": "A síndrome de Lemierre caracteriza-se por tromboflebite séptica da veia jugular interna, tipicamente secundária a uma infecção orofaríngea, com risco de embolização séptica a distância — principalmente pulmonar. Neste caso, a sequência de odinofagia tratada parcialmente, seguida de massa cervical com trombose jugular à tomografia e, dias depois, consolidações pulmonares bilaterais com hemocultura positiva para Fusobacterium necrophorum (patógeno clássico da síndrome), confirma o diagnóstico.",
+  "learning_points": [
+    "Reconhecer a síndrome de Lemierre como complicação rara, porém grave, de infecções orofaríngeas mal resolvidas.",
+    "Associar tromboflebite de veia jugular interna a risco de embolização séptica pulmonar a distância.",
+    "Identificar o Fusobacterium necrophorum como patógeno característico da síndrome de Lemierre."
+  ],
+  "references": [
+    {
+      "title": "Luciano RF, de Lima JPV, Deriquehem V, Saud NS, Zuchen F, Caramez EA, Moraes AC. Relato de caso: embolia pulmonar séptica em mulher jovem secundária a tromboflebite jugular – síndrome de Lemierre. Braz J Infect Dis. 2024;28 Supl 3:104448",
+      "url": "https://www.bjid.org.br/en-relato-de-caso-embolia-pulmonar-articulo-S1413867024007311"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: resumo de caso clínico apresentado em congresso (IX Congresso de Infectologia do Estado do Rio de Janeiro), publicado com acesso de texto completo na The Brazilian Journal of Infectious Diseases (Elsevier), indexada e revisada por pares — risco de direitos autorais baixo.",
+    "Idade da paciente classificada como 'mulher jovem' no título original; mantida a idade específica (42 anos) informada no corpo do resumo."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

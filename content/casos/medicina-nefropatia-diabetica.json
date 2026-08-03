@@ -1,0 +1,77 @@
+{
+  "id": "nefropatia-diabetica-sindrome-nefrotica",
+  "title": "Inchaço progressivo em pés e tornozelos com urina espumosa",
+  "objective": "Identificar a hipótese diagnóstica mais provável para síndrome edematosa com proteinúria em paciente diabético",
+  "professions": ["medicina"],
+  "area": "clinica-medica",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 53,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 53 anos relata que, há cerca de 2 meses, começou a apresentar inchaço nos pés e tornozelos, a ponto de não conseguir calçar sapatos."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Fez automedicação com diurético (não recorda o nome), com melhora parcial e temporária. Nos últimos meses, notou ganho de peso de cerca de 10 kg, apesar de praticar exercícios físicos regularmente. Percebeu também que sua urina está espumosa, algo não observado antes do aparecimento do edema."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Diabetes mellitus com controle glicêmico inadequado, sem acompanhamento com endocrinologista há cerca de 2 anos, em uso de glibenclamida. Nega tabagismo, etilismo e uso de drogas ilícitas."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Bom estado geral, hidratada, discretamente descorada (+/4). Edema periorbital importante (+3/4). Fundoscopia evidenciando pontos hemorrágicos e exsudatos duros na retina. Edema de membros inferiores (+3/4) com cacifo. PA 149x77 mmHg. Aparelhos respiratório, cardiovascular e abdome sem alterações."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Teste com fita reagente (dipstick) urinário: glicose 2+, proteína 2+; negativo para esterase leucocitária, nitrato ou sangue."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "nefropatia diabética (síndrome nefrótica secundária a diabetes)",
+    "accepted_terms": ["nefropatia diabética", "glomerulopatia diabética com síndrome nefrótica"],
+    "partial_terms": ["glomeruloesclerose segmentar e focal", "nefropatia membranosa"]
+  },
+  "differentials": [
+    {
+      "name": "glomeruloesclerose segmentar e focal",
+      "explanation": "Também causa síndrome nefrótica, mas tipicamente cursa com proteinúria não seletiva e hematúria, além de início mais agudo ou subagudo — diferente do padrão insidioso e da proteinúria seletiva para albumina observados nesta paciente."
+    },
+    {
+      "name": "nefropatia membranosa",
+      "explanation": "Comum na faixa etária da paciente, mas costuma cursar com hematúria microscópica e hipertensão de curso variável, achados não consistentes com o quadro apresentado."
+    },
+    {
+      "name": "glomerulonefrite pós-infecciosa",
+      "explanation": "Pouco provável dado o curso insidioso (2 meses) sem evento infeccioso recente relatado e ausência de hematúria."
+    }
+  ],
+  "explanation": "Paciente com diabetes de longa data mal controlado, apresentando edema periorbital e de membros inferiores, proteinúria seletiva para albumina, glicosúria e retinopatia diabética à fundoscopia (achado que reforça o tempo de doença microvascular), sem sinais de infecção urinária, sustenta o diagnóstico de nefropatia diabética evoluindo com síndrome nefrótica. A presença de retinopatia é um forte indício de que a lesão renal também é de origem diabética, já que sua ausência levantaria suspeita de outra glomerulopatia.",
+  "learning_points": [
+    "Reconhecer a nefropatia diabética como principal causa de doença renal crônica em pacientes diabéticos.",
+    "Entender a associação entre retinopatia e nefropatia diabética como pista diagnóstica.",
+    "Usar o teste de dipstick urinário como triagem inicial de proteinúria e glicosúria."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico: Nefropatia Diabética — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-nefropatia-diabetica-ligas"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "Nenhuma reformulação estrutural foi necessária; o caso já apresenta diagnóstico diferencial rico e explícito na própria fonte."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

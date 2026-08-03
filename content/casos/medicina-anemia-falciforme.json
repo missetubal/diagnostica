@@ -1,0 +1,77 @@
+{
+  "id": "anemia-falciforme-crise-dolorosa",
+  "title": "Dor intensa recorrente em membros inferiores, com úlcera em tornozelo",
+  "objective": "Identificar a hipótese diagnóstica mais provável para crise de dor recorrente em membros inferiores associada a anemia",
+  "professions": ["medicina"],
+  "area": "clinica-medica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 30,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 30 anos apresenta dor forte em membros inferiores (8/10) há 2 horas, sem melhora com analgésico, associada a dor lombar no momento da consulta."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Refere fadiga e indisposição há 1 dia, com edema doloroso em tornozelo. Relata já ter apresentado inúmeros outros episódios de dor em pernas no último ano, por vezes com inchaço local. Teve quadro gripal (febre, coriza, tosse) na semana anterior, tratado com paracetamol."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Nega hipertensão e diabetes. Pai falecido aos 40 anos por AVC. Relata período recente de estresse importante (separação conjugal, trabalho como doméstica durante a pandemia)."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Mucosas descoradas (++/4+), discreta icterícia. Ausculta cardiovascular com sopro difuso (++/4+). Presença de edema unilateral em tornozelo esquerdo (++/4), associado a úlcera maleolar de cerca de 2 cm, com secreção purulenta, hiperemia nas bordas e dor à palpação."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Hematócrito 24%, hemoglobina 8,2 g/dL, reticulócitos elevados (135.000/mm³). Análise do esfregaço evidenciando presença de drepanócitos (hemácias falcizadas). RDW elevado (15%), sugerindo anisocitose. Leucócitos discretamente elevados (11.000/mm³). Eletrocardiograma sem alterações."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "crise dolorosa vaso-oclusiva secundária a anemia falciforme",
+    "accepted_terms": ["anemia falciforme (crise álgica)", "doença falciforme com crise vaso-oclusiva"],
+    "partial_terms": ["trombose venosa profunda", "síndrome viral isolada"]
+  },
+  "differentials": [
+    {
+      "name": "trombose venosa profunda",
+      "explanation": "Consideração razoável pela dor e edema em membro inferior, mas o padrão recorrente ao longo de anos, a anemia com drepanócitos no esfregaço e a úlcera maleolar tornam a origem hematológica crônica mais provável do que um evento trombótico agudo isolado."
+    },
+    {
+      "name": "síndrome viral isolada",
+      "explanation": "Explicaria o quadro gripal recente, mas não a dor intensa recorrente em membros inferiores, a anemia nem a úlcera maleolar crônica."
+    },
+    {
+      "name": "hemoglobinopatia SC",
+      "explanation": "Diagnóstico diferencial genuíno dentro do espectro das doenças falciformes, tipicamente com quadro clínico mais brando; a distinção definitiva exige eletroforese de hemoglobina."
+    }
+  ],
+  "explanation": "A combinação de dor recorrente em membros inferiores ao longo de anos, anemia com achado de hemácias falcizadas (drepanócitos) no esfregaço, sinais de hemólise (icterícia leve) e úlcera maleolar crônica — uma complicação característica da doença falciforme — sustenta o diagnóstico de crise dolorosa vaso-oclusiva secundária a anemia falciforme, provavelmente desencadeada pelo quadro infeccioso recente.",
+  "learning_points": [
+    "Reconhecer a crise vaso-oclusiva como apresentação clínica típica da anemia falciforme.",
+    "Identificar a úlcera maleolar como complicação crônica característica da doença falciforme.",
+    "Entender a eletroforese de hemoglobina como exame confirmatório definitivo para as hemoglobinopatias."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico: Anemia Falciforme — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-anemia-falciforme-ligas"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "Caso-fonte inclui detalhes psicossociais extensos (separação conjugal, ansiedade, trabalho durante a pandemia), mantidos apenas de forma resumida por não serem centrais ao raciocínio hematológico."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

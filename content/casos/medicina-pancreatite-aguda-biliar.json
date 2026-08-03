@@ -1,0 +1,73 @@
+{
+  "id": "pancreatite-aguda-litiase-biliar",
+  "title": "Dor abdominal em epigástrio com irradiação para o dorso",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor abdominal aguda em epigástrio com irradiação dorsal",
+  "professions": ["medicina"],
+  "area": "gastroenterologia",
+  "difficulty": "medio",
+  "patient": {
+    "age": 35,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 35 anos apresenta dor no estômago há 2 dias, inicialmente leve (4/10), evoluindo para intensa (8/10) nas últimas 2 horas."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Dor abdominal persistente em pontada, localizada em epigástrio, com irradiação para o dorso, piora após ingesta alimentar e melhora em posição genupeitoral, associada a náuseas e vômitos. Nega febre. Uso de escopolamina sem melhora."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Diagnosticada com colelitíase há 8 meses. Histórico de hipercolesterolemia. Nega alergias e cirurgias recentes."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Regular estado geral, hipocorada (1+/4+), desidratada (2+/4+), PA 136x82 mmHg, FC 100 bpm. Sinal de Cullen positivo (equimose periumbilical). Abdome rígido e doloroso à palpação, ruídos hidroaéreos presentes."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Amilase 1011 U/l e lipase 15.203 U/l (muito elevadas). Glicemia 961 mg/dl. Cálcio sérico baixo (5,7 mg/dl). DHL elevado (2778 U/l). Ultrassonografia de abdome revelando coledocolitíase, colelitíase e aumento do volume pancreático."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "pancreatite aguda de origem biliar (litiásica)",
+    "accepted_terms": ["pancreatite aguda biliar", "pancreatite aguda por coledocolitíase"],
+    "partial_terms": ["colecistite aguda", "úlcera péptica perfurada"]
+  },
+  "differentials": [
+    {
+      "name": "colecistite aguda",
+      "explanation": "Também cursa com dor em quadrante superior, mas a irradiação para o dorso, os níveis extremamente elevados de amilase/lipase e o sinal de Cullen (sugestivo de processo hemorrágico retroperitoneal) apontam mais especificamente para acometimento pancreático."
+    },
+    {
+      "name": "úlcera péptica perfurada",
+      "explanation": "Causa abdome agudo, mas o padrão de dor com piora pós-prandial e melhora em posição genupeitoral, associado aos marcadores enzimáticos pancreáticos muito elevados, é mais específico de pancreatite."
+    }
+  ],
+  "explanation": "Dor epigástrica com irradiação para o dorso, piora pós-prandial, associada a amilase e lipase acentuadamente elevadas (mais de 3 vezes o valor de referência) e achados de imagem evidenciando coledocolitíase, colelitíase e aumento do pâncreas, preenchem os critérios diagnósticos de pancreatite aguda, com etiologia biliar mais provável dado o histórico de colelitíase.",
+  "learning_points": [
+    "Aplicar os critérios diagnósticos de pancreatite aguda (dor típica + enzimas pancreáticas 3x o valor de referência + achados de imagem).",
+    "Reconhecer a litíase biliar como causa mais comum de pancreatite aguda.",
+    "Identificar o sinal de Cullen como sinal de gravidade (hemorragia retroperitoneal)."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico de Pancreatite Aguda — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-pancreatite-aguda-ligas-2"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "Nenhuma reformulação estrutural foi necessária."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

@@ -1,0 +1,83 @@
+{
+  "id": "fraqueza-estabilizadores-ombro-atleta-rugby",
+  "title": "Dor e perda de força no ombro em atleta de rugby",
+  "objective": "Identificar a causa mais provável de dor e perda de força no ombro em uma atleta jovem, descartando causa neurológica",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 16,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Atleta de rugby de 16 anos relata dor e perda de força no ombro e membro superior esquerdo há quatro meses, com dor constante graduada em 4/10 na escala visual analógica."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Os sintomas foram percebidos durante treino de musculação, na execução do supino, especificamente na fase descendente do movimento. Nega lesões prévias no ombro."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Sem histórico de lesões anteriores relatado."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Sem edema, contusão ou hematoma na região. Palpação sem alterações. Teste de força do ombro esquerdo grau 4/5. Assimetria escapular, com a escápula esquerda posicionada abaixo do nível da direita. Teste do arco doloroso do ombro negativo."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Avaliação inicial considerou a possibilidade de lesão nervosa como causa da perda de força, hipótese não confirmada pelos achados do exame físico."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "discinesia escapular com fraqueza dos estabilizadores dinâmicos do ombro",
+    "accepted_terms": [
+      "fraqueza do manguito rotador e desalinhamento escapular",
+      "instabilidade funcional do ombro por déficit de estabilizadores escapulares"
+    ],
+    "partial_terms": ["síndrome do impacto no ombro", "lesão do plexo braquial"]
+  },
+  "differentials": [
+    {
+      "name": "lesão do plexo braquial ou nervo torácico longo",
+      "explanation": "Foi a hipótese inicial considerada devido à perda de força, mas a ausência de outros sinais neurológicos e o padrão de fraqueza limitado à musculatura estabilizadora do ombro tornam essa hipótese menos provável."
+    },
+    {
+      "name": "síndrome do impacto subacromial",
+      "explanation": "Poderia explicar dor no ombro relacionada a movimento, mas o teste do arco doloroso negativo reduz a probabilidade dessa hipótese como causa principal."
+    },
+    {
+      "name": "lesão estrutural do manguito rotador",
+      "explanation": "Deve ser considerada em atletas com dor e fraqueza no ombro, mas a ausência de sinais de ruptura franca e a melhora completa apenas com fortalecimento e exercícios de mobilidade favorecem uma causa funcional/de estabilização, não estrutural."
+    }
+  ],
+  "explanation": "A ausência de sinais inflamatórios, o teste de arco doloroso negativo, a assimetria escapular observada e o padrão de fraqueza limitado aos estabilizadores dinâmicos do ombro, associados à resposta positiva a um programa de fortalecimento e mobilidade da cintura escapular, sustentam o diagnóstico de discinesia escapular com fraqueza dos estabilizadores dinâmicos, e não uma lesão neurológica ou estrutural mais grave.",
+  "learning_points": [
+    "Reconhecer a discinesia escapular como causa de dor e perda de força funcional no ombro de atletas.",
+    "Usar a ausência de sinais neurológicos e testes específicos negativos para descartar hipóteses mais graves antes de confirmar uma causa funcional.",
+    "Valorizar o fortalecimento dos estabilizadores dinâmicos do ombro na prevenção de lesões em atletas com movimentos repetitivos de alta demanda."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 12: Reabilitação fisioterapêutica de uma atleta de rugby com dor e perda de força no ombro (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    },
+    {
+      "title": "Page et al. Manual therapy and exercise for rotator cuff disease. Cochrane Database of Systematic Reviews, 2016",
+      "url": "https://doi.org/10.1002/14651858.CD012224"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Paciente é menor de idade (16 anos) — revisor deve confirmar se o MVP permite casos com pacientes menores de idade e se há alguma consideração adicional necessária."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

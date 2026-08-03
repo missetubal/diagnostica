@@ -1,0 +1,84 @@
+{
+  "id": "reabilitacao-pos-lca-menisco-complicacoes-associadas",
+  "title": "Limitação de extensão do joelho e dor no tendão patelar após cirurgia de LCA",
+  "objective": "Identificar o quadro cinético-funcional que explica a instabilidade e a dor persistente em um joelho operado, reconhecendo complicações associadas à reabilitação",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 27,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 27 anos, atleta amador de futsal e handebol, retoma a fisioterapia após 21 semanas de uma reconstrução do ligamento cruzado anterior (LCA) e reparo do menisco medial do joelho esquerdo, queixando-se de limitação para estender totalmente o joelho e dor na região do tendão patelar."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "A lesão original ocorreu durante uma partida de futsal, com o pé fixo ao solo. Foi submetido à reconstrução do LCA com enxerto dos tendões da pata de ganso e reparo meniscal por sutura. Iniciou reabilitação após a cirurgia, mas interrompeu o tratamento fisioterapêutico por cerca de 2 meses antes de retornar. Durante um exercício de extensão de quadril, sofreu um novo episódio de dor sugestivo de estiramento dos isquiotibiais, seguido de piora da extensão do joelho e da dor no tendão patelar, especialmente em exercícios de musculação para membros inferiores."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Retomou a musculação ainda na segunda semana de pós-operatório, mas sem exercitar os membros inferiores por vários meses, iniciando depois apenas exercícios em cadeia cinética fechada. Já apresentava, logo após a cirurgia, sintomas compatíveis com tendinopatia na inserção distal do tendão do quadríceps."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Atrofia visível do membro inferior esquerdo. Força de flexores do joelho grau 4/5. Sulco visível na região posterior da coxa esquerda. Dor à palpação dos isquiotibiais, do tendão patelar e da inserção distal do tendão do quadríceps no membro esquerdo. Déficit de extensão ativa do joelho esquerdo de 13° em relação ao lado contralateral. Valgo dinâmico de joelho bilateral e instabilidade do joelho esquerdo."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Testes funcionais (agachamento unipodal, Step Down frontal e lateral) evidenciam déficit de controle motor e instabilidade do joelho esquerdo, associados à redução de força de isquiotibiais avaliada pela escala MRC."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "instabilidade de joelho pós-reconstrução de LCA associada a déficit de extensão e sobrecarga do aparelho extensor (tendinopatia patelar/quadricipital)",
+    "accepted_terms": [
+      "reabilitação incompleta pós-LCA com déficit de extensão e tendinopatia associada",
+      "complicações da reabilitação pós-cirúrgica de LCA (déficit de extensão e sobrecarga tendínea)"
+    ],
+    "partial_terms": ["reruptura do LCA", "lesão isolada de isquiotibiais"]
+  },
+  "differentials": [
+    {
+      "name": "reruptura ou falha do enxerto de LCA",
+      "explanation": "Deve sempre ser considerada em pacientes com instabilidade após reconstrução, especialmente com interrupção do tratamento; a ausência de um novo evento traumático significativo torna esse diagnóstico menos provável como explicação isolada, mas não pode ser descartada sem exame de imagem."
+    },
+    {
+      "name": "lesão isolada de isquiotibiais (sem relação com o pós-operatório)",
+      "explanation": "O episódio agudo durante o exercício de extensão de quadril é compatível com um novo estiramento, mas ocorre sobre uma base já fragilizada pelo uso do enxerto de isquiotibiais e pela reabilitação incompleta, não sendo um evento isolado."
+    },
+    {
+      "name": "artrofibrose do joelho",
+      "explanation": "Pode explicar déficit de extensão persistente pós-LCA, mas o quadro aqui é mais consistente com fraqueza e descondicionamento por interrupção do tratamento do que com rigidez articular estrutural."
+    }
+  ],
+  "explanation": "A combinação de déficit de extensão ativa do joelho, fraqueza de isquiotibiais (musculatura usada como enxerto), dor no aparelho extensor por sobrecarga durante o retorno à musculação sem acompanhamento adequado, e instabilidade nos testes funcionais é consistente com uma reabilitação pós-LCA incompleta, com déficits que deveriam ter sido corrigidos em fases anteriores do tratamento, agora somados a uma sobrecarga secundária do aparelho extensor.",
+  "learning_points": [
+    "Reconhecer que a interrupção da reabilitação pós-LCA pode gerar déficits persistentes de extensão e força, mesmo meses após a cirurgia.",
+    "Entender os riscos específicos associados ao tipo de enxerto utilizado (isquiotibiais versus tendão patelar) na reconstrução do LCA.",
+    "Basear a conduta fisioterapêutica nas disfunções encontradas no paciente, e não apenas no tempo cronológico de pós-operatório."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 16: Reabilitação pós reconstrução do LCA e reparo de menisco com lesões de tecidos moles associadas (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    },
+    {
+      "title": "Brophy, Lowry. AAOS Clinical Practice Guideline Summary: Management of Anterior Cruciate Ligament Injuries. Journal of the American Academy of Orthopaedic Surgeons, 2023",
+      "url": "https://doi.org/10.5435/jaaos-d-22-01020"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso complexo com múltiplas complicações sequenciais (tendinopatia quadricipital, estiramento de isquiotibiais, dor de pata de ganso ao final) — revisor deve avaliar se deve ser simplificado ou mantido como caso de alta complexidade para usuários avançados.",
+    "'Diagnóstico' foi formulado como o quadro cinético-funcional, já que o histórico cirúrgico já era conhecido; o foco do raciocínio é identificar por que a reabilitação não evoluiu como esperado."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

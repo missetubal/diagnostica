@@ -1,0 +1,72 @@
+{
+  "id": "drge-pirose-regurgitacao-noturna",
+  "title": "Queimação no peito recorrente há vários meses",
+  "objective": "Identificar a hipótese diagnóstica mais provável para pirose retroesternal recorrente com padrão típico",
+  "professions": ["medicina"],
+  "area": "gastroenterologia",
+  "difficulty": "facil",
+  "patient": {
+    "age": 40,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 40 anos relata queimação no peito (pirose) há 8 meses."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "A pirose retroesternal, às vezes acompanhada de regurgitação, é mais frequente durante a noite e melhora momentaneamente com o uso de antiácido. Piora quando se deita logo após se alimentar ou quando ingere comida gordurosa. Relata piora nos últimos 2 meses, com aumento da frequência dos episódios (mais de 4 dias por semana), associada a ansiedade e problemas emocionais. Relata náuseas na maioria dos episódios e tosse seca de longa data, sem período de início definido. Nega vômitos, disfagia, odinofagia, hematêmese, perda de peso ou halitose."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Nega diabetes, hipertensão ou neoplasias prévias. Tabagismo desde os 20 anos (cerca de 1 maço/dia). Alimentação irregular, com excessos aos finais de semana."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Bom estado geral, sinais vitais normais, IMC dentro da normalidade (23,7 kg/m²). Exame cardiovascular, respiratório e abdominal sem alterações relevantes."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "doença do refluxo gastroesofágico (DRGE)",
+    "accepted_terms": ["DRGE", "doença do refluxo gastroesofágico não erosiva"],
+    "partial_terms": ["dor torácica de origem cardíaca", "asma"]
+  },
+  "differentials": [
+    {
+      "name": "dor torácica de origem cardíaca",
+      "explanation": "Deve sempre ser considerada em queixas de queimação retroesternal, mas o padrão claramente relacionado à alimentação e à posição (piora ao deitar após comer), a ausência de fatores de risco cardiovascular relevantes e a idade da paciente tornam a origem esofágica mais provável."
+    },
+    {
+      "name": "asma",
+      "explanation": "A tosse seca crônica poderia sugerir asma, mas na ausência de sibilância ou outros sintomas respiratórios típicos, e dado o contexto de pirose e regurgitação, a tosse é mais bem explicada como manifestação atípica de DRGE."
+    },
+    {
+      "name": "esofagite eosinofílica ou infecciosa",
+      "explanation": "Diagnóstico diferencial a considerar caso os sintomas não respondam ao tratamento padrão para DRGE, mas não é a hipótese inicial mais provável dado o quadro típico apresentado."
+    }
+  ],
+  "explanation": "Pirose retroesternal recorrente há mais de algumas semanas, regurgitação predominantemente noturna, piora com decúbito pós-prandial e alimentos gordurosos, e melhora parcial com antiácido, compõem um quadro clínico clássico de DRGE. A ausência de sinais de alarme (perda de peso, disfagia, odinofagia, hematêmese) e de fatores de risco para malignidade permite diagnóstico clínico, sem necessidade inicial de endoscopia digestiva alta.",
+  "learning_points": [
+    "Reconhecer o diagnóstico clínico de DRGE em quadros típicos, sem necessidade obrigatória de exames complementares.",
+    "Identificar os sinais de alarme que indicariam necessidade de endoscopia digestiva alta.",
+    "Reconhecer tosse crônica como possível manifestação atípica de DRGE."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico: DRGE — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-drge-ligas"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "Diferenciais formulados com base na discussão de sintomas atípicos e diagnósticos diferenciais já presentes na própria fonte; nenhuma reformulação estrutural adicional foi necessária."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

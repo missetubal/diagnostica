@@ -1,0 +1,67 @@
+{
+  "id": "disfuncao-costovertebral-dor-toracica",
+  "title": "Dor torácica alta relacionada a movimentos do braço",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor torácica crônica com exames de ombro e cervical normais",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 45,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Paciente apresenta dor torácica entre os níveis T2-T3, próximo à borda da escápula direita, com início insidioso há cerca de 4 anos e condição estável ao longo do tempo. A dor é agravada por movimentos do membro superior direito e desaparece após período de descanso. Já passou por diversas sessões de fisioterapia sem sucesso."
+    },
+    {
+      "order": 2,
+      "type": "exame_fisico",
+      "content": "Exame do ombro e da coluna cervical negativos. Sem indicações de patologia grave na coluna torácica. ADM torácica normal e indolor. Mobilidade do tecido neural normal na região."
+    },
+    {
+      "order": 3,
+      "type": "exames_complementares",
+      "content": "Movimentos articulares acessórios entre T2 e T4 hipomóveis, assim como a 2ª e 3ª articulações costovertebrais direitas (2ª e 3ª costelas hipomóveis em inspiração). Dor à palpação da 2ª articulação costovertebral direita. Controle da estabilidade escapular do lado direito inferior em relação ao esquerdo."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "disfunção articular costovertebral (2ª/3ª costela direita) associada a déficit de controle escapular",
+    "accepted_terms": ["síndrome da articulação costovertebral hipomóvel", "disfunção costovertebral direita"],
+    "partial_terms": ["síndrome do impacto do ombro", "disfunção cervical isolada"]
+  },
+  "differentials": [
+    {
+      "name": "patologia do ombro (impacto subacromial, manguito rotador)",
+      "explanation": "Descartada pelo exame de ombro negativo."
+    },
+    {
+      "name": "origem cervical",
+      "explanation": "Descartada pelo exame cervical negativo."
+    },
+    {
+      "name": "patologia torácica grave (visceral ou óssea)",
+      "explanation": "Considerada e descartada — não há indicações de patologia séria, e a ADM torácica é normal e indolor."
+    }
+  ],
+  "explanation": "A hipomobilidade localizada e reprodutível nas articulações costovertebrais direitas, a dor à palpação local, e o déficit de controle escapular associado, junto com exames negativos para ombro, cervical e patologia grave, sustentam uma origem costovertebral mecânica, mantida por déficit de estabilização escapular.",
+  "learning_points": [
+    "Reconhecer a articulação costovertebral como possível fonte de dor torácica quando ombro e cervical estão normais.",
+    "Associar déficit de controle motor escapular a disfunções articulares torácicas recorrentes.",
+    "Considerar mobilização com movimento guiada pela reprodução de sintomas como estratégia de avaliação e tratamento."
+  ],
+  "references": [
+    {
+      "title": "Caso clínico 'Caso 4: Dor torácica' — Grupo Terapia Manual",
+      "url": "https://www.terapiamanual.com.br/site/casos_clinicos/?id=59&c=3"
+    }
+  ],
+  "avisos_para_revisor": [
+    "ATENÇÃO — mesmo risco de direitos autorais já sinalizado nos casos anteriores desta fonte.",
+    "Idade da paciente não foi informada na fonte original; foi utilizado um valor estimado (45 anos). Revisor deve avaliar se prefere remover o campo de idade específica ou ajustá-lo."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

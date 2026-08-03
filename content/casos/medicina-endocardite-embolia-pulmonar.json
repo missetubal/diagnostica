@@ -1,0 +1,72 @@
+{
+  "id": "endocardite-infecciosa-embolia-pulmonar-septica-adolescente",
+  "title": "Febre, tosse com raias de sangue e perda de peso em adolescente saudável",
+  "objective": "Identificar a hipótese diagnóstica mais provável para múltiplas opacidades pulmonares cavitadas em paciente jovem previamente hígido, sem doença cardíaca conhecida",
+  "professions": ["medicina"],
+  "area": "infectologia",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 16,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Adolescente de 16 anos, previamente saudável, apresenta febre diária, sudorese noturna e tosse com expectoração clara há 1 mês, às vezes com raias de sangue."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Refere também dispneia aos moderados esforços e perda de peso não quantificada no último mês. O irmão realizou tratamento irregular para tuberculose há 2 anos, sem acompanhamento dos contactantes no período. Nega doença cardíaca conhecida, uso de drogas injetáveis ou problemas de saúde bucal recentes."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Regular estado geral, emagrecido, febril. Ausculta pulmonar com redução localizada do murmúrio vesicular em bases. Ausculta cardíaca a ser correlacionada com os exames de imagem."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Radiografia de tórax com opacidades nodulares com cavitação central em ambos os pulmões. Pesquisa de BAAR no escarro, lavado gástrico e PPD negativos, afastando a hipótese inicial de tuberculose. Tomografia de tórax com 6 opacidades nodulares de predomínio periférico, bilaterais, com escavações internas, maiores nos lobos inferiores — padrão sugestivo de êmbolos sépticos. Ecocardiograma evidenciando vegetação em valva tricúspide. Hemocultura com crescimento de Staphylococcus aureus."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "endocardite infecciosa de valva tricúspide com embolia pulmonar séptica",
+    "accepted_terms": ["endocardite infecciosa com êmbolos sépticos pulmonares", "endocardite tricúspide (S. aureus) com embolização pulmonar"],
+    "partial_terms": ["tuberculose pulmonar", "pneumonia adquirida na comunidade de curso prolongado", "neoplasia pulmonar"]
+  },
+  "differentials": [
+    {
+      "name": "tuberculose pulmonar",
+      "explanation": "Era a hipótese inicial mais forte dado o contato domiciliar prévio e o padrão cavitário, mas foi afastada pela negatividade de baciloscopias, cultura de escarro/lavado gástrico e PPD."
+    },
+    {
+      "name": "pneumonia adquirida na comunidade de curso prolongado",
+      "explanation": "Poderia explicar febre e tosse arrastadas, mas não o padrão de múltiplas opacidades nodulares periféricas cavitadas e bilaterais, mais sugestivo de embolização séptica do que de consolidação pneumônica única."
+    },
+    {
+      "name": "neoplasia pulmonar ou linfoma",
+      "explanation": "Diagnóstico diferencial válido em paciente com febre, perda de peso e lesões pulmonares múltiplas, mas o achado ecocardiográfico de vegetação valvar associado a hemocultura positiva confirma a origem infecciosa embólica."
+    }
+  ],
+  "explanation": "Endocardite infecciosa em coração estruturalmente sadio é incomum, mas deve ser suspeitada quando há febre prolongada e múltiplas lesões pulmonares cavitárias periféricas, principalmente em mais de dois locais — padrão sugestivo de embolização séptica, e não de consolidação infecciosa única. A confirmação veio da vegetação em valva tricúspide ao ecocardiograma e da hemocultura positiva para S. aureus, após a tuberculose (hipótese inicial mais provável pelo contexto epidemiológico) ter sido corretamente descartada pelos exames microbiológicos específicos.",
+  "learning_points": [
+    "Reconhecer o padrão de múltiplas opacidades pulmonares periféricas cavitadas como sugestivo de embolia séptica, e não apenas de infecção primária pulmonar.",
+    "Saber que endocardite infecciosa pode ocorrer em coração estruturalmente normal, dificultando a suspeita clínica inicial.",
+    "Entender a importância de descartar ativamente diagnósticos diferenciais prováveis (como TB, dado o contexto epidemiológico) antes de confirmar uma hipótese alternativa."
+  ],
+  "references": [
+    {
+      "title": "Scaramel IC, Gazeta RE, Rocha IVM, Castro CA, Santos CB. Relato de caso: endocardite infecciosa de valva tricúspide com embolia pulmonar em paciente pediátrico. Braz J Infect Dis. 2021;25 Supl 1:101485",
+      "url": "https://www.bjid.org.br/en-relato-de-caso-endocardite-infecciosa-articulo-S1413867020306127"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: resumo de caso clínico apresentado em congresso (12° Congresso Paulista de Infectologia), publicado em acesso aberto (Open Access / CC) na The Brazilian Journal of Infectious Diseases (Elsevier), indexada e revisada por pares — risco de direitos autorais baixo.",
+      "Fonte original é um resumo estruturado (introdução/objetivo/metodologia/discussão), não um relato de caso narrativo completo; o exame físico cardiovascular específico não estava detalhado na fonte — o estágio de exame físico foi mantido breve e genérico por fidelidade ao material disponível, sem invenção de achados."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

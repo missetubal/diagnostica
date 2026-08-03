@@ -1,0 +1,63 @@
+{
+  "id": "cefaleia-cervicogenica-c0-c1-c1-c2",
+  "title": "Dor de cabeça recorrente com restrição cervical alta",
+  "objective": "Identificar a hipótese diagnóstica mais provável para cefaleia crônica associada a restrição articular na coluna cervical alta",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 40,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Paciente apresenta dores de cabeça com início insidioso há 6 anos, sem recordar de evento traumático ou mudança de atividade na época do início. Saúde geral boa."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Dor difusa suboccipital, temporal e retroorbital, essencialmente no lado esquerdo, agravada por períodos sustentados de flexão cervical (como ler um livro) e outros fatores não identificados pelo paciente. Não há alterações visuais, sonoras ou náusea associadas, mas pode haver vertigem."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "ADM cervical normal, mas há restrição dos movimentos acessórios em C0-C1 e C1-C2 no lado esquerdo, com dor local e referida à cabeça na palpação da articulação C0-C1 esquerda."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "cefaleia cervicogênica por disfunção articular alta (C0-C1/C1-C2)",
+    "accepted_terms": ["cefaleia de origem cervical", "cefaleia cervicogênica"],
+    "partial_terms": ["enxaqueca", "cefaleia tensional inespecífica"]
+  },
+  "differentials": [
+    {
+      "name": "enxaqueca (migrânea)",
+      "explanation": "Tipicamente acompanhada de fotofobia, fonofobia e náusea mais proeminentes, e não costuma responder a mobilização articular cervical local; a ausência desses sintomas e a resposta à intervenção cervical tornam essa hipótese menos provável."
+    },
+    {
+      "name": "cefaleia tensional",
+      "explanation": "Pode ter padrão difuso semelhante, mas a origem articular localizável (C0-C1/C1-C2, unilateral) e a reprodução da dor referida à cabeça pela palpação articular específica apontam para uma causa cervicogênica."
+    }
+  ],
+  "explanation": "A dor referida à região occipital, temporal e retro-orbital, compatível com o padrão de dor referida da coluna cervical alta, a restrição articular localizada e reprodutível em C0-C1/C1-C2 à esquerda, e a resposta favorável à mobilização e manipulação articular cervical confirmam uma origem cervicogênica para a cefaleia.",
+  "learning_points": [
+    "Reconhecer o padrão de dor referida da coluna cervical alta (C0-C2) como causa comum de cefaleia.",
+    "Diferenciar cefaleia cervicogênica de enxaqueca e cefaleia tensional pela história e pelo exame articular.",
+    "Entender a importância do teste de insuficiência vertebrobasilar antes de realizar manipulação cervical alta."
+  ],
+  "references": [
+    {
+      "title": "Caso clínico 'Caso 5: Cefaléia' — Grupo Terapia Manual",
+      "url": "https://www.terapiamanual.com.br/site/casos_clinicos/?id=60&c=3"
+    }
+  ],
+  "avisos_para_revisor": [
+    "ATENÇÃO — mesmo risco de direitos autorais já sinalizado nos casos anteriores desta fonte.",
+    "Sexo e idade do paciente não foram especificados na fonte original; foram atribuídos valores genéricos (40 anos, masculino). Revisor deve avaliar se prefere deixar como 'não informado' no cadastro final."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

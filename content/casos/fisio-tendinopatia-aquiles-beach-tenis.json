@@ -1,0 +1,81 @@
+{
+  "id": "tendinopatia-aquiles-jogador-beach-tenis",
+  "title": "Dor crônica no tendão de Aquiles após jogos intensos",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor crônica localizada no tendão calcâneo relacionada à prática esportiva",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 38,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 38 anos, jogador amador de beach tênis, relata dor crônica no tendão de Aquiles direito, mais evidente após jogos intensos, sem limitação funcional relevante apesar do incômodo."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "O desconforto começou há cerca de um ano, inicialmente após jogos de alta intensidade e negligenciado no início. A dor evoluiu progressivamente, passando a incomodar também em atividades como subir escadas. Já realizou fortalecimento com eletroestimulação de corpo inteiro uma vez por semana."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Sem doenças associadas ou histórico familiar de tendinopatias. Já realizou ultrassonografia meses atrás, que identificou inflamação na porção proximal do tendão de Aquiles, sem sinais de espessamento ou ruptura."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Dor à palpação na inserção calcânea e na região média do tendão de Aquiles direito, consistente com dor nociceptiva local, sem sinais de dor difusa. Desconforto ao realizar dorsiflexão."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Single Hop Test: 1,48 m na perna direita e 1,39 m na perna esquerda (dentro dos parâmetros esperados). Lunge Test: 42° na perna direita e 41° na esquerda (dentro dos parâmetros esperados). Ultrassonografia mais recente confirma tendinopatia com inflamação na porção média do tendão de Aquiles direito."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "tendinopatia do tendão de Aquiles (porção média e insercional)",
+    "accepted_terms": ["tendinopatia aquileana", "tendinose do tendão calcâneo", "tendinopatia do calcâneo"],
+    "partial_terms": ["fascite plantar", "bursite retrocalcânea"]
+  },
+  "differentials": [
+    {
+      "name": "bursite retrocalcânea",
+      "explanation": "Pode causar dor na região posterior do calcanhar, mas costuma vir associada a edema localizado mais evidente na bursa, não confirmado pelos achados de imagem deste caso."
+    },
+    {
+      "name": "ruptura parcial do tendão de Aquiles",
+      "explanation": "Deve ser descartada por imagem em quadros de dor tendínea persistente; a ultrassonografia sem sinais de espessamento importante ou ruptura torna essa hipótese menos provável."
+    },
+    {
+      "name": "fascite plantar",
+      "explanation": "Também comum em atletas com sobrecarga do tríceps sural, mas a localização da dor (tendão de Aquiles, não calcanhar plantar) e os achados de imagem direcionam para a tendinopatia aquileana."
+    }
+  ],
+  "explanation": "A dor localizada e progressiva no tendão de Aquiles relacionada à sobrecarga por esporte com mudanças de direção e saltos (beach tênis), confirmada por achados de imagem (inflamação tendínea sem ruptura) e por dor reproduzida à palpação e à dorsiflexão, sustenta o diagnóstico de tendinopatia do tendão de Aquiles.",
+  "learning_points": [
+    "Reconhecer a tendinopatia de Aquiles como lesão por uso excessivo, relacionada a esportes com ciclos de alongamento-encurtamento repetitivos.",
+    "Diferenciar tendinopatia insercional de tendinopatia de porção média, pois isso pode influenciar a escolha de exercícios (evitar alongamento em quadros insercionais).",
+    "Conhecer o protocolo de treino lento de alta carga (heavy-slow resistance) como alternativa eficaz ao exercício excêntrico isolado."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 14: Tendinopatia do tendão de Aquiles em jogador de beach tênis (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    },
+    {
+      "title": "Grävare Silbernagel, Crossley. A proposed return-to-sport program for patients with midportion Achilles tendinopathy. Journal of Orthopaedic & Sports Physical Therapy, 2015",
+      "url": "https://www.jospt.org/doi/10.2519/jospt.2015.5885"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Ocupação do paciente (arquiteto) foi omitida por não ser essencial ao raciocínio clínico.",
+    "Datas específicas de exames foram removidas ou generalizadas."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

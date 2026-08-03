@@ -1,0 +1,71 @@
+{
+  "id": "cervicobraquialgia-tensao-neural-mediano",
+  "title": "Dor em ombro e braço relacionada a atividades repetitivas no trabalho",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor em ombro e braço sem sinais de perda de condução nervosa",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 27,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Secretária de 27 anos apresenta dor em ombro e membro superior direito, com aumento no final do dia de trabalho, tornando-se intensa a ponto de incapacitá-la, principalmente com uso excessivo do membro superior direito. Início insidioso, com progressão gradual dos sintomas nos últimos três meses."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Dor difusa, intermitente, localizada sobre o ombro direito, face anterior e lateral do braço e punho direito, descrita como em queimação e também em 'pontadas'. Pior ao fim do dia, geralmente acorda a paciente durante a noite. Não há parestesias, anestesias ou sinais sugestivos de alteração do sistema nervoso simpático. A dor é agravada por posições sustentadas do membro superior, movimentos frequentes do mesmo (digitação, levantar objetos) e por posições cervicais sustentadas em flexão (como ler um livro). Alívio da dor com repouso do membro junto ao corpo. Saúde geral boa, sem medicações. Radiografias de coluna cervical e ombro sem alterações significantes."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Nenhuma alteração significante à inspeção. ADM ativa do membro superior direito limitada para o ombro, com dor a 60° de abdução e flexão e dor durante a rotação interna. A abdução do ombro associada a inclinação cervical contralateral (aumento de tensão neural) se mostrou mais dolorosa e mais restrita (40°). Inclinação e rotação cervical à esquerda limitadas e produzem dor no ombro."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Avaliação de condução nervosa negativa (reflexos, miótomos e dermátomos). Teste de tensão neural (TTN) positivo para o nervo mediano (plexo braquial e raízes cervicais). Tecido neural hiperálgesico à palpação na emergência das raízes cervicais inferiores e do plexo braquial. Facetas cervicais direitas sensíveis à palpação entre os níveis C5 e C7."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "cervicobraquialgia por tensão neural adversa do nervo mediano com componente articular cervical (C5-C7)",
+    "accepted_terms": ["síndrome de tensão neural do plexo braquial/nervo mediano", "cervicobraquialgia mecânica de origem neural"],
+    "partial_terms": ["síndrome do túnel do carpo", "tendinopatia do manguito rotador"]
+  },
+  "differentials": [
+    {
+      "name": "síndrome do túnel do carpo",
+      "explanation": "A dor descrita é proximal (ombro, braço) e não há relato de parestesia/anestesia distal típica; o teste de tensão neural positivo aponta para envolvimento mais proximal (raízes/plexo) do que uma compressão isolada no punho."
+    },
+    {
+      "name": "tendinopatia do manguito rotador",
+      "explanation": "A piora com inclinação cervical contralateral (que aumenta a tensão neural) e o teste de tensão neural positivo não são explicados por uma tendinopatia isolada do ombro; radiografia de ombro normal."
+    },
+    {
+      "name": "radiculopatia cervical com perda de condução",
+      "explanation": "A avaliação de condução nervosa (reflexos, miótomos, dermátomos) negativa torna uma radiculopatia com perda de função menos provável; o quadro é mais compatível com irritação mecânica do trajeto neural sem perda de condução."
+    }
+  ],
+  "explanation": "A combinação de piora dos sintomas com posições que aumentam a tensão neural (inclinação cervical contralateral), teste de tensão neural do mediano positivo, hiperalgesia à palpação do trajeto neural, e sensibilidade das facetas cervicais C5-C7, junto com ausência de sinais de perda de condução nervosa, sustenta uma cervicobraquialgia mecânica por tensão neural adversa com componente articular cervical associado.",
+  "learning_points": [
+    "Reconhecer sinais de tensão neural adversa (piora com posições que alongam o trajeto neural, teste de tensão neural positivo) como mecanismo de dor no braço sem perda de condução.",
+    "Diferenciar tensão neural mecânica de compressão neural com perda de função.",
+    "Entender a progressão do tratamento de mobilização neural, de posições de repouso para posições progressivas de tensão."
+  ],
+  "references": [
+    {
+      "title": "Caso clínico 'Caso 7: Cervicobraquialgia' — Grupo Terapia Manual",
+      "url": "https://www.terapiamanual.com.br/site/casos_clinicos/?id=62&c=3"
+    }
+  ],
+  "avisos_para_revisor": [
+    "ATENÇÃO — mesmo risco de direitos autorais já sinalizado nos casos anteriores desta fonte."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

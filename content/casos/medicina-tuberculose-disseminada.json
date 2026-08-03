@@ -1,0 +1,72 @@
+{
+  "id": "tuberculose-disseminada-otomastoidite-peritoneal",
+  "title": "Dor abdominal, otite arrastada e febre em adolescente",
+  "objective": "Identificar a hipótese diagnóstica mais provável para acometimento simultâneo de múltiplos sítios (ouvido, abdome, pulmão) em adolescente com quadro arrastado",
+  "professions": ["medicina"],
+  "area": "infectologia",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 13,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Adolescente de 13 anos é avaliado em ambulatório de clínica médica por dor abdominal tipo cólica, em região hipogástrica com irradiação periumbilical, há aproximadamente 45 dias, associada a otite supurada há 30 dias."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Foi iniciada amoxicilina por 15 dias sem resposta, evoluindo com aumento de volume da região da mastoide, dor, eritema e febre, além de manutenção da dor abdominal (agora de menor intensidade). Foi indicada internação hospitalar. Refere história familiar de contato com portador de tuberculose pulmonar há sete anos, além de antecedente de rinite alérgica e varicela aos 4 anos. Nega pneumopatias, cardiopatias, alergias ou cirurgias prévias."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Lúcido, orientado, cooperativo, taquipneico, febril, acianótico, normocorado. Aumento de volume na região da mastoide. FC 119 bpm, FR 23 ipm, PA 120x70 mmHg. Ausculta pulmonar com murmúrio vesicular audível associado a discretos estertores difusos em ápices. Ausculta cardíaca sem alterações. Abdome dolorido difusamente, sem sinais de irritação peritoneal, discreta hepatomegalia dolorosa e ascite associada."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Leucocitose (25.500) com desvio à esquerda, proteína C reativa elevada. Prova tuberculínica não reatora. Hemoculturas negativas. Baciloscopias e cultura de escarro espontâneo negativas. Sorologias para histoplasmose, criptococose, HIV e citomegalovírus não reagentes. Radiografia de tórax com infiltrado alveolar difuso em ambos os ápices; tomografia de tórax com condensação alveolar bilateral e cavitações, principalmente à direita. Tomografia da mastoide com velamento das células mastoides e erosões ósseas. Tomografia de abdome com captação anormal de contraste hepática e coleção líquida periintestinal. Após drenagem cirúrgica da mastoide, a cultura da secreção revelou positividade para Mycobacterium tuberculosis."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "tuberculose disseminada (otomastoidite tuberculosa e tuberculose peritoneal associadas a pneumonia tuberculosa)",
+    "accepted_terms": ["tuberculose disseminada", "tuberculose extrapulmonar disseminada com acometimento pulmonar, de mastoide e peritoneal"],
+    "partial_terms": ["otite/mastoidite bacteriana comum", "tuberculose peritoneal isolada", "abdome agudo inflamatório"]
+  },
+  "differentials": [
+    {
+      "name": "otomastoidite bacteriana comum",
+      "explanation": "Explicaria a otite e a mastoidite isoladamente, mas não a resposta insatisfatória à amoxicilina, nem o acometimento pulmonar e abdominal concomitantes; a cultura positiva para M. tuberculosis na secreção da mastoide confirma a etiologia tuberculosa."
+    },
+    {
+      "name": "linfoma ou outra neoplasia",
+      "explanation": "Diagnóstico diferencial relevante em quadro arrastado com febre, perda de peso e acometimento multissistêmico, mas a prova tuberculínica não reatora inicial não exclui TB (pode ocorrer por anergia), e a cultura positiva confirma o diagnóstico infeccioso."
+    },
+    {
+      "name": "tuberculose peritoneal isolada",
+      "explanation": "Explicaria a ascite e dor abdominal, mas não o quadro concomitante de otomastoidite nem os achados pulmonares de imagem, sugerindo doença disseminada e não um único foco extrapulmonar."
+    }
+  ],
+  "explanation": "Tuberculose disseminada é definida pelo achado de lesão pulmonar associada a foco extrapulmonar, ou de dois ou mais focos extrapulmonares concomitantes. Neste caso, o paciente apresentou pneumonia tuberculosa cavitária associada a otomastoidite tuberculosa e tuberculose peritoneal (forma ascítica), com confirmação bacteriológica pela cultura positiva da secreção da mastoide para M. tuberculosis. O history de contato familiar prévio com tuberculose e a resposta insatisfatória à antibioticoterapia comum para uma otite arrastada são pistas importantes para a suspeita diagnóstica, mesmo com prova tuberculínica inicialmente não reatora.",
+  "learning_points": [
+    "Reconhecer a tuberculose disseminada como acometimento pulmonar associado a um ou mais focos extrapulmonares.",
+    "Suspeitar de tuberculose diante de infecção arrastada e refratária a tratamento convencional, mesmo com prova tuberculínica não reatora.",
+    "Conhecer as formas extrapulmonares menos comuns de tuberculose (otomastoidite, peritoneal) e seus achados característicos de imagem."
+  ],
+  "references": [
+    {
+      "title": "Barroso Pereira JC, Ribeiro Machado Pereira R, Assis Gerecht S. Tuberculose disseminada – Caso clínico e discussão. Revista Portuguesa de Pneumologia, 2008;XIV(4):561-569",
+      "url": "https://www.redalyc.org/pdf/1697/169718430010.pdf"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso clínico publicado em revista científica revisada por pares (Revista Portuguesa de Pneumologia), disponibilizado em acesso aberto via Redalyc (iniciativa acadêmica sem fins lucrativos) — risco de direitos autorais baixo, mas recomenda-se manter a citação completa dos autores originais.",
+      "Conteúdo condensado a partir de um relato de caso extenso com discussão teórica longa; termos técnicos (ex: 'fase pneumónica precoce') foram simplificados para o formato de caso interativo, mantendo os achados clínicos e laboratoriais reais do paciente."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

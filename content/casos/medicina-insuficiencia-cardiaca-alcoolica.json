@@ -1,0 +1,77 @@
+{
+  "id": "insuficiencia-cardiaca-etiologia-alcoolica",
+  "title": "Falta de ar progressiva com evolução para repouso",
+  "objective": "Identificar a etiologia mais provável de insuficiência cardíaca biventricular com fração de ejeção muito reduzida",
+  "professions": ["medicina"],
+  "area": "cardiologia",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 56,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 56 anos apresenta falta de ar há 1 ano, com piora importante há 1 mês."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Refere dispneia progressiva, inicialmente aos grandes esforços, evoluindo para médios esforços e, por fim, em repouso. Não tolera o decúbito dorsal, permanecendo sentado para conseguir respirar (ortopneia). Tosse seca há 4 meses, mais acentuada à noite. Perda ponderal de cerca de 6 kg e redução do apetite nos últimos 6 meses. Edema em membros inferiores."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Hipertensão há mais de 10 anos, diabetes mellitus tipo 2 diagnosticado há menos de 6 meses. Tabagismo (15 anos-maço). Etilismo importante, com consumo diário de destilados, maior nos finais de semana. Sedentarismo."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Emagrecido, taquipneico, mucosas hipocrômicas. Estase de jugulares bilateral a 45°. Murmúrio vesicular diminuído em base direita, com estertores crepitantes bibasais. Ictus cordis impulsivo em 7º espaço intercostal esquerdo. Bulhas rítmicas em 3 tempos, com presença de B3, sem sopros. Abdome globoso às custas de ascite, com hepatomegalia. Edema bilateral de membros inferiores com cacifo (++/4)."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Radiografia de tórax com cardiomegalia e congestão pulmonar. Eletrocardiograma com sobrecarga de ventrículo e átrio esquerdos e baixa voltagem em derivações periféricas. Ressonância cardíaca e ecocardiograma evidenciando fração de ejeção muito reduzida (19%), dilatação biatrial importante e hipocinesia difusa de ambos os ventrículos, com realce tardio de padrão mesocárdico. BNP muito elevado. Função hepática, renal, hemograma e coagulograma sem alterações relevantes. Sorologias para hepatites virais e doença de Chagas não reagentes."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "insuficiência cardíaca com fração de ejeção reduzida, provável etiologia alcoólica (cardiomiopatia alcoólica)",
+    "accepted_terms": ["insuficiência cardíaca de etiologia alcoólica", "cardiomiopatia dilatada alcoólica com IC descompensada"],
+    "partial_terms": ["cirrose hepática com ascite", "síndrome nefrótica"]
+  },
+  "differentials": [
+    {
+      "name": "causa hepática para o edema/ascite (cirrose)",
+      "explanation": "Afastada pelo perfil hepático e ultrassonografia de abdome sem alterações significativas de parênquima."
+    },
+    {
+      "name": "síndrome nefrótica",
+      "explanation": "Afastada pela função renal normal e proteinúria discreta (não em faixa nefrótica), mais compatível com congestão venosa renal por insuficiência cardíaca direita do que com doença glomerular primária."
+    },
+    {
+      "name": "cardiomiopatia isquêmica",
+      "explanation": "Considerada dado o perfil de risco cardiovascular (HAS, DM, tabagismo), mas o padrão de realce tardio na ressonância cardíaca (mesocárdico, e não subendocárdico) não é sugestivo de origem isquêmica."
+    }
+  ],
+  "explanation": "Quadro clássico de insuficiência cardíaca biventricular (dispneia progressiva até repouso, ortopneia, edema, ascite, hepatomegalia, estertores, B3), confirmado pelos critérios de Framingham e por exames de imagem mostrando fração de ejeção muito reduzida e dilatação biatrial, associado a etilismo importante e exclusão de causas isquêmica, hepática e renal, aponta para cardiomiopatia dilatada de etiologia alcoólica como causa mais provável da insuficiência cardíaca descompensada.",
+  "learning_points": [
+    "Aplicar os critérios de Framingham/NYHA para diagnóstico e estadiamento de insuficiência cardíaca.",
+    "Reconhecer a cardiomiopatia alcoólica como etiologia relevante e potencialmente reversível com abstinência.",
+    "Diferenciar causas cardíacas de hepáticas/renais para edema generalizado usando exames complementares direcionados."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico: Insuficiência Cardíaca com evolução dos sintomas — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-insuficiencia-cardiaca-ligas-2"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "Nenhuma reformulação estrutural foi necessária; o caso já apresenta diagnóstico diferencial rico e explícito na própria fonte."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

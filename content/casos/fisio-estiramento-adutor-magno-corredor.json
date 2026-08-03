@@ -1,0 +1,85 @@
+{
+  "id": "estiramento-adutor-magno-corredor",
+  "title": "Dor crônica na região posterior da coxa em corredor",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor crônica na coxa, diferenciando-a de outras causas de dor irradiada na região glútea e posterior da coxa",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 44,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 44 anos, corredor, procura fisioterapia devido a dor na coxa há 15 meses, com intensidade 7/10, que começou como uma sensação de pressão e progrediu ao longo do tempo. A dor melhora com alongamentos e piora após longos períodos em pé ou dirigindo."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Mantém rotina de corrida de 5 a 6 vezes por semana, cerca de 10 km por sessão, sem realizar treino de fortalecimento muscular complementar."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Sem histórico de trauma agudo específico relacionado ao início da dor."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Sem edema, contusões, hematomas ou incisões. Assimetria de comprimento entre os membros inferiores (direito 1,5 cm mais curto que o esquerdo). Dor à palpação na região de inserção da musculatura isquiotibial. Amplitude de movimento preservada. Força de flexão de joelho reduzida (grau 4/5) por dor. Teste de elevação da perna reta evidencia encurtamento bilateral de isquiotibiais. Step Down evidencia queda pélvica e instabilidade bilateral."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Testes específicos para descartar diferenciais: teste de força de glúteo máximo (negativo para tendinite de glúteo), teste de Freiberg (negativo para síndrome do piriforme), Slump test e teste de Lasègue (negativos para dor ciática de origem neural). Exame de imagem evidencia estiramento isquiocondilar do músculo adutor magno direito, descartando tendinite de isquiotibiais."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "estiramento crônico do adutor magno (porção isquiocondilar)",
+    "accepted_terms": ["lesão do adutor magno", "estiramento isquiocondilar do adutor magno", "tendinopatia/lesão crônica do adutor magno"],
+    "partial_terms": ["tendinopatia de isquiotibiais", "síndrome do piriforme", "dor ciática de origem neural"]
+  },
+  "differentials": [
+    {
+      "name": "tendinite de glúteo máximo",
+      "explanation": "Foi ativamente investigada e descartada por teste de força específico negativo para essa estrutura."
+    },
+    {
+      "name": "síndrome do piriforme",
+      "explanation": "Foi considerada pela localização da dor na região glútea/posterior, mas descartada pelo teste de Freiberg negativo."
+    },
+    {
+      "name": "dor ciática de origem neural (radiculopatia ou compressão nervosa)",
+      "explanation": "Foi descartada pelos testes neurodinâmicos (Slump test e teste de Lasègue) negativos, direcionando o raciocínio para uma causa muscular localizada."
+    },
+    {
+      "name": "tendinite de isquiotibiais",
+      "explanation": "Foi considerada pela dor à palpação na região de inserção isquiotibial, mas descartada pelo exame de imagem, que confirmou o comprometimento do adutor magno em sua porção isquiocondilar (uma região anatomicamente próxima e por vezes confundida com a origem dos isquiotibiais)."
+    }
+  ],
+  "explanation": "Este caso ilustra um raciocínio de exclusão sistemática: a dor na região posterior da coxa e glútea levantou múltiplas hipóteses (glúteo, piriforme, nervo ciático, isquiotibiais), cada uma testada e descartada especificamente, até a confirmação por imagem de que a estrutura realmente acometida era a porção isquiocondilar do adutor magno — um músculo cuja origem próxima à tuberosidade isquiática pode mimetizar clinicamente lesões de isquiotibiais.",
+  "learning_points": [
+    "Reconhecer que a porção isquiocondilar do adutor magno pode mimetizar clinicamente uma lesão de isquiotibiais, por proximidade anatômica da origem.",
+    "Aplicar testes específicos (força de glúteo, Freiberg, Slump, Lasègue) para descartar sistematicamente diferenciais antes de confirmar um diagnóstico por imagem.",
+    "Entender que lesões musculares crônicas (meses de evolução) podem ter apresentação mais sutil e sobreposta a outras condições do que lesões agudas."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 19: Abordagem fisioterapêutica em paciente com estiramento de adutor magno direito (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    },
+    {
+      "title": "Rudisill et al. Evidence-based management and factors associated with return to play after acute hamstring injury in athletes: a systematic review. Orthopaedic Journal of Sports Medicine, 2021",
+      "url": "https://doi.org/10.1177/23259671211053833"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso reúne diagnóstico diferencial extenso (4 hipóteses testadas e descartadas); revisor deve avaliar se todas devem ser mantidas no nível 'difícil' ou se algumas podem ser retiradas para não sobrecarregar o usuário.",
+    "O resumo original do capítulo menciona 'lesões de isquiotibiais' no título/resumo de forma um pouco inconsistente com o diagnóstico final (adutor magno) — mantido fiel ao corpo do relato de caso, que é claro sobre o diagnóstico final."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

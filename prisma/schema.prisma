@@ -1,0 +1,420 @@
+// Prisma schema — Diagnostica
+// Modelo de dados conforme docs/sugestao-arquitetura.md (seção 7)
+// Postgres gerenciado pelo Supabase.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ---------------------------------------------------------------------------
+// Enums
+// ---------------------------------------------------------------------------
+
+enum UserType {
+  estudante
+  residente
+  profissional
+  professor
+}
+
+enum UserRole {
+  user
+  reviewer
+  admin
+}
+
+enum Difficulty {
+  facil
+  medio
+  dificil
+}
+
+enum SourceType {
+  humano
+  ia_assistida
+  importado
+}
+
+enum CaseStatus {
+  rascunho
+  em_revisao
+  aprovado
+  publicado
+  sinalizado
+  desativado
+}
+
+enum StageType {
+  queixa_principal
+  historia
+  antecedentes
+  medicamentos
+  sinais_vitais
+  exame_fisico
+  exames_complementares
+  evolucao
+  pista_final
+}
+
+enum AnswerType {
+  correta
+  parcialmente_correta
+  incorreta
+}
+
+enum AttemptStatus {
+  iniciada
+  em_andamento
+  concluida
+  abandonada
+}
+
+enum ReviewDecision {
+  aprovado
+  reprovado
+  necessita_ajustes
+}
+
+enum ReportStatus {
+  aberto
+  em_analise
+  resolvido
+  descartado
+}
+
+// ---------------------------------------------------------------------------
+// Users, Professions, Areas
+// ---------------------------------------------------------------------------
+
+model User {
+  id              String   @id @default(uuid())
+  deviceId        String?  @unique @map("device_id")
+  authUserId      String?  @unique @map("auth_user_id")
+  email           String?  @unique
+  name            String?
+  userType        UserType? @map("user_type")
+  professionId    String?  @map("profession_id")
+  experienceLevel String?  @map("experience_level")
+  role            UserRole @default(user)
+  isActive        Boolean  @default(true) @map("is_active")
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  profession   Profession?      @relation(fields: [professionId], references: [id])
+  preferences  UserPreferences?
+  areas        UserArea[]
+  attempts     Attempt[]
+  reports      Report[]
+  reviewedCases Case[]          @relation("CaseReviewer")
+  createdCases  Case[]          @relation("CaseCreator")
+  caseReviews   CaseReview[]
+
+  @@map("users")
+}
+
+model Profession {
+  id          String   @id @default(uuid())
+  name        String
+  slug        String   @unique
+  description String?
+  isActive    Boolean  @default(true) @map("is_active")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  users             User[]
+  areas             ProfessionArea[]
+  caseProfessions   CaseProfession[]
+
+  @@map("professions")
+}
+
+model Area {
+  id          String   @id @default(uuid())
+  name        String
+  slug        String   @unique
+  description String?
+  isActive    Boolean  @default(true) @map("is_active")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  professions ProfessionArea[]
+  userAreas   UserArea[]
+  cases       Case[]
+
+  @@map("areas")
+}
+
+model ProfessionArea {
+  professionId String @map("profession_id")
+  areaId       String @map("area_id")
+
+  profession Profession @relation(fields: [professionId], references: [id], onDelete: Cascade)
+  area       Area       @relation(fields: [areaId], references: [id], onDelete: Cascade)
+
+  @@id([professionId, areaId])
+  @@map("profession_areas")
+}
+
+model UserPreferences {
+  id                 String   @id @default(uuid())
+  userId             String   @unique @map("user_id")
+  difficulty         Difficulty?
+  dailyGoal          Int?     @map("daily_goal")
+  preferredCaseMode  String?  @map("preferred_case_mode")
+  createdAt          DateTime @default(now()) @map("created_at")
+  updatedAt          DateTime @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_preferences")
+}
+
+model UserArea {
+  userId String @map("user_id")
+  areaId String @map("area_id")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  area Area @relation(fields: [areaId], references: [id], onDelete: Cascade)
+
+  @@id([userId, areaId])
+  @@map("user_areas")
+}
+
+// ---------------------------------------------------------------------------
+// Cases
+// ---------------------------------------------------------------------------
+
+model Case {
+  id            String     @id @default(uuid())
+  title         String
+  slug          String     @unique
+  objective     String
+  areaId        String     @map("area_id")
+  difficulty    Difficulty
+  sourceType    SourceType @map("source_type")
+  status        CaseStatus @default(rascunho)
+  version       Int        @default(1)
+  createdBy     String?    @map("created_by")
+  reviewedBy    String?    @map("reviewed_by")
+  publishedAt   DateTime?  @map("published_at")
+  createdAt     DateTime   @default(now()) @map("created_at")
+  updatedAt     DateTime   @updatedAt @map("updated_at")
+
+  area           Area                @relation(fields: [areaId], references: [id])
+  creator        User?               @relation("CaseCreator", fields: [createdBy], references: [id])
+  reviewer       User?               @relation("CaseReviewer", fields: [reviewedBy], references: [id])
+  professions    CaseProfession[]
+  patientProfile CasePatientProfile?
+  stages         CaseStage[]
+  answers        CaseAnswer[]
+  differentials  CaseDifferential[]
+  learningPoints CaseLearningPoint[]
+  references     CaseReference[]
+  attempts       Attempt[]
+  reports        Report[]
+  reviews        CaseReview[]
+
+  @@index([status, areaId, difficulty])
+  @@index([status, publishedAt])
+  @@map("cases")
+}
+
+model CaseProfession {
+  caseId       String @map("case_id")
+  professionId String @map("profession_id")
+
+  case       Case       @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  profession Profession @relation(fields: [professionId], references: [id], onDelete: Cascade)
+
+  @@id([caseId, professionId])
+  @@map("case_professions")
+}
+
+model CasePatientProfile {
+  id                  String  @id @default(uuid())
+  caseId              String  @unique @map("case_id")
+  age                 Int
+  sex                 String
+  context             String?
+  relevantInformation String? @map("relevant_information")
+
+  case Case @relation(fields: [caseId], references: [id], onDelete: Cascade)
+
+  @@map("case_patient_profiles")
+}
+
+model CaseStage {
+  id         String    @id @default(uuid())
+  caseId     String    @map("case_id")
+  orderIndex Int       @map("order_index")
+  stageType  StageType @map("stage_type")
+  content    String
+  isRequired Boolean   @default(true) @map("is_required")
+  createdAt  DateTime  @default(now()) @map("created_at")
+  updatedAt  DateTime  @updatedAt @map("updated_at")
+
+  case      Case               @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  responses AttemptResponse[]
+
+  @@index([caseId, orderIndex])
+  @@map("case_stages")
+}
+
+model CaseAnswer {
+  id            String     @id @default(uuid())
+  caseId        String     @map("case_id")
+  canonicalTerm String     @map("canonical_term")
+  answerType    AnswerType @map("answer_type")
+  explanation   String
+  createdAt     DateTime   @default(now()) @map("created_at")
+  updatedAt     DateTime   @updatedAt @map("updated_at")
+
+  case  Case                  @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  terms AcceptedAnswerTerm[]
+
+  @@map("case_answers")
+}
+
+model AcceptedAnswerTerm {
+  id             String @id @default(uuid())
+  answerId       String @map("answer_id")
+  term           String
+  normalizedTerm String @map("normalized_term")
+
+  answer CaseAnswer @relation(fields: [answerId], references: [id], onDelete: Cascade)
+
+  @@index([normalizedTerm])
+  @@map("accepted_answer_terms")
+}
+
+model CaseDifferential {
+  id          String  @id @default(uuid())
+  caseId      String  @map("case_id")
+  name        String
+  explanation String
+  relevance   String?
+
+  case Case @relation(fields: [caseId], references: [id], onDelete: Cascade)
+
+  @@map("case_differentials")
+}
+
+model CaseLearningPoint {
+  id         String @id @default(uuid())
+  caseId     String @map("case_id")
+  content    String
+  orderIndex Int    @map("order_index")
+
+  case Case @relation(fields: [caseId], references: [id], onDelete: Cascade)
+
+  @@map("case_learning_points")
+}
+
+model CaseReference {
+  id            String    @id @default(uuid())
+  caseId        String    @map("case_id")
+  title         String
+  url           String?
+  referenceType String?   @map("reference_type")
+  accessedAt    DateTime? @map("accessed_at")
+
+  case Case @relation(fields: [caseId], references: [id], onDelete: Cascade)
+
+  @@map("case_references")
+}
+
+// ---------------------------------------------------------------------------
+// Attempts, Reports, Reviews
+// ---------------------------------------------------------------------------
+
+model Attempt {
+  id           String        @id @default(uuid())
+  userId       String        @map("user_id")
+  caseId       String        @map("case_id")
+  status       AttemptStatus @default(iniciada)
+  currentStage Int           @default(0) @map("current_stage")
+  hintsUsed    Int           @default(0) @map("hints_used")
+  score        Int?
+  startedAt    DateTime      @default(now()) @map("started_at")
+  finishedAt   DateTime?     @map("finished_at")
+  createdAt    DateTime      @default(now()) @map("created_at")
+  updatedAt    DateTime      @updatedAt @map("updated_at")
+
+  user      User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  case      Case               @relation(fields: [caseId], references: [id])
+  responses AttemptResponse[]
+  reports   Report[]
+
+  @@index([userId, createdAt])
+  @@index([caseId, createdAt])
+  @@map("attempts")
+}
+
+model AttemptResponse {
+  id             String   @id @default(uuid())
+  attemptId      String   @map("attempt_id")
+  stageId        String   @map("stage_id")
+  submittedText  String   @map("submitted_text")
+  normalizedText String   @map("normalized_text")
+  classification AnswerType?
+  feedback       String?
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  attempt Attempt   @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  stage   CaseStage @relation(fields: [stageId], references: [id])
+
+  @@map("attempt_responses")
+}
+
+model Report {
+  id          String       @id @default(uuid())
+  userId      String       @map("user_id")
+  caseId      String       @map("case_id")
+  attemptId   String?      @map("attempt_id")
+  category    String
+  description String
+  status      ReportStatus @default(aberto)
+  reviewedBy  String?      @map("reviewed_by")
+  resolution  String?
+  createdAt   DateTime     @default(now()) @map("created_at")
+  updatedAt   DateTime     @updatedAt @map("updated_at")
+
+  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  case    Case     @relation(fields: [caseId], references: [id])
+  attempt Attempt? @relation(fields: [attemptId], references: [id])
+
+  @@index([status, createdAt])
+  @@map("reports")
+}
+
+model CaseReview {
+  id         String         @id @default(uuid())
+  caseId     String         @map("case_id")
+  reviewerId String         @map("reviewer_id")
+  decision   ReviewDecision
+  comments   String?
+  reviewedAt DateTime       @default(now()) @map("reviewed_at")
+
+  case     Case @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  reviewer User @relation(fields: [reviewerId], references: [id])
+
+  @@map("case_reviews")
+}
+
+// ---------------------------------------------------------------------------
+// Desafio diário (motor de crescimento — P0 no MVP)
+// ---------------------------------------------------------------------------
+
+model DailyChallenge {
+  id        String   @id @default(uuid())
+  date      DateTime @unique @db.Date
+  caseId    String   @map("case_id")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("daily_challenges")
+}

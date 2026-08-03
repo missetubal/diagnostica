@@ -1,0 +1,80 @@
+{
+  "id": "tendinopatia-supraespinhal-atleta-volei",
+  "title": "Dor no ombro em atleta de vôlei",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor crônica no ombro de um atleta de esporte overhead",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 26,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 26 anos, jogador de vôlei, relata dor no ombro direito que se intensifica durante o jogo, atingindo até 7/10 na escala visual analógica."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Joga vôlei desde a infância. A dor começou de forma aguda durante uma partida e persistiu desde então, tornando-se crônica. Iniciou fisioterapia recentemente; anteriormente havia feito apenas laserterapia e TENS pontuais pelo sistema público de saúde."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Refere lesões prévias não relacionadas ao quadro atual: fratura em dedo da mão direita e entorses de tornozelo bilaterais."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Elevação da escápula direita associada à elevação do ombro em movimentos de abdução. Dor leve à palpação do tendão do supraespinhal. Redução de amplitude de movimento em flexão e abdução do ombro direito em comparação ao lado contralateral. Força em abdução de ombro direito grau 4/5. Testes especiais: Jobe positivo, Hawkins-Kennedy positivo, Apley (ombro) positivo, Drop Arm Test negativo."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Escala SPADI: 58/100 no domínio dor e 32,5/100 no domínio incapacidade."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "tendinopatia do supraespinhal",
+    "accepted_terms": ["tendinopatia do manguito rotador", "tendinite do supraespinhal", "tendinopatia do supra-espinhoso"],
+    "partial_terms": ["síndrome do impacto no ombro", "bursite subacromial", "lesão do manguito rotador"]
+  },
+  "differentials": [
+    {
+      "name": "ruptura do manguito rotador",
+      "explanation": "Cursaria tipicamente com Drop Arm Test positivo e perda de força mais evidente, ambos ausentes neste caso."
+    },
+    {
+      "name": "instabilidade glenoumeral",
+      "explanation": "Pode causar dor e apreensão em atletas de esportes overhead, mas não há relato de testes de apreensão positivos, e o padrão de dor é mais compatível com sobrecarga tendínea."
+    },
+    {
+      "name": "capsulite adesiva",
+      "explanation": "Causaria perda de amplitude passiva mais global e simétrica, diferente do padrão localizado observado neste caso."
+    }
+  ],
+  "explanation": "A combinação de testes especiais positivos (Jobe, Hawkins-Kennedy, Apley), dor localizada à palpação do tendão do supraespinhal, alteração postural compensatória (elevação de escápula) e o padrão de sobrecarga típico de esporte overhead sustentam o diagnóstico de tendinopatia do supraespinhal.",
+  "learning_points": [
+    "Reconhecer a combinação de testes especiais (Jobe, Hawkins-Kennedy) como sugestiva de comprometimento do tendão do supraespinhal.",
+    "Usar escalas funcionais como o SPADI para quantificar dor e incapacidade e acompanhar a evolução do tratamento.",
+    "Considerar fatores biomecânicos do esporte overhead (como o vôlei) na origem de tendinopatias do ombro."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 2: Tendinopatia em supraespinhal em atleta de vôlei (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    },
+    {
+      "title": "Challoumas, Stavrou, Dimitrakakis. The volleyball athlete's shoulder: biomechanical adaptations and injury associations. Sports Biomechanics, 2017",
+      "url": "https://doi.org/10.1080/14763141.2016.1222629"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Valores exatos de goniometria e SPADI foram mantidos por serem clinicamente relevantes; revisor pode optar por simplificar caso o público-alvo do MVP não deva lidar com tantos números em um único caso."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

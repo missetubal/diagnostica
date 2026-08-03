@@ -1,0 +1,64 @@
+{
+  "id": "hemiparesia-cronica-pos-ave-padrao-comprometimento-fugl-meyer",
+  "title": "Membro superior parético 11 anos após AVC: o que a avaliação revela?",
+  "objective": "A partir da avaliação padronizada (Fugl-Meyer, Motor Activity Log, goniometria, teste muscular manual) de uma paciente com sequela crônica de AVC já diagnosticada, identificar o padrão específico de comprometimento que deve orientar a escolha da terapia",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-neurologica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 54,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 54 anos, destra, com sequela de acidente vascular cerebral hemorrágico (AVCh) há onze anos, apresentando hemiparesia leve à direita e afasia motora, procura a clínica-escola de fisioterapia para reavaliação e tratamento do membro superior parético."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "A paciente não realizou nenhum outro tipo de terapia durante o período em que participou da avaliação. Apresenta movimentação ativa mínima suficiente para os critérios de inclusão em protocolo de terapia intensiva (flexão/extensão de punho, abdução de polegar e flexão/extensão de ao menos dois outros dedos)."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Avaliação da função sensório-motora do membro superior parético pela escala de Fugl-Meyer modificada (score total de 132 pontos, dividido em mobilidade, sensibilidade, função motora e coordenação/velocidade). Avaliação das atividades funcionais diárias pela escala Motor Activity Log (MAL), nos quesitos qualidade e quantidade. Amplitude de movimento avaliada por goniometria universal. Força muscular avaliada por teste muscular manual (TMM), com predomínio de grau 3-4 nos grupos musculares do membro superior parético."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "padrão de comprometimento predominante em mobilidade, sensibilidade e função motora do membro superior parético, com relativa preservação de dor e coordenação/velocidade",
+    "accepted_terms": ["déficit sensório-motor predominante nos domínios mobilidade/sensibilidade/função motora da escala Fugl-Meyer, poupando dor e coordenação", "comprometimento seletivo (não generalizado) do membro superior parético crônico"],
+    "partial_terms": ["comprometimento motor generalizado e uniforme em todos os domínios", "déficit predominante de dor/coordenação"]
+  },
+  "differentials": [
+    {
+      "name": "comprometimento motor generalizado e uniforme em todos os domínios da escala Fugl-Meyer",
+      "explanation": "Seria esperado em lesões mais extensas ou em fase aguda; nesta paciente crônica (11 anos de lesão), a avaliação mostrou perfil heterogêneo, com maior comprometimento em mobilidade, sensibilidade e função motora do que em dor e coordenação/velocidade — distinção relevante para direcionar a intervenção."
+    },
+    {
+      "name": "déficit predominante em dor e coordenação/velocidade",
+      "explanation": "Não corresponde ao perfil desta paciente: os domínios dor e coordenação/velocidade foram os que menos evoluíram no reteste porque já apresentavam menor comprometimento relativo desde a avaliação inicial, ao contrário de mobilidade, sensibilidade e função motora."
+    }
+  ],
+  "explanation": "Mesmo em lesão crônica de longa data (11 anos), a avaliação padronizada com a escala de Fugl-Meyer permite identificar um perfil específico e não uniforme de comprometimento sensório-motor: nesta paciente, os domínios mobilidade, sensibilidade e função motora mostraram maior comprometimento relativo, enquanto dor e coordenação/velocidade estavam relativamente preservados. Esse padrão de avaliação — e não apenas o diagnóstico geral de 'hemiparesia pós-AVC' — é o que orienta a indicação de terapias específicas de reeducação funcional, como a Terapia de Restrição e Indução ao Movimento (TRIM), voltadas a potencializar o uso do membro parético nas atividades de vida diária.",
+  "learning_points": [
+    "Reconhecer que a escala de Fugl-Meyer permite identificar um perfil heterogêneo de comprometimento sensório-motor, não um déficit uniforme.",
+    "Entender que ganhos funcionais são possíveis mesmo em lesões neurológicas crônicas de longa data, quando a intervenção é direcionada ao perfil específico de déficit.",
+    "Relacionar os domínios avaliados (mobilidade, sensibilidade, função motora, coordenação/velocidade) às escolhas terapêuticas específicas em reabilitação do membro superior parético."
+  ],
+  "references": [
+    {
+      "title": "Rodrigues FZ, Marinho GKA, Silva AT, Silva AM, Sales EV, Mariano KOP. Terapia de Restrição e Indução ao Movimento no Membro Superior Parético Crônico – Relato de Caso. Rev Neurocienc. 2013;21(4):568-573",
+      "url": "https://periodicos.unifesp.br/index.php/neurociencias/article/download/8150/5682"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Padrão estrutural diferente dos casos musculoesqueléticos anteriores: o diagnóstico médico (AVC hemorrágico com hemiparesia) já é conhecido e antigo (11 anos) no momento do encaminhamento. Por decisão de escopo (aprovada por Michelle), o main_answer foi construído em torno do perfil específico de comprometimento revelado pela avaliação padronizada (Fugl-Meyer/MAL), não em torno do diagnóstico médico já revelado.",
+    "Fonte: relato de caso publicado em revista científica universitária (Revista Neurociências, UNIFESP), com ISSN, DOI e processo editorial formal (revisado e aceito) — risco de direitos autorais baixo.",
+    "Fonte original é um estudo de caso com desfecho de tratamento (eficácia da TRIM) mais do que um caso diagnóstico; o main_answer foi deliberadamente ancorado no perfil de avaliação (achados basais), não no resultado do tratamento, para preservar o formato de raciocínio diagnóstico do jogo."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

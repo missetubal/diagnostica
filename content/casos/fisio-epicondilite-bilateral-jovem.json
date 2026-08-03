@@ -1,0 +1,80 @@
+{
+  "id": "epicondilite-bilateral-jovem-ativo",
+  "title": "Dor bilateral nos cotovelos em jovem ativo",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor bilateral nos cotovelos associada a movimentos repetitivos ocupacionais e físicos",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "facil",
+  "patient": {
+    "age": 23,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 23 anos relata dor persistente em ambos os cotovelos durante atividades laborais e físicas do dia a dia."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Trabalha repondo mercadorias e operando caixa, com movimentos repetitivos de abastecimento e carregamento de peso, além de postura inadequada ao trabalhar e ao usar o notebook para estudar. Treina musculação cinco dias por semana, mas sem exercícios específicos e isolados para antebraço."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Sem uso de medicação relatado. Sem histórico de trauma agudo no cotovelo."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Dor à palpação nos epicôndilos lateral e medial, bilateralmente, com amplitude de movimento e força muscular preservadas. Teste de Cozen (epicondilite lateral) e teste do cotovelo de golfista (epicondilite medial) realizados em ambos os cotovelos."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Questionário DASH (função de braço, ombro e mão) aplicado na primeira avaliação, com resultado classificado como 'bom'."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "epicondilite medial e lateral bilateral",
+    "accepted_terms": ["epicondilite bilateral", "cotovelo de tenista e cotovelo de golfista bilaterais", "tendinose dos epicôndilos medial e lateral"],
+    "partial_terms": ["síndrome do túnel cubital", "tendinopatia do antebraço"]
+  },
+  "differentials": [
+    {
+      "name": "síndrome do túnel cubital",
+      "explanation": "Pode causar dor medial no cotovelo, mas tipicamente associada a sintomas neurológicos (formigamento em dedos anelar e mínimo), ausentes neste caso, e o teste específico do cotovelo de golfista foi o que reproduziu a dor, não um teste neurodinâmico."
+    },
+    {
+      "name": "bursite do olécrano",
+      "explanation": "Causaria edema localizado e visível na ponta do cotovelo, não descrito neste caso, tornando essa hipótese menos provável."
+    },
+    {
+      "name": "artrose do cotovelo",
+      "explanation": "Menos provável em um paciente jovem sem histórico de trauma articular relevante ou limitação de amplitude de movimento."
+    }
+  ],
+  "explanation": "A dor localizada nos epicôndilos medial e lateral, bilateral, associada a testes específicos positivos (Cozen para epicondilite lateral e teste do cotovelo de golfista para epicondilite medial) e a um claro fator desencadeante de sobrecarga por movimentos repetitivos ocupacionais e de treino, sustenta o diagnóstico de epicondilite medial e lateral bilateral.",
+  "learning_points": [
+    "Reconhecer a epicondilite lateral (cotovelo de tenista) e medial (cotovelo de golfista) como condições distintas, ambas por sobrecarga repetitiva.",
+    "Usar testes específicos (Cozen, teste do cotovelo de golfista) para localizar a origem da dor no cotovelo.",
+    "Considerar fatores ocupacionais e ergonômicos, além dos esportivos, na avaliação de lesões por sobrecarga."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 13: Epicondilite bilateral em jovem ativo: intervenção com fotobiomodulação e exercícios (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    },
+    {
+      "title": "Elmeligie et al. Clinical efficacy of high-intensity laser therapy on lateral epicondylitis patients: a systematic review and meta-analysis. American Journal of Physical Medicine & Rehabilitation, 2023",
+      "url": "https://doi.org/10.1097/phm.0000000000002039"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Ocupação específica do paciente foi mantida por ser clinicamente relevante ao raciocínio (fator ocupacional), mas pode ser generalizada ainda mais se necessário."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

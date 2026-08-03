@@ -1,0 +1,73 @@
+{
+  "id": "acalasia-disfagia-progressiva",
+  "title": "Dificuldade progressiva para engolir alimentos sólidos",
+  "objective": "Identificar a hipótese diagnóstica mais provável para disfagia progressiva sem resposta a tratamento para refluxo",
+  "professions": ["medicina"],
+  "area": "gastroenterologia",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 44,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 44 anos apresenta dificuldade para engolir alimentos há 8 meses."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Disfagia inicialmente apenas para sólidos, com necessidade de ingerir grande quantidade de água para ajudar na deglutição, piorando há cerca de 1 mês. Relata dor retroesternal em aperto há 2 anos e meio, exacerbada após alimentação, com duração menor que 5 minutos. Associada à dor, refere 'entalos' e regurgitações noturnas esporádicas, que se intensificaram nos últimos 6 meses. Foi diagnosticada com doença do refluxo gastroesofágico há 2 anos, mas o tratamento não trouxe melhora. Relata também halitose, apesar de boa higiene bucal."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Hipertensão arterial sistêmica controlada, em uso de losartana, metoprolol e indapamida. Nega outras comorbidades, alergias, cirurgias ou internações prévias. Nega história familiar de doenças do trato gastrointestinal."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Regular estado geral, emagrecida, normocorada. Exame cardiovascular, respiratório, abdominal e neurológico sem alterações relevantes. Presença de halitose."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Eletrocardiograma e exames laboratoriais de rotina sem alterações. Sorologia para doença de Chagas negativa. Endoscopia digestiva alta revelando mucosa esofágica íntegra, calibre levemente aumentado, resistência à passagem do endoscópio na transição esofagogástrica e discreta quantidade de líquido no terço inferior do esôfago. Estudo da motilidade esofágica evidenciando ausência de peristalse do corpo esofágico, aumento do tônus do esfíncter esofágico inferior (EEI) e ausência de relaxamento do EEI durante a deglutição. Radiografia contrastada do esôfago mostrando porção torácica dilatada, com afilamento na transição para a cárdia e trânsito esofágico lento."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "acalásia (distúrbio motor primário do esôfago)",
+    "accepted_terms": ["acalásia idiopática", "acalásia esofágica"],
+    "partial_terms": ["doença do refluxo gastroesofágico", "neoplasia esofágica"]
+  },
+  "differentials": [
+    {
+      "name": "doença do refluxo gastroesofágico",
+      "explanation": "Diagnóstico prévio da paciente, mas a ausência de melhora com tratamento convencional, a disfagia progressiva de sólidos com necessidade de líquidos para ajudar na deglutição, e os achados de motilidade esofágica alterada não são explicados pelo refluxo isoladamente."
+    },
+    {
+      "name": "neoplasia esofágica",
+      "explanation": "Hipótese sempre a ser descartada em disfagia progressiva; a endoscopia sem lesão endoscópica estrutural evidente (mucosa íntegra) torna essa hipótese menos provável, embora a resistência à passagem na transição esofagogástrica precise ser bem caracterizada."
+    }
+  ],
+  "explanation": "Disfagia progressiva de sólidos, regurgitação, dor retroesternal e ausência de resposta a tratamento para refluxo, associados a exame endoscópico sem lesão estrutural que explique os sintomas e alteração da motilidade esofágica (ausência de peristalse e falha de relaxamento do esfíncter esofágico inferior), confirmam o distúrbio motor primário do esôfago, com sorologia negativa para doença de Chagas apontando para causa idiopática.",
+  "learning_points": [
+    "Reconhecer que disfagia sem resposta a tratamento para refluxo gastroesofágico deve levantar suspeita de distúrbio motor esofágico.",
+    "Entender a manometria esofágica como exame padrão-ouro para confirmação diagnóstica da acalásia.",
+    "Sempre descartar doença de Chagas como causa secundária de acalásia em áreas endêmicas."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico: Acalásia — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-acalasia-ligas"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "A fonte original já apresentava a conclusão do exame de motilidade esofágica como 'Conclusão: acalásia' dentro da própria descrição do exame complementar. Para preservar o desafio diagnóstico, este estágio foi reformulado descrevendo apenas os achados objetivos da manometria (aperistalse, hipertonia do EEI, ausência de relaxamento), sem repetir o rótulo diagnóstico explícito da fonte. Revisor deve confirmar se a reformulação manteve fidelidade aos achados originais."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

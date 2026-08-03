@@ -1,0 +1,72 @@
+{
+  "id": "disfuncao-sacroiliaca-torcional-domestica",
+  "title": "Dor lombar e no quadril após movimento de torção",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor aguda na região do quadril/coxa após mecanismo de torção do tronco",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 34,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 34 anos apresenta dor severa no quadril e coxa esquerda, com uma semana de duração, iniciada após tentar mover a geladeira. Ao fazê-lo, rodou o tronco e sentiu uma 'pontada' na região da articulação sacroilíaca esquerda."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "A dor é aguda, localizada na região sacroilíaca esquerda, e ocasionalmente irradia para a região posterior da coxa."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "A inclinação do tronco para a esquerda provoca dor. Andar e subir escadas é difícil devido à dor durante o apoio de peso. Levantar de uma cadeira provoca dor, mas sentar não. Flexionar a coxa esquerda sobre o tronco alivia a dor por um curto período. ADM do tronco normal, mas dolorosa em flexão e inclinação à esquerda. Palpação sobre a linha articular sacroilíaca dolorida."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Testes de provocação sacroilíaca de Yeoman e Gaenslen positivos no lado esquerdo. Sinais neurológicos e radiografia normais."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "disfunção sacroilíaca por mecanismo torcional",
+    "accepted_terms": ["disfunção da articulação sacroilíaca esquerda", "lesão sacroilíaca pós-torção do tronco"],
+    "partial_terms": ["lombalgia mecânica simples", "lesão muscular de coxa"]
+  },
+  "differentials": [
+    {
+      "name": "lesão muscular da coxa posterior (isquiotibiais)",
+      "explanation": "O mecanismo de torção do tronco e a dor localizada na articulação sacroilíaca, e não na massa muscular, tornam essa hipótese menos provável; os testes específicos de sacroilíaca foram positivos."
+    },
+    {
+      "name": "hérnia discal lombar com irradiação",
+      "explanation": "Sinais neurológicos normais e ausência de padrão radicular claro tornam essa hipótese menos provável."
+    },
+    {
+      "name": "fratura ou lesão óssea",
+      "explanation": "Descartada pela radiografia normal."
+    }
+  ],
+  "explanation": "O mecanismo de torção do tronco, a dor localizada na região sacroilíaca, os testes de provocação específicos positivos (Yeoman e Gaenslen) e a resposta favorável à mobilização articular sacroilíaca confirmam uma origem sacroilíaca para o quadro.",
+  "learning_points": [
+    "Reconhecer o padrão típico de disfunção sacroilíaca desencadeada por movimento de torção do tronco.",
+    "Usar testes de provocação combinados (Yeoman e Gaenslen) para aumentar a confiança na hipótese diagnóstica.",
+    "Entender que a resposta ao tratamento também compõe o raciocínio de confirmação diagnóstica em disfunções sem exame padrão-ouro definitivo."
+  ],
+  "references": [
+    {
+      "title": "Caso clínico 'Caso 2: Disfunção coxo-femoral' — Grupo Terapia Manual",
+      "url": "https://www.terapiamanual.com.br/site/casos_clinicos/?id=49&c=3"
+    }
+  ],
+  "avisos_para_revisor": [
+    "ATENÇÃO — mesmo risco de direitos autorais já sinalizado no primeiro caso desta fonte: site comercial de cursos de terapia manual, sem licença aberta indicada.",
+    "Disfunção sacroilíaca não tem um teste padrão-ouro isolado; o diagnóstico no caso-fonte foi confirmado combinando testes de provocação e resposta ao tratamento — mantido fiel a essa lógica."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

@@ -1,0 +1,83 @@
+{
+  "id": "lca-parcial-condropatia-patelar-musculacao",
+  "title": "Dor anteromedial no joelho de início insidioso",
+  "objective": "Identificar o quadro clínico-funcional mais consistente com dor anteromedial de joelho de início insidioso, sem mecanismo de trauma claro",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 32,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 32 anos, praticante de musculação, procura atendimento por dor na região ântero-medial do joelho, com intensidade de 9-10/10 na escala visual analógica em períodos de agudização."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "A dor persiste há cerca de 6 meses, com piora em movimentos de flexão do joelho, e evolução progressiva em intensidade e frequência. Não identifica nenhum mecanismo de trauma associado ao início do quadro — refere apenas início insidioso."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Fazia uso frequente de medicação analgésica para controle da dor. Sem outras comorbidades relatadas."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Presença de edema em região anterior e medial do joelho, além de crepitação ao movimentar a articulação. Teste funcional de step down evidencia valgo dinâmico e importante instabilidade articular do joelho."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Teste de salto único (single hop test): 83 cm no membro inferior esquerdo e 90 cm no direito — assimetria relevante entre os membros."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "instabilidade de joelho e sobrecarga femoropatelar compatível com rompimento parcial do LCA e condropatia patelar",
+    "accepted_terms": [
+      "lesão parcial do ligamento cruzado anterior com condropatia patelar",
+      "instabilidade de joelho por lesão ligamentar parcial e degeneração cartilaginosa inicial"
+    ],
+    "partial_terms": ["síndrome da dor femoropatelar isolada", "tendinopatia patelar"]
+  },
+  "differentials": [
+    {
+      "name": "síndrome da dor femoropatelar isolada (sem lesão ligamentar)",
+      "explanation": "Explicaria a dor anterior e a crepitação, mas não explica isoladamente o grau de instabilidade e valgo dinâmico observado no teste de step down."
+    },
+    {
+      "name": "lesão meniscal",
+      "explanation": "Pode cursar com dor, edema e crepitação; deve ser investigada, mas o padrão de instabilidade dinâmica em valgo é mais característico de comprometimento ligamentar associado."
+    },
+    {
+      "name": "osteoartrose femoropatelar estabelecida",
+      "explanation": "Deve ser diferenciada da condropatia inicial (mais precoce e potencialmente reversível), especialmente em uma paciente de 32 anos sem fatores de risco adicionais relatados."
+    }
+  ],
+  "explanation": "A dor de início insidioso sem trauma claro, associada a edema, crepitação e importante instabilidade em valgo dinâmico no teste de step down, além da assimetria no teste de salto único, é compatível com o quadro de rompimento parcial do LCA associado a condropatia patelar de grau inicial, mesmo sem um evento traumático agudo identificável.",
+  "learning_points": [
+    "Reconhecer que lesões ligamentares parciais podem ter início insidioso, sem um evento traumático evidente.",
+    "Usar testes funcionais como o step down e o salto único para avaliar instabilidade dinâmica e assimetria entre membros.",
+    "Diferenciar condropatia patelar inicial (potencialmente reversível) de artrose estabelecida."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 8: Tratamento conservador no manejo de rompimento parcial de LCA associado a condropatia patelar grau I (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    },
+    {
+      "title": "Gaitonde, Ericksen, Robbins. Patellofemoral pain syndrome. American Family Physician, 2019",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Diagnóstico estrutural (LCA parcial + condropatia) já havia sido estabelecido por avaliação médica antes do início da fisioterapia; o 'diagnóstico' do caso foi reformulado para o quadro funcional identificável pela fisioterapia."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

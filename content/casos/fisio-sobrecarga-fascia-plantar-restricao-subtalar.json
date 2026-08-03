@@ -1,0 +1,72 @@
+{
+  "id": "sobrecarga-fascia-plantar-restricao-subtalar",
+  "title": "Dor no calcanhar durante caminhada, com restrição da articulação subtalar",
+  "objective": "Identificar o mecanismo biomecânico mais provável para dor plantar do calcâneo relacionada à caminhada",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 37,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 37 anos apresenta dor na face plantar do calcâneo direito, presente apenas ao caminhar ou com descarga de peso. Início insidioso há 3 meses, que a paciente atribui ao início de caminhadas diárias."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Já procurou atendimento médico previamente, com prescrição de anti-inflamatórios e repouso, e orientação de possível procedimento cirúrgico caso não houvesse melhora. Radiografia mostrou pequenos esporões calcâneos, bilaterais e de aparência simétrica. Peso considerado normal para idade, altura e biotipo."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Inspeção estática sem alterações relevantes, alinhamento de membros inferiores considerado normal, sem diferença significante de comprimento. Durante a marcha, pouca pronação subtalar na fase de apoio em ambos os lados. Inspeção da planta dos pés sem alterações."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "ADM de quadril, joelho e tornozelo (talocrural) normais. ADM de pronação da articulação subtalar reduzida, principalmente à direita. Movimento acessório látero-lateral da articulação subtalar reduzido no lado direito. Teste de tensão neural do nervo tibial negativo, assim como a palpação do nervo no túnel do tarso. Palpação profunda da face plantar do calcanhar direito positiva, reproduzindo a dor habitual da paciente."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "sobrecarga da fáscia plantar por restrição de mobilidade da articulação subtalar direita",
+    "accepted_terms": ["dor plantar do calcâneo por hipomobilidade subtalar", "fasciopatia plantar secundária a restrição articular subtalar"],
+    "partial_terms": ["fasciíte plantar inflamatória isolada", "síndrome do túnel do tarso"]
+  },
+  "differentials": [
+    {
+      "name": "síndrome do túnel do tarso (compressão do nervo tibial)",
+      "explanation": "Descartada por teste de tensão neural negativo e palpação negativa no túnel do tarso."
+    },
+    {
+      "name": "fasciopatia plantar inflamatória clássica (sobrecarga simples)",
+      "explanation": "A presença de esporões bilaterais simétricos e a resposta positiva à mobilização articular subtalar (além de repouso e anti-inflamatórios) sugerem uma contribuição mecânica por restrição articular, somada a um possível componente inflamatório local."
+    },
+    {
+      "name": "fratura de estresse do calcâneo",
+      "explanation": "Pouco provável dado o padrão insidioso, a radiografia sem sinais de fratura, e a dor reproduzida especificamente à palpação da fáscia, não do osso."
+    }
+  ],
+  "explanation": "A redução da mobilidade subtalar, especialmente em pronação, reduz a capacidade de absorção de impacto do pé, sobrecarregando a fáscia plantar durante a marcha. A reprodução da dor à palpação profunda da fáscia, associada à restrição articular subtalar localizada e à resposta favorável à mobilização articular, sustenta essa hipótese mecânica como fator contribuinte central do quadro.",
+  "learning_points": [
+    "Entender a articulação subtalar e sua mobilidade de pronação como parte do mecanismo de absorção de impacto do pé.",
+    "Reconhecer que uma restrição articular localizada pode sobrecarregar tecidos moles adjacentes, como a fáscia plantar.",
+    "Considerar mobilização articular como parte do tratamento de dor plantar, além de medidas convencionais (repouso, anti-inflamatórios, alongamento)."
+  ],
+  "references": [
+    {
+      "title": "Caso clínico 'Caso 9: Fascite plantar' — Grupo Terapia Manual",
+      "url": "https://www.terapiamanual.com.br/site/casos_clinicos/?id=64&c=3"
+    }
+  ],
+  "avisos_para_revisor": [
+    "ATENÇÃO — mesmo risco de direitos autorais já sinalizado nos casos anteriores desta fonte.",
+    "IMPORTANTE: a fonte original já apresenta, na história do paciente, um diagnóstico médico prévio de 'fasciíte plantar' (dado por outro profissional antes do atendimento fisioterapêutico) — padrão semelhante ao problema identificado anteriormente no livro de neuropediatria, que foi pulado. Para preservar o formato de Diagnóstico Progressivo, esse rótulo diagnóstico prévio foi removido da queixa_principal/história, e o main_answer foi reformulado em torno do mecanismo biomecânico específico (restrição subtalar) identificado pelo raciocínio fisioterapêutico, que não é dado de forma explícita ao longo da história do paciente. Revisor deve confirmar se essa reformulação preserva um desafio diagnóstico genuíno para quem for jogar."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

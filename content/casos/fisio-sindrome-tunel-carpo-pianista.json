@@ -1,0 +1,82 @@
+{
+  "id": "sindrome-tunel-carpo-pianista",
+  "title": "Dor e fraqueza nos membros superiores em pianista",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor, formigamento e fraqueza em membros superiores relacionados a atividade repetitiva, em um quadro com comorbidades dolorosas associadas",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 22,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Estudante universitária de 22 anos, pianista, relata dor nos punhos, dedos e cotovelos, associada a fraqueza nos membros superiores, com piora dos sintomas durante a noite."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Toca piano desde a infância, mas aumentou muito a carga de prática ao ingressar na universidade, passando a tocar várias horas por dia. Os sintomas começaram nesse período e obrigaram a reduzir drasticamente o tempo de prática ao instrumento, chegando a trancar uma disciplina por causa da limitação."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Possui diagnóstico prévio de fibromialgia e epicondilite lateral, além de histórico de lesão de menisco já tratada. Está em acompanhamento com psicólogo, psiquiatra e reumatologista, e faz uso de antidepressivo e de medicação para fibromialgia."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Discinesia escapular e hiperalgesia periescapular, com tensão aumentada em trapézio, romboides e serrátil. Teste de Phalen positivo. Testes neurodinâmicos para o nervo mediano positivos."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Questionário DASH (disfunção de braço, ombro e mão) inicial de 44 pontos, indicando incapacidade funcional moderada. Dinamometria de preensão manual reduzida bilateralmente em relação ao esperado."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "síndrome do túnel do carpo",
+    "accepted_terms": ["compressão do nervo mediano no punho", "neuropatia compressiva do nervo mediano"],
+    "partial_terms": ["epicondilite lateral", "tendinopatia dos flexores do punho", "dor miofascial associada à fibromialgia"]
+  },
+  "differentials": [
+    {
+      "name": "exacerbação de fibromialgia",
+      "explanation": "A paciente tem diagnóstico prévio de fibromialgia, que pode causar dor difusa nos membros superiores, mas isoladamente não explica o teste de Phalen positivo nem os achados neurodinâmicos específicos do nervo mediano."
+    },
+    {
+      "name": "epicondilite lateral",
+      "explanation": "Diagnóstico prévio coexistente que pode contribuir para a dor no cotovelo, mas não explica isoladamente o padrão de dormência e fraqueza na mão, nem os testes específicos positivos para compressão do nervo mediano."
+    },
+    {
+      "name": "radiculopatia cervical",
+      "explanation": "Pode causar dor irradiada e fraqueza no membro superior, especialmente com sintomas noturnos; deve ser considerada, mas os testes provocativos localizados no punho (Phalen, neurodinâmico do mediano) direcionam para uma compressão mais distal."
+    }
+  ],
+  "explanation": "O teste de Phalen positivo, os testes neurodinâmicos positivos para o nervo mediano e o padrão de sintomas (dor, formigamento e fraqueza nas mãos, com piora noturna) associado a uma atividade repetitiva de alta demanda (prática intensiva de piano) sustentam o diagnóstico de síndrome do túnel do carpo, mesmo em um quadro complicado pela presença de comorbidades dolorosas coexistentes.",
+  "learning_points": [
+    "Reconhecer que comorbidades dolorosas (como a fibromialgia) podem se sobrepor a uma compressão nervosa focal, exigindo testes específicos para diferenciação.",
+    "Usar o teste de Phalen e testes neurodinâmicos como ferramentas de rastreio para síndrome do túnel do carpo.",
+    "Considerar fatores ocupacionais e de atividade repetitiva (como a prática intensiva de instrumento musical) na avaliação de queixas de membro superior."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 9: Tratamento da síndrome do túnel do carpo em jovem pianista (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    },
+    {
+      "title": "Padua et al. Carpal tunnel syndrome: clinical features, diagnosis, and management. The Lancet Neurology, 2016",
+      "url": "https://doi.org/10.1016/S1474-4422(16)30231-9"
+    }
+  ],
+  "avisos_para_revisor": [
+    "A idade exata da paciente não estava explícita na fonte; foi estimada como estudante universitária jovem adulta — confirmar ou ajustar.",
+    "Caso reúne várias comorbidades reais (fibromialgia, epicondilite, uso de psicofármacos); revisor deve confirmar se a complexidade é apropriada para o nível 'difícil' ou se algumas comorbidades devem ser simplificadas.",
+    "Nomes comerciais de medicamentos citados na fonte foram generalizados para classes terapêuticas."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

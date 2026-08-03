@@ -1,0 +1,5 @@
+node_modules
+.next
+content/casos
+prisma/migrations
+package-lock.json

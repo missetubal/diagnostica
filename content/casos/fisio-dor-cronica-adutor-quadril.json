@@ -1,0 +1,84 @@
+{
+  "id": "dor-cronica-adutor-quadril-jogador-futebol",
+  "title": "Dor persistente na região interna da coxa em jogador amador",
+  "objective": "Identificar o quadro clínico mais consistente com a recorrência de dor após lesão muscular de adutor previamente tratada",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 29,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 29 anos relata dor na região interna da coxa esquerda, descrita como pontadas e fincadas, que retornou ao aumentar a carga nos treinos de membros inferiores."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Cerca de 6 meses antes, sentiu um estiramento ao abrir as pernas para alcançar a bola durante um jogo de futebol amador (atua como goleiro), evoluindo com hematoma extenso na coxa e recebendo diagnóstico de lesão grau II de adutor de quadril esquerdo. Fez 3 meses de fisioterapia na época, com melhora parcial mas sem resolução completa da dor."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Frequenta academia 5 vezes por semana (treino de força e treino cardiorrespiratório) e pratica futebol e beach tennis ocasionalmente. Tratou condropatia patelar e lesão de pata de ganso no joelho direito no passado, sem sequelas aparentes."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Inspeção visual sem alterações. À palpação, área com aumento de tensão muscular e dor na região do adutor esquerdo. Amplitude de movimento de quadril preservada em ambos os membros."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Força muscular (escala MRC): abdução de quadril grau 4/5 bilateral; adução de quadril grau 4/5 à direita e grau 3/5 à esquerda. Dor avaliada em 6/10 na Escala Visual Numérica."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "dor crônica e fraqueza residual pós-lesão de adutor de quadril",
+    "accepted_terms": [
+      "sequela de lesão muscular de adutor com fraqueza residual",
+      "recidiva funcional de lesão de adutor de quadril"
+    ],
+    "partial_terms": ["tendinopatia dos adutores", "pubalgia atlética"]
+  },
+  "differentials": [
+    {
+      "name": "nova lesão muscular aguda de adutor",
+      "explanation": "Deve ser considerada diante de dor recorrente relacionada a aumento de carga, mas a ausência de novo trauma agudo específico e de sinais como hematoma ou equimose torna uma nova ruptura menos provável, favorecendo fraqueza residual e sobrecarga."
+    },
+    {
+      "name": "pubalgia atlética (osteíte púbica ou lesão do complexo pubo-adutor)",
+      "explanation": "Comum em atletas com histórico de lesão de adutor recorrente; deve ser considerada especialmente se a dor se tornar mais medial/púbica ou crônica, mas os achados aqui são localizados na região do adutor previamente lesionado."
+    },
+    {
+      "name": "tendinopatia dos adutores por sobrecarga",
+      "explanation": "Pode se sobrepor a uma lesão muscular prévia mal reabilitada, sendo compatível com o padrão de dor relacionada ao aumento progressivo de carga de treino."
+    }
+  ],
+  "explanation": "O histórico de lesão de adutor grau II tratada de forma incompleta, associado à fraqueza assimétrica em adução de quadril (grau 3/5 à esquerda versus 4/5 à direita) e à recorrência da dor com aumento de carga de treino, é compatível com um quadro de dor crônica e déficit de força residual pós-lesão de adutor, mais do que com uma nova lesão aguda.",
+  "learning_points": [
+    "Reconhecer que a reabilitação incompleta de lesões musculares pode deixar déficits de força residuais e predispor à recidiva.",
+    "Avaliar força muscular de forma comparativa entre os membros para identificar assimetrias relevantes.",
+    "Considerar diagnósticos diferenciais relacionados à virilha (pubalgia atlética) em atletas com histórico de lesão de adutor recorrente."
+  ],
+  "references": [
+    {
+      "title": "Casos clínicos em Fisioterapia Esportiva — Capítulo 11: Tratamento de dor crônica pós lesão de adutor grau II (e-book, Universidade Federal de Pelotas, 2024)",
+      "url": ""
+    },
+    {
+      "title": "Thorborg. Current Clinical Concepts: Exercise and Load Management of Adductor Strains. Journal of Athletic Training, 2023",
+      "url": "https://doi.org/10.4085/1062-6050-0496.21"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Ocupação e datas específicas do paciente foram generalizadas/removidas em relação à fonte.",
+    "Histórico de lesões prévias em outra articulação (joelho) foi mantido por poder ser relevante para o raciocínio sobre carga geral de treino, mas pode ser removido se o revisor considerar desnecessário."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

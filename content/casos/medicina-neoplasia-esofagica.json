@@ -1,0 +1,77 @@
+{
+  "id": "disfagia-progressiva-perda-peso-massa-esofagica",
+  "title": "Dificuldade progressiva para engolir com perda de peso significativa",
+  "objective": "Identificar a hipótese diagnóstica mais provável para disfagia progressiva associada a perda de peso acentuada",
+  "professions": ["medicina"],
+  "area": "gastroenterologia",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 51,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 51 anos apresenta dificuldade para deglutir há 2 meses e meio."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Disfagia de início abrupto para alimentos sólidos, alimentando-se atualmente apenas de líquidos e pastosos. Refere dor em queimação em região epigástrica, iniciada junto com a disfagia. Relata perda de peso significativa (20 kg em 2 meses) e alteração do ritmo intestinal, com fezes em cíbalos. Apetite mantido. Nega odinofagia, náuseas, vômitos, melena e enterorragia."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Histórico importante de alcoolismo, com três internações prévias para tratamento, em abstinência há 9 meses. Tabagismo de longa data (35 anos-maço). Uso de diazepam para dificuldade de sono."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Mucosas hipocoradas. Presença de lesões crostosas descamativas pruriginosas com perda de sensibilidade local em ambos os membros inferiores. Abdome doloroso à palpação profunda em quadrante superior esquerdo, fígado palpável."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Solicitados hemograma, ferro, ferritina, dosagem de complexo B, função renal e hepática para investigação da síndrome consumptiva. Endoscopia digestiva alta revelando massa em forma de 'cogumelo' de 8,5 cm no esôfago. Biópsia da lesão confirmando carcinoma de células escamosas."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "carcinoma de células escamosas do esôfago (neoplasia esofágica)",
+    "accepted_terms": ["câncer de esôfago (carcinoma epidermoide/escamoso)", "neoplasia esofágica maligna"],
+    "partial_terms": ["estenose péptica benigna", "acalásia"]
+  },
+  "differentials": [
+    {
+      "name": "estenose péptica benigna",
+      "explanation": "Pode causar disfagia progressiva, mas o início relativamente abrupto, a perda de peso muito acentuada em curto período e os fatores de risco importantes (tabagismo e etilismo de longa data) tornam a hipótese neoplásica mais preocupante e prioritária de investigação."
+    },
+    {
+      "name": "acalásia",
+      "explanation": "Também causa disfagia progressiva, mas costuma ter curso mais lento e ser acompanhada de regurgitação; a perda de peso tão acentuada em tempo tão curto e o perfil de risco (tabagismo associado a etilismo) favorecem a investigação endoscópica precoce voltada para neoplasia."
+    },
+    {
+      "name": "doença do refluxo gastroesofágico",
+      "explanation": "Explicaria a dor epigástrica em queimação isoladamente, mas não a disfagia progressiva nem a perda ponderal tão expressiva."
+    }
+  ],
+  "explanation": "Disfagia progressiva de início relativamente rápido, perda de peso muito significativa (20 kg em 2 meses), associada a fatores de risco clássicos para carcinoma epidermoide de esôfago (tabagismo e etilismo de longa data), confirmada por endoscopia digestiva alta evidenciando massa esofágica e biópsia positiva para carcinoma de células escamosas, sustenta o diagnóstico de neoplasia esofágica maligna.",
+  "learning_points": [
+    "Reconhecer disfagia progressiva com perda de peso como sinal de alarme que exige investigação endoscópica precoce.",
+    "Identificar tabagismo e etilismo como principais fatores de risco para carcinoma epidermoide de esôfago.",
+    "Entender a endoscopia digestiva alta com biópsia como exame definitivo para diagnóstico histológico."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico: Neoplasia do Trato Gastrointestinal Superior — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-neoplasia-do-trato-gastrointestinal-superior-ligas"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "O título da fonte original ('Neoplasia do Trato Gastrointestinal Superior') já indicava a categoria diagnóstica; o título deste caso foi reformulado para descrever apenas os sintomas, preservando o desafio diagnóstico. O nome completo do paciente (fictício, mas incomum) foi substituído por identificação genérica por não ser essencial ao caso."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

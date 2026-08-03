@@ -1,0 +1,77 @@
+{
+  "id": "covid19-pneumonia-diabetes-descompensada",
+  "title": "Falta de ar intensa e progressiva com febre há 4 dias",
+  "objective": "Identificar a hipótese diagnóstica mais provável para quadro respiratório febril progressivo em contexto epidemiológico sugestivo",
+  "professions": ["medicina"],
+  "area": "pneumologia",
+  "difficulty": "medio",
+  "patient": {
+    "age": 63,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 63 anos procura o serviço de emergência com 'falta de ar' intensa há 4 dias."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Refere tosse seca, mal-estar, dispneia progressiva, febre de 39°C e sudorese intensa iniciada na última noite. Nega rinorreia, hiposmia e cefaleia. Piora ao esforço físico mesmo leve. Refere ter diabetes mellitus há 20 anos, sem tratamento regular. Relata contato há 7 dias com um parente que testou positivo para infecção respiratória viral."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Bronquite asmática na infância. Diabetes mellitus sem tratamento regular. Nega internamentos, traumas ou cirurgias prévias. Sedentário, nega etilismo, tabagismo ou drogas ilícitas."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Regular estado geral, febril, taquicárdico (FC 130 bpm), taquipneico (FR 27 ipm), saturação de O2 93%. Murmúrio vesicular diminuído globalmente, com presença de roncos difusos esparsos. Demais sistemas sem alterações relevantes."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Hemograma com leucocitose e linfocitose. Glicemia 344 mg/dl (diabetes descompensada). D-dímero elevado (1100 ng/mL). Radiografia de tórax com radiopacidade em campos pulmonares bilaterais, predominando nas bases. Teste molecular (RT-PCR) para vírus respiratório positivo."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "pneumonia viral (SARS-CoV-2) com diabetes descompensada associada",
+    "accepted_terms": ["COVID-19 com pneumonia", "infecção por SARS-CoV-2 complicada com pneumonia"],
+    "partial_terms": ["pneumonia bacteriana comunitária", "influenza", "cetoacidose diabética isolada"]
+  },
+  "differentials": [
+    {
+      "name": "influenza ou outro vírus respiratório",
+      "explanation": "O quadro clínico inicial pode ser indistinguível de outras viroses respiratórias; a confirmação definitiva depende do teste molecular específico."
+    },
+    {
+      "name": "pneumonia bacteriana comunitária",
+      "explanation": "Consideração sempre presente em paciente com febre e infiltrado pulmonar, mas o contexto epidemiológico (contato recente confirmado) e o padrão de infiltrado bilateral basal tornam a origem viral mais provável."
+    },
+    {
+      "name": "cetoacidose diabética isolada",
+      "explanation": "A glicemia elevada indica descompensação diabética concomitante, mas não explica isoladamente o quadro respiratório febril com infiltrado pulmonar; ambas as condições coexistem e se agravam mutuamente."
+    }
+  ],
+  "explanation": "Quadro respiratório febril progressivo associado a contato epidemiológico recente confirmado, leucograma com padrão sugestivo de infecção viral, infiltrado pulmonar bilateral predominando nas bases e confirmação por teste molecular positivo sustentam o diagnóstico de pneumonia viral; a glicemia muito elevada em paciente diabético sem tratamento regular indica descompensação metabólica associada, fator de risco reconhecido para pior evolução de infecções respiratórias virais.",
+  "learning_points": [
+    "Reconhecer o espectro clínico de infecções respiratórias virais, do quadro leve à pneumonia.",
+    "Entender a importância do contexto epidemiológico na construção da hipótese diagnóstica.",
+    "Identificar o diabetes descompensado como fator de risco para gravidade em infecções respiratórias."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico: Covid-19 — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-covid-19-ligas"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "O contato epidemiológico recente com pessoa positiva para o vírus, mencionado já na história do paciente na fonte original, é um dado clínico real e plausível (não uma revelação artificial), mas foi generalizado neste caso ('infecção respiratória viral' em vez de nomear o vírus) para preservar um pouco mais o desafio diagnóstico. Revisor deve avaliar se prefere reverter para o nome específico do vírus, dado que era um dado real da anamnese na fonte."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

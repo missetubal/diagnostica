@@ -1,0 +1,77 @@
+{
+  "id": "diabetes-mellitus-tipo1-adolescente",
+  "title": "Perda de peso e sede excessiva em adolescente",
+  "objective": "Identificar a hipótese diagnóstica mais provável para poliúria, polidipsia e perda de peso de início recente em adolescente",
+  "professions": ["medicina"],
+  "area": "clinica-medica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 14,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Adolescente de 14 anos apresenta quadro de poliúria, polidipsia, polifagia e perda de peso (cerca de 8 kg) com início há aproximadamente 3 meses."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "A mãe relata início súbito dos sintomas em um adolescente previamente saudável, com ingestão de água muito maior que o habitual e idas mais frequentes ao banheiro. Apesar da polifagia (comendo de forma excessiva), houve emagrecimento acentuado. Notou também maior letargia, com queda no rendimento escolar, e menor disposição para atividades físicas, antes praticadas com frequência. Ambos negam febre."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Sem intercorrências relevantes na infância, desenvolvimento neuropsicomotor e crescimento normais. Histórico familiar: pais hipertensos; avós maternos e paternos com diabetes mellitus tipo 2; avô materno com diabetes mellitus tipo 1, falecido aos 68 anos."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "IMC 18,37 kg/m² (percentil 50, normal para a idade). Mucosa oral e língua levemente ressecadas, sinal da prega cutânea desaparecendo um pouco mais lentamente que o normal. Taquipneico. Demais sistemas sem alterações relevantes."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Parasitológico de fezes negativo. Hemograma completo normal. Glicemia de jejum: 143 mg/dl. Glicemia 2h após teste de tolerância oral à glicose: 250 mg/dl. Hemoglobina glicada (HbA1c): 8,0%."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "diabetes mellitus tipo 1",
+    "accepted_terms": ["diabetes mellitus tipo 1A/1B", "diabetes tipo 1 (insulinodependente)"],
+    "partial_terms": ["diabetes mellitus tipo 2", "parasitose intestinal"]
+  },
+  "differentials": [
+    {
+      "name": "diabetes mellitus tipo 2",
+      "explanation": "Menos provável dado o IMC normal, a idade jovem e a ausência de obesidade, embora exista histórico familiar de DM2."
+    },
+    {
+      "name": "parasitose intestinal",
+      "explanation": "Considerada pela perda de peso, mas descartada pelo parasitológico de fezes negativo."
+    },
+    {
+      "name": "neoplasia",
+      "explanation": "Considerada dada a perda de peso significativa e a letargia, mas o quadro metabólico clássico (poliúria, polidipsia, polifagia) associado à confirmação laboratorial de hiperglicemia torna essa hipótese desnecessária."
+    }
+  ],
+  "explanation": "A tríade clássica de poliúria, polidipsia e polifagia com perda de peso em um adolescente magro, associada a glicemia de jejum e pós-sobrecarga elevadas e HbA1c de 8%, confirma o diagnóstico de diabetes mellitus. O perfil do paciente (jovem, magro, com histórico familiar de diabetes tipo 1) é mais compatível com o tipo 1 do que com o tipo 2.",
+  "learning_points": [
+    "Reconhecer a tríade clássica do diabetes descompensado (poliúria, polidipsia, polifagia) e sua relação com a perda de peso.",
+    "Diferenciar diabetes tipo 1 de tipo 2 pelo perfil clínico e antropométrico do paciente.",
+    "Entender a fisiopatologia dos sintomas cardinais do diabetes descompensado."
+  ],
+  "references": [
+    {
+      "title": "Caso Clínico: Diabetes Mellitus I — Comunidade Sanar/Sanarmed",
+      "url": "https://www.sanarmed.com/caso-clinico-diabetes-mellitus-i-ligas"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Fonte: caso elaborado por liga acadêmica de estudantes de medicina (Comunidade Sanar/Sanarmed), conteúdo educacional gratuito e de acesso público, mas não é literatura médica revisada por pares — recomenda-se validação clínica antes de publicar.",
+    "O texto de abertura da fonte já mencionava o diagnóstico final antes da história clínica ('obteve o diagnóstico de diabetes mellitus tipo 1A'); esse trecho introdutório foi removido, mantendo apenas queixa/história/exame/exames como sequência de raciocínio, para preservar o desafio diagnóstico."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

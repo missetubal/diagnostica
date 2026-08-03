@@ -1,0 +1,68 @@
+{
+  "id": "epicondilalgia-lateral-origem-cervical",
+  "title": "Dor lateral no cotovelo relacionada a trabalho no computador",
+  "objective": "Identificar a hipótese diagnóstica mais provável para dor lateral do cotovelo que não respondeu a tratamento local isolado",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-musculoesqueletica",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 27,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 27 anos apresenta dor na face lateral do cotovelo direito há cerca de três meses, sem evento traumático identificado, com piora progressiva. Refere aumento da dor ao trabalhar algumas horas no computador. Realizou 10 sessões de fisioterapia (eletroterapia local) sem melhora."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Sem histórico de lesões ou cirurgias prévias. Pratica esporte com regularidade."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Dor difusa intermitente na face lateral proximal do antebraço. Após tempo sentado trabalhando, surge desconforto na coluna cervical e aumento da dor no cotovelo. Pressão sobre o compartimento extensor do antebraço produz dor aguda. Sem sinais inflamatórios no cotovelo, ADM normal. Dor à extensão forçada do punho e à flexão passiva do mesmo."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Teste de tensão neural do nervo radial positivo do lado acometido. Sinais neurológicos normais. Hiperlordose cervical e inclinação lateral diminuída para o lado esquerdo. Movimentos cervicais isolados não aumentam a dor do cotovelo, mas uma posição sustentada semelhante ao trabalho aumenta a sensibilidade à palpação do local acometido."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "epicondilalgia lateral de origem neural/cervical (mecanismo de dupla compressão envolvendo o nervo radial)",
+    "accepted_terms": ["epicondilalgia lateral com componente neural cervical", "epicondilalgia lateral do cotovelo por tensão neural adversa"],
+    "partial_terms": ["epicondilite lateral por overuse local isolado", "cervicalgia isolada"]
+  },
+  "differentials": [
+    {
+      "name": "epicondilite lateral por overuse tecidual local isolado",
+      "explanation": "Não explica a ausência de resposta a 10 sessões de eletroterapia local nem o teste de tensão neural do nervo radial positivo."
+    },
+    {
+      "name": "radiculopatia cervical C5-C6 isolada",
+      "explanation": "Sinais neurológicos normais e ausência de dor irradiada franca tornam uma radiculopatia com perda de condução menos provável; o quadro é mais compatível com irritação mecânica leve ao longo do trajeto neural."
+    }
+  ],
+  "explanation": "A combinação de teste de tensão neural do nervo radial positivo, influência de posturas cervicais sustentadas sobre a dor do cotovelo, e a falha de um tratamento local isolado sustenta o envolvimento do sistema nervoso periférico ao longo do trajeto do nervo radial, com participação da coluna cervical, e não apenas uma tendinopatia local por sobrecarga.",
+  "learning_points": [
+    "Reconhecer que dor lateral do cotovelo sem resposta a tratamento local pode ter componente neural e cervical associado.",
+    "Aplicar o conceito de compressão em múltiplos pontos ao longo do trajeto de um nervo periférico.",
+    "Usar o teste de tensão neural para investigar a contribuição do sistema nervoso periférico em quadros de dor musculoesquelética que não respondem ao tratamento convencional."
+  ],
+  "references": [
+    {
+      "title": "Caso clínico 'Caso 3: Epicondilite lateral' — Grupo Terapia Manual",
+      "url": "https://www.terapiamanual.com.br/site/casos_clinicos/?id=58&c=3"
+    }
+  ],
+  "avisos_para_revisor": [
+    "ATENÇÃO — mesmo risco de direitos autorais já sinalizado nos casos anteriores desta fonte.",
+    "O título original da fonte já nomeia 'Epicondilite lateral'. Foi mantido apenas como rótulo descritivo da região de dor no título deste caso, mas o main_answer foi formulado em torno do mecanismo neural/cervical (achado central do raciocínio clínico do caso-fonte), e não uma simples repetição do nome da queixa. Revisor deve confirmar se o título do caso, como está, não entrega a resposta antecipadamente ao jogador."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

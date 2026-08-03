@@ -1,0 +1,63 @@
+{
+  "id": "lesao-medular-toracica-classificacao-asia",
+  "title": "Paciente com paraplegia pós-trauma: qual o quadro funcional real?",
+  "objective": "A partir da avaliação fisioterapêutica padronizada (ASIA, Ashworth, Barthel, MIF) de uma paciente já com diagnóstico médico de lesão medular, identificar a classificação funcional e as complicações associadas que devem orientar a conduta",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-neurologica",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 40,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 40 anos, vítima de violência doméstica, atingida por três projéteis de arma de fogo em região de coluna torácica, é atendida na clínica-escola de fisioterapia após alta hospitalar, com diagnóstico médico de lesão traumática à medula espinhal em nível torácico e paraplegia."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Foi socorrida e recebeu atendimento especializado no momento do trauma. Iniciam-se dois atendimentos fisioterapêuticos por semana. No exame físico inicial, observa-se paralisia dos membros inferiores, ausência de função de tronco e ausência de controle esfincteriano; membros superiores preservados."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Avaliação de sensibilidade (toque com algodão e picada de agulha) mostra sensibilidade preservada em região de tórax e membros inferiores, apesar da ausência de função motora abaixo do nível da lesão. Teste manual de força: grau 3 predominante em membros superiores (com dor por fraqueza de manguito rotador). Escala de Ashworth para membros inferiores: grau 4 (hipertonia grave, com dificuldade de movimentação passiva). Identificado quadro de hipotensão postural, com mal-estar nas mudanças de postura. Índice de Barthel: 27/100 pontos (grande dependência). Medida de Independência Funcional (MIF): 22/126 pontos (dependência total)."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "lesão medular torácica (nível motor T3) ASIA B, com espasticidade grave de membros inferiores e hipotensão postural associada",
+    "accepted_terms": ["paraplegia torácica ASIA B com espasticidade grau 4 e hipotensão ortostática", "lesão medular incompleta (ASIA B) em T3, com dependência funcional total"],
+    "partial_terms": ["lesão medular completa (ASIA A)", "apenas paraplegia motora, sem classificar tônus ou disautonomia"]
+  },
+  "differentials": [
+    {
+      "name": "lesão medular completa (ASIA A)",
+      "explanation": "Seria esperada ausência total de função sensitiva e motora abaixo do nível da lesão, mas a paciente preserva sensibilidade tátil e dolorosa em alguns dermátomos abaixo de T3, o que caracteriza lesão incompleta (ASIA B), com implicações prognósticas diferentes de uma lesão completa."
+    },
+    {
+      "name": "quadro limitado a déficit motor, sem outras complicações associadas",
+      "explanation": "Reduzir o quadro apenas à paraplegia motora ignoraria achados centrais para o plano terapêutico: a espasticidade grave (Ashworth 4) e a hipotensão postural são complicações específicas que exigem condutas próprias (manejo de tônus, progressão gradual de posturas), além do treino motor."
+    }
+  ],
+  "explanation": "A classificação ASIA (American Spinal Injury Association) é a ferramenta padronizada para determinar o nível e a completude da lesão medular a partir dos achados de força motora e sensibilidade. Neste caso, a presença de sensibilidade preservada em dermátomos abaixo de T3, associada à ausência de função motora, define lesão incompleta ASIA B — diferente de uma lesão completa (ASIA A). Some-se a isso a espasticidade grave (Ashworth 4) e a hipotensão postural, achados que, junto aos baixos escores de Barthel e MIF, compõem o quadro funcional completo que orienta os objetivos terapêuticos: prevenção de deformidades, manejo de tônus, treino de tronco e progressão postural gradual para tratar a hipotensão.",
+  "learning_points": [
+    "Aplicar a classificação ASIA para diferenciar lesão medular completa de incompleta a partir de achados sensitivos e motores.",
+    "Reconhecer a espasticidade (escala de Ashworth) e a hipotensão postural como complicações frequentes e clinicamente relevantes da lesão medular alta, distintas do déficit motor primário.",
+    "Utilizar índices funcionais padronizados (Barthel, MIF) para quantificar objetivamente o grau de dependência e monitorar a evolução do paciente."
+  ],
+  "references": [
+    {
+      "title": "Medina GS, Botaro CA, Oliveira JF. Reabilitação física no lesado medular: estudo de caso. Revista Científica da FAMINAS, v.8, n.3, set.-dez. 2012",
+      "url": "https://periodicos.faminas.edu.br/index.php/RCFaminas/article/download/305/281/1160"
+    }
+  ],
+  "avisos_para_revisor": [
+    "Padrão estrutural diferente dos casos musculoesqueléticos anteriores: o diagnóstico médico (paraplegia por trauma raquimedular) já é conhecido no encaminhamento — reflexo da prática real de fisioterapia neurológica hospitalar/ambulatorial. Por decisão de escopo (aprovada por Michelle), o main_answer foi construído em torno da classificação funcional (ASIA, Ashworth, Barthel/MIF) obtida pela avaliação fisioterapêutica padronizada, não em torno do diagnóstico médico já revelado.",
+    "Fonte: relato de caso publicado em revista científica universitária (Revista Científica da FAMINAS), com ISSN e processo editorial formal — risco de direitos autorais moderado-baixo."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}
