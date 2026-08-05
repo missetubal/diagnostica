@@ -102,6 +102,7 @@ model User {
   experienceLevel String?  @map("experience_level")
   role            UserRole @default(user)
   isActive        Boolean  @default(true) @map("is_active")
+  onboardingCompletedAt DateTime? @map("onboarding_completed_at")
   createdAt       DateTime @default(now()) @map("created_at")
   updatedAt       DateTime @updatedAt @map("updated_at")
 
