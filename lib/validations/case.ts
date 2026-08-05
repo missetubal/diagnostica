@@ -50,7 +50,9 @@ export const caseDifferentialSchema = z.object({
 
 export const caseReferenceSchema = z.object({
   title: z.string().min(1),
-  url: z.string().url().optional(),
+  // Vários JSONs em content/casos/ trazem url: "" quando não há link — aceitar
+  // string vazia em vez de exigir URL válida.
+  url: z.string().url().optional().or(z.literal('')),
 });
 
 export const casePatientSchema = z.object({

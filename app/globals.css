@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .input {
+    @apply w-full rounded border px-3 py-2 text-sm;
+  }
+  .btn-primary {
+    @apply rounded bg-black px-3 py-2 text-sm font-medium text-white disabled:opacity-50;
+  }
+  .btn-secondary {
+    @apply rounded border px-2 py-1 text-xs;
+  }
+  .btn-danger {
+    @apply rounded border border-red-300 px-2 py-1 text-xs text-red-600;
+  }
+}

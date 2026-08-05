@@ -12,7 +12,8 @@
     "format:check": "prettier --check .",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
-    "prisma:studio": "prisma studio"
+    "prisma:studio": "prisma studio",
+    "import:casos": "tsx scripts/import-casos.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.7.1",
@@ -37,6 +38,7 @@
     "prettier-plugin-tailwindcss": "^0.8.1",
     "prisma": "^6.16.3",
     "tailwindcss": "^4",
+    "tsx": "^4.23.7",
     "typescript": "^5"
   }
 }
