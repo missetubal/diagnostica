@@ -58,7 +58,14 @@ function extractErrorMessage(body: unknown, fallback: string) {
   return fallback;
 }
 
-export default function CaseAttempt({ mode }: { mode: 'progressivo' | 'completo' }) {
+export default function CaseAttempt({
+  mode = 'progressivo',
+  initialAttemptId,
+}: {
+  mode?: 'progressivo' | 'completo';
+  /** Retoma uma tentativa já criada (ex.: desafio diário) em vez de sortear um caso novo. */
+  initialAttemptId?: string;
+}) {
   const router = useRouter();
   const [attempt, setAttempt] = useState<AttemptState | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -74,19 +81,32 @@ export default function CaseAttempt({ mode }: { mode: 'progressivo' | 'completo'
 
     (async () => {
       try {
-        const nextRes = await fetch('/api/cases/next');
-        const nextBody = await nextRes.json();
-        if (!nextRes.ok) throw new Error(extractErrorMessage(nextBody, 'Não foi possível carregar um caso.'));
+        let startBody: AttemptState;
 
-        const startRes = await fetch(`/api/cases/${nextBody.id}/start`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ mode }),
-        });
-        const startBody = await startRes.json();
-        if (!startRes.ok) throw new Error(extractErrorMessage(startBody, 'Não foi possível iniciar a tentativa.'));
+        if (initialAttemptId) {
+          const res = await fetch(`/api/attempts/${initialAttemptId}`);
+          startBody = await res.json();
+          if (!res.ok) throw new Error(extractErrorMessage(startBody, 'Não foi possível carregar a tentativa.'));
+        } else {
+          const nextRes = await fetch('/api/cases/next');
+          const nextBody = await nextRes.json();
+          if (!nextRes.ok) throw new Error(extractErrorMessage(nextBody, 'Não foi possível carregar um caso.'));
 
-        if (!cancelled) setAttempt(startBody);
+          const startRes = await fetch(`/api/cases/${nextBody.id}/start`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ mode }),
+          });
+          startBody = await startRes.json();
+          if (!startRes.ok) throw new Error(extractErrorMessage(startBody, 'Não foi possível iniciar a tentativa.'));
+        }
+
+        if (cancelled) return;
+        if (startBody.status === 'concluida') {
+          router.push(`/play/resultado/${startBody.id}`);
+          return;
+        }
+        setAttempt(startBody);
       } catch (err) {
         if (!cancelled) setError((err as Error).message);
       }
@@ -95,7 +115,7 @@ export default function CaseAttempt({ mode }: { mode: 'progressivo' | 'completo'
     return () => {
       cancelled = true;
     };
-  }, [mode, attemptNonce]);
+  }, [mode, initialAttemptId, attemptNonce, router]);
 
   async function handleSubmitHypothesis() {
     if (!attempt || !hypothesis.trim()) return;

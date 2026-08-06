@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { BookOpen, ExternalLink, Flag, ListChecks, RotateCcw, Sparkles, User } from 'lucide-react';
+import { BookOpen, Check, ExternalLink, Flag, ListChecks, RotateCcw, Share2, Sparkles, User } from 'lucide-react';
 import { CLASSIFICATION_LABELS, CLASSIFICATION_STYLE, type AnswerType } from '@/lib/classification-ui';
 import { bestClassification } from '@/lib/score';
+import { buildShareText } from '@/lib/daily-share';
 import { DIFFICULTY_LABELS } from '@/lib/labels';
 
 type Difficulty = 'facil' | 'medio' | 'dificil';
@@ -13,8 +14,11 @@ type SourceType = 'humano' | 'ia_assistida' | 'importado';
 type AttemptResult = {
   id: string;
   mode: 'progressivo' | 'completo';
+  is_daily_challenge: boolean;
   hints_used: number;
+  total_stages: number;
   score: number | null;
+  finished_at: string | null;
   case: {
     difficulty: Difficulty;
     area: { name: string };
@@ -45,6 +49,7 @@ function extractErrorMessage(body: unknown, fallback: string) {
 export default function ResultView({ attemptId }: { attemptId: string }) {
   const [result, setResult] = useState<AttemptResult | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [shareCopied, setShareCopied] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -88,6 +93,38 @@ export default function ResultView({ attemptId }: { attemptId: string }) {
 
   const best = bestClassification(result.responses.map((r) => r.classification));
   const phrase = STATUS_PHRASE[best ?? 'nenhuma'];
+
+  async function handleShare() {
+    if (!result) return;
+    const text = buildShareText({
+      dateLabel: result.finished_at
+        ? new Date(result.finished_at).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
+        : '',
+      areaName: result.case.area.name,
+      totalStages: result.total_stages,
+      hintsUsed: result.hints_used,
+      classification: best,
+    });
+
+    if (navigator.share) {
+      try {
+        await navigator.share({ text });
+        return;
+      } catch {
+        // usuário cancelou o share nativo — cai para copiar.
+      }
+    }
+
+    try {
+      await navigator.clipboard.writeText(text);
+      setShareCopied(true);
+      setTimeout(() => setShareCopied(false), 2000);
+    } catch {
+      // Sem permissão de clipboard (comum em navegadores mais restritos) —
+      // último recurso: deixa o texto selecionável para copiar manualmente.
+      window.prompt('Copie seu resultado:', text);
+    }
+  }
 
   return (
     <div className="mx-auto flex w-full max-w-md flex-1 flex-col px-6 py-8">
@@ -204,7 +241,14 @@ export default function ResultView({ attemptId }: { attemptId: string }) {
         </div>
       )}
 
-      <div className="mt-6 flex gap-3">
+      {result.is_daily_challenge && (
+        <button type="button" className="btn-secondary mt-6 w-full" onClick={handleShare}>
+          {shareCopied ? <Check className="h-4 w-4" /> : <Share2 className="h-4 w-4" />}
+          {shareCopied ? 'Copiado!' : 'Compartilhar resultado'}
+        </button>
+      )}
+
+      <div className="mt-3 flex gap-3">
         <Link href="/play" className="btn-primary flex-1">
           Novo caso
         </Link>

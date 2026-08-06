@@ -24,6 +24,25 @@ botão "Iniciar desafio". O modelo `DailyChallenge` (`date` + `case_id`) já exi
   citar o diagnóstico).
 - Conclusão do desafio diário conta para o cálculo de sequência (tarefa 08).
 
+## Decisões de implementação
+
+- **Um caso por profissão por dia civil**, não um caso único global — confirma a leitura sugerida pelo
+  texto do protótipo. `DailyChallenge` ganhou `profession_id` (antes só `date` + `case_id`), com unique
+  `(date, profession_id)`. Dia civil em UTC, mesma convenção da tarefa 08.
+- **Sem job/cron real**: a escolha do caso do dia é determinística — hash de `data + profession_id` sobre
+  a lista ordenada de casos publicados daquela profissão — calculada sob demanda na primeira leitura do
+  dia (`ensureDailyChallenge`, `lib/daily-challenge.ts`) e persistida via `upsert` (`INSERT ... ON
+  CONFLICT`, atômico no Postgres). Chamadas concorrentes calculam o mesmo caso, então não há race nem
+  necessidade de lock/fila — cron da Vercel viraria só um "aquecimento" opcional, não uma dependência de
+  corretude.
+- **Uma tentativa por desafio**, não "por `user_id + case_id + data`" como o escopo original sugeria —
+  isso confundiria uma tentativa de prática livre que caísse no mesmo caso do desafio com o desafio em si.
+  Em vez disso, `Attempt` ganhou `daily_challenge_id` (nullable) com unique `(user_id, daily_challenge_id)`
+  — Postgres trata `NULL` como distinto por padrão, então tentativas de prática livre não são afetadas.
+- **Sequência de dias**: nenhuma mudança necessária em `lib/stats.ts` — o cálculo já considera qualquer
+  `Attempt` concluído, independente de `mode` ou `daily_challenge_id`, então o desafio diário conta
+  automaticamente como uma prática livre concluída no dia.
+
 ## Fora de escopo
 
 - Desafio diário por área (só por profissão, no MVP).

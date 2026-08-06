@@ -135,6 +135,7 @@ model Profession {
   users             User[]
   areas             ProfessionArea[]
   caseProfessions   CaseProfession[]
+  dailyChallenges   DailyChallenge[]
 
   @@map("professions")
 }
@@ -224,6 +225,7 @@ model Case {
   attempts       Attempt[]
   reports        Report[]
   reviews        CaseReview[]
+  dailyChallenges DailyChallenge[]
 
   @@index([status, areaId, difficulty])
   @@index([status, publishedAt])
@@ -339,24 +341,30 @@ model CaseReference {
 // ---------------------------------------------------------------------------
 
 model Attempt {
-  id           String        @id @default(uuid())
-  userId       String        @map("user_id")
-  caseId       String        @map("case_id")
-  status       AttemptStatus @default(iniciada)
-  mode         AttemptMode   @default(progressivo)
-  currentStage Int           @default(0) @map("current_stage")
-  hintsUsed    Int           @default(0) @map("hints_used")
-  score        Int?
-  startedAt    DateTime      @default(now()) @map("started_at")
-  finishedAt   DateTime?     @map("finished_at")
-  createdAt    DateTime      @default(now()) @map("created_at")
-  updatedAt    DateTime      @updatedAt @map("updated_at")
+  id               String        @id @default(uuid())
+  userId           String        @map("user_id")
+  caseId           String        @map("case_id")
+  dailyChallengeId String?       @map("daily_challenge_id")
+  status           AttemptStatus @default(iniciada)
+  mode             AttemptMode   @default(progressivo)
+  currentStage     Int           @default(0) @map("current_stage")
+  hintsUsed        Int           @default(0) @map("hints_used")
+  score            Int?
+  startedAt        DateTime      @default(now()) @map("started_at")
+  finishedAt       DateTime?     @map("finished_at")
+  createdAt        DateTime      @default(now()) @map("created_at")
+  updatedAt        DateTime      @updatedAt @map("updated_at")
 
-  user      User               @relation(fields: [userId], references: [id], onDelete: Cascade)
-  case      Case               @relation(fields: [caseId], references: [id])
-  responses AttemptResponse[]
-  reports   Report[]
+  user           User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  case           Case            @relation(fields: [caseId], references: [id])
+  dailyChallenge DailyChallenge? @relation(fields: [dailyChallengeId], references: [id])
+  responses      AttemptResponse[]
+  reports        Report[]
 
+  // Um usuário só pode ter UMA tentativa por desafio diário — Postgres trata
+  // NULL como distinto por padrão, então tentativas de prática livre
+  // (dailyChallengeId = null) não são afetadas por essa constraint.
+  @@unique([userId, dailyChallengeId])
   @@index([userId, createdAt])
   @@index([caseId, createdAt])
   @@map("attempts")
@@ -418,10 +426,18 @@ model CaseReview {
 // ---------------------------------------------------------------------------
 
 model DailyChallenge {
-  id        String   @id @default(uuid())
-  date      DateTime @unique @db.Date
-  caseId    String   @map("case_id")
-  createdAt DateTime @default(now()) @map("created_at")
+  id           String   @id @default(uuid())
+  date         DateTime @db.Date
+  professionId String   @map("profession_id")
+  caseId       String   @map("case_id")
+  createdAt    DateTime @default(now()) @map("created_at")
 
+  profession Profession @relation(fields: [professionId], references: [id])
+  case       Case       @relation(fields: [caseId], references: [id])
+  attempts   Attempt[]
+
+  // Um caso por profissão por dia civil (docs/tasks/09) — não um caso único
+  // global, conforme o texto do protótipo ("igual para todos de [profissão]").
+  @@unique([date, professionId])
   @@map("daily_challenges")
 }

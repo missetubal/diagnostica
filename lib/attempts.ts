@@ -164,6 +164,7 @@ const resultInclude = {
       differentials: true,
       learningPoints: { orderBy: { orderIndex: 'asc' } },
       references: true,
+      stages: { select: { id: true } },
     },
   },
   responses: { orderBy: { createdAt: 'asc' }, include: { stage: { select: { orderIndex: true } } } },
@@ -187,7 +188,9 @@ export async function getAttemptResult(attemptId: string, userId: string) {
   return {
     id: attempt.id,
     mode: attempt.mode,
+    is_daily_challenge: attempt.dailyChallengeId !== null,
     hints_used: attempt.hintsUsed,
+    total_stages: attempt.case.stages.length,
     score: attempt.score,
     finished_at: attempt.finishedAt,
     case: {

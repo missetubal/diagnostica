@@ -87,11 +87,11 @@ export default async function DashboardPage() {
       </Link>
 
       <div className="mt-3 grid grid-cols-2 gap-3">
-        <div className="card flex flex-col items-start gap-2 opacity-60">
-          <CalendarDays className="h-5 w-5 text-[var(--muted)]" />
+        <Link href="/daily" className="card flex flex-col items-start gap-2">
+          <CalendarDays className="h-5 w-5 text-[var(--teal-600)]" />
           <span className="text-sm font-semibold">Desafio diário</span>
-          <span className="text-xs text-[var(--muted)]">Em breve</span>
-        </div>
+          <span className="text-xs text-[var(--muted)]">Um caso por dia</span>
+        </Link>
         <Link href="/progress" className="card flex flex-col items-start gap-2">
           <TrendingUp className="h-5 w-5 text-[var(--teal-600)]" />
           <span className="text-sm font-semibold">Meu progresso</span>
