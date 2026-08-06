@@ -27,6 +27,18 @@ o progresso é local ao dispositivo/navegador e que sincronização entre dispos
 - Estado vazio: usuário sem tentativas ainda vê os cards zerados, sem erro (visto no protótipo:
   "Sequência: 0 dias", "Taxa de acerto: 0%").
 
+## Decisões de implementação
+
+- **Timezone da sequência (`streak`)**: dias-calendário em UTC, a partir de `Attempt.finishedAt` (que já é
+  UTC no Postgres). Não há timezone do usuário armazenado em `User`/`UserPreferences` no MVP (perfil é
+  anônimo, sem esse dado) — usar o fuso do navegador exigiria guardá-lo em algum lugar e recalcular
+  sequências ao mudar de fuso, complexidade não justificada para o MVP. Efeito colateral aceito: perto da
+  virada do dia, dependendo do fuso do usuário, um caso pode contar para o dia UTC "errado" do ponto de
+  vista local — mesmo tipo de trade-off que outros apps fazem sem timezone de usuário.
+- **Taxa de acerto**: por tentativa, não por resposta individual — `tentativas concluídas cuja melhor
+  classificação obtida foi "correta" / total de tentativas concluídas` (mesma noção de "melhor
+  classificação da tentativa" usada na fórmula de pontuação, `lib/score.ts`).
+
 ## Fora de escopo
 
 - Sincronização entre dispositivos / contas de usuário (Fase 2/9).

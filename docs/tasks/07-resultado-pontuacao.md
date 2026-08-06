@@ -28,6 +28,24 @@ Tela final observada no protótipo ao terminar um caso ("Ver resposta"):
 - UI da tela de resultado replicando as seções acima.
 - Gravar o resultado no histórico do perfil anônimo (liga com tarefa 08).
 
+## Fórmula de pontuação (implementada em `lib/score.ts`)
+
+```
+base = 100 se a melhor classificação obtida na tentativa for "correta"
+     =  50 se "parcialmente_correta"
+     =   0 se nunca passou de "incorreta" (ou nenhuma hipótese enviada)
+
+score = max(0, base − hints_used × 10)
+```
+
+"Melhor classificação obtida" considera todas as `AttemptResponse` da tentativa, não só a última — reenviar
+hipótese ("Nova hipótese") não é penalizado, então uma resposta correta enviada antes de avançar pistas
+conta mesmo que o usuário tenha reformulado depois. `hints_used` é o valor final gravado em `Attempt` no
+momento do `finish`. Modo completo (tarefa 05) nunca incrementa `hints_used`, então lá o score é sempre a
+pontuação base cheia — sem bônus por "poucas pistas" porque não existe pista nesse modo.
+
+ponytail: 10 pontos por pista é um valor fixo, ajustar quando houver dados reais de tentativas.
+
 ## Fora de escopo
 
 - Compartilhamento do resultado (esse fluxo é específico do desafio diário — tarefa 09, que não revela o

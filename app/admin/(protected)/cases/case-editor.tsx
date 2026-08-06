@@ -103,7 +103,7 @@ export function CaseEditor({
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="max-w-3xl space-y-8 text-sm">
       <section className="space-y-3">
-        <h2 className="font-semibold">Geral</h2>
+        <h2 className="font-semibold text-[var(--foreground)]">Geral</h2>
 
         <Field label="Título">
           <input {...register('title', { required: true })} className="input" />
@@ -181,7 +181,7 @@ export function CaseEditor({
 
       <section className="space-y-3">
         <div className="flex items-center justify-between">
-          <h2 className="font-semibold">Etapas</h2>
+          <h2 className="font-semibold text-[var(--foreground)]">Etapas</h2>
           <button
             type="button"
             className="btn-secondary"
@@ -198,7 +198,7 @@ export function CaseEditor({
           </button>
         </div>
         {stages.fields.map((field, index) => (
-          <div key={field.id} className="space-y-2 rounded border p-3">
+          <div key={field.id} className="card space-y-2">
             <div className="grid grid-cols-[80px_1fr_auto] gap-2">
               <input
                 type="number"
@@ -227,7 +227,7 @@ export function CaseEditor({
 
       <section className="space-y-3">
         <div className="flex items-center justify-between">
-          <h2 className="font-semibold">Respostas</h2>
+          <h2 className="font-semibold text-[var(--foreground)]">Respostas</h2>
           <button
             type="button"
             className="btn-secondary"
@@ -239,7 +239,7 @@ export function CaseEditor({
           </button>
         </div>
         {answers.fields.map((field, index) => (
-          <div key={field.id} className="space-y-2 rounded border p-3">
+          <div key={field.id} className="card space-y-2">
             <div className="grid grid-cols-[1fr_180px_auto] gap-2">
               <input
                 {...register(`answers.${index}.canonicalTerm`)}
@@ -346,13 +346,13 @@ function ListSection<T extends { id: string }>({
   return (
     <section className="space-y-3">
       <div className="flex items-center justify-between">
-        <h2 className="font-semibold">{title}</h2>
+        <h2 className="font-semibold text-[var(--foreground)]">{title}</h2>
         <button type="button" className="btn-secondary" onClick={onAdd}>
           {addLabel}
         </button>
       </div>
       {fields.map((field, index) => (
-        <div key={field.id} className="space-y-2 rounded border p-3">
+        <div key={field.id} className="card space-y-2">
           {renderItem(index)}
           <button type="button" className="btn-danger" onClick={() => onRemove(index)}>
             Remover
@@ -366,7 +366,7 @@ function ListSection<T extends { id: string }>({
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="space-y-1">
-      <label className="block text-xs font-medium text-neutral-600">{label}</label>
+      <label className="block text-xs font-medium text-[var(--muted)]">{label}</label>
       {children}
     </div>
   );

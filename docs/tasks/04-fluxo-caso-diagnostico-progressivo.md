@@ -34,13 +34,20 @@ anos", modo Progressivo:
   `status: concluida`, `finished_at`, calcula `score` (ver tarefa 07).
 - UI: reaproveitar os mesmos componentes de card/etapa entre modo Progressivo e Caso completo.
 
-## Decisão a confirmar antes de implementar
+## Decisão confirmada
 
-`docs/sugestao-arquitetura.md` (seção 13) especifica classificação **baseada em taxonomia do caso**
-(`canonical_term` + `accepted_terms` + `partial_terms`), com IA apenas para normalizar termos — não para
-avaliar livremente. O protótipo, porém, parece devolver uma avaliação de IA em texto livre e
-personalizada por resposta. Definir explicitamente qual abordagem entra no MVP antes de começar esta
-tarefa (ver tarefa 06) — isso muda o contrato de `POST /api/attempts/:id/answer`.
+Classificação **baseada em taxonomia do caso**, não avaliação de IA em texto livre. Motivos:
+
+- `docs/sugestao-arquitetura.md` §13, §28 e §31 recomendam explicitamente essa abordagem ("feedback
+  baseado em regras e taxonomia"; IA apenas assistiva, nunca decidindo a classificação sozinha).
+- O schema Prisma já está desenhado para taxonomia, não para avaliação livre: `CaseAnswer`
+  (`canonicalTerm` + `answerType` + `explanation`) com `AcceptedAnswerTerm[]` por termo, e
+  `AttemptResponse.classification`/`feedback` como campos derivados — não há campo para resposta de IA
+  gerada por tentativa.
+
+A leitura do protótipo em `/play` como "avaliação de IA livre" não corresponde ao MVP; tarefa 06
+implementa a comparação por taxonomia (`normalized_term` + fuzzy match), e `POST
+/api/attempts/:id/answer` (escopo abaixo) consome esse resultado.
 
 ## Fora de escopo
 

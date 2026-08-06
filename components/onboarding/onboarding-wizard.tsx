@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { ChevronLeft, GraduationCap, Stethoscope } from 'lucide-react';
 
 type Profession = { id: string; name: string };
 type Area = { id: string; name: string };
@@ -14,9 +15,9 @@ type ProfileData = {
   preferences: { difficulty: Difficulty | null } | null;
 };
 
-const USER_TYPES: { value: 'estudante' | 'profissional'; label: string }[] = [
-  { value: 'estudante', label: 'Estudante' },
-  { value: 'profissional', label: 'Profissional' },
+const USER_TYPES: { value: 'estudante' | 'profissional'; label: string; icon: typeof GraduationCap }[] = [
+  { value: 'estudante', label: 'Estudante', icon: GraduationCap },
+  { value: 'profissional', label: 'Profissional', icon: Stethoscope },
 ];
 
 const DIFFICULTIES: { value: Difficulty; label: string; description: string }[] = [
@@ -133,13 +134,15 @@ export default function OnboardingWizard({
   return (
     <div className="mx-auto flex min-h-full w-full max-w-md flex-col px-6 py-8">
       <div className="mb-6">
-        <div className="mb-2 flex items-center justify-between text-sm text-zinc-500">
-          <span>{STEP_TITLES[step - 1]}</span>
+        <div className="mb-2 flex items-center justify-between text-sm text-[var(--muted)]">
+          <span className="font-display font-semibold text-[var(--foreground)]">
+            {STEP_TITLES[step - 1]}
+          </span>
           <span>{step}/4</span>
         </div>
-        <div className="h-1.5 w-full rounded-full bg-zinc-200 dark:bg-zinc-800">
+        <div className="h-1.5 w-full rounded-full bg-[var(--border)]">
           <div
-            className="h-1.5 rounded-full bg-zinc-950 transition-all dark:bg-zinc-50"
+            className="h-1.5 rounded-full bg-[var(--teal-600)] transition-all"
             style={{ width: `${(step / 4) * 100}%` }}
           />
         </div>
@@ -148,20 +151,25 @@ export default function OnboardingWizard({
       <div className="flex-1">
         {step === 1 && (
           <div className="flex flex-col gap-3">
-            {USER_TYPES.map((option) => (
-              <button
-                key={option.value}
-                type="button"
-                onClick={() => setUserType(option.value)}
-                className={`rounded-xl border px-4 py-4 text-left font-medium transition-colors ${
-                  userType === option.value
-                    ? 'border-zinc-950 bg-zinc-950 text-white dark:border-zinc-50 dark:bg-zinc-50 dark:text-black'
-                    : 'border-zinc-200 dark:border-zinc-800'
-                }`}
-              >
-                {option.label}
-              </button>
-            ))}
+            {USER_TYPES.map((option) => {
+              const Icon = option.icon;
+              const active = userType === option.value;
+              return (
+                <button
+                  key={option.value}
+                  type="button"
+                  onClick={() => setUserType(option.value)}
+                  className={`flex items-center gap-3 rounded-2xl border px-4 py-4 text-left font-medium transition-colors ${
+                    active
+                      ? 'border-[var(--teal-600)] bg-[var(--teal-600)] text-white'
+                      : 'border-[var(--border)] bg-white hover:border-[var(--teal-500)]'
+                  }`}
+                >
+                  <Icon className={`h-5 w-5 ${active ? 'text-white' : 'text-[var(--teal-600)]'}`} />
+                  {option.label}
+                </button>
+              );
+            })}
           </div>
         )}
 
@@ -175,16 +183,16 @@ export default function OnboardingWizard({
                   setProfessionId(profession.id);
                   setUserAreas([]);
                 }}
-                className={`rounded-xl border px-4 py-4 text-left font-medium transition-colors ${
+                className={`rounded-2xl border px-4 py-4 text-left font-medium transition-colors ${
                   professionId === profession.id
-                    ? 'border-zinc-950 bg-zinc-950 text-white dark:border-zinc-50 dark:bg-zinc-50 dark:text-black'
-                    : 'border-zinc-200 dark:border-zinc-800'
+                    ? 'border-[var(--teal-600)] bg-[var(--teal-600)] text-white'
+                    : 'border-[var(--border)] bg-white hover:border-[var(--teal-500)]'
                 }`}
               >
                 {profession.name}
               </button>
             ))}
-            <p className="mt-2 text-sm text-zinc-500">
+            <p className="mt-2 text-sm text-[var(--muted)]">
               Mais profissões em breve: enfermagem, farmácia, nutrição.
             </p>
           </div>
@@ -192,18 +200,16 @@ export default function OnboardingWizard({
 
         {step === 3 && (
           <div className="flex flex-wrap gap-2">
-            {areasLoading && <p className="text-sm text-zinc-500">Carregando áreas…</p>}
+            {areasLoading && <p className="text-sm text-[var(--muted)]">Carregando áreas…</p>}
             {!areasLoading &&
               areas.map((area) => (
                 <button
                   key={area.id}
                   type="button"
                   onClick={() => toggleArea(area.id)}
-                  className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
-                    userAreas.includes(area.id)
-                      ? 'border-zinc-950 bg-zinc-950 text-white dark:border-zinc-50 dark:bg-zinc-50 dark:text-black'
-                      : 'border-zinc-200 dark:border-zinc-800'
-                  }`}
+                  className={
+                    userAreas.includes(area.id) ? 'pill-active px-4 py-2 text-sm' : 'pill px-4 py-2 text-sm'
+                  }
                 >
                   {area.name}
                 </button>
@@ -213,27 +219,26 @@ export default function OnboardingWizard({
 
         {step === 4 && (
           <div className="flex flex-col gap-3">
-            {DIFFICULTIES.map((option) => (
-              <button
-                key={option.value}
-                type="button"
-                onClick={() => setDifficulty(option.value)}
-                className={`rounded-xl border px-4 py-4 text-left transition-colors ${
-                  difficulty === option.value
-                    ? 'border-zinc-950 bg-zinc-950 text-white dark:border-zinc-50 dark:bg-zinc-50 dark:text-black'
-                    : 'border-zinc-200 dark:border-zinc-800'
-                }`}
-              >
-                <div className="font-medium">{option.label}</div>
-                <div
-                  className={`text-sm ${
-                    difficulty === option.value ? 'text-zinc-300' : 'text-zinc-500'
+            {DIFFICULTIES.map((option) => {
+              const active = difficulty === option.value;
+              return (
+                <button
+                  key={option.value}
+                  type="button"
+                  onClick={() => setDifficulty(option.value)}
+                  className={`rounded-2xl border px-4 py-4 text-left transition-colors ${
+                    active
+                      ? 'border-[var(--teal-600)] bg-[var(--teal-600)] text-white'
+                      : 'border-[var(--border)] bg-white hover:border-[var(--teal-500)]'
                   }`}
                 >
-                  {option.description}
-                </div>
-              </button>
-            ))}
+                  <div className="font-semibold">{option.label}</div>
+                  <div className={`text-sm ${active ? 'text-teal-50' : 'text-[var(--muted)]'}`}>
+                    {option.description}
+                  </div>
+                </button>
+              );
+            })}
           </div>
         )}
 
@@ -246,8 +251,9 @@ export default function OnboardingWizard({
             type="button"
             onClick={() => setStep(step - 1)}
             disabled={submitting}
-            className="flex-1 rounded-full border border-zinc-200 py-3 font-medium disabled:opacity-50 dark:border-zinc-800"
+            className="btn-secondary flex-1 py-3"
           >
+            <ChevronLeft className="h-4 w-4" />
             Voltar
           </button>
         )}
@@ -255,7 +261,7 @@ export default function OnboardingWizard({
           type="button"
           disabled={!canAdvance() || submitting}
           onClick={() => (step < 4 ? setStep(step + 1) : handleSubmit())}
-          className="flex-1 rounded-full bg-zinc-950 py-3 font-medium text-white disabled:opacity-50 dark:bg-zinc-50 dark:text-black"
+          className="btn-primary flex-1 py-3"
         >
           {step < 4 ? 'Continuar' : submitting ? 'Salvando…' : 'Começar'}
         </button>

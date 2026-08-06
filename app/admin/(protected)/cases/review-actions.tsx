@@ -34,9 +34,9 @@ export function ReviewActions({
   }
 
   return (
-    <div className="space-y-3 rounded border p-4 text-sm">
+    <div className="card space-y-3 text-sm">
       <p>
-        Status atual: <strong>{status}</strong>
+        Status atual: <span className="pill-active">{status}</span>
       </p>
 
       <div className="flex flex-wrap gap-2">

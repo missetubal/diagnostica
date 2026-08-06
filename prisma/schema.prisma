@@ -74,6 +74,11 @@ enum AttemptStatus {
   abandonada
 }
 
+enum AttemptMode {
+  progressivo
+  completo
+}
+
 enum ReviewDecision {
   aprovado
   reprovado
@@ -338,6 +343,7 @@ model Attempt {
   userId       String        @map("user_id")
   caseId       String        @map("case_id")
   status       AttemptStatus @default(iniciada)
+  mode         AttemptMode   @default(progressivo)
   currentStage Int           @default(0) @map("current_stage")
   hintsUsed    Int           @default(0) @map("hints_used")
   score        Int?

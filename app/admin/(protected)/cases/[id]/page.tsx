@@ -24,7 +24,9 @@ export default async function AdminCaseDetailPage({
 
   return (
     <div className="space-y-6">
-      <h1 className="text-xl font-semibold">{caseRecord.title}</h1>
+      <h1 className="font-display text-2xl font-semibold tracking-tight text-[var(--foreground)]">
+        {caseRecord.title}
+      </h1>
 
       <ReviewActions caseId={caseRecord.id} status={caseRecord.status} userRole={user.role} />
 
@@ -35,30 +37,32 @@ export default async function AdminCaseDetailPage({
         professions={professions}
       />
 
-      <section className="max-w-3xl space-y-2 text-sm">
-        <h2 className="font-semibold">Histórico de revisão</h2>
-        {caseRecord.reviews.length === 0 && <p className="text-neutral-500">Nenhuma revisão ainda.</p>}
+      <section className="max-w-3xl space-y-3 text-sm">
+        <h2 className="font-semibold text-[var(--foreground)]">Histórico de revisão</h2>
+        {caseRecord.reviews.length === 0 && (
+          <p className="text-[var(--muted)]">Nenhuma revisão ainda.</p>
+        )}
         {caseRecord.reviews.map((review) => (
-          <div key={review.id} className="rounded border p-3">
+          <div key={review.id} className="card">
             <p>
               <strong>{review.decision}</strong> por {review.reviewer.email ?? review.reviewer.id} em{' '}
               {review.reviewedAt.toLocaleString('pt-BR')}
             </p>
-            {review.comments && <p className="text-neutral-600">{review.comments}</p>}
+            {review.comments && <p className="mt-1 text-[var(--muted)]">{review.comments}</p>}
           </div>
         ))}
       </section>
 
-      <section className="max-w-3xl space-y-2 text-sm">
-        <h2 className="font-semibold">Reportes</h2>
-        {caseRecord.reports.length === 0 && <p className="text-neutral-500">Nenhum reporte.</p>}
+      <section className="max-w-3xl space-y-3 text-sm">
+        <h2 className="font-semibold text-[var(--foreground)]">Reportes</h2>
+        {caseRecord.reports.length === 0 && <p className="text-[var(--muted)]">Nenhum reporte.</p>}
         {caseRecord.reports.map((report) => (
-          <div key={report.id} className="rounded border p-3">
+          <div key={report.id} className="card">
             <p>
               <strong>{report.category}</strong> · {report.status} ·{' '}
               {report.createdAt.toLocaleDateString('pt-BR')}
             </p>
-            <p className="text-neutral-600">{report.description}</p>
+            <p className="mt-1 text-[var(--muted)]">{report.description}</p>
           </div>
         ))}
       </section>

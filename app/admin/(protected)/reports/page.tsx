@@ -12,7 +12,9 @@ export default async function AdminReportsPage({
 
   return (
     <div className="max-w-4xl space-y-6">
-      <h1 className="text-xl font-semibold">Reportes</h1>
+      <h1 className="font-display text-2xl font-semibold tracking-tight text-[var(--foreground)]">
+        Reportes
+      </h1>
 
       <form className="flex gap-3 text-sm">
         <select name="status" defaultValue={params.status ?? ''} className="input w-auto">
@@ -29,18 +31,21 @@ export default async function AdminReportsPage({
 
       <div className="space-y-3">
         {reports.map((report) => (
-          <div key={report.id} className="space-y-2 rounded border p-3 text-sm">
+          <div key={report.id} className="card space-y-2 text-sm">
             <p>
-              <Link href={`/admin/cases/${report.case.id}`} className="font-medium underline">
+              <Link
+                href={`/admin/cases/${report.case.id}`}
+                className="font-medium text-[var(--teal-600)] hover:text-[var(--teal-700)]"
+              >
                 {report.case.title}
               </Link>{' '}
               · {report.category} · {report.createdAt.toLocaleDateString('pt-BR')}
             </p>
-            <p className="text-neutral-600">{report.description}</p>
+            <p className="text-[var(--muted)]">{report.description}</p>
             <ReportRow reportId={report.id} status={report.status} resolution={report.resolution} />
           </div>
         ))}
-        {reports.length === 0 && <p className="text-neutral-500">Nenhum reporte encontrado.</p>}
+        {reports.length === 0 && <p className="text-[var(--muted)]">Nenhum reporte encontrado.</p>}
       </div>
     </div>
   );

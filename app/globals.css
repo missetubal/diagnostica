@@ -1,41 +1,77 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f6f7f4;
+  --surface: #ffffff;
+  --foreground: #1c1f1d;
+  --muted: #6b7280;
+  --border: #e6e8e3;
+
+  --teal-50: #effcf9;
+  --teal-100: #d3f5ee;
+  --teal-500: #14b89e;
+  --teal-600: #0d9488;
+  --teal-700: #0b7c72;
+
+  --orange-500: #f97316;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-teal-50: var(--teal-50);
+  --color-teal-100: var(--teal-100);
+  --color-teal-500: var(--teal-500);
+  --color-teal-600: var(--teal-600);
+  --color-teal-700: var(--teal-700);
+  --color-orange-500: var(--orange-500);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--background);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer components {
   .input {
-    @apply w-full rounded border px-3 py-2 text-sm;
+    @apply w-full rounded-xl border border-[var(--border)] bg-white px-3.5 py-2.5 text-sm text-[var(--foreground)] outline-none transition-colors placeholder:text-[var(--muted)] focus:border-[var(--teal-500)];
   }
+
   .btn-primary {
-    @apply rounded bg-black px-3 py-2 text-sm font-medium text-white disabled:opacity-50;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-[var(--teal-600)] px-4 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[var(--teal-700)] disabled:cursor-not-allowed disabled:opacity-50;
   }
+
   .btn-secondary {
-    @apply rounded border px-2 py-1 text-xs;
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-[var(--border)] bg-white px-4 py-2.5 text-sm font-medium text-[var(--foreground)] transition-colors hover:bg-[var(--teal-50)] disabled:cursor-not-allowed disabled:opacity-50;
   }
+
   .btn-danger {
-    @apply rounded border border-red-300 px-2 py-1 text-xs text-red-600;
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-red-200 px-3 py-1.5 text-xs font-medium text-red-600 transition-colors hover:bg-red-50;
+  }
+
+  .card {
+    @apply rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[0_1px_2px_rgba(0,0,0,0.03)];
+  }
+
+  .pill {
+    @apply rounded-full border border-[var(--border)] bg-white px-3 py-1 text-xs font-medium text-[var(--foreground)];
+  }
+
+  .pill-active {
+    @apply rounded-full bg-[var(--teal-600)] px-3 py-1 text-xs font-medium text-white;
+  }
+
+  .font-display {
+    font-family: var(--font-display);
   }
 }
