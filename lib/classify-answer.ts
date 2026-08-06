@@ -41,9 +41,15 @@ export function matchAnswer(
   const normalized = normalizeText(submittedText);
 
   for (const answer of answers) {
-    const candidates = [normalizeText(answer.canonicalTerm), ...answer.terms.map((t) => t.normalizedTerm)];
+    const candidates = [
+      normalizeText(answer.canonicalTerm),
+      ...answer.terms.map((t) => t.normalizedTerm),
+    ];
     if (candidates.includes(normalized)) {
-      return { classification: answer.answerType, feedback: feedbackFor(answer.answerType, answer.explanation) };
+      return {
+        classification: answer.answerType,
+        feedback: feedbackFor(answer.answerType, answer.explanation),
+      };
     }
   }
 
@@ -53,7 +59,10 @@ export function matchAnswer(
 // ponytail: limiar fixo, ajustar quando houver dados reais de tentativas.
 const FUZZY_SIMILARITY_THRESHOLD = 0.4;
 
-export async function classifyAnswer(caseId: string, submittedText: string): Promise<ClassificationResult> {
+export async function classifyAnswer(
+  caseId: string,
+  submittedText: string,
+): Promise<ClassificationResult> {
   const answers = await db.caseAnswer.findMany({
     where: { caseId },
     select: {
@@ -68,7 +77,9 @@ export async function classifyAnswer(caseId: string, submittedText: string): Pro
   if (exact.classification !== 'incorreta') return exact;
 
   const normalized = normalizeText(submittedText);
-  const fuzzy = await db.$queryRaw<{ answerType: AnswerType; explanation: string; similarity: number }[]>`
+  const fuzzy = await db.$queryRaw<
+    { answerType: AnswerType; explanation: string; similarity: number }[]
+  >`
     SELECT * FROM (
       SELECT ca."answer_type" AS "answerType", ca."explanation", similarity(ca."canonical_term", ${normalized}) AS similarity
       FROM case_answers ca
@@ -85,7 +96,10 @@ export async function classifyAnswer(caseId: string, submittedText: string): Pro
 
   const best = fuzzy[0];
   if (best && best.similarity >= FUZZY_SIMILARITY_THRESHOLD) {
-    return { classification: best.answerType, feedback: feedbackFor(best.answerType, best.explanation) };
+    return {
+      classification: best.answerType,
+      feedback: feedbackFor(best.answerType, best.explanation),
+    };
   }
 
   return exact;

@@ -36,7 +36,7 @@ o progresso é local ao dispositivo/navegador e que sincronização entre dispos
   virada do dia, dependendo do fuso do usuário, um caso pode contar para o dia UTC "errado" do ponto de
   vista local — mesmo tipo de trade-off que outros apps fazem sem timezone de usuário.
 - **Taxa de acerto**: por tentativa, não por resposta individual — `tentativas concluídas cuja melhor
-  classificação obtida foi "correta" / total de tentativas concluídas` (mesma noção de "melhor
+classificação obtida foi "correta" / total de tentativas concluídas` (mesma noção de "melhor
   classificação da tentativa" usada na fórmula de pontuação, `lib/score.ts`).
 
 ## Fora de escopo

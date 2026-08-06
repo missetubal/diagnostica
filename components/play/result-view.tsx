@@ -2,8 +2,22 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { BookOpen, Check, ExternalLink, Flag, ListChecks, RotateCcw, Share2, Sparkles, User } from 'lucide-react';
-import { CLASSIFICATION_LABELS, CLASSIFICATION_STYLE, type AnswerType } from '@/lib/classification-ui';
+import {
+  BookOpen,
+  Check,
+  ExternalLink,
+  Flag,
+  ListChecks,
+  RotateCcw,
+  Share2,
+  Sparkles,
+  User,
+} from 'lucide-react';
+import {
+  CLASSIFICATION_LABELS,
+  CLASSIFICATION_STYLE,
+  type AnswerType,
+} from '@/lib/classification-ui';
 import { bestClassification } from '@/lib/score';
 import { buildShareText } from '@/lib/daily-share';
 import { DIFFICULTY_LABELS } from '@/lib/labels';
@@ -29,7 +43,12 @@ type AttemptResult = {
     learning_points: string[];
     references: { title: string; url: string | null }[];
   };
-  responses: { id: string; submitted_text: string; classification: AnswerType | null; stage_order: number }[];
+  responses: {
+    id: string;
+    submitted_text: string;
+    classification: AnswerType | null;
+    stage_order: number;
+  }[];
 };
 
 const STATUS_PHRASE: Record<AnswerType | 'nenhuma', string> = {
@@ -57,7 +76,8 @@ export default function ResultView({ attemptId }: { attemptId: string }) {
       try {
         const res = await fetch(`/api/attempts/${attemptId}/result`);
         const body = await res.json();
-        if (!res.ok) throw new Error(extractErrorMessage(body, 'Não foi possível carregar o resultado.'));
+        if (!res.ok)
+          throw new Error(extractErrorMessage(body, 'Não foi possível carregar o resultado.'));
         if (!cancelled) setResult(body);
       } catch (err) {
         if (!cancelled) setError((err as Error).message);
@@ -98,7 +118,10 @@ export default function ResultView({ attemptId }: { attemptId: string }) {
     if (!result) return;
     const text = buildShareText({
       dateLabel: result.finished_at
-        ? new Date(result.finished_at).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
+        ? new Date(result.finished_at).toLocaleDateString('pt-BR', {
+            day: '2-digit',
+            month: '2-digit',
+          })
         : '',
       areaName: result.case.area.name,
       totalStages: result.total_stages,
@@ -128,7 +151,9 @@ export default function ResultView({ attemptId }: { attemptId: string }) {
 
   return (
     <div className="mx-auto flex w-full max-w-md flex-1 flex-col px-6 py-8">
-      <p className="text-xs font-semibold tracking-wide text-[var(--muted)] uppercase">Caso encerrado</p>
+      <p className="text-xs font-semibold tracking-wide text-[var(--muted)] uppercase">
+        Caso encerrado
+      </p>
       <p className="font-display mt-1 text-4xl font-bold">{result.score ?? 0} PTS</p>
       <p className="mt-1 text-sm text-[var(--muted)]">{phrase}</p>
 
@@ -152,8 +177,12 @@ export default function ResultView({ attemptId }: { attemptId: string }) {
 
       {result.case.diagnosis && (
         <div className="card mt-4">
-          <p className="text-xs font-semibold tracking-wide text-[var(--teal-600)] uppercase">Diagnóstico</p>
-          <p className="font-display mt-1 text-lg font-semibold">{result.case.diagnosis.canonical_term}</p>
+          <p className="text-xs font-semibold tracking-wide text-[var(--teal-600)] uppercase">
+            Diagnóstico
+          </p>
+          <p className="font-display mt-1 text-lg font-semibold">
+            {result.case.diagnosis.canonical_term}
+          </p>
           <p className="mt-2 text-xs font-medium text-[var(--muted)]">Justificativa clínica</p>
           <p className="mt-1 text-sm leading-relaxed">{result.case.diagnosis.explanation}</p>
         </div>
@@ -168,7 +197,9 @@ export default function ResultView({ attemptId }: { attemptId: string }) {
             {result.case.differentials.map((d) => (
               <li key={d.name}>
                 <p className="text-sm font-semibold">{d.name}</p>
-                <p className="mt-0.5 text-sm leading-relaxed text-[var(--muted)]">{d.explanation}</p>
+                <p className="mt-0.5 text-sm leading-relaxed text-[var(--muted)]">
+                  {d.explanation}
+                </p>
               </li>
             ))}
           </ul>
@@ -221,10 +252,14 @@ export default function ResultView({ attemptId }: { attemptId: string }) {
 
       {result.responses.length > 0 && (
         <div className="mt-4">
-          <p className="text-xs font-semibold tracking-wide text-[var(--muted)] uppercase">Suas tentativas</p>
+          <p className="text-xs font-semibold tracking-wide text-[var(--muted)] uppercase">
+            Suas tentativas
+          </p>
           <div className="mt-2 flex flex-col gap-2">
             {result.responses.map((response) => {
-              const style = response.classification ? CLASSIFICATION_STYLE[response.classification] : null;
+              const style = response.classification
+                ? CLASSIFICATION_STYLE[response.classification]
+                : null;
               return (
                 <div
                   key={response.id}
@@ -232,7 +267,9 @@ export default function ResultView({ attemptId }: { attemptId: string }) {
                 >
                   <p className="font-medium">{response.submitted_text}</p>
                   {response.classification && (
-                    <p className="mt-0.5 text-xs opacity-80">{CLASSIFICATION_LABELS[response.classification]}</p>
+                    <p className="mt-0.5 text-xs opacity-80">
+                      {CLASSIFICATION_LABELS[response.classification]}
+                    </p>
                   )}
                 </div>
               );
@@ -252,15 +289,19 @@ export default function ResultView({ attemptId }: { attemptId: string }) {
         <Link href="/play" className="btn-primary flex-1">
           Novo caso
         </Link>
-        <button type="button" disabled className="btn-secondary flex-1 cursor-not-allowed opacity-60">
+        <button
+          type="button"
+          disabled
+          className="btn-secondary flex-1 cursor-not-allowed opacity-60"
+        >
           <Flag className="h-4 w-4" />
           Reportar
         </button>
       </div>
 
       <p className="mt-4 text-center text-xs text-[var(--muted)]">
-        Conteúdo educacional para treino de raciocínio clínico. Não substitui protocolos, diretrizes ou
-        supervisão profissional.
+        Conteúdo educacional para treino de raciocínio clínico. Não substitui protocolos, diretrizes
+        ou supervisão profissional.
       </p>
     </div>
   );

@@ -25,7 +25,12 @@ export async function GET() {
     return NextResponse.json({
       case: caseRecord,
       attempt: attempt
-        ? { id: attempt.id, status: attempt.status, score: attempt.score, hints_used: attempt.hintsUsed }
+        ? {
+            id: attempt.id,
+            status: attempt.status,
+            score: attempt.score,
+            hints_used: attempt.hintsUsed,
+          }
         : null,
     });
   } catch (error) {

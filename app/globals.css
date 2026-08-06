@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #f6f7f4;
@@ -44,7 +44,7 @@ body {
 
 @layer components {
   .input {
-    @apply w-full rounded-xl border border-[var(--border)] bg-white px-3.5 py-2.5 text-sm text-[var(--foreground)] outline-none transition-colors placeholder:text-[var(--muted)] focus:border-[var(--teal-500)];
+    @apply w-full rounded-xl border border-[var(--border)] bg-white px-3.5 py-2.5 text-sm text-[var(--foreground)] transition-colors outline-none placeholder:text-[var(--muted)] focus:border-[var(--teal-500)];
   }
 
   .btn-primary {

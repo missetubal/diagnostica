@@ -14,7 +14,9 @@ export function buildShareText(input: {
   classification: AnswerType | null;
 }): string {
   const revealedStages = Math.min(input.hintsUsed + 1, input.totalStages);
-  const grid = Array.from({ length: input.totalStages }, (_, i) => (i < revealedStages ? '🟩' : '⬜')).join('');
+  const grid = Array.from({ length: input.totalStages }, (_, i) =>
+    i < revealedStages ? '🟩' : '⬜',
+  ).join('');
 
   const resultLabel =
     input.classification === 'correta'

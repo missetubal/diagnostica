@@ -32,7 +32,10 @@ assert.equal(bySynonym.classification, 'correta');
 assert.equal(bySynonym.feedback, 'Explicação completa do diagnóstico.');
 
 // Termo canônico em si também conta como correta.
-const byCanonical = matchAnswer(answers, 'Infarto Agudo do Miocárdio com Supradesnivelamento do Segmento ST');
+const byCanonical = matchAnswer(
+  answers,
+  'Infarto Agudo do Miocárdio com Supradesnivelamento do Segmento ST',
+);
 assert.equal(byCanonical.classification, 'correta');
 
 // Termo parcial nunca revela a explicação completa (critério de aceite da tarefa 04).

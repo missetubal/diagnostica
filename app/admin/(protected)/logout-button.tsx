@@ -14,7 +14,10 @@ export function LogoutButton() {
   }
 
   return (
-    <button onClick={handleLogout} className="font-medium text-[var(--teal-600)] hover:text-[var(--teal-700)]">
+    <button
+      onClick={handleLogout}
+      className="font-medium text-[var(--teal-600)] hover:text-[var(--teal-700)]"
+    >
       Sair
     </button>
   );

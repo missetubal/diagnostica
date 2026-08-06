@@ -10,7 +10,10 @@ import { getAuthenticatedAdminUser } from '@/lib/auth';
 export async function requireReviewerOrResponse() {
   const user = await getAuthenticatedAdminUser();
   if (!user) {
-    return { user: null, response: NextResponse.json({ error: 'Não autenticado.' }, { status: 401 }) };
+    return {
+      user: null,
+      response: NextResponse.json({ error: 'Não autenticado.' }, { status: 401 }),
+    };
   }
   return { user, response: null };
 }
@@ -18,7 +21,10 @@ export async function requireReviewerOrResponse() {
 export async function requireAdminOrResponse() {
   const user = await getAuthenticatedAdminUser();
   if (!user) {
-    return { user: null, response: NextResponse.json({ error: 'Não autenticado.' }, { status: 401 }) };
+    return {
+      user: null,
+      response: NextResponse.json({ error: 'Não autenticado.' }, { status: 401 }),
+    };
   }
   if (user.role !== 'admin') {
     return {

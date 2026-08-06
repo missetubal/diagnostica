@@ -37,7 +37,8 @@ export default function DailyChallengeView() {
       try {
         const res = await fetch('/api/daily/challenge');
         const body = await res.json();
-        if (!res.ok) throw new Error(extractErrorMessage(body, 'Não foi possível carregar o desafio diário.'));
+        if (!res.ok)
+          throw new Error(extractErrorMessage(body, 'Não foi possível carregar o desafio diário.'));
         if (!cancelled) setStatus(body);
       } catch (err) {
         if (!cancelled) setError((err as Error).message);
@@ -54,7 +55,8 @@ export default function DailyChallengeView() {
     try {
       const res = await fetch('/api/daily/challenge/start', { method: 'POST' });
       const body = await res.json();
-      if (!res.ok) throw new Error(extractErrorMessage(body, 'Não foi possível iniciar o desafio.'));
+      if (!res.ok)
+        throw new Error(extractErrorMessage(body, 'Não foi possível iniciar o desafio.'));
       setStartedAttemptId(body.id);
     } catch (err) {
       setError((err as Error).message);
@@ -63,7 +65,9 @@ export default function DailyChallengeView() {
     }
   }
 
-  const activeAttemptId = startedAttemptId ?? (status?.attempt && status.attempt.status !== 'concluida' ? status.attempt.id : null);
+  const activeAttemptId =
+    startedAttemptId ??
+    (status?.attempt && status.attempt.status !== 'concluida' ? status.attempt.id : null);
 
   if (activeAttemptId) {
     return <CaseAttempt mode="progressivo" initialAttemptId={activeAttemptId} />;
@@ -119,8 +123,8 @@ export default function DailyChallengeView() {
     <div className="mx-auto flex w-full max-w-md flex-1 flex-col px-6 py-8">
       <h1 className="font-display text-3xl font-semibold tracking-tight">Desafio Diário</h1>
       <p className="mt-2 text-sm text-[var(--muted)]">
-        Um caso clínico por dia, igual para todos de sua profissão. Você só pode jogar uma vez por dia —
-        use bem as pistas.
+        Um caso clínico por dia, igual para todos de sua profissão. Você só pode jogar uma vez por
+        dia — use bem as pistas.
       </p>
 
       <div className="mt-4 flex flex-wrap items-center gap-2">
@@ -149,7 +153,12 @@ export default function DailyChallengeView() {
         </li>
       </ul>
 
-      <button type="button" className="btn-primary mt-6 w-full" disabled={starting} onClick={handleStart}>
+      <button
+        type="button"
+        className="btn-primary mt-6 w-full"
+        disabled={starting}
+        onClick={handleStart}
+      >
         {starting ? 'Iniciando…' : 'Iniciar desafio'}
       </button>
     </div>

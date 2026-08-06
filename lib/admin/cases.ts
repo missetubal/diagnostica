@@ -67,7 +67,9 @@ export function toAdminCaseInput(caseRecord: CaseWithRelations): AdminCaseInput 
       title: reference.title,
       url: reference.url ?? '',
       referenceType: reference.referenceType ?? undefined,
-      accessedAt: reference.accessedAt ? reference.accessedAt.toISOString().slice(0, 10) : undefined,
+      accessedAt: reference.accessedAt
+        ? reference.accessedAt.toISOString().slice(0, 10)
+        : undefined,
     })),
   };
 }

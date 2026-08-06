@@ -18,7 +18,7 @@ export default async function PerfilPage() {
   return (
     <div className="mx-auto flex w-full max-w-md flex-1 flex-col px-6 py-8">
       <h1 className="font-display text-3xl font-semibold tracking-tight">Perfil</h1>
-      <p className="mt-1 text-sm text-muted">Suas preferências de treino</p>
+      <p className="text-muted mt-1 text-sm">Suas preferências de treino</p>
 
       <div className="card mt-6 flex flex-col divide-y divide-[var(--border)]">
         <div className="flex items-center gap-3 py-3 first:pt-0">
@@ -26,7 +26,7 @@ export default async function PerfilPage() {
             <GraduationCap className="h-4.5 w-4.5" />
           </span>
           <div>
-            <p className="text-xs text-muted">Você é</p>
+            <p className="text-muted text-xs">Você é</p>
             <p className="text-sm font-semibold">
               {profile.user_type ? USER_TYPE_LABELS[profile.user_type] : '—'}
             </p>
@@ -38,7 +38,7 @@ export default async function PerfilPage() {
             <Stethoscope className="h-4.5 w-4.5" />
           </span>
           <div>
-            <p className="text-xs text-muted">Áreas de interesse</p>
+            <p className="text-muted text-xs">Áreas de interesse</p>
             {profile.user_areas.length > 0 ? (
               <div className="mt-1.5 flex flex-wrap gap-1.5">
                 {profile.user_areas.map((area) => (
@@ -60,7 +60,9 @@ export default async function PerfilPage() {
           <div>
             <p className="text-xs text-[var(--muted)]">Nível de dificuldade</p>
             <p className="text-sm font-semibold">
-              {profile.preferences?.difficulty ? DIFFICULTY_LABELS[profile.preferences.difficulty] : '—'}
+              {profile.preferences?.difficulty
+                ? DIFFICULTY_LABELS[profile.preferences.difficulty]
+                : '—'}
             </p>
           </div>
         </div>

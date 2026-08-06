@@ -50,7 +50,11 @@ export default async function AdminCasesPage({
           ))}
         </select>
 
-        <select name="profession_id" defaultValue={params.profession_id ?? ''} className="input w-auto">
+        <select
+          name="profession_id"
+          defaultValue={params.profession_id ?? ''}
+          className="input w-auto"
+        >
           <option value="">Todas as profissões</option>
           {professions.map((profession) => (
             <option key={profession.id} value={profession.id}>

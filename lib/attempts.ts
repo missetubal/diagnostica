@@ -62,7 +62,11 @@ function serializeAttempt(attempt: AttemptWithRelations) {
   };
 }
 
-export async function startAttempt(userId: string, caseId: string, mode: AttemptMode = 'progressivo') {
+export async function startAttempt(
+  userId: string,
+  caseId: string,
+  mode: AttemptMode = 'progressivo',
+) {
   const caseRecord = await db.case.findUnique({
     where: { id: caseId, status: 'publicado' },
     include: { stages: true },
@@ -83,7 +87,10 @@ export async function startAttempt(userId: string, caseId: string, mode: Attempt
 }
 
 async function getOwnedAttempt(attemptId: string, userId: string) {
-  const attempt = await db.attempt.findUnique({ where: { id: attemptId }, include: attemptInclude });
+  const attempt = await db.attempt.findUnique({
+    where: { id: attemptId },
+    include: attemptInclude,
+  });
   if (!attempt || attempt.userId !== userId) {
     throw new Error('Tentativa não encontrada.');
   }
@@ -105,7 +112,11 @@ export async function revealHint(attemptId: string, userId: string) {
 
   const updated = await db.attempt.update({
     where: { id: attemptId },
-    data: { currentStage: attempt.currentStage + 1, hintsUsed: attempt.hintsUsed + 1, status: 'em_andamento' },
+    data: {
+      currentStage: attempt.currentStage + 1,
+      hintsUsed: attempt.hintsUsed + 1,
+      status: 'em_andamento',
+    },
     include: attemptInclude,
   });
   return serializeAttempt(updated);
@@ -167,7 +178,10 @@ const resultInclude = {
       stages: { select: { id: true } },
     },
   },
-  responses: { orderBy: { createdAt: 'asc' }, include: { stage: { select: { orderIndex: true } } } },
+  responses: {
+    orderBy: { createdAt: 'asc' },
+    include: { stage: { select: { orderIndex: true } } },
+  },
 } satisfies Prisma.AttemptInclude;
 
 /**
@@ -199,8 +213,13 @@ export async function getAttemptResult(attemptId: string, userId: string) {
       area: attempt.case.area,
       patient: attempt.case.patientProfile,
       source_type: attempt.case.sourceType,
-      diagnosis: diagnosis ? { canonical_term: diagnosis.canonicalTerm, explanation: diagnosis.explanation } : null,
-      differentials: attempt.case.differentials.map((d) => ({ name: d.name, explanation: d.explanation })),
+      diagnosis: diagnosis
+        ? { canonical_term: diagnosis.canonicalTerm, explanation: diagnosis.explanation }
+        : null,
+      differentials: attempt.case.differentials.map((d) => ({
+        name: d.name,
+        explanation: d.explanation,
+      })),
       learning_points: attempt.case.learningPoints.map((p) => p.content),
       references: attempt.case.references.map((r) => ({ title: r.title, url: r.url })),
     },

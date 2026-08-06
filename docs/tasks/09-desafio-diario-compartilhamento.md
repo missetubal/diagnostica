@@ -32,7 +32,7 @@ botão "Iniciar desafio". O modelo `DailyChallenge` (`date` + `case_id`) já exi
 - **Sem job/cron real**: a escolha do caso do dia é determinística — hash de `data + profession_id` sobre
   a lista ordenada de casos publicados daquela profissão — calculada sob demanda na primeira leitura do
   dia (`ensureDailyChallenge`, `lib/daily-challenge.ts`) e persistida via `upsert` (`INSERT ... ON
-  CONFLICT`, atômico no Postgres). Chamadas concorrentes calculam o mesmo caso, então não há race nem
+CONFLICT`, atômico no Postgres). Chamadas concorrentes calculam o mesmo caso, então não há race nem
   necessidade de lock/fila — cron da Vercel viraria só um "aquecimento" opcional, não uma dependência de
   corretude.
 - **Uma tentativa por desafio**, não "por `user_id + case_id + data`" como o escopo original sugeria —

@@ -26,7 +26,10 @@ function deterministicIndex(seed: string, length: number): number {
  * ponytail: escolha por hash simples, sem pesos/histórico de repetição —
  * upgrade se casos repetirem com frequência incômoda entre dias.
  */
-export async function ensureDailyChallenge(professionId: string, dateKey: string = todayUtcDateKey()) {
+export async function ensureDailyChallenge(
+  professionId: string,
+  dateKey: string = todayUtcDateKey(),
+) {
   const date = new Date(`${dateKey}T00:00:00Z`);
 
   const existing = await db.dailyChallenge.findUnique({
@@ -43,7 +46,8 @@ export async function ensureDailyChallenge(professionId: string, dateKey: string
     throw new Error('Nenhum caso publicado disponível para o desafio diário dessa profissão.');
   }
 
-  const caseId = eligibleCases[deterministicIndex(`${dateKey}:${professionId}`, eligibleCases.length)].id;
+  const caseId =
+    eligibleCases[deterministicIndex(`${dateKey}:${professionId}`, eligibleCases.length)].id;
 
   return db.dailyChallenge.upsert({
     where: { date_professionId: { date, professionId } },

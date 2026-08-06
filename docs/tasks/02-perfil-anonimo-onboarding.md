@@ -11,11 +11,13 @@ protótipo reabre o mesmo wizard em modo de edição (`/onboarding?edit=1`) — 
 ## Escopo
 
 **Perfil anônimo**
+
 - Gerar um `device_id` no cliente (ex.: UUID em cookie httpOnly ou localStorage) na primeira visita.
 - `POST /api/profile`: cria o `User` (perfil anônimo) se ainda não existir para aquele `device_id`.
 - `GET /api/profile/me`: retorna o perfil atual (ou 404 se ainda não passou pelo onboarding).
 
 **Onboarding — 4 passos, com barra de progresso (`1/4` … `4/4`) e botão voltar:**
+
 1. **Você é…** — Estudante ou Profissional (`user_type`).
 2. **Sua profissão** — Medicina ou Fisioterapia, com nota "Mais profissões em breve: enfermagem,
    farmácia, nutrição." (`profession_id`).
@@ -23,6 +25,7 @@ protótipo reabre o mesmo wizard em modo de edição (`/onboarding?edit=1`) — 
    (`user_areas`).
 4. **Nível de dificuldade** — Fácil / Médio / Difícil, cada um com a descrição curta vista no protótipo
    (ex. "Condições comuns, apresentação típica, poucos diferenciais.") (`user_preferences.difficulty`).
+
 - Botão final "Começar" (`Continuar` nos passos 1–3) grava tudo via `PATCH /api/users/me` +
   `PATCH /api/users/me/preferences` e redireciona ao dashboard.
 - Reabrir o mesmo wizard em `/onboarding?edit=1` a partir da aba "Perfil", pré-preenchido com os valores

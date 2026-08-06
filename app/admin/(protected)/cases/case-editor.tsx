@@ -232,7 +232,12 @@ export function CaseEditor({
             type="button"
             className="btn-secondary"
             onClick={() =>
-              answers.append({ canonicalTerm: '', answerType: 'correta', explanation: '', termsText: '' })
+              answers.append({
+                canonicalTerm: '',
+                answerType: 'correta',
+                explanation: '',
+                termsText: '',
+              })
             }
           >
             + Resposta
@@ -278,7 +283,11 @@ export function CaseEditor({
         onRemove={differentials.remove}
         renderItem={(index) => (
           <>
-            <input {...register(`differentials.${index}.name`)} placeholder="Nome" className="input" />
+            <input
+              {...register(`differentials.${index}.name`)}
+              placeholder="Nome"
+              className="input"
+            />
             <textarea
               {...register(`differentials.${index}.explanation`)}
               placeholder="Explicação"
@@ -313,8 +322,16 @@ export function CaseEditor({
         onRemove={references.remove}
         renderItem={(index) => (
           <>
-            <input {...register(`references.${index}.title`)} placeholder="Título" className="input" />
-            <input {...register(`references.${index}.url`)} placeholder="URL (opcional)" className="input" />
+            <input
+              {...register(`references.${index}.title`)}
+              placeholder="Título"
+              className="input"
+            />
+            <input
+              {...register(`references.${index}.url`)}
+              placeholder="URL (opcional)"
+              className="input"
+            />
           </>
         )}
       />

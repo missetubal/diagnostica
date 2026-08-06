@@ -7,8 +7,8 @@ export default function PlaySelectPage() {
       <h1 className="font-display text-3xl font-semibold tracking-tight">Escolha o modo</h1>
       <p className="mt-2 flex gap-2 text-sm text-[var(--muted)]">
         <ShieldAlert className="mt-0.5 h-4 w-4 shrink-0" />
-        Conteúdo educacional para treino de raciocínio clínico. Não substitui protocolos, diretrizes ou
-        supervisão profissional — consulte sempre suas referências e supervisores.
+        Conteúdo educacional para treino de raciocínio clínico. Não substitui protocolos, diretrizes
+        ou supervisão profissional — consulte sempre suas referências e supervisores.
       </p>
 
       <div className="mt-6 flex flex-col gap-3">
@@ -29,7 +29,9 @@ export default function PlaySelectPage() {
         >
           <span className="flex-1">
             <span className="font-display block text-base font-semibold">Caso completo</span>
-            <span className="block text-sm text-[var(--muted)]">Todas as informações de uma vez</span>
+            <span className="block text-sm text-[var(--muted)]">
+              Todas as informações de uma vez
+            </span>
           </span>
           <ChevronRight className="h-5 w-5 text-[var(--muted)]" />
         </Link>

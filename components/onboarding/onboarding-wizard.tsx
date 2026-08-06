@@ -15,7 +15,11 @@ type ProfileData = {
   preferences: { difficulty: Difficulty | null } | null;
 };
 
-const USER_TYPES: { value: 'estudante' | 'profissional'; label: string; icon: typeof GraduationCap }[] = [
+const USER_TYPES: {
+  value: 'estudante' | 'profissional';
+  label: string;
+  icon: typeof GraduationCap;
+}[] = [
   { value: 'estudante', label: 'Estudante', icon: GraduationCap },
   { value: 'profissional', label: 'Profissional', icon: Stethoscope },
 ];
@@ -208,7 +212,9 @@ export default function OnboardingWizard({
                   type="button"
                   onClick={() => toggleArea(area.id)}
                   className={
-                    userAreas.includes(area.id) ? 'pill-active px-4 py-2 text-sm' : 'pill px-4 py-2 text-sm'
+                    userAreas.includes(area.id)
+                      ? 'pill-active px-4 py-2 text-sm'
+                      : 'pill px-4 py-2 text-sm'
                   }
                 >
                   {area.name}

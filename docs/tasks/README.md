@@ -7,19 +7,19 @@ do fluxo demonstrado no protótipo em `case-clinic-flow.base44.app` e da arquite
 
 ## Ordem recomendada
 
-| # | Tarefa | Prioridade | Depende de |
-|---|--------|------------|------------|
-| 01 | [Migrations Supabase + conta admin](01-supabase-migrations-admin-account.md) | P0 | — |
-| 11 | [Landing, navegação e shell do app](11-navegacao-shell.md) | P0 | — (paralelo a 01) |
-| 02 | [Perfil anônimo e onboarding](02-perfil-anonimo-onboarding.md) | P0 | 01 |
-| 03 | [Painel administrativo de revisão de casos](03-admin-panel-revisao-casos.md) | P0 | 01 |
-| 06 | [Classificação de respostas](06-classificacao-respostas.md) | P0 | 03 |
-| 04 | [Fluxo de caso: diagnóstico progressivo](04-fluxo-caso-diagnostico-progressivo.md) | P0 | 02, 03, 06 |
-| 07 | [Resultado e pontuação](07-resultado-pontuacao.md) | P0 | 04 |
-| 08 | [Dashboard, histórico e progresso](08-historico-progresso.md) | P0 | 02, 07 |
-| 09 | [Desafio diário e compartilhamento](09-desafio-diario-compartilhamento.md) | P0 | 04, 07, 08 |
-| 10 | [Reportar problema](10-reportar-problema.md) | P0 | 04, 07 |
-| 05 | [Modo "Caso completo"](05-modo-caso-completo.md) | P1 | 04 |
+| #   | Tarefa                                                                             | Prioridade | Depende de        |
+| --- | ---------------------------------------------------------------------------------- | ---------- | ----------------- |
+| 01  | [Migrations Supabase + conta admin](01-supabase-migrations-admin-account.md)       | P0         | —                 |
+| 11  | [Landing, navegação e shell do app](11-navegacao-shell.md)                         | P0         | — (paralelo a 01) |
+| 02  | [Perfil anônimo e onboarding](02-perfil-anonimo-onboarding.md)                     | P0         | 01                |
+| 03  | [Painel administrativo de revisão de casos](03-admin-panel-revisao-casos.md)       | P0         | 01                |
+| 06  | [Classificação de respostas](06-classificacao-respostas.md)                        | P0         | 03                |
+| 04  | [Fluxo de caso: diagnóstico progressivo](04-fluxo-caso-diagnostico-progressivo.md) | P0         | 02, 03, 06        |
+| 07  | [Resultado e pontuação](07-resultado-pontuacao.md)                                 | P0         | 04                |
+| 08  | [Dashboard, histórico e progresso](08-historico-progresso.md)                      | P0         | 02, 07            |
+| 09  | [Desafio diário e compartilhamento](09-desafio-diario-compartilhamento.md)         | P0         | 04, 07, 08        |
+| 10  | [Reportar problema](10-reportar-problema.md)                                       | P0         | 04, 07            |
+| 05  | [Modo "Caso completo"](05-modo-caso-completo.md)                                   | P1         | 04                |
 
 Numeração dos arquivos segue as fases do roadmap técnico (seção 25 da arquitetura), não a ordem de
 execução — use a coluna "Depende de" acima para sequenciar.

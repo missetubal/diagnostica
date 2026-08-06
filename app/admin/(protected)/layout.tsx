@@ -21,7 +21,10 @@ export default async function AdminProtectedLayout({ children }: { children: Rea
               <Link href="/admin/cases" className="transition-colors hover:text-[var(--teal-600)]">
                 Casos
               </Link>
-              <Link href="/admin/reports" className="transition-colors hover:text-[var(--teal-600)]">
+              <Link
+                href="/admin/reports"
+                className="transition-colors hover:text-[var(--teal-600)]"
+              >
                 Reportes
               </Link>
             </nav>

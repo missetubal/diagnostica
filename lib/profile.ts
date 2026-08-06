@@ -28,9 +28,7 @@ export function serializeProfile(user: ProfileWithRelations) {
     user_type: user.userType,
     profession_id: user.professionId,
     user_areas: user.areas.map(({ area }) => ({ id: area.id, name: area.name, slug: area.slug })),
-    preferences: user.preferences
-      ? { difficulty: user.preferences.difficulty }
-      : null,
+    preferences: user.preferences ? { difficulty: user.preferences.difficulty } : null,
     onboarding_completed_at: user.onboardingCompletedAt,
   };
 }

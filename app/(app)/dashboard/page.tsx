@@ -29,7 +29,8 @@ export default async function DashboardPage() {
           <p className="text-sm text-[var(--muted)]">Sequência</p>
           <p className="mt-2 flex items-center gap-1.5 text-2xl font-semibold">
             <Flame className="h-5 w-5 text-orange-500" />
-            {stats.streak_current} <span className="text-sm font-normal text-[var(--muted)]">dias</span>
+            {stats.streak_current}{' '}
+            <span className="text-sm font-normal text-[var(--muted)]">dias</span>
           </p>
         </div>
         <div className="card">

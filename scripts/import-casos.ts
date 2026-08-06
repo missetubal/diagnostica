@@ -46,7 +46,9 @@ async function main() {
     const professions = await db.profession.findMany({ where: { slug: { in: data.professions } } });
     if (professions.length !== data.professions.length) {
       invalid++;
-      console.error(`[inválido] ${file}: profissão não cadastrada em [${data.professions.join(', ')}].`);
+      console.error(
+        `[inválido] ${file}: profissão não cadastrada em [${data.professions.join(', ')}].`,
+      );
       continue;
     }
 
@@ -112,7 +114,9 @@ async function main() {
     created++;
   }
 
-  console.log(`Import concluído: ${created} criados, ${skipped} já existiam, ${invalid} inválidos.`);
+  console.log(
+    `Import concluído: ${created} criados, ${skipped} já existiam, ${invalid} inválidos.`,
+  );
 }
 
 main()

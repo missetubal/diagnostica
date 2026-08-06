@@ -5,11 +5,7 @@ import { getCaseWithRelations, toAdminCaseInput } from '@/lib/admin/cases';
 import { CaseEditor } from '../case-editor';
 import { ReviewActions } from '../review-actions';
 
-export default async function AdminCaseDetailPage({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
+export default async function AdminCaseDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const [user, caseRecord, areas, professions] = await Promise.all([
     getAuthenticatedAdminUser(),
@@ -45,8 +41,8 @@ export default async function AdminCaseDetailPage({
         {caseRecord.reviews.map((review) => (
           <div key={review.id} className="card">
             <p>
-              <strong>{review.decision}</strong> por {review.reviewer.email ?? review.reviewer.id} em{' '}
-              {review.reviewedAt.toLocaleString('pt-BR')}
+              <strong>{review.decision}</strong> por {review.reviewer.email ?? review.reviewer.id}{' '}
+              em {review.reviewedAt.toLocaleString('pt-BR')}
             </p>
             {review.comments && <p className="mt-1 text-[var(--muted)]">{review.comments}</p>}
           </div>

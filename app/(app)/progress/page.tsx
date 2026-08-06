@@ -24,7 +24,8 @@ export default async function ProgressPage() {
           <p className="text-sm text-[var(--muted)]">Sequência atual</p>
           <p className="mt-2 flex items-center gap-1.5 text-2xl font-semibold">
             <Flame className="h-5 w-5 text-orange-500" />
-            {stats.streak_current} <span className="text-sm font-normal text-[var(--muted)]">dias</span>
+            {stats.streak_current}{' '}
+            <span className="text-sm font-normal text-[var(--muted)]">dias</span>
           </p>
           <p className="mt-1 text-xs text-[var(--muted)]">Recorde: {stats.streak_best} dias</p>
         </div>
@@ -83,7 +84,9 @@ export default async function ProgressPage() {
             {history.map((attempt) => (
               <div key={attempt.id} className="card">
                 <div className="flex items-start justify-between gap-3">
-                  <p className="text-sm font-semibold">{attempt.diagnosis ?? 'Caso sem diagnóstico registrado'}</p>
+                  <p className="text-sm font-semibold">
+                    {attempt.diagnosis ?? 'Caso sem diagnóstico registrado'}
+                  </p>
                   <p className="shrink-0 text-sm font-semibold text-[var(--teal-600)]">
                     {attempt.score ?? 0} pts
                   </p>
@@ -105,8 +108,8 @@ export default async function ProgressPage() {
 
       <div className="mt-4 flex items-start gap-2 rounded-xl border border-[var(--border)] bg-white p-3 text-xs text-[var(--muted)]">
         <Info className="mt-0.5 h-4 w-4 shrink-0" />
-        Seu progresso é salvo localmente neste dispositivo/navegador. Sincronização entre dispositivos
-        chegará em breve.
+        Seu progresso é salvo localmente neste dispositivo/navegador. Sincronização entre
+        dispositivos chegará em breve.
       </div>
     </div>
   );

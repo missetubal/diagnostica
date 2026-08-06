@@ -23,9 +23,16 @@ assert.equal(noHints.includes('🟩⬜⬜⬜'), true);
 assert.equal(noHints.includes('0 pistas usadas'), true);
 
 // Incorreto e parcial usam rótulos distintos.
-assert.equal(buildShareText({ ...base, hintsUsed: 3, classification: 'incorreta' }).includes('❌ Não resolvido'), true);
 assert.equal(
-  buildShareText({ ...base, hintsUsed: 3, classification: 'parcialmente_correta' }).includes('🟨 Quase lá'),
+  buildShareText({ ...base, hintsUsed: 3, classification: 'incorreta' }).includes(
+    '❌ Não resolvido',
+  ),
+  true,
+);
+assert.equal(
+  buildShareText({ ...base, hintsUsed: 3, classification: 'parcialmente_correta' }).includes(
+    '🟨 Quase lá',
+  ),
   true,
 );
 

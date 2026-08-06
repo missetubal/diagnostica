@@ -3,7 +3,11 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { ArrowRight, RotateCcw, User } from 'lucide-react';
-import { CLASSIFICATION_LABELS, CLASSIFICATION_STYLE, type AnswerType } from '@/lib/classification-ui';
+import {
+  CLASSIFICATION_LABELS,
+  CLASSIFICATION_STYLE,
+  type AnswerType,
+} from '@/lib/classification-ui';
 import { DIFFICULTY_LABELS } from '@/lib/labels';
 
 type Difficulty = 'facil' | 'medio' | 'dificil';
@@ -72,7 +76,10 @@ export default function CaseAttempt({
   const [attemptNonce, setAttemptNonce] = useState(0);
 
   const [hypothesis, setHypothesis] = useState('');
-  const [lastResult, setLastResult] = useState<{ classification: AnswerType; feedback: string } | null>(null);
+  const [lastResult, setLastResult] = useState<{
+    classification: AnswerType;
+    feedback: string;
+  } | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [advancing, setAdvancing] = useState(false);
 
@@ -86,11 +93,15 @@ export default function CaseAttempt({
         if (initialAttemptId) {
           const res = await fetch(`/api/attempts/${initialAttemptId}`);
           startBody = await res.json();
-          if (!res.ok) throw new Error(extractErrorMessage(startBody, 'Não foi possível carregar a tentativa.'));
+          if (!res.ok)
+            throw new Error(
+              extractErrorMessage(startBody, 'Não foi possível carregar a tentativa.'),
+            );
         } else {
           const nextRes = await fetch('/api/cases/next');
           const nextBody = await nextRes.json();
-          if (!nextRes.ok) throw new Error(extractErrorMessage(nextBody, 'Não foi possível carregar um caso.'));
+          if (!nextRes.ok)
+            throw new Error(extractErrorMessage(nextBody, 'Não foi possível carregar um caso.'));
 
           const startRes = await fetch(`/api/cases/${nextBody.id}/start`, {
             method: 'POST',
@@ -98,7 +109,10 @@ export default function CaseAttempt({
             body: JSON.stringify({ mode }),
           });
           startBody = await startRes.json();
-          if (!startRes.ok) throw new Error(extractErrorMessage(startBody, 'Não foi possível iniciar a tentativa.'));
+          if (!startRes.ok)
+            throw new Error(
+              extractErrorMessage(startBody, 'Não foi possível iniciar a tentativa.'),
+            );
         }
 
         if (cancelled) return;
@@ -128,7 +142,8 @@ export default function CaseAttempt({
         body: JSON.stringify({ text: hypothesis }),
       });
       const body = await res.json();
-      if (!res.ok) throw new Error(extractErrorMessage(body, 'Não foi possível avaliar a hipótese.'));
+      if (!res.ok)
+        throw new Error(extractErrorMessage(body, 'Não foi possível avaliar a hipótese.'));
       setLastResult(body);
     } catch (err) {
       setError((err as Error).message);
@@ -250,7 +265,11 @@ export default function CaseAttempt({
                   {CLASSIFICATION_LABELS[lastResult.classification]}
                 </p>
                 <p className="mt-1.5 text-sm leading-relaxed opacity-90">{lastResult.feedback}</p>
-                <button type="button" className="btn-secondary mt-3 bg-white" onClick={handleNovaHipotese}>
+                <button
+                  type="button"
+                  className="btn-secondary mt-3 bg-white"
+                  onClick={handleNovaHipotese}
+                >
                   Nova hipótese
                 </button>
               </div>
@@ -280,7 +299,12 @@ export default function CaseAttempt({
         )}
       </div>
 
-      <button type="button" className="btn-secondary mt-3 w-full" disabled={advancing} onClick={handleAdvance}>
+      <button
+        type="button"
+        className="btn-secondary mt-3 w-full"
+        disabled={advancing}
+        onClick={handleAdvance}
+      >
         {advancing ? '…' : attempt.is_last_stage ? 'Ver resposta' : 'Próxima pista'}
         {!advancing && <ArrowRight className="h-4 w-4" />}
       </button>

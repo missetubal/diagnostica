@@ -555,9 +555,7 @@ decision:
   "id": "caso-001",
   "title": "Dor torácica em adulto",
   "objective": "Identificar a hipótese diagnóstica mais provável",
-  "professions": [
-    "medicina"
-  ],
+  "professions": ["medicina"],
   "area": "emergencia",
   "difficulty": "medio",
   "patient": {
@@ -588,15 +586,8 @@ decision:
   ],
   "main_answer": {
     "canonical_term": "síndrome coronariana aguda",
-    "accepted_terms": [
-      "síndrome coronariana aguda",
-      "infarto agudo do miocárdio",
-      "iam"
-    ],
-    "partial_terms": [
-      "dor torácica",
-      "isquemia cardíaca"
-    ]
+    "accepted_terms": ["síndrome coronariana aguda", "infarto agudo do miocárdio", "iam"],
+    "partial_terms": ["dor torácica", "isquemia cardíaca"]
   },
   "differentials": [
     {
@@ -904,18 +895,9 @@ Exemplo:
 ```json
 {
   "canonical_term": "infarto agudo do miocárdio com supradesnivelamento do segmento ST",
-  "correct_terms": [
-    "iam com supra",
-    "infarto com supradesnivelamento do st"
-  ],
-  "partial_terms": [
-    "síndrome coronariana aguda",
-    "infarto agudo do miocárdio"
-  ],
-  "incorrect_terms": [
-    "refluxo gastroesofágico",
-    "ansiedade"
-  ]
+  "correct_terms": ["iam com supra", "infarto com supradesnivelamento do st"],
+  "partial_terms": ["síndrome coronariana aguda", "infarto agudo do miocárdio"],
+  "incorrect_terms": ["refluxo gastroesofágico", "ansiedade"]
 }
 ```
 
@@ -1420,29 +1402,29 @@ Um caso clínico estará pronto quando:
 
 ## 28. Decisões recomendadas
 
-| Item | Recomendação |
-|---|---|
-| Arquitetura | Aplicativo único (Next.js), sem serviços separados |
-| Frontend | Next.js + TypeScript |
-| Backend | Route Handlers do próprio Next.js (TypeScript) |
-| ORM | Prisma |
-| Banco de dados | PostgreSQL (via Supabase) |
-| Cache | Não utilizado no MVP |
-| Filas | Não utilizadas no MVP |
-| IA | Chamada direta a provedor externo, sem serviço próprio |
-| Casos clínicos | Estruturados e revisados |
-| IA no MVP | Assistiva, não autônoma |
-| Autenticação | Sem conta de usuário no MVP (perfil anônimo); Supabase Auth só para o painel administrativo; contas de usuário na Fase 2 |
-| API | REST |
-| Documentação | OpenAPI/Swagger |
-| Desenvolvimento | Local (`npm run dev`) + projeto Supabase de desenvolvimento |
-| Deploy | Vercel (app único) + Supabase (dados) |
-| Testes E2E | Playwright |
-| Observabilidade | Sentry + logs estruturados |
-| Analytics | PostHog ou solução própria |
-| Controle de versão | Git + GitHub |
-| CI/CD | GitHub Actions |
-| Banco vetorial | Supabase (pgvector) futuramente |
+| Item               | Recomendação                                                                                                             |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| Arquitetura        | Aplicativo único (Next.js), sem serviços separados                                                                       |
+| Frontend           | Next.js + TypeScript                                                                                                     |
+| Backend            | Route Handlers do próprio Next.js (TypeScript)                                                                           |
+| ORM                | Prisma                                                                                                                   |
+| Banco de dados     | PostgreSQL (via Supabase)                                                                                                |
+| Cache              | Não utilizado no MVP                                                                                                     |
+| Filas              | Não utilizadas no MVP                                                                                                    |
+| IA                 | Chamada direta a provedor externo, sem serviço próprio                                                                   |
+| Casos clínicos     | Estruturados e revisados                                                                                                 |
+| IA no MVP          | Assistiva, não autônoma                                                                                                  |
+| Autenticação       | Sem conta de usuário no MVP (perfil anônimo); Supabase Auth só para o painel administrativo; contas de usuário na Fase 2 |
+| API                | REST                                                                                                                     |
+| Documentação       | OpenAPI/Swagger                                                                                                          |
+| Desenvolvimento    | Local (`npm run dev`) + projeto Supabase de desenvolvimento                                                              |
+| Deploy             | Vercel (app único) + Supabase (dados)                                                                                    |
+| Testes E2E         | Playwright                                                                                                               |
+| Observabilidade    | Sentry + logs estruturados                                                                                               |
+| Analytics          | PostHog ou solução própria                                                                                               |
+| Controle de versão | Git + GitHub                                                                                                             |
+| CI/CD              | GitHub Actions                                                                                                           |
+| Banco vetorial     | Supabase (pgvector) futuramente                                                                                          |
 
 ---
 

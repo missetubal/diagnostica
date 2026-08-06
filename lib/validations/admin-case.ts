@@ -51,7 +51,10 @@ export const adminCaseSchema = z.object({
   slug: z
     .string()
     .min(1)
-    .regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'Slug deve ser kebab-case (letras minúsculas, números, hífens).'),
+    .regex(
+      /^[a-z0-9]+(-[a-z0-9]+)*$/,
+      'Slug deve ser kebab-case (letras minúsculas, números, hífens).',
+    ),
   objective: z.string().min(1),
   areaId: z.string().uuid(),
   professionIds: z.array(z.string().uuid()).min(1, 'Caso precisa de ao menos uma profissão.'),
