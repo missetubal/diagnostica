@@ -6,7 +6,6 @@ import {
   BookOpen,
   Check,
   ExternalLink,
-  Flag,
   ListChecks,
   RotateCcw,
   Share2,
@@ -21,6 +20,7 @@ import {
 import { bestClassification } from '@/lib/score';
 import { buildShareText } from '@/lib/daily-share';
 import { DIFFICULTY_LABELS } from '@/lib/labels';
+import ReportDialog from '@/components/play/report-dialog';
 
 type Difficulty = 'facil' | 'medio' | 'dificil';
 type SourceType = 'humano' | 'ia_assistida' | 'importado';
@@ -34,6 +34,7 @@ type AttemptResult = {
   score: number | null;
   finished_at: string | null;
   case: {
+    id: string;
     difficulty: Difficulty;
     area: { name: string };
     patient: { age: number; sex: string } | null;
@@ -289,14 +290,7 @@ export default function ResultView({ attemptId }: { attemptId: string }) {
         <Link href="/play" className="btn-primary flex-1">
           Novo caso
         </Link>
-        <button
-          type="button"
-          disabled
-          className="btn-secondary flex-1 cursor-not-allowed opacity-60"
-        >
-          <Flag className="h-4 w-4" />
-          Reportar
-        </button>
+        <ReportDialog caseId={result.case.id} attemptId={result.id} />
       </div>
 
       <p className="mt-4 text-center text-xs text-[var(--muted)]">

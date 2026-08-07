@@ -42,6 +42,13 @@ export default async function AdminReportsPage({
               · {report.category} · {report.createdAt.toLocaleDateString('pt-BR')}
             </p>
             <p className="text-[var(--muted)]">{report.description}</p>
+            {report.attempt && (
+              <p className="text-xs text-[var(--muted)]">
+                Tentativa: {report.attempt.mode} · {report.attempt.status}
+                {report.attempt.finishedAt ? ` · ${report.attempt.hintsUsed} pistas` : ''}
+                {report.attempt.score !== null ? ` · ${report.attempt.score} pts` : ''}
+              </p>
+            )}
             <ReportRow reportId={report.id} status={report.status} resolution={report.resolution} />
           </div>
         ))}

@@ -4,6 +4,9 @@ import { db } from '@/lib/db';
 export const reportListInclude = {
   user: true,
   case: { select: { id: true, title: true, slug: true } },
+  attempt: {
+    select: { id: true, mode: true, score: true, hintsUsed: true, status: true, finishedAt: true },
+  },
 } satisfies Prisma.ReportInclude;
 
 export interface ReportFilters {
