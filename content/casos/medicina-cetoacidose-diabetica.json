@@ -1,0 +1,83 @@
+{
+  "id": "cetoacidose-diabetica-dm1-jovem",
+  "title": "Jovem com dor abdominal, respiração acelerada e hálito cetônico",
+  "objective": "Reconhecer cetoacidose diabética como emergência endócrina em paciente jovem com diabetes tipo 1 conhecido, diante de dor abdominal, taquipneia e alteração do estado mental.",
+  "professions": ["medicina"],
+  "area": "emergencia",
+  "difficulty": "medio",
+  "patient": {
+    "age": 19,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 19 anos, com diabetes mellitus tipo 1 diagnosticado há 6 anos, é trazido ao pronto-socorro por dor abdominal difusa, náuseas e vômitos há 1 dia."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Refere que há cerca de 3 dias vem esquecendo de aplicar as doses de insulina por estar sem dinheiro para repor o cartucho da caneta aplicadora. Nas últimas 24 horas, associou-se sede intensa, poliúria e fraqueza progressiva. Familiares notaram respiração mais rápida e profunda e um hálito adocicado. Nas últimas horas, ficou mais sonolento e confuso."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "DM1 há 6 anos, em uso habitual de insulina basal-bolus. Nega outras comorbidades. Nega uso de álcool ou drogas ilícitas. Sem infecções recentes identificadas até o momento."
+    },
+    {
+      "order": 4,
+      "type": "sinais_vitais",
+      "content": "PA 100x60 mmHg, FC 118 bpm, FR 32 irpm (respiração de Kussmaul), SpO2 97% em ar ambiente, Tax 36,8°C. Mucosas secas, turgor cutâneo diminuído."
+    },
+    {
+      "order": 5,
+      "type": "exame_fisico",
+      "content": "Paciente sonolento, mas despertável, orientado apenas parcialmente no tempo. Hálito cetônico perceptível. Abdome difusamente doloroso à palpação, sem sinais de irritação peritoneal, ruídos hidroaéreos presentes. Sem rigidez de nuca. Sem déficits focais."
+    },
+    {
+      "order": 6,
+      "type": "exames_complementares",
+      "content": "Glicemia capilar: 480 mg/dL. Gasometria venosa: pH 7,18, bicarbonato 9 mEq/L, ânion gap elevado. Cetonúria 3+ na fita urinária. Sódio 133 mEq/L, potássio 5,2 mEq/L, creatinina levemente elevada."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "cetoacidose diabética",
+    "accepted_terms": ["CAD", "cetoacidose diabética descompensada"],
+    "partial_terms": ["descompensação glicêmica", "hiperglicemia grave"]
+  },
+  "differentials": [
+    {
+      "name": "gastroenterite aguda",
+      "explanation": "Dor abdominal e vômitos podem sugerir causa gastrointestinal primária, mas a glicemia muito elevada, a acidose com ânion gap alto e a cetonúria apontam para causa metabólica, não infecciosa intestinal."
+    },
+    {
+      "name": "abdome agudo cirúrgico",
+      "explanation": "A dor abdominal difusa exige exclusão de causa cirúrgica, mas a ausência de sinais de irritação peritoneal e a presença de hiperglicemia/cetoacidose tornam a dor abdominal secundária à CAD (manifestação reconhecida da condição) mais provável."
+    },
+    {
+      "name": "cetoacidose alcoólica",
+      "explanation": "Também cursa com acidose e cetonemia, mas a ausência de história de uso de álcool e a presença de DM1 conhecido com omissão de insulina tornam a CAD por deficiência de insulina o diagnóstico mais provável."
+    }
+  ],
+  "explanation": "A tríade hiperglicemia (>250 mg/dL), acidose metabólica com ânion gap elevado e cetonemia/cetonúria confirma cetoacidose diabética. O gatilho mais comum em pacientes com DM1 conhecido é a omissão ou redução inadequada da dose de insulina, como neste caso. A dor abdominal, a respiração de Kussmaul (compensação respiratória da acidose) e o hálito cetônico são achados clássicos. O rebaixamento do nível de consciência reflete a gravidade da descompensação metabólica e reforça a necessidade de tratamento imediato com hidratação, insulinoterapia e reposição de potássio guiada por monitorização laboratorial seriada.",
+  "learning_points": [
+    "Reconhecer a tríade diagnóstica da CAD: hiperglicemia, acidose metabólica com ânion gap elevado e cetonemia/cetonúria.",
+    "Identificar a omissão de insulina como gatilho comum de CAD em pacientes com DM1 conhecido.",
+    "Reconhecer dor abdominal como manifestação possível de CAD, não apenas de causas intra-abdominais primárias.",
+    "Reconhecer a respiração de Kussmaul como mecanismo de compensação respiratória da acidose metabólica."
+  ],
+  "references": [
+    {
+      "title": "American Diabetes Association — Standards of Care in Diabetes: Hyperglycemic Crises",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso escrito de forma original com base em critérios diagnósticos consolidados de CAD (ADA); não é adaptação de um caso-fonte específico publicado — confirmar se os valores laboratoriais escolhidos (pH, bicarbonato, ânion gap) estão de acordo com a versão mais atual da diretriz antes de publicar.",
+    "Conferir se a conduta terapêutica implícita (hidratação, insulinoterapia, reposição de K+) precisa ser detalhada em algum campo adicional para o público de medicina."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

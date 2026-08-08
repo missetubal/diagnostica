@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Geist, Geist_Mono, Lora } from 'next/font/google';
 import './globals.css';
 
@@ -18,10 +18,17 @@ const lora = Lora({
   weight: ['600', '700'],
 });
 
+const title = 'Diagnostica — Treinamento clínico interativo';
+const description =
+  'Diagnostica — pratique raciocínio clínico com casos interativos personalizados para sua profissão e nível.';
+
 export const metadata: Metadata = {
-  title: 'Diagnostica — Treinamento clínico interativo',
-  description:
-    'Diagnostica — pratique raciocínio clínico com casos interativos personalizados para sua profissão e nível.',
+  title,
+  description,
+  openGraph: { title, description, type: 'website', locale: 'pt_BR' },
+};
+
+export const viewport: Viewport = {
   themeColor: '#0d9488',
 };
 

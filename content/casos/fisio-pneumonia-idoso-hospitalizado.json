@@ -1,0 +1,66 @@
+{
+  "id": "pneumonia-idoso-hospitalizado-diagnostico-fisioterapeutico-secrecao",
+  "title": "Idosa hospitalizada por pneumonia, com dificuldade para eliminar secreção",
+  "objective": "A partir da avaliação fisioterapêutica de paciente idosa já com diagnóstico médico de pneumonia adquirida na comunidade, identificar o diagnóstico cinético-funcional que orienta a conduta de higiene brônquica e mobilização.",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-cardiorrespiratoria",
+  "difficulty": "facil",
+  "patient": {
+    "age": 78,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 78 anos, internada há 3 dias com diagnóstico médico de pneumonia adquirida na comunidade, é encaminhada para avaliação da fisioterapia."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Antes da internação, apresentava tosse produtiva, febre e prostração há 5 dias. Em uso de antibioticoterapia endovenosa prescrita pela equipe médica desde a admissão. Familiares relatam que a paciente está mais quieta que o habitual, aceitando pouco a dieta, e que \"não tem força para tossir direito\"."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Paciente em regular estado geral, um pouco sonolenta, colaborativa quando estimulada. Padrão respiratório com leve taquipneia. Tosse presente, mas fraca, com dificuldade para eliminar secreção mesmo quando estimulada. Ausculta pulmonar com estertores crepitantes em base direita e roncos esparsos. Sinais vitais: FR 24 irpm, FC 90 bpm, Tax 37,6°C, SpO2 92% em cateter nasal a 2 l/min. Permanece a maior parte do dia deitada, com mobilização mínima."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Radiografia de tórax com consolidação em lobo inferior direito, compatível com o diagnóstico médico de pneumonia."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "diagnóstico fisioterapêutico de retenção de secreção por tosse ineficaz associada a fraqueza muscular e imobilismo no leito",
+    "accepted_terms": [
+      "disfunção cinético-funcional respiratória com hipersecreção e tosse ineficaz por fraqueza generalizada",
+      "quadro de secreção retida associado a baixa mobilização e prostração"
+    ],
+    "partial_terms": ["apenas consolidação pulmonar (sem diagnóstico fisioterapêutico específico)", "apenas fraqueza generalizada (sem relacionar à função respiratória)"]
+  },
+  "differentials": [
+    {
+      "name": "quadro respiratório explicado apenas pela consolidação pulmonar, sem componente de tosse ineficaz",
+      "explanation": "A consolidação em base direita explica os estertores localizados, mas os roncos esparsos, a tosse fraca e a dificuldade relatada para eliminar secreção mesmo com estímulo indicam que há também comprometimento funcional da tosse a ser tratado, não apenas o processo infeccioso de base."
+    },
+    {
+      "name": "sonolência e prostração como quadro predominantemente neurológico",
+      "explanation": "A sonolência é discreta e coerente com um quadro infeccioso e prostração sistêmica em idosa, sem outros sinais neurológicos focais relatados; não há elementos que sugiram causa neurológica primária."
+    }
+  ],
+  "explanation": "Apesar de o diagnóstico médico de pneumonia já estar estabelecido e em tratamento com antibioticoterapia, cabe à fisioterapia identificar o diagnóstico cinético-funcional a partir da avaliação: tosse ineficaz, retenção de secreção evidenciada por roncos associados aos estertores da consolidação, e baixa mobilização espontânea em paciente idosa prostrada, o que aumenta o risco de complicações respiratórias e de descondicionamento. Esse diagnóstico orienta a escolha de técnicas de higiene brônquica adaptadas à fragilidade da paciente (manobras de desobstrução, estímulo e assistência à tosse) associadas à mobilização precoce e progressiva, mesmo que limitada inicialmente à mudança de decúbito e sedestação.",
+  "learning_points": [
+    "Reconhecer a tosse ineficaz por fraqueza como alvo específico da avaliação fisioterapêutica em paciente idoso com pneumonia.",
+    "Diferenciar achados de consolidação pulmonar (estertores localizados) de achados de retenção de secreção associada (roncos difusos).",
+    "Reconhecer a importância da mobilização precoce, mesmo que limitada, na prevenção de descondicionamento em pacientes idosos hospitalizados."
+  ],
+  "references": [],
+  "avisos_para_revisor": [
+    "Caso original, seguindo o mesmo padrão de escopo já aprovado para fisioterapia hospitalar.",
+    "Considerar avaliar fragilidade/risco de sarcopenia como informação complementar relevante para pacientes idosos hospitalizados, se o time clínico julgar pertinente."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

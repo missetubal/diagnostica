@@ -1,0 +1,78 @@
+{
+  "id": "transtorno-ansiedade-generalizada-preocupacao-excessiva",
+  "title": "Preocupação excessiva e tensão constante há vários meses",
+  "objective": "Reconhecer os critérios de transtorno de ansiedade generalizada a partir da entrevista clínica psicológica.",
+  "professions": ["psicologia"],
+  "area": "psicologia-clinica",
+  "difficulty": "facil",
+  "patient": {
+    "age": 29,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 29 anos procura atendimento psicológico por sensação constante de preocupação e tensão, que descreve como \"estar sempre no limite\", há cerca de 8 meses."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Relata preocupação excessiva com múltiplas áreas da vida (trabalho, relacionamentos, saúde da família), difícil de controlar, presente na maior parte dos dias. Associa dificuldade para relaxar, tensão muscular, principalmente nos ombros e pescoço, cansaço fácil e dificuldade para manter a concentração no trabalho. Refere também dificuldade para adormecer, \"com a cabeça cheia de pensamentos\". Nega episódios de crise aguda de ansiedade com falta de ar súbita e medo intenso de morrer."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Nega tratamento psicológico ou psiquiátrico prévio. Nega uso de álcool ou substâncias. Refere que a mãe também é \"uma pessoa ansiosa\"."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "No exame do estado mental: paciente colaborativa, orientada, humor ansioso, afeto congruente, discurso lógico e coerente, sem alterações de conteúdo do pensamento (sem ideação suicida, sem sintomas psicóticos). Boa crítica sobre sua condição."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Escala GAD-7 (Transtorno de Ansiedade Generalizada) aplicada na sessão: pontuação 14, compatível com ansiedade moderada."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "transtorno de ansiedade generalizada (TAG)",
+    "accepted_terms": ["TAG", "transtorno de ansiedade generalizada"],
+    "partial_terms": ["ansiedade", "estresse"]
+  },
+  "differentials": [
+    {
+      "name": "transtorno de pânico",
+      "explanation": "Cursa com crises agudas e intensas de ansiedade com sintomas físicos súbitos (falta de ar, taquicardia, medo de morrer), que a paciente nega; o padrão descrito é de preocupação difusa e persistente, não de crises episódicas."
+    },
+    {
+      "name": "transtorno depressivo com ansiedade associada",
+      "explanation": "Sintomas ansiosos podem coexistir com quadros depressivos, mas a ausência de humor deprimido persistente, anedonia ou alterações relevantes de apetite/psicomotricidade torna o TAG isolado a hipótese mais consistente com o quadro relatado."
+    },
+    {
+      "name": "transtorno de adaptação com ansiedade",
+      "explanation": "Cursaria com sintomas ansiosos ligados a um estressor identificável e recente; a paciente não relaciona o quadro a um evento específico recente, e a duração de 8 meses com preocupação difusa favorece TAG."
+    }
+  ],
+  "explanation": "A preocupação excessiva e de difícil controle, presente na maior parte dos dias por mais de 6 meses, associada a sintomas como tensão muscular, fadiga, dificuldade de concentração e alteração do sono, sem crises agudas de pânico, é compatível com os critérios diagnósticos de transtorno de ansiedade generalizada. A pontuação na escala GAD-7 reforça a gravidade moderada do quadro. A conduta psicológica indicada inclui psicoeducação sobre o transtorno, técnicas de manejo da preocupação e intervenções baseadas em evidência, como terapia cognitivo-comportamental; encaminhamento para avaliação psiquiátrica pode ser considerado caso haja prejuízo funcional importante ou resposta insuficiente à psicoterapia.",
+  "learning_points": [
+    "Reconhecer os critérios centrais do TAG: preocupação excessiva, de difícil controle, presente na maioria dos dias por pelo menos 6 meses.",
+    "Diferenciar TAG de transtorno de pânico pela ausência de crises agudas e episódicas.",
+    "Reconhecer a GAD-7 como instrumento de rastreio e graduação de gravidade da ansiedade.",
+    "Identificar quando o encaminhamento para avaliação psiquiátrica complementar pode ser indicado, dentro do escopo da psicologia."
+  ],
+  "references": [
+    {
+      "title": "American Psychiatric Association — DSM-5-TR, critérios diagnósticos para Transtorno de Ansiedade Generalizada",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso original, elaborado com base em critérios diagnósticos consolidados (DSM-5-TR) e na escala GAD-7; não corresponde a caso publicado específico.",
+    "Primeiro caso da profissão Psicologia no banco — recomenda-se validação por profissional de psicologia antes de publicar, especialmente quanto à adequação da linguagem clínica e ao enquadramento da conduta sugerida dentro do escopo profissional."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

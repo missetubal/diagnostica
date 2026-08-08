@@ -1,0 +1,88 @@
+{
+  "id": "ave-isquemico-hemiparesia-afasia-agudo",
+  "title": "Início súbito de fraqueza em um lado do corpo e dificuldade para falar",
+  "objective": "Reconhecer sinais e sintomas de AVC isquêmico agudo de circulação anterior e a importância da definição da janela terapêutica.",
+  "professions": ["medicina"],
+  "area": "neurologia",
+  "difficulty": "medio",
+  "patient": {
+    "age": 71,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 71 anos é trazida ao pronto-socorro pelo marido por fraqueza súbita do lado direito do corpo e dificuldade para falar, iniciadas há 50 minutos."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "O marido relata que a paciente estava normal enquanto tomava café da manhã, quando subitamente parou de falar coerentemente e deixou cair a xícara da mão direita. Notou que a boca ficou \"torta\" para a esquerda. Não houve perda de consciência, convulsão ou trauma associado. O horário do último momento assintomático é bem definido, compatível com o início dos sintomas relatados."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Hipertensão arterial em tratamento irregular. Fibrilação atrial diagnosticada há 2 anos, sem uso regular de anticoagulante por conta própria. Nega AVC prévio. Nega tabagismo."
+    },
+    {
+      "order": 4,
+      "type": "medicamentos",
+      "content": "Losartana em uso irregular. Refere ter parado o anticoagulante oral há cerca de 2 meses \"porque estava se sentindo bem\"."
+    },
+    {
+      "order": 5,
+      "type": "sinais_vitais",
+      "content": "PA 178x100 mmHg, FC 96 bpm irregular, FR 18 irpm, SpO2 96% em ar ambiente, glicemia capilar 132 mg/dL."
+    },
+    {
+      "order": 6,
+      "type": "exame_fisico",
+      "content": "Afasia mista (compreensão e expressão prejudicadas), paresia facial central à direita, força grau 2/5 em membro superior direito e grau 3/5 em membro inferior direito, hipoestesia à direita. Desvio do olhar conjugado para a esquerda."
+    },
+    {
+      "order": 7,
+      "type": "exames_complementares",
+      "content": "Tomografia de crânio sem contraste, realizada em caráter de urgência, não evidencia sangramento nem sinais precoces extensos de isquemia estabelecida."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "acidente vascular cerebral isquêmico agudo",
+    "accepted_terms": ["AVC isquêmico", "AVE isquêmico", "isquemia cerebral aguda"],
+    "partial_terms": ["ataque isquêmico transitório", "AVC"]
+  },
+  "differentials": [
+    {
+      "name": "hemorragia intracraniana",
+      "explanation": "Deve sempre ser excluída antes de qualquer terapia de reperfusão; a tomografia sem sinais de sangramento neste caso torna a isquemia mais provável, mas a exclusão por imagem é obrigatória em todo déficit focal agudo."
+    },
+    {
+      "name": "crise convulsiva com paralisia de Todd",
+      "explanation": "Pode simular déficit focal agudo, mas a ausência de evento convulsivo testemunhado e a instalação súbita sem pródromos tornam essa hipótese menos provável."
+    },
+    {
+      "name": "hipoglicemia sintomática",
+      "explanation": "Pode causar déficit focal transitório que mimetiza AVC, mas a glicemia capilar normal neste caso praticamente exclui essa causa."
+    }
+  ],
+  "explanation": "O déficit neurológico focal de início súbito (afasia, paresia facio-braquio-crural direita, desvio do olhar) em paciente com fibrilação atrial sem anticoagulação adequada sugere fortemente AVC isquêmico de provável origem cardioembólica, acometendo território da artéria cerebral média esquerda. A ausência de sangramento na tomografia inicial e o tempo de evolução dentro da janela terapêutica reforçam a indicação de avaliação urgente para terapias de reperfusão, conforme protocolos de AVC agudo.",
+  "learning_points": [
+    "Reconhecer o padrão de déficit focal agudo compatível com AVC de circulação anterior (afasia + hemiparesia direita).",
+    "Identificar fibrilação atrial sem anticoagulação como fator de risco relevante para AVC cardioembólico.",
+    "Reconhecer a importância de definir o horário do último momento assintomático para a decisão terapêutica.",
+    "Reconhecer a tomografia de crânio sem contraste como exame inicial obrigatório para excluir hemorragia antes de terapia de reperfusão."
+  ],
+  "references": [
+    {
+      "title": "AHA/ASA — Guideline for the Early Management of Patients With Acute Ischemic Stroke",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso original; não inclui pontuação de NIHSS explícita para evitar atribuir um valor não verificado — se desejado, o time clínico pode calcular e incluir a pontuação a partir dos déficits descritos.",
+    "Definir explicitamente, em revisão clínica, se a conduta esperada (trombólise/trombectomia) deve ser mencionada na explicação ou fica fora do escopo do campo 'explanation'."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

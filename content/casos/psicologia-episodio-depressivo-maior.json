@@ -1,0 +1,78 @@
+{
+  "id": "episodio-depressivo-maior-anedonia-humor-deprimido",
+  "title": "Tristeza persistente e perda de interesse pelas atividades habituais",
+  "objective": "Reconhecer os critérios de episódio depressivo maior a partir da entrevista clínica psicológica, incluindo a avaliação ativa de risco de suicídio.",
+  "professions": ["psicologia"],
+  "area": "psicologia-clinica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 41,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 41 anos procura atendimento psicológico, encaminhado pela esposa, por \"não ser mais o mesmo\" há cerca de 2 meses."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Relata humor deprimido na maior parte do dia, quase todos os dias, associado à perda de interesse em atividades que antes gostava, como jogar futebol com os amigos e sair com a família. Refere fadiga constante, mesmo sem esforço físico relevante, dificuldade de concentração no trabalho, com queda de produtividade notada pelo chefe. Relata alteração do apetite, com perda de cerca de 4 kg no período sem dieta intencional, e insônia com despertar precoce. Verbaliza sentimento de inutilidade e culpa excessiva relacionados à demissão recente de um colega, mesmo sem relação direta com ele."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Sem diagnóstico psiquiátrico prévio conhecido. Refere episódio semelhante, mais leve, há cerca de 6 anos, que \"passou sozinho\" sem tratamento. Nega uso de álcool ou substâncias."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "No exame do estado mental: paciente com psicomotricidade um pouco lentificada, contato visual reduzido, humor deprimido, afeto congruente e restrito. Discurso coerente, com conteúdo voltado a temas de desvalia e culpa. Ao ser questionado ativamente sobre risco, nega ideação suicida estruturada no momento, mas verbaliza pensamentos passivos do tipo \"seria mais fácil não acordar\", sem plano ou intenção."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Escala PHQ-9 (Patient Health Questionnaire) aplicada na sessão: pontuação 17, compatível com depressão moderada a grave."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "episódio depressivo maior",
+    "accepted_terms": ["transtorno depressivo maior", "depressão maior", "episódio depressivo"],
+    "partial_terms": ["tristeza", "estresse", "burnout"]
+  },
+  "differentials": [
+    {
+      "name": "transtorno de adaptação com humor deprimido",
+      "explanation": "Poderia ser considerado se os sintomas estivessem claramente restritos a um estressor identificável recente e fossem proporcionalmente mais leves; a presença de sintomas neurovegetativos completos (sono, apetite, psicomotricidade) e pensamentos de desvalia por mais de 2 semanas torna o episódio depressivo maior mais provável."
+    },
+    {
+      "name": "transtorno bipolar (fase depressiva)",
+      "explanation": "Deve sempre ser investigado por meio de rastreio ativo de episódios prévios de humor elevado, irritabilidade ou impulsividade; a ausência de relato de tais episódios até o momento não confirma nem exclui bipolaridade, sendo necessário aprofundar essa investigação antes de firmar o diagnóstico definitivo."
+    },
+    {
+      "name": "luto",
+      "explanation": "Pode cursar com tristeza intensa e alterações de sono/apetite, mas geralmente está associado a uma perda específica e recente, o que não é relatado neste caso; a presença de sentimentos de inutilidade generalizados (não restritos a uma perda) favorece o diagnóstico de episódio depressivo maior."
+    }
+  ],
+  "explanation": "A presença de humor deprimido e anedonia persistentes por mais de 2 semanas, associados a alterações de sono, apetite, psicomotricidade, concentração e sentimentos de culpa/inutilidade, preenche os critérios centrais de episódio depressivo maior. A presença de ideação suicida passiva, mesmo sem plano estruturado, exige avaliação ativa e contínua de risco em cada sessão, além de discussão sobre a necessidade de suporte adicional. A pontuação elevada na PHQ-9 confirma gravidade moderada a grave, o que reforça a indicação de encaminhamento para avaliação psiquiátrica conjunta, além do acompanhamento psicoterapêutico.",
+  "learning_points": [
+    "Reconhecer os critérios centrais de episódio depressivo maior: humor deprimido e/ou anedonia por pelo menos 2 semanas, associados a sintomas neurovegetativos e cognitivos.",
+    "Reconhecer a importância da avaliação ativa de ideação suicida, mesmo quando verbalizada de forma passiva.",
+    "Diferenciar episódio depressivo maior de luto e de transtorno de adaptação com humor deprimido.",
+    "Reconhecer a PHQ-9 como instrumento de rastreio e graduação de gravidade da depressão."
+  ],
+  "references": [
+    {
+      "title": "American Psychiatric Association — DSM-5-TR, critérios diagnósticos para Episódio Depressivo Maior",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso original; contém menção a ideação suicida passiva por ser clinicamente relevante para o raciocínio diagnóstico — revisar se o tratamento desse tema está adequado às diretrizes de conteúdo sensível da plataforma antes de publicar.",
+    "Confirmar se o encaminhamento psiquiátrico sugerido na explicação está formulado de forma adequada ao escopo de atuação do psicólogo."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

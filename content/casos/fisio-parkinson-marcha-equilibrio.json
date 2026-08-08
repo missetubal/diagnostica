@@ -1,0 +1,72 @@
+{
+  "id": "doenca-parkinson-avaliacao-funcional-marcha-equilibrio",
+  "title": "Homem com doença de Parkinson e episódios recorrentes de quase queda",
+  "objective": "A partir da avaliação fisioterapêutica funcional de paciente com diagnóstico médico de doença de Parkinson, identificar o diagnóstico cinético-funcional que orienta o treino de marcha e equilíbrio.",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-neurologica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 70,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 70 anos, com diagnóstico médico de doença de Parkinson há 4 anos, é encaminhado à fisioterapia por episódios recorrentes de quase queda nos últimos 2 meses."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Refere que a marcha ficou mais lenta e \"arrastada\", com dificuldade para iniciar o primeiro passo, principalmente ao sair de portas estreitas ou virar-se em espaços pequenos. A esposa relata que ele \"trava\" no meio do trajeto algumas vezes (episódios de congelamento da marcha). Já teve dois episódios de quase queda ao tentar virar-se rapidamente, sem lesão até o momento. Em acompanhamento com neurologista, em uso de levodopa/carbidopa, com resposta parcial."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Postura em leve flexão de tronco e joelhos, marcha com passos curtos e arrastados, redução do balanço de braços, principalmente à esquerda. Observado episódio de congelamento ao iniciar a marcha e ao tentar girar 180 graus. Rigidez em roda denteada em membro superior esquerdo. Bradicinesia evidente em tarefas de movimentos alternados rápidos. Equilíbrio reativo prejudicado ao teste de retropulsão (puxão para trás), necessitando de mais de um passo compensatório para recuperar o equilíbrio."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Escala de Hoehn-Yahr estágio 2,5 (comprometimento bilateral leve, com algum comprometimento do equilíbrio ao teste de retropulsão), conforme registro do neurologista."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "diagnóstico fisioterapêutico de instabilidade postural com congelamento da marcha e risco elevado de queda",
+    "accepted_terms": [
+      "disfunção cinético-funcional de marcha e equilíbrio por bradicinesia e freezing, com risco de queda",
+      "quadro de instabilidade postural associado a congelamento da marcha em doença de Parkinson"
+    ],
+    "partial_terms": ["apenas rigidez muscular (sem relacionar ao risco de queda)", "apenas bradicinesia (sem diagnóstico fisioterapêutico específico de marcha/equilíbrio)"]
+  },
+  "differentials": [
+    {
+      "name": "quedas explicadas predominantemente por hipotensão ortostática",
+      "explanation": "Hipotensão ortostática é causa relevante de quedas em Parkinson e deve ser investigada pela equipe médica, mas os episódios relatados estão associados a congelamento da marcha e dificuldade de giro, não a mudanças posturais (deitado/sentado para em pé), tornando a instabilidade postural relacionada à marcha a explicação mais coerente com o relato."
+    },
+    {
+      "name": "comprometimento cognitivo como causa principal das quase quedas",
+      "explanation": "Não há relatos de confusão mental, esquecimento ou desorientação associados aos episódios; o padrão descrito (travar ao iniciar marcha e ao girar) é característico de congelamento motor, não de causa cognitiva primária."
+    }
+  ],
+  "explanation": "Embora o diagnóstico médico de doença de Parkinson já esteja estabelecido, o diagnóstico cinético-funcional deve ser construído a partir da avaliação específica de marcha e equilíbrio: padrão de marcha com passos curtos, redução do balanço de braços, episódios de congelamento ao iniciar a marcha e ao girar, e resposta postural prejudicada ao teste de retropulsão. Esse conjunto caracteriza instabilidade postural com risco elevado de queda, achado central na fase intermediária da doença (Hoehn-Yahr 2,5-3). Esse diagnóstico orienta a conduta fisioterapêutica: estratégias de pistas visuais e auditivas (cueing) para reduzir o congelamento, treino de giro seguro, treino de equilíbrio reativo e orientação de prevenção de quedas no domicílio.",
+  "learning_points": [
+    "Reconhecer o congelamento da marcha (freezing) como manifestação específica que aumenta o risco de queda na doença de Parkinson.",
+    "Diferenciar instabilidade postural relacionada à marcha de outras causas de queda, como hipotensão ortostática.",
+    "Reconhecer o teste de retropulsão como ferramenta de avaliação do equilíbrio reativo relevante para o diagnóstico fisioterapêutico.",
+    "Identificar estratégias de pistas externas (cueing) como recurso fisioterapêutico para reduzir episódios de congelamento."
+  ],
+  "references": [
+    {
+      "title": "International Parkinson and Movement Disorder Society — Evidence-Based Medicine Review: Physiotherapy for Parkinson's Disease",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso original; escala de Hoehn-Yahr mencionada de forma didática — confirmar se o estágio atribuído (2,5) é consistente com os achados descritos antes de publicar.",
+    "Confirmar se o caso deve seguir o padrão de diagnóstico já revelado (Parkinson conhecido) com main_answer em diagnóstico cinético-funcional, conforme decisão de escopo já aprovada para fisioterapia hospitalar/neurológica."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

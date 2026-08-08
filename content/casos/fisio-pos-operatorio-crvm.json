@@ -1,0 +1,66 @@
+{
+  "id": "pos-operatorio-crvm-mobilizacao-precoce-diagnostico-fisioterapeutico",
+  "title": "Paciente no 1º dia pós-operatório de revascularização do miocárdio, avaliação fisioterapêutica",
+  "objective": "A partir da avaliação fisioterapêutica de paciente no pós-operatório imediato de cirurgia cardíaca, identificar o diagnóstico cinético-funcional que orienta a conduta de mobilização e fisioterapia respiratória.",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-cardiorrespiratoria",
+  "difficulty": "medio",
+  "patient": {
+    "age": 59,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 59 anos, no 1º dia de pós-operatório de cirurgia de revascularização do miocárdio (CRVM) com esternotomia mediana, é avaliado pela fisioterapia na UTI."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Cirurgia sem intercorrências relatadas, extubado há 12 horas. Refere dor incisional que limita a inspiração profunda e a tosse, classificada como 6/10 na escala visual analógica, parcialmente controlada com analgesia prescrita. Refere sensação de \"peito preso\" e receio de tossir por medo de \"abrir o ponto\"."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Padrão respiratório superficial, com amplitude torácica reduzida, principalmente à custa de expansibilidade de bases. Tosse voluntária fraca, contida pela dor. Ausculta pulmonar com murmúrio vesicular globalmente diminuído em bases, sem ruídos adventícios localizados. Drenos torácicos em sítio cirúrgico, com débito dentro do esperado. Sinais vitais: FR 22 irpm, FC 88 bpm, PA 122x76 mmHg, SpO2 94% em cateter nasal a 2 l/min. Permanece em decúbito dorsal, ainda sem ter sido mobilizado para sedestação."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Radiografia de tórax pós-operatória com discreta redução de volume pulmonar em bases, sem sinais de derrame pleural significativo ou pneumotórax."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "diagnóstico fisioterapêutico de restrição ventilatória por dor incisional e inibição da tosse, associado a atraso de mobilização no pós-operatório",
+    "accepted_terms": [
+      "padrão respiratório restritivo pós-esternotomia por dor, com tosse ineficaz e mobilização retardada",
+      "disfunção cinético-funcional respiratória restritiva associada a medo de mobilização e dor incisional"
+    ],
+    "partial_terms": ["apenas dor pós-operatória (sem diagnóstico fisioterapêutico específico)", "apenas atelectasia (sem relacionar à causa restritiva/dor)"]
+  },
+  "differentials": [
+    {
+      "name": "atelectasia já estabelecida como achado isolado",
+      "explanation": "A radiografia mostra apenas discreta redução de volume em bases, sem consolidação característica de atelectasia estabelecida; o quadro é mais bem descrito como risco elevado de atelectasia por padrão restritivo e tosse ineficaz do que atelectasia já instalada."
+    },
+    {
+      "name": "complicação pleural (derrame ou pneumotórax) como causa principal da hipoxemia leve",
+      "explanation": "A radiografia não mostra derrame significativo ou pneumotórax; a hipoxemia leve é mais coerente com hipoventilação de bases por dor e decúbito prolongado do que com complicação pleural."
+    }
+  ],
+  "explanation": "No pós-operatório imediato de cirurgia cardíaca, o diagnóstico cinético-funcional deve ser construído a partir dos achados de avaliação, e não apenas do procedimento cirúrgico realizado. Neste caso, a combinação de dor incisional limitando a expansibilidade torácica, tosse voluntária ineficaz por receio e contenção, ausculta com diminuição do murmúrio vesicular em bases e ausência de mobilização até o momento caracteriza um padrão restritivo com risco elevado de complicações pulmonares pós-operatórias (atelectasia, retenção de secreção). Esse diagnóstico orienta a conduta fisioterapêutica: analgesia associada a técnicas de reexpansão pulmonar, treino de tosse com proteção da incisão (uso de travesseiro/apoio esternal), e início precoce e progressivo da mobilização (sedestação, ortostatismo, deambulação assistida), conforme protocolos de reabilitação cardíaca pós-cirúrgica.",
+  "learning_points": [
+    "Reconhecer a dor incisional e o medo de mobilização como fatores limitantes da função respiratória no pós-operatório de cirurgia cardíaca.",
+    "Diferenciar risco de atelectasia (padrão restritivo, tosse ineficaz) de atelectasia já estabelecida.",
+    "Reconhecer a importância da mobilização precoce e progressiva na prevenção de complicações pulmonares pós-operatórias."
+  ],
+  "references": [],
+  "avisos_para_revisor": [
+    "Caso original, seguindo o padrão de escopo já aprovado para fisioterapia hospitalar (diagnóstico médico/cirúrgico já conhecido; main_answer construído em torno do diagnóstico cinético-funcional).",
+    "Confirmar se o débito de dreno descrito como 'dentro do esperado' precisa de valor numérico para maior precisão clínica."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

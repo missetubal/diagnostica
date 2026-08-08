@@ -57,11 +57,18 @@ O Diagnostica busca resolver esse problema oferecendo uma experiência prática,
 
 > Medicina e fisioterapia foram escolhidas como profissões de lançamento por serem as áreas em que há maior contato direto com profissionais para validação e revisão clínica dos casos.
 
-### Expansão futura
+### Fase 2 (ativa)
 
 - Estudantes de enfermagem.
 - Enfermeiros.
 - Técnicos de enfermagem.
+- Estudantes de psicologia.
+- Psicólogos clínicos.
+
+> Enfermagem e psicologia foram adicionadas após o MVP inicial (2026-08). Os casos dessas profissões seguem o mesmo fluxo de rascunho → revisão → publicação, mas ainda dependem de validação por profissionais das respectivas áreas antes de irem a público.
+
+### Expansão futura
+
 - Farmacêuticos.
 - Nutricionistas.
 - Outros profissionais e estudantes da área da saúde.
@@ -91,6 +98,12 @@ O Diagnostica busca resolver esse problema oferecendo uma experiência prática,
 
 - Deseja praticar avaliação funcional.
 - Pode estudar casos musculoesqueléticos, cardiorrespiratórios ou neurológicos.
+
+#### Estudante ou profissional de psicologia
+
+- Deseja praticar avaliação e entrevista clínica.
+- Quer treinar formulação de hipóteses diagnósticas psicológicas (DSM-5-TR/CID-11).
+- Pode estudar psicologia clínica, hospitalar ou infantojuvenil.
 
 #### Farmacêutico clínico
 
@@ -295,6 +308,15 @@ O usuário poderá informar:
 - Fisioterapia cardiorrespiratória.
 - Fisioterapia neurológica.
 
+#### Áreas da Fase 2 (Enfermagem e Psicologia)
+
+- Enfermagem clínica.
+- Enfermagem em urgência e emergência.
+- Enfermagem em saúde mental.
+- Psicologia clínica.
+- Psicologia hospitalar.
+- Psicologia infantojuvenil.
+
 #### Áreas de expansão futura (demais profissões)
 
 - Pediatria.
@@ -302,8 +324,6 @@ O usuário poderá informar:
 - Ginecologia e obstetrícia.
 - Saúde da família.
 - Terapia intensiva.
-- Saúde mental.
-- Enfermagem clínica.
 - Farmácia clínica.
 - Nutrição clínica.
 
@@ -808,15 +828,28 @@ Priorizar:
 - Raciocínio cardiorrespiratório.
 - Raciocínio neurológico.
 
-### Enfermagem (expansão futura)
+### Enfermagem (Fase 2)
 
 Priorizar:
 
-- Avaliação clínica.
+- Avaliação clínica de enfermagem.
 - Sinais de alerta.
-- Classificação de risco.
-- Cuidados de enfermagem.
+- Classificação de risco (ex.: protocolos de triagem/Manchester).
+- Diagnóstico de enfermagem (taxonomia NANDA-I) e plano de cuidados.
 - Tomada de decisão dentro do escopo profissional.
+
+Não incluir diagnóstico médico definitivo ou prescrição medicamentosa como resposta esperada — a resposta canônica deve ser um diagnóstico/prioridade de enfermagem ou uma classificação de risco, não uma doença.
+
+### Psicologia (Fase 2)
+
+Priorizar:
+
+- Entrevista e avaliação psicológica.
+- Formulação de hipótese diagnóstica psicológica (DSM-5-TR/CID-11), quando aplicável ao nível de formação.
+- Raciocínio sobre fatores predisponentes, precipitantes e mantenedores.
+- Encaminhamento e limites de escopo (quando indicar avaliação psiquiátrica/médica complementar).
+
+Não incluir prescrição medicamentosa nem conduta médica como resposta esperada — o psicólogo não prescreve. A resposta canônica deve ser a hipótese diagnóstica psicológica ou a conduta de manejo dentro do escopo da psicologia.
 
 ### Farmácia (expansão futura)
 

@@ -1,0 +1,71 @@
+{
+  "id": "paralisia-facial-periferica-avaliacao-funcional-house-brackmann",
+  "title": "Mulher com paralisia facial periférica encaminhada para fisioterapia",
+  "objective": "A partir da avaliação fisioterapêutica de paciente com diagnóstico médico de paralisia facial periférica (paralisia de Bell), identificar o diagnóstico cinético-funcional que orienta a conduta de reabilitação facial.",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-neurologica",
+  "difficulty": "facil",
+  "patient": {
+    "age": 34,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 34 anos, com diagnóstico médico de paralisia facial periférica idiopática (paralisia de Bell) há 5 dias, é encaminhada à fisioterapia pelo neurologista."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Relata que os sintomas começaram de forma súbita, ao acordar, com dificuldade para fechar o olho direito e desvio da boca para o lado esquerdo ao sorrir. Refere também alteração leve do paladar e maior sensibilidade a sons no lado direito. Em uso de corticoide oral prescrito pelo neurologista desde o diagnóstico. Nega fraqueza em membros ou outros sintomas neurológicos associados."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Assimetria facial evidente à direita: incapacidade de fechar completamente o olho direito (lagoftalmo), apagamento do sulco nasolabial direito, desvio da comissura labial para a esquerda ao sorrir, incapacidade de franzir a testa à direita. Sinal de Bell presente (globo ocular desvia para cima ao tentar fechar o olho). Força facial classificada em grau IV na escala de House-Brackmann. Sensibilidade e força em membros preservadas."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Avaliação neurológica prévia do neurologista já excluiu sinais de comprometimento central (força e sensibilidade em membros preservadas, ausência de outros déficits de nervos cranianos), confirmando a origem periférica do comprometimento do nervo facial."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "diagnóstico fisioterapêutico de paresia facial periférica grau IV (House-Brackmann) com risco de complicação ocular por lagoftalmo",
+    "accepted_terms": [
+      "disfunção cinético-funcional facial por paralisia periférica com lagoftalmo e risco de exposição corneana",
+      "quadro de paresia facial periférica moderada a grave com comprometimento do fechamento ocular"
+    ],
+    "partial_terms": ["apenas assimetria facial (sem graduação funcional)", "apenas paralisia de Bell (sem diagnóstico fisioterapêutico específico)"]
+  },
+  "differentials": [
+    {
+      "name": "comprometimento facial de origem central (AVC)",
+      "explanation": "Já excluído pela avaliação neurológica prévia (preservação de força/sensibilidade em membros e comprometimento também da fronte, compatível com lesão de neurônio motor inferior); didaticamente, é importante lembrar que na paralisia central a fronte costuma ser poupada, ao contrário do observado neste caso."
+    },
+    {
+      "name": "síndrome de Ramsay Hunt",
+      "explanation": "Cursa com paralisia facial periférica associada a vesículas no conduto auditivo e dor otológica mais intensa; a ausência de lesões vesiculares relatadas torna a paralisia de Bell idiopática mais provável, mas a inspeção do conduto auditivo pela equipe médica é relevante para essa diferenciação."
+    }
+  ],
+  "explanation": "Com o diagnóstico médico de paralisia de Bell já confirmado e a origem central já excluída pelo neurologista, o diagnóstico cinético-funcional da fisioterapia deve graduar objetivamente o comprometimento motor facial (House-Brackmann grau IV) e identificar riscos funcionais associados, com destaque para o lagoftalmo, que gera risco de exposição e lesão corneana. Esse diagnóstico orienta a conduta: proteção ocular (uso de lubrificante e oclusão noturna, geralmente orientada em conjunto com oftalmologia), eletroestimulação e exercícios de mímica facial conforme protocolo indicado na fase aguda, e treino de controle motor facial (biofeedback com espelho) para favorecer a recuperação simétrica e reduzir o risco de sincinesias.",
+  "learning_points": [
+    "Diferenciar paralisia facial periférica de central pela presença ou ausência de comprometimento da musculatura frontal.",
+    "Reconhecer a escala de House-Brackmann como ferramenta de graduação funcional da paralisia facial periférica.",
+    "Identificar o lagoftalmo como achado que exige atenção prioritária pelo risco de complicação ocular."
+  ],
+  "references": [
+    {
+      "title": "House JW, Brackmann DE. Facial nerve grading system. Otolaryngol Head Neck Surg, 1985.",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso original; escala de House-Brackmann grau IV atribuída de forma didática a partir dos achados descritos — confirmar consistência antes de publicar.",
+    "Confirmar se a conduta de proteção ocular deve ser detalhada com mais precisão técnica pela equipe de revisão."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

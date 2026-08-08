@@ -32,7 +32,7 @@ export default async function OnboardingPage({
     <OnboardingWizard
       initialProfile={serializeProfile(user)}
       professions={professions.map((p) => ({ id: p.id, name: p.name }))}
-      redirectTo={isEdit ? '/perfil' : '/dashboard'}
+      redirectTo="/dashboard"
     />
   );
 }

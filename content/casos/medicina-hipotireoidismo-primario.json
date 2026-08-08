@@ -1,0 +1,77 @@
+{
+  "id": "hipotireoidismo-primario-fadiga-ganho-peso",
+  "title": "Cansaço progressivo e ganho de peso em mulher de meia-idade",
+  "objective": "Reconhecer hipotireoidismo primário como causa de fadiga, ganho de peso e intolerância ao frio em apresentação insidiosa.",
+  "professions": ["medicina"],
+  "area": "clinica-medica",
+  "difficulty": "facil",
+  "patient": {
+    "age": 47,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 47 anos procura atendimento ambulatorial por cansaço persistente há cerca de 6 meses."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Relata fadiga que piorou progressivamente, associada a ganho de peso de aproximadamente 5 kg no período, mesmo sem mudança relevante na alimentação. Refere também maior sensibilidade ao frio, pele mais seca e queda de cabelo. Notou alteração do hábito intestinal, com constipação mais frequente. Nega palpitações, tremores ou perda de peso."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Histórico familiar de doença tireoidiana (mãe com hipotireoidismo). Nega uso de medicamentos contínuos. Nega cirurgia cervical ou radioterapia prévia."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Pele seca e fria ao toque, discreto edema periorbitário, voz um pouco mais rouca. Tireoide palpável, de consistência firme, sem nódulos evidentes. Reflexos tendinosos profundos com fase de relaxamento lentificada. Frequência cardíaca no limite inferior da normalidade."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "TSH elevado, T4 livre reduzido. Perfil lipídico com discreto aumento do LDL-colesterol em relação a exame anterior."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "hipotireoidismo primário",
+    "accepted_terms": ["hipotireoidismo", "hipotireoidismo clínico"],
+    "partial_terms": ["tireoidite", "disfunção tireoidiana"]
+  },
+  "differentials": [
+    {
+      "name": "depressão",
+      "explanation": "A fadiga e as alterações de humor podem se sobrepor ao hipotireoidismo, mas os achados físicos (pele seca, intolerância ao frio, reflexos lentificados) e o perfil hormonal alterado apontam para causa tireoidiana primária."
+    },
+    {
+      "name": "anemia",
+      "explanation": "Também causa fadiga e pode coexistir, mas não explica isoladamente o padrão de pele seca, intolerância ao frio e alteração do TSH."
+    },
+    {
+      "name": "síndrome nefrótica ou outra causa de edema",
+      "explanation": "Poderia ser aventada pelo edema periorbitário, mas a ausência de proteinúria relatada e o padrão hormonal tireoidiano tornam o hipotireoidismo a explicação mais coerente para o quadro global."
+    }
+  ],
+  "explanation": "TSH elevado com T4 livre reduzido confirma hipotireoidismo primário (disfunção da própria glândula tireoide). O quadro clínico de fadiga, ganho de peso, intolerância ao frio, pele seca, constipação e reflexos lentificados é característico. A história familiar de doença tireoidiana reforça a suspeita de etiologia autoimune (tireoidite de Hashimoto), a causa mais comum de hipotireoidismo primário em áreas com suficiência de iodo.",
+  "learning_points": [
+    "Reconhecer o conjunto de sinais e sintomas sugestivos de hipotireoidismo (fadiga, ganho de peso, intolerância ao frio, pele seca, constipação).",
+    "Diferenciar hipotireoidismo primário (TSH alto, T4 livre baixo) de outras causas de disfunção tireoidiana pelo perfil hormonal.",
+    "Reconhecer a tireoidite de Hashimoto como causa mais comum de hipotireoidismo primário em áreas com suficiência de iodo."
+  ],
+  "references": [
+    {
+      "title": "American Thyroid Association — Guidelines for the Treatment of Hypothyroidism",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso original, elaborado com base em apresentação clínica clássica de hipotireoidismo primário; não corresponde a caso publicado específico.",
+    "Avaliar se seria pertinente adicionar anticorpo anti-TPO como exame complementar adicional na etapa de revisão clínica, para reforçar a etiologia autoimune sugerida na explicação."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

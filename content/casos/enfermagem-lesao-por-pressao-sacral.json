@@ -1,0 +1,76 @@
+{
+  "id": "lesao-por-pressao-sacral-diagnostico-enfermagem-nanda",
+  "title": "Paciente acamado com área avermelhada na região sacral",
+  "objective": "Construir o diagnóstico de enfermagem (NANDA-I) a partir da avaliação de uma lesão por pressão em estágio inicial, orientando o plano de cuidados.",
+  "professions": ["enfermagem"],
+  "area": "enfermagem-clinica",
+  "difficulty": "facil",
+  "patient": {
+    "age": 81,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 81 anos, internada há 6 dias por pneumonia, com mobilidade reduzida no leito, é avaliada pela enfermagem durante a mudança de decúbito de rotina."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Familiares relatam que a paciente passa a maior parte do tempo deitada, com pouca movimentação espontânea devido à fraqueza e sonolência associadas ao quadro infeccioso. A equipe de enfermagem não identifica registro de mudança de decúbito sistemática nos últimos dois dias no prontuário."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "À inspeção da região sacral, observa-se área de pele íntegra, porém eritematosa, que não embranquece à digitopressão, sem rompimento de pele. Pele seca ao redor da lesão. Escala de Braden aplicada: pontuação 12, compatível com risco alto para lesão por pressão. Mobilidade reduzida, atividade restrita ao leito, nutrição levemente comprometida (baixa aceitação alimentar nos últimos dias), umidade da pele ocasionalmente aumentada por sudorese."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Sem exames laboratoriais específicos solicitados para esta avaliação; achado identificado por exame físico direcionado da pele durante a rotina de cuidados de enfermagem."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "diagnóstico de enfermagem: risco de integridade da pele prejudicada (evoluindo para lesão por pressão estágio 1) relacionado a mobilidade física reduzida, evidenciado por eritema não branqueável em região sacral e pontuação de alto risco na Escala de Braden",
+    "accepted_terms": [
+      "integridade da pele prejudicada (lesão por pressão estágio 1) relacionada a imobilidade no leito",
+      "diagnóstico de enfermagem NANDA-I: risco de lesão por pressão por mobilidade física prejudicada"
+    ],
+    "partial_terms": ["lesão por pressão (sem relacionar à causa/fatores de risco)", "pele ressecada"]
+  },
+  "differentials": [
+    {
+      "name": "dermatite associada à incontinência",
+      "explanation": "Cursaria com lesão mais difusa, geralmente associada a áreas expostas à umidade de urina/fezes, com bordas menos definidas; a localização estritamente sobre a proeminência óssea sacral, associada a alto risco na Escala de Braden por mobilidade reduzida, torna a lesão por pressão em estágio inicial mais provável."
+    },
+    {
+      "name": "eritema alérgico ou de contato",
+      "explanation": "Não há relato de exposição a novo produto tópico ou padrão de distribuição compatível; a localização sobre proeminência óssea em paciente com mobilidade muito reduzida favorece fortemente a origem por pressão."
+    }
+  ],
+  "explanation": "A presença de eritema não branqueável sobre proeminência óssea (região sacral) em paciente com mobilidade física reduzida, associada a pontuação de alto risco na Escala de Braden, caracteriza lesão por pressão em estágio 1, ainda com pele íntegra. O diagnóstico de enfermagem construído a partir desses achados orienta o plano de cuidados: reposicionamento programado e documentado (mudança de decúbito conforme protocolo institucional), uso de superfícies de redistribuição de pressão, proteção da pele, avaliação nutricional e reavaliação frequente da integridade cutânea, prevenindo a progressão para estágios mais avançados da lesão.",
+  "learning_points": [
+    "Reconhecer o eritema não branqueável sobre proeminência óssea como sinal de lesão por pressão em estágio 1.",
+    "Aplicar a Escala de Braden como ferramenta de avaliação de risco para lesão por pressão.",
+    "Construir um diagnóstico de enfermagem (NANDA-I) relacionando o achado (problema) ao fator etiológico (mobilidade reduzida) e às evidências (eritema, pontuação de Braden).",
+    "Reconhecer o reposicionamento programado como intervenção central na prevenção da progressão da lesão por pressão."
+  ],
+  "references": [
+    {
+      "title": "NANDA International — Diagnósticos de Enfermagem: Definições e Classificação",
+      "url": ""
+    },
+    {
+      "title": "National Pressure Injury Advisory Panel (NPIAP) — Sistema de Classificação de Lesão por Pressão",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso original; confirmar se a formulação do diagnóstico de enfermagem está de acordo com a taxonomia NANDA-I vigente na data de publicação (edições são atualizadas periodicamente).",
+    "Primeiro caso da área enfermagem-clinica no banco — recomenda-se validação por enfermeiro estomaterapeuta ou com experiência em cuidados de pele."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

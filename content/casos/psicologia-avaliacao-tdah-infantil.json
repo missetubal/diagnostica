@@ -1,0 +1,78 @@
+{
+  "id": "avaliacao-psicologica-tdah-queixa-escolar-crianca",
+  "title": "Criança com queixa escolar de desatenção e agitação",
+  "objective": "Reconhecer os elementos da avaliação psicológica compatíveis com hipótese de Transtorno do Déficit de Atenção/Hiperatividade (TDAH) em criança com queixa escolar.",
+  "professions": ["psicologia"],
+  "area": "psicologia-infantojuvenil",
+  "difficulty": "medio",
+  "patient": {
+    "age": 8,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Menino de 8 anos é levado pelos pais para avaliação psicológica após a escola relatar \"dificuldade de concentração e agitação em sala de aula\"."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Os pais relatam que a professora observa que ele \"não para sentado\", interrompe os colegas, tem dificuldade para esperar sua vez e frequentemente não termina as tarefas escolares, mesmo demonstrando entender o conteúdo quando testado individualmente. Em casa, os pais notam padrão semelhante: dificuldade para manter atenção em tarefas mais longas, esquecimento frequente de pertences escolares, e agitação em situações que exigem ficar parado, como refeições em família. Os sintomas estão presentes desde os primeiros anos escolares, antes dos 12 anos, e ocorrem tanto em casa quanto na escola."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Desenvolvimento neuropsicomotor dentro da normalidade, segundo relato dos pais. Nega histórico de eventos estressores familiares recentes significativos. O pai relata \"ter sido parecido\" quando criança."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Na observação lúdica/exame do estado mental: criança comunicativa, contato visual adequado, humor eutímico, porém com dificuldade evidente para permanecer sentado durante toda a sessão, levantando-se e manipulando objetos da sala repetidamente. Consegue engajar-se em atividades lúdicas de curta duração, mas demonstra dificuldade para completar tarefas mais longas propostas."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Escalas de rastreio de TDAH (versão para pais e versão para professores, ex.: SNAP-IV) aplicadas, com pontuação elevada em ambos os informantes nos domínios de desatenção e hiperatividade/impulsividade, de forma consistente entre os dois ambientes (casa e escola)."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "hipótese diagnóstica de Transtorno do Déficit de Atenção/Hiperatividade (TDAH), apresentação combinada",
+    "accepted_terms": ["TDAH combinado", "transtorno do déficit de atenção e hiperatividade"],
+    "partial_terms": ["desatenção", "dificuldade escolar", "agitação"]
+  },
+  "differentials": [
+    {
+      "name": "transtorno de conduta ou transtorno desafiador opositivo",
+      "explanation": "Podem cursar com comportamento disruptivo em sala de aula, mas caracterizam-se principalmente por padrão de desafio, hostilidade ou violação de regras/direitos de terceiros, o que não é o foco do relato aqui, centrado em desatenção e inquietude motora."
+    },
+    {
+      "name": "ansiedade infantil",
+      "explanation": "Pode gerar dificuldade de concentração em crianças, mas geralmente vem acompanhada de sinais de preocupação excessiva, evitação ou sintomas físicos de ansiedade, não relatados neste caso; o padrão de agitação motora constante em múltiplos contextos favorece TDAH."
+    },
+    {
+      "name": "dificuldade específica de aprendizagem",
+      "explanation": "Poderia explicar o não término das tarefas, mas o relato de que a criança compreende o conteúdo quando testada individualmente, associado à agitação motora e impulsividade presentes em casa e na escola, torna o TDAH a hipótese mais consistente com o conjunto de sintomas."
+    }
+  ],
+  "explanation": "A presença de sintomas de desatenção (dificuldade de concentração, tarefas incompletas, esquecimentos) e de hiperatividade/impulsividade (agitação motora, dificuldade para esperar a vez, interrupções) por período prolongado, presentes de forma consistente em mais de um ambiente (casa e escola) e com início antes dos 12 anos, é compatível com a hipótese diagnóstica de TDAH, apresentação combinada. A convergência das escalas de rastreio preenchidas por pais e professores reforça essa hipótese. A confirmação diagnóstica definitiva, dentro do escopo da psicologia, deve considerar avaliação multiprofissional (incluindo, quando indicado, avaliação médica/psiquiátrica para exclusão de outras causas e eventual decisão sobre tratamento farmacológico), sendo função do psicólogo conduzir a avaliação psicológica estruturada e comunicar os achados à família e à escola.",
+  "learning_points": [
+    "Reconhecer os critérios centrais de TDAH: sintomas de desatenção e/ou hiperatividade-impulsividade presentes em múltiplos ambientes, com início antes dos 12 anos.",
+    "Diferenciar TDAH de outras causas de dificuldade escolar, como transtorno desafiador opositivo, ansiedade infantil e dificuldades específicas de aprendizagem.",
+    "Reconhecer o valor de escalas de rastreio preenchidas por múltiplos informantes (pais e professores) na avaliação psicológica infantil.",
+    "Identificar a importância da avaliação multiprofissional para confirmação diagnóstica e decisão terapêutica em TDAH."
+  ],
+  "references": [
+    {
+      "title": "American Psychiatric Association — DSM-5-TR, critérios diagnósticos para Transtorno do Déficit de Atenção/Hiperatividade",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso original; primeiro caso da área psicologia-infantojuvenil no banco — recomenda-se validação por psicólogo com experiência em avaliação infantil antes de publicar.",
+    "Confirmar se a menção a 'eventual decisão sobre tratamento farmacológico' na explicação está adequada ao escopo do psicólogo (a decisão é médica/psiquiátrica; o psicólogo contribui apenas com a avaliação) — reforçar essa distinção na revisão, se necessário."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

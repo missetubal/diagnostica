@@ -2,12 +2,14 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Activity, User } from 'lucide-react';
+import { Home, Activity, CalendarDays, TrendingUp, User } from 'lucide-react';
 
 const ITEMS = [
   { href: '/dashboard', label: 'Início', icon: Home },
-  { href: '/play', label: 'Jogar', icon: Activity },
-  { href: '/perfil', label: 'Perfil', icon: User },
+  { href: '/play', label: 'Praticar', icon: Activity },
+  { href: '/daily', label: 'Diário', icon: CalendarDays },
+  { href: '/progress', label: 'Progresso', icon: TrendingUp },
+  { href: '/onboarding?edit=1', label: 'Perfil', icon: User },
 ];
 
 export default function BottomNav() {

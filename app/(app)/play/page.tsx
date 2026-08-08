@@ -1,15 +1,12 @@
 import Link from 'next/link';
-import { ChevronRight, ShieldAlert } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
+import EducationalDisclaimer from '@/components/educational-disclaimer';
 
 export default function PlaySelectPage() {
   return (
     <div className="mx-auto flex w-full max-w-md flex-1 flex-col px-6 py-8">
       <h1 className="font-display text-3xl font-semibold tracking-tight">Escolha o modo</h1>
-      <p className="mt-2 flex gap-2 text-sm text-[var(--muted)]">
-        <ShieldAlert className="mt-0.5 h-4 w-4 shrink-0" />
-        Conteúdo educacional para treino de raciocínio clínico. Não substitui protocolos, diretrizes
-        ou supervisão profissional — consulte sempre suas referências e supervisores.
-      </p>
+      <EducationalDisclaimer className="mt-2" />
 
       <div className="mt-6 flex flex-col gap-3">
         <Link

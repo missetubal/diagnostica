@@ -1,0 +1,82 @@
+{
+  "id": "dpoc-exacerbacao-infecciosa-tabagista",
+  "title": "Tabagista com piora da falta de ar e aumento da expectoração",
+  "objective": "Reconhecer exacerbação aguda de DPOC provavelmente de causa infecciosa, distinguindo de outras causas de dispneia aguda.",
+  "professions": ["medicina"],
+  "area": "pneumologia",
+  "difficulty": "facil",
+  "patient": {
+    "age": 66,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 66 anos, tabagista, com diagnóstico prévio de DPOC, procura atendimento por piora da falta de ar há 4 dias."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Relata que sua falta de ar basal, habitualmente controlada com broncodilatador de longa duração, piorou progressivamente nos últimos 4 dias, hoje presente até em repouso. Associa aumento do volume do escarro, que também mudou de aspecto, tornando-se amarelo-esverdeado. Nega febre alta, mas refere mal-estar leve. Nega dor torácica pleurítica ou hemoptise."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "DPOC diagnosticada há 8 anos (VEF1 basal em torno de 55% do previsto). Tabagismo ativo, 40 anos-maço. Duas exacerbações no último ano, ambas tratadas ambulatorialmente. Nega insuficiência cardíaca ou outras comorbidades relevantes conhecidas."
+    },
+    {
+      "order": 4,
+      "type": "medicamentos",
+      "content": "Uso regular de broncodilatador de longa duração (LABA/LAMA) e, esporadicamente, salbutamol de resgate. Nega uso de corticoide inalatório ou sistêmico recente."
+    },
+    {
+      "order": 5,
+      "type": "sinais_vitais",
+      "content": "PA 138x84 mmHg, FC 96 bpm, FR 24 irpm, SpO2 91% em ar ambiente, Tax 37,4°C."
+    },
+    {
+      "order": 6,
+      "type": "exame_fisico",
+      "content": "Uso leve de musculatura acessória, tórax em tonel. Ausculta pulmonar com sibilos difusos e murmúrio vesicular diminuído bilateralmente, sem estertores crepitantes localizados. Sem turgência jugular ou edema de membros inferiores."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "exacerbação aguda de DPOC",
+    "accepted_terms": ["exacerbação de DPOC", "DPOC exacerbado", "exacerbação da doença pulmonar obstrutiva crônica"],
+    "partial_terms": ["bronquite aguda", "infecção respiratória"]
+  },
+  "differentials": [
+    {
+      "name": "pneumonia adquirida na comunidade",
+      "explanation": "Poderia explicar piora respiratória e expectoração purulenta, mas a ausência de estertores crepitantes localizados e de febre alta torna a exacerbação de DPOC mais provável; radiografia de tórax ajudaria a excluir consolidação."
+    },
+    {
+      "name": "insuficiência cardíaca descompensada",
+      "explanation": "A dispneia progressiva exige exclusão de causa cardíaca, mas a ausência de ortopneia, turgência jugular e edema de membros inferiores torna essa hipótese menos provável neste quadro."
+    },
+    {
+      "name": "tromboembolismo pulmonar",
+      "explanation": "Deve ser considerado em piora aguda da dispneia, mas a evolução ao longo de dias com sintomas típicos de exacerbação (aumento de volume e purulência do escarro), sem dor pleurítica ou outros fatores de risco relatados, torna a exacerbação infecciosa de DPOC a hipótese inicial mais provável."
+    }
+  ],
+  "explanation": "A piora aguda da dispneia basal associada a aumento do volume e mudança da cor do escarro (critérios de Anthonisen) em paciente com DPOC conhecido caracteriza exacerbação aguda, provavelmente de etiologia infecciosa bacteriana. A hipoxemia (SpO2 91%) e o uso de musculatura acessória indicam gravidade que justifica associação de broncodilatador de curta ação, corticoide sistêmico e, dados os critérios de purulência do escarro, considerar antibioticoterapia, conforme diretrizes atuais de manejo de DPOC.",
+  "learning_points": [
+    "Reconhecer os critérios de Anthonisen para exacerbação de DPOC (piora da dispneia, aumento do volume e da purulência do escarro).",
+    "Diferenciar exacerbação infecciosa de DPOC de outras causas de dispneia aguda, como IC descompensada e TEP.",
+    "Identificar quando a purulência do escarro sugere benefício de antibioticoterapia na exacerbação."
+  ],
+  "references": [
+    {
+      "title": "GOLD — Global Strategy for the Diagnosis, Management, and Prevention of COPD",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso original, não adaptado de fonte específica; conferir se a diretriz GOLD vigente no momento da publicação mantém os mesmos critérios de purulência do escarro para indicação de antibiótico.",
+    "Confirmar se o nível de dificuldade 'fácil' está adequado ou se deveria ser 'médio' dado o raciocínio diferencial exigido."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

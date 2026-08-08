@@ -1,0 +1,75 @@
+{
+  "id": "enfrentamento-diagnostico-oncologico-recente-psicologia-hospitalar",
+  "title": "Paciente recém-diagnosticada com câncer de mama, encaminhada para psicologia hospitalar",
+  "objective": "Reconhecer o processo de enfrentamento (coping) diante de diagnóstico oncológico recente, diferenciando reação esperada de quadro que exigiria atenção psicológica mais intensiva.",
+  "professions": ["psicologia"],
+  "area": "psicologia-hospitalar",
+  "difficulty": "facil",
+  "patient": {
+    "age": 52,
+    "sex": "feminino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Mulher de 52 anos, internada para início de tratamento após diagnóstico de câncer de mama há 10 dias, é encaminhada para avaliação psicológica pela equipe de oncologia."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Relata que, desde o diagnóstico, tem dias em que \"chora sem motivo aparente\" e outros em que \"consegue seguir a rotina normalmente\". Verbaliza medo do tratamento, preocupação com a reação da família e receio quanto às mudanças na própria imagem corporal. Mantém apetite e sono preservados, embora refira algumas noites de dificuldade para adormecer pensando no tratamento. Continua se envolvendo nas decisões sobre o próprio cuidado e busca informações ativamente com a equipe médica."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Nega histórico prévio de transtorno psiquiátrico ou acompanhamento psicológico anterior. Refere bom suporte familiar, com marido e filhos presentes durante a internação."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "No exame do estado mental: paciente colaborativa, orientada, humor com oscilações compatíveis com o momento vivido (ora ansiosa, ora mais serena), afeto congruente e modulado. Discurso lógico, sem sinais de desorganização do pensamento. Mantém perspectiva de futuro e engajamento ativo no próprio cuidado."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Nenhum instrumento padronizado foi necessário nesta avaliação inicial; observação clínica e entrevista semiestruturada foram suficientes para a formulação do caso."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "reação emocional esperada de enfrentamento (coping) ao diagnóstico oncológico, sem indicativo de transtorno psiquiátrico associado",
+    "accepted_terms": [
+      "processo de enfrentamento adaptativo ao adoecimento oncológico",
+      "reação de ajustamento esperada ao diagnóstico de câncer"
+    ],
+    "partial_terms": ["transtorno de adaptação", "ansiedade"]
+  },
+  "differentials": [
+    {
+      "name": "transtorno de adaptação",
+      "explanation": "Poderia ser considerado se as oscilações de humor gerassem prejuízo funcional significativo e persistente além do esperado para o contexto, o que não é observado aqui: a paciente mantém engajamento ativo no cuidado, com sono e apetite preservados na maior parte do tempo."
+    },
+    {
+      "name": "episódio depressivo maior",
+      "explanation": "A tristeza está presente, mas não há anedonia persistente, alterações significativas de apetite/sono ou sentimentos de desvalia; o quadro é mais bem compreendido como reação proporcional ao momento vivido do que como episódio depressivo estabelecido."
+    },
+    {
+      "name": "transtorno de ansiedade",
+      "explanation": "O medo relacionado ao tratamento e à imagem corporal é esperado no contexto oncológico; não há preocupação excessiva e generalizada para além do adoecimento, nem sintomas físicos de ansiedade desproporcionais ao contexto."
+    }
+  ],
+  "explanation": "As oscilações de humor, o medo do tratamento e a preocupação com a imagem corporal são reações emocionais esperadas diante de um diagnóstico oncológico recente, especialmente quando a paciente mantém funcionalidade preservada (sono, apetite, engajamento no cuidado) e suporte familiar adequado. Reconhecer isso como um processo de enfrentamento adaptativo, e não como transtorno psiquiátrico, é central na psicologia hospitalar: evita patologizar reações normais, ao mesmo tempo em que orienta uma escuta ativa e suporte psicoeducativo, com monitoramento contínuo para identificar precocemente sinais de que o enfrentamento não está sendo adaptativo (por exemplo, evitação extrema de informações, desesperança persistente ou isolamento).",
+  "learning_points": [
+    "Diferenciar reação emocional esperada (enfrentamento adaptativo) de transtorno psiquiátrico associado ao adoecimento.",
+    "Reconhecer a manutenção de funcionalidade (sono, apetite, engajamento no cuidado) como indicador relevante na avaliação psicológica hospitalar.",
+    "Identificar o papel da psicologia hospitalar no suporte ao enfrentamento, sem patologizar reações proporcionais ao contexto."
+  ],
+  "references": [],
+  "avisos_para_revisor": [
+    "Caso original, elaborado para ilustrar avaliação psicológica hospitalar sem instrumento padronizado — confirmar se o time clínico considera adequado incluir alguma escala complementar (ex.: HADS) nesta etapa.",
+    "Primeiro caso da área psicologia-hospitalar no banco — recomenda-se validação por psicólogo hospitalar antes de publicar."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

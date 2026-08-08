@@ -1,0 +1,81 @@
+{
+  "id": "ansiedade-pre-operatoria-preparo-psicologico-cirurgia-cardiaca",
+  "title": "Paciente com ansiedade intensa na véspera de cirurgia cardíaca",
+  "objective": "Avaliar ansiedade pré-operatória e diferenciar reação de ansiedade situacional esperada de quadro que exige intervenção psicológica mais intensiva antes do procedimento.",
+  "professions": ["psicologia"],
+  "area": "psicologia-hospitalar",
+  "difficulty": "medio",
+  "patient": {
+    "age": 55,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 55 anos, internado para cirurgia cardíaca eletiva marcada para o dia seguinte, é encaminhado para avaliação psicológica pela enfermagem por relato de \"muito nervosismo\"."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Refere que, desde que soube da data da cirurgia há uma semana, tem dormido mal, com pensamentos repetitivos sobre \"não acordar da anestesia\". Nas últimas 24 horas, o nervosismo se intensificou: relata taquicardia, sudorese nas mãos e vontade de \"desistir e ir embora do hospital\" ao pensar no procedimento. Ao mesmo tempo, verbaliza que sabe da importância da cirurgia e quer segui-la, mas \"não consegue controlar o medo\"."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Nega transtorno psiquiátrico prévio. Relata que o pai faleceu durante uma cirurgia há 20 anos, evento que associa espontaneamente ao medo atual."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "No exame do estado mental: paciente colaborativo, orientado, ansioso, com fala um pouco acelerada ao relatar o medo da cirurgia, mãos visivelmente trêmulas durante a entrevista. Afeto congruente com o relato de ansiedade. Discurso organizado, sem alterações de conteúdo do pensamento fora do tema da cirurgia. Mantém crítica preservada sobre a desproporcionalidade parcial do medo."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Escala de Ansiedade Pré-Operatória de Amsterdam (APAIS) aplicada na sessão: pontuação elevada no domínio de ansiedade relacionada à cirurgia e à anestesia."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "ansiedade pré-operatória significativa, associada a experiência prévia de perda relacionada a cirurgia, com indicação de intervenção psicológica antes do procedimento",
+    "accepted_terms": [
+      "ansiedade pré-cirúrgica intensa com necessidade de preparo psicológico específico",
+      "quadro de ansiedade situacional pré-operatória agravada por histórico familiar de óbito cirúrgico"
+    ],
+    "partial_terms": ["ansiedade", "medo da cirurgia"]
+  },
+  "differentials": [
+    {
+      "name": "ansiedade pré-operatória leve e esperada",
+      "explanation": "Algum grau de ansiedade antes de cirurgia cardíaca é esperado e não patológico; porém, a intensidade dos sintomas (insônia, taquicardia, vontade de desistir do procedimento) e a pontuação elevada na APAIS indicam um nível que ultrapassa a ansiedade situacional leve, justificando intervenção psicológica direcionada antes da cirurgia."
+    },
+    {
+      "name": "transtorno de estresse pós-traumático relacionado ao óbito do pai",
+      "explanation": "O evento de 20 anos atrás é claramente um gatilho do medo atual, mas não há relato de sintomas centrais de TEPT, como revivescências intrusivas, evitação persistente ou hipervigilância generalizada fora do contexto cirúrgico atual; o quadro é mais bem compreendido como ansiedade situacional intensificada por uma lembrança específica do que como TEPT estabelecido."
+    },
+    {
+      "name": "transtorno de pânico",
+      "explanation": "Os sintomas físicos (taquicardia, sudorese) ocorrem especificamente no contexto do medo da cirurgia, e não como crises espontâneas e recorrentes em múltiplos contextos, o que torna o transtorno de pânico menos provável como explicação principal."
+    }
+  ],
+  "explanation": "A intensidade dos sintomas de ansiedade (insônia, taquicardia, sudorese, pensamento intrusivo sobre não sobreviver ao procedimento) associada a um gatilho identificável (óbito do pai durante cirurgia) caracteriza ansiedade pré-operatória significativa, que vai além da apreensão esperada antes de um procedimento de grande porte. A pontuação elevada na APAIS reforça a necessidade de intervenção psicológica breve antes da cirurgia — por exemplo, técnicas de reestruturação cognitiva sobre o pensamento catastrófico associado à lembrança do pai, técnicas de respiração e relaxamento, e articulação com a equipe médica para esclarecimento de dúvidas que possam reduzir a incerteza percebida — com o objetivo de reduzir o impacto da ansiedade sobre o preparo para a cirurgia.",
+  "learning_points": [
+    "Diferenciar ansiedade pré-operatória esperada de ansiedade pré-operatória que exige intervenção psicológica direcionada.",
+    "Reconhecer como experiências prévias associadas a perdas podem intensificar a ansiedade situacional em contexto hospitalar.",
+    "Reconhecer a APAIS como instrumento de avaliação da ansiedade pré-operatória.",
+    "Identificar técnicas de preparo psicológico pré-cirúrgico dentro do escopo da psicologia hospitalar."
+  ],
+  "references": [
+    {
+      "title": "Moerman N, van Dam FS, Muller MJ, Oosting H. The Amsterdam Preoperative Anxiety and Information Scale (APAIS). Anesth Analg, 1996.",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso original; pontuação da APAIS descrita de forma qualitativa ('elevada') — se desejado, o time clínico pode atribuir valor numérico específico na revisão.",
+    "Confirmar se a menção ao óbito do pai durante cirurgia é apropriada ao tom educacional da plataforma ou se deve ser suavizada."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

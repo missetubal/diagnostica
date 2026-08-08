@@ -1,0 +1,77 @@
+{
+  "id": "classificacao-risco-manchester-dor-toracica-triagem",
+  "title": "Triagem de enfermagem em paciente com dor no peito na sala de emergência",
+  "objective": "Aplicar o raciocínio de classificação de risco (protocolo de Manchester) em paciente que chega ao pronto-socorro com dor torácica, definindo a prioridade de atendimento.",
+  "professions": ["enfermagem"],
+  "area": "enfermagem-urgencia-emergencia",
+  "difficulty": "facil",
+  "patient": {
+    "age": 58,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 58 anos chega à recepção do pronto-socorro caminhando, acompanhado da esposa, relatando dor no peito."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Relata que a dor começou há cerca de 30 minutos, em aperto, no meio do peito, com irradiação para o braço esquerdo, associada a sudorese fria. Refere que a dor não melhora com repouso. Nega ter tomado qualquer medicação até o momento."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Hipertenso e diabético, ambos em tratamento irregular. Tabagista atual. Pai com infarto antes dos 60 anos."
+    },
+    {
+      "order": 4,
+      "type": "sinais_vitais",
+      "content": "PA 150x95 mmHg, FC 102 bpm, FR 22 irpm, SpO2 95% em ar ambiente, dor classificada como 8/10 na escala numérica de dor."
+    },
+    {
+      "order": 5,
+      "type": "exame_fisico",
+      "content": "Paciente ansioso, pálido, sudoreico, orientado, sem sinais de dificuldade respiratória grave no momento da triagem. Nega perda de consciência prévia."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "classificação de risco laranja — muito urgente (atendimento em até 10 minutos), por dor torácica sugestiva de origem cardíaca",
+    "accepted_terms": [
+      "prioridade laranja no protocolo de Manchester",
+      "muito urgente — dor torácica de perfil cardíaco"
+    ],
+    "partial_terms": ["prioridade amarela (urgente)", "prioridade vermelha (emergência)"]
+  },
+  "differentials": [
+    {
+      "name": "vermelho (emergência)",
+      "explanation": "Seria a classificação adequada se houvesse sinais de comprometimento imediato de via aérea, respiração ou circulação (ex.: inconsciência, hipotensão franca, sinais de choque), o que não está presente neste momento; ainda assim, o quadro deve ser reavaliado continuamente, pois pode se agravar rapidamente."
+    },
+    {
+      "name": "amarelo (urgente)",
+      "explanation": "Seria uma subclassificação inadequada neste caso: a combinação de dor torácica típica, irradiação, sudorese e fatores de risco cardiovascular relevantes discrimina para prioridade mais alta (muito urgente) nos fluxogramas de dor torácica do protocolo de Manchester."
+    }
+  ],
+  "explanation": "No protocolo de Manchester, dor torácica com características sugestivas de origem cardíaca (aperto, irradiação para o braço, sudorese associada, sem melhora com repouso) em paciente com múltiplos fatores de risco cardiovascular discrimina para a prioridade muito urgente (laranja), com meta de atendimento médico em até 10 minutos, mesmo na ausência de sinais de instabilidade hemodinâmica franca no momento da triagem. A classificação de risco não substitui o diagnóstico médico, mas define o tempo-alvo de atendimento e orienta ações imediatas de enfermagem, como monitorização contínua, obtenção de acesso venoso e realização de eletrocardiograma o mais rápido possível, além de reavaliação constante caso surjam sinais de agravamento.",
+  "learning_points": [
+    "Reconhecer os discriminadores de dor torácica que elevam a prioridade no protocolo de Manchester.",
+    "Diferenciar prioridade vermelha (sinais de comprometimento vital imediato) de prioridade laranja (muito urgente, sem instabilidade franca).",
+    "Reconhecer ações de enfermagem esperadas diante de classificação de alta prioridade: monitorização, acesso venoso e ECG precoce.",
+    "Reconhecer a reavaliação contínua como parte do processo de triagem, já que o quadro pode se agravar."
+  ],
+  "references": [
+    {
+      "title": "Manchester Triage Group — Manchester Triage System, fluxograma \"Dor Torácica\"",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso original; a classificação de risco atribuída (laranja) segue a lógica geral dos fluxogramas publicados do protocolo de Manchester para dor torácica sugestiva de origem cardíaca sem sinais de instabilidade hemodinâmica — recomenda-se que um enfermeiro com certificação em Manchester confirme a classificação exata antes de publicar, pois pequenas variações de discriminadores podem mudar a cor.",
+    "Primeiro caso da área enfermagem-urgencia-emergencia no banco — recomenda-se validação por enfermeiro de urgência/emergência."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

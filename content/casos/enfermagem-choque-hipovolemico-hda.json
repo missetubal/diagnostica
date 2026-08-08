@@ -1,0 +1,73 @@
+{
+  "id": "choque-hipovolemico-hemorragia-digestiva-alta-cuidados-imediatos-enfermagem",
+  "title": "Paciente com vômitos em borra de café e queda do nível de consciência",
+  "objective": "Reconhecer sinais de choque hipovolêmico em paciente com sangramento digestivo alto e priorizar os cuidados imediatos de enfermagem.",
+  "professions": ["enfermagem"],
+  "area": "enfermagem-urgencia-emergencia",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 64,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 64 anos é trazido ao pronto-socorro pelo SAMU após dois episódios de vômito com aspecto de \"borra de café\" e uma evacuação com fezes enegrecidas nas últimas horas."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Familiares relatam que o paciente está mais sonolento e confuso desde o último episódio de vômito. Refere histórico de dor epigástrica recorrente nas últimas semanas, automedicada com anti-inflamatório para dor lombar. Nega histórico de sangramento digestivo prévio."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Hipertensão arterial em uso de losartana. Uso recente e frequente de anti-inflamatório não esteroidal por conta própria. Nega etilismo importante ou doença hepática conhecida."
+    },
+    {
+      "order": 4,
+      "type": "sinais_vitais",
+      "content": "PA 84x52 mmHg, FC 128 bpm, FR 26 irpm, SpO2 94% em ar ambiente, tempo de enchimento capilar maior que 3 segundos, pele fria e pegajosa em extremidades."
+    },
+    {
+      "order": 5,
+      "type": "exame_fisico",
+      "content": "Paciente pálido, sonolento, mas despertável e responsivo a estímulo verbal, orientado parcialmente. Mucosas descoradas. Abdome discretamente doloroso em epigástrio à palpação, sem sinais de irritação peritoneal. Ainda não foi puncionado acesso venoso calibroso."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "diagnóstico de enfermagem de risco de choque relacionado a perda sanguínea ativa (hemorragia digestiva alta), evidenciado por hipotensão, taquicardia, tempo de enchimento capilar prolongado e rebaixamento do nível de consciência — prioridade máxima de atendimento",
+    "accepted_terms": [
+      "choque hipovolêmico em curso por sangramento digestivo alto, com prioridade de estabilização imediata",
+      "diagnóstico de enfermagem: risco de perfusão tissular ineficaz relacionado a hipovolemia por hemorragia digestiva"
+    ],
+    "partial_terms": ["desidratação", "hipotensão a esclarecer"]
+  },
+  "differentials": [
+    {
+      "name": "quadro explicado apenas por desidratação leve",
+      "explanation": "A combinação de hematêmese, melena, hipotensão franca, taquicardia compensatória, tempo de enchimento capilar prolongado e rebaixamento do nível de consciência ultrapassa o que seria esperado em desidratação leve, caracterizando choque hipovolêmico por perda sanguínea ativa, uma emergência com risco de morte."
+    },
+    {
+      "name": "rebaixamento do nível de consciência de causa neurológica primária",
+      "explanation": "Não há déficits neurológicos focais relatados; a sonolência e confusão são mais bem explicadas como manifestação de hipoperfusão cerebral secundária ao choque hipovolêmico do que por uma causa neurológica primária isolada."
+    }
+  ],
+  "explanation": "Os achados de hematêmese em borra de café, melena, hipotensão, taquicardia, extremidades frias com enchimento capilar prolongado e alteração do nível de consciência configuram sinais de choque hipovolêmico por hemorragia digestiva alta ativa, uma emergência com risco iminente de morte. A prioridade de enfermagem é a estabilização imediata: obtenção de dois acessos venosos calibrosos, início de reposição volêmica conforme prescrição médica, monitorização contínua de sinais vitais e nível de consciência, oxigenoterapia suplementar e comunicação imediata à equipe médica para intervenção definitiva (endoscopia digestiva de urgência). O uso recente e frequente de anti-inflamatório é um fator de risco relevante para lesão de mucosa gástrica, mas a prioridade neste momento é a estabilização hemodinâmica, não a investigação etiológica.",
+  "learning_points": [
+    "Reconhecer os sinais clínicos de choque hipovolêmico: hipotensão, taquicardia, extremidades frias, enchimento capilar prolongado e alteração do nível de consciência.",
+    "Identificar hematêmese e melena como sinais de hemorragia digestiva alta ativa.",
+    "Priorizar ações de enfermagem de estabilização imediata (acesso venoso calibroso, reposição volêmica, monitorização) diante de sinais de choque.",
+    "Reconhecer o uso de anti-inflamatórios não esteroidais como fator de risco para sangramento digestivo, sem que isso deva atrasar a estabilização hemodinâmica."
+  ],
+  "references": [],
+  "avisos_para_revisor": [
+    "Caso original, elaborado com base em sinais clínicos consolidados de choque hipovolêmico; não corresponde a caso publicado específico.",
+    "Confirmar com o time clínico se detalhes adicionais de protocolo institucional (ex.: posicionamento específico do paciente) devem ser incluídos, já que a prática pode variar entre instituições/diretrizes mais recentes.",
+    "Dificuldade classificada como 'difícil' por exigir reconhecimento rápido de múltiplos sinais de gravidade combinados; confirmar se está adequada."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

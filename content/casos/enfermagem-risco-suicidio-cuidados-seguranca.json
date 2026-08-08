@@ -1,0 +1,82 @@
+{
+  "id": "avaliacao-enfermagem-risco-suicidio-cuidados-seguranca",
+  "title": "Paciente internado verbaliza pensamentos de morte durante avaliação de enfermagem",
+  "objective": "Reconhecer sinais de risco de suicídio durante avaliação de enfermagem e priorizar medidas de segurança imediatas, dentro do escopo de cuidado de enfermagem em saúde mental.",
+  "professions": ["enfermagem"],
+  "area": "enfermagem-saude-mental",
+  "difficulty": "dificil",
+  "patient": {
+    "age": 37,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 37 anos, internado há 2 dias na enfermaria clínica para tratamento de uma condição médica, é abordado pela enfermagem durante a evolução de rotina e verbaliza estar \"cansado de tudo\"."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Ao ser questionado ativamente pela enfermeira sobre o que quis dizer, o paciente relata ter perdido o emprego recentemente e estar enfrentando dificuldades financeiras importantes, além da internação atual. Verbaliza pensamentos frequentes de que \"seria mais fácil se eu não existisse\", presentes há cerca de duas semanas, e refere já ter pensado em formas de acabar com a própria vida, embora afirme não ter feito nenhum plano concreto até o momento. Nega tentativa prévia de suicídio."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Sem acompanhamento psiquiátrico ou psicológico prévio conhecido. Nega uso abusivo de álcool ou outras substâncias. Refere se sentir isolado da família nos últimos meses."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Paciente colaborativo durante a entrevista, mantém contato visual, humor rebaixado, afeto congruente e restrito. Discurso organizado e coerente, sem sinais de desorganização do pensamento ou alterações perceptivas. Verbaliza sofrimento intenso relacionado às perdas recentes."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Aplicado instrumento estruturado de rastreio de risco de suicídio utilizado pelo serviço (ex.: Columbia-Suicide Severity Rating Scale — C-SSRS, versão de triagem), com resultado indicando presença de ideação suicida ativa, sem plano estruturado nem intenção declarada de agir no momento."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "diagnóstico de enfermagem: risco de suicídio, evidenciado por ideação suicida ativa sem plano estruturado, sofrimento psíquico intenso e isolamento social recente — prioridade de cuidados de segurança imediatos e comunicação à equipe multiprofissional",
+    "accepted_terms": [
+      "risco de suicídio moderado a alto, com indicação de medidas de segurança e avaliação psiquiátrica urgente",
+      "diagnóstico de enfermagem NANDA-I: risco de suicídio relacionado a sofrimento psíquico e isolamento social"
+    ],
+    "partial_terms": ["tristeza", "sintomas depressivos (sem classificação de risco)"]
+  },
+  "differentials": [
+    {
+      "name": "ideação suicida passiva sem risco relevante",
+      "explanation": "O relato vai além de um desejo passivo de morte: o paciente verbaliza ter pensado em formas de acabar com a própria vida, o que caracteriza ideação ativa e exige avaliação e intervenção imediatas, não apenas observação passiva."
+    },
+    {
+      "name": "quadro explicado apenas por reação situacional às perdas recentes, sem necessidade de medidas de segurança",
+      "explanation": "Embora o estressor situacional (perda de emprego, dificuldades financeiras, isolamento) seja relevante para compreender o sofrimento do paciente, a presença de ideação suicida ativa por si só exige avaliação de risco estruturada e medidas de segurança imediatas, independentemente da causa desencadeante."
+    }
+  ],
+  "explanation": "A verbalização espontânea de sofrimento (\"cansado de tudo\"), seguida de ideação suicida ativa confirmada em avaliação direta (pensamentos sobre formas de acabar com a própria vida, ainda que sem plano estruturado), configura risco de suicídio que exige resposta imediata da enfermagem: garantir a segurança do ambiente (remoção de objetos potencialmente perigosos, conforme protocolo institucional), manter observação mais próxima e comunicar imediatamente a equipe médica e a equipe de saúde mental para avaliação psiquiátrica urgente. A pergunta direta e não julgadora sobre ideação suicida, como feita neste caso, é parte essencial e recomendada da avaliação de enfermagem, e não um fator que aumenta o risco.",
+  "learning_points": [
+    "Reconhecer a importância de perguntar diretamente sobre ideação suicida diante de sinais de sofrimento verbalizado, sem receio de que a pergunta aumente o risco.",
+    "Diferenciar ideação suicida passiva de ideação ativa, e reconhecer a presença de plano/intenção como fatores que elevam ainda mais o risco.",
+    "Identificar medidas de segurança imediatas de enfermagem diante de risco de suicídio identificado (ambiente seguro, observação, comunicação à equipe).",
+    "Reconhecer o papel do enfermeiro na triagem de risco e no acionamento da equipe de saúde mental, dentro do escopo de sua atuação."
+  ],
+  "references": [
+    {
+      "title": "Ministério da Saúde — Diretrizes Nacionais para Prevenção do Suicídio",
+      "url": ""
+    },
+    {
+      "title": "Posner K, et al. Columbia-Suicide Severity Rating Scale (C-SSRS)",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso original, elaborado para treinamento de reconhecimento de risco de suicídio pela enfermagem; conteúdo sensível — revisar linguagem e enquadramento junto às diretrizes de conteúdo sensível da plataforma antes de publicar.",
+    "Primeiro caso da área enfermagem-saude-mental no banco — recomenda-se validação por enfermeiro de saúde mental/psiquiatria antes de publicar.",
+    "Avaliar se a plataforma deseja incluir, junto a este caso, algum aviso ou recurso de apoio para usuários que possam se identificar pessoalmente com o tema, além do uso educacional."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

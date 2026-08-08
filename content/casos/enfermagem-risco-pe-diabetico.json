@@ -1,0 +1,77 @@
+{
+  "id": "risco-pe-diabetico-diagnostico-enfermagem-cuidados",
+  "title": "Paciente diabético com queixa de formigamento nos pés",
+  "objective": "Construir o diagnóstico de enfermagem relacionado a risco de lesão no pé diabético a partir da avaliação dos pés e dos fatores de risco.",
+  "professions": ["enfermagem"],
+  "area": "enfermagem-clinica",
+  "difficulty": "medio",
+  "patient": {
+    "age": 63,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 63 anos, com diabetes mellitus tipo 2 há 15 anos, comparece à consulta de enfermagem de rotina relatando formigamento e \"dormência\" nos pés há vários meses."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Relata que não sente bem quando pisa em objetos pequenos e já teve um ferimento no pé há cerca de 4 meses que demorou mais de um mês para cicatrizar. Refere controle glicêmico irregular, com hemoglobina glicada recente de 9,2%. Nega uso de calçados adequados, referindo preferência por chinelos abertos, inclusive fora de casa."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Diabetes mellitus tipo 2, hipertensão arterial. Tabagista atual. Nega amputação prévia."
+    },
+    {
+      "order": 4,
+      "type": "exame_fisico",
+      "content": "Pele dos pés seca e descamativa, com fissuras discretas no calcanhar. Ausência de pulsos pediosos palpáveis bilateralmente, pulsos tibiais posteriores diminuídos. Teste de sensibilidade com monofilamento de 10g ausente em múltiplos pontos de ambos os pés. Unhas espessadas, sem sinais de infecção ativa no momento. Não há ferida aberta atualmente."
+    },
+    {
+      "order": 5,
+      "type": "exames_complementares",
+      "content": "Hemoglobina glicada (HbA1c) recente: 9,2%. Sem exame de imagem vascular disponível até o momento."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "diagnóstico de enfermagem: risco de integridade tissular prejudicada (risco de lesão em pé diabético) relacionado a neuropatia periférica e perfusão tissular periférica diminuída, evidenciado por perda de sensibilidade ao monofilamento, pulsos pediosos ausentes e histórico de ferida de cicatrização lenta",
+    "accepted_terms": [
+      "risco de pé diabético relacionado a neuropatia e insuficiência vascular periférica",
+      "diagnóstico de enfermagem NANDA-I: risco de integridade da pele prejudicada em pé diabético"
+    ],
+    "partial_terms": ["pele seca", "diabetes descompensado (sem relacionar ao risco de lesão no pé)"]
+  },
+  "differentials": [
+    {
+      "name": "quadro explicado apenas por xerose (pele seca) sem componente neurovascular",
+      "explanation": "A pele seca está presente, mas a perda de sensibilidade ao monofilamento e a ausência de pulsos pediosos indicam comprometimento neurovascular relevante, que é o principal determinante do risco de lesão no pé diabético, não apenas ressecamento cutâneo."
+    },
+    {
+      "name": "dor neuropática como diagnóstico isolado, sem risco de lesão associado",
+      "explanation": "O formigamento reflete neuropatia sensitiva, mas o histórico de ferida de cicatrização lenta e a ausência de pulsos tornam o risco de lesão tissular (e não apenas o sintoma de dor/formigamento) o foco prioritário do diagnóstico de enfermagem."
+    }
+  ],
+  "explanation": "A combinação de perda de sensibilidade protetora (monofilamento ausente), redução da perfusão periférica (pulsos pediosos ausentes, tibiais posteriores diminuídos), controle glicêmico inadequado (HbA1c 9,2%) e histórico de ferida de cicatrização lenta caracteriza alto risco de lesão em pé diabético, mesmo sem ferida ativa no momento da avaliação. O diagnóstico de enfermagem construído a partir desses achados orienta o plano de cuidados: orientação sobre inspeção diária dos pés, uso de calçados fechados e adequados, cuidados com unhas e pele, controle glicêmico, cessação do tabagismo e encaminhamento para avaliação vascular especializada, com objetivo de prevenir o desenvolvimento de úlceras e reduzir o risco de amputação.",
+  "learning_points": [
+    "Reconhecer os componentes da avaliação do pé diabético: sensibilidade (monofilamento), perfusão (pulsos), pele e histórico de lesões prévias.",
+    "Construir um diagnóstico de enfermagem de risco (sem lesão ativa) a partir de fatores de risco identificados na avaliação.",
+    "Identificar orientações de autocuidado essenciais na prevenção de lesões em pé diabético.",
+    "Reconhecer o tabagismo e o controle glicêmico inadequado como fatores agravantes do risco vascular no pé diabético."
+  ],
+  "references": [
+    {
+      "title": "International Working Group on the Diabetic Foot (IWGDF) — Guidelines on the Prevention of Foot Ulcers in Persons with Diabetes",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso original, elaborado com base em critérios consolidados de avaliação de risco de pé diabético (monofilamento, pulsos, histórico de lesão); não corresponde a caso publicado específico.",
+    "Confirmar se a formulação do diagnóstico de enfermagem está de acordo com a taxonomia NANDA-I vigente na data de publicação."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

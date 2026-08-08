@@ -1,0 +1,88 @@
+{
+  "id": "sindrome-coronariana-aguda-sem-supra-diabetico",
+  "title": "Dor torácica opressiva em repouso em paciente diabético",
+  "objective": "Reconhecer síndrome coronariana aguda sem supradesnivelamento do segmento ST em paciente com múltiplos fatores de risco cardiovascular.",
+  "professions": ["medicina"],
+  "area": "cardiologia",
+  "difficulty": "medio",
+  "patient": {
+    "age": 62,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 62 anos procura o pronto-socorro por dor no peito iniciada em repouso há 2 horas."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Descreve a dor como um aperto retroesternal, de moderada a forte intensidade, irradiando para o braço esquerdo e para a mandíbula, associada a sudorese fria e náusea leve. Refere um episódio semelhante, porém mais breve e de menor intensidade, há cerca de 1 semana, aos esforços moderados, que cedeu com repouso. Nega dor pleurítica ou que piora com a palpação."
+    },
+    {
+      "order": 3,
+      "type": "antecedentes",
+      "content": "Diabetes mellitus tipo 2 há 10 anos, hipertensão arterial, dislipidemia e tabagismo (30 anos-maço, parou há 5 anos). Pai com infarto do miocárdio aos 58 anos."
+    },
+    {
+      "order": 4,
+      "type": "medicamentos",
+      "content": "Metformina, losartana e sinvastatina em uso regular, com aderência relatada como parcial."
+    },
+    {
+      "order": 5,
+      "type": "sinais_vitais",
+      "content": "PA 148x92 mmHg, FC 98 bpm, FR 20 irpm, SpO2 96% em ar ambiente, sudorese fria visível."
+    },
+    {
+      "order": 6,
+      "type": "exame_fisico",
+      "content": "Ausculta cardíaca rítmica, sem sopros ou atrito. Ausculta pulmonar limpa. Sem edema de membros inferiores ou turgência jugular. Sem dor à palpação da parede torácica."
+    },
+    {
+      "order": 7,
+      "type": "exames_complementares",
+      "content": "Eletrocardiograma com infradesnivelamento do segmento ST de 1,5 mm em derivações V4-V6, sem supradesnivelamento. Troponina de alta sensibilidade elevada em relação ao valor de referência, com curva ascendente na dosagem seriada."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "síndrome coronariana aguda sem supradesnivelamento do segmento ST",
+    "accepted_terms": ["SCA sem supra de ST", "infarto agudo do miocárdio sem supra de ST", "IAMSSST", "SCASSST"],
+    "partial_terms": ["angina instável", "dor torácica de origem cardíaca"]
+  },
+  "differentials": [
+    {
+      "name": "dor torácica musculoesquelética",
+      "explanation": "Improvável dado o padrão típico da dor, a irradiação, a sudorese associada e as alterações eletrocardiográficas e enzimáticas, além da ausência de dor à palpação da parede torácica."
+    },
+    {
+      "name": "refluxo gastroesofágico",
+      "explanation": "Pode causar desconforto retroesternal, mas a associação com esforço no episódio anterior, a sudorese fria e as alterações objetivas de ECG e troponina tornam a origem cardíaca isquêmica muito mais provável."
+    },
+    {
+      "name": "dissecção aguda de aorta",
+      "explanation": "Diagnóstico diferencial importante em dor torácica intensa; a ausência de dor descrita como \"rasgando\", de assimetria de pulsos ou de diferença pressórica entre membros, associada às alterações eletrocardiográficas e enzimáticas compatíveis com isquemia miocárdica, torna a SCA mais provável, mas a exclusão de dissecção deve sempre ser considerada quando há dúvida clínica."
+    }
+  ],
+  "explanation": "A combinação de dor torácica típica em repouso, angina prévia em padrão de crescendo, infradesnivelamento do segmento ST e elevação de troponina com curva ascendente confirma síndrome coronariana aguda sem supradesnivelamento do segmento ST, no espectro que vai da angina instável ao infarto sem supra. Fatores de risco cardiovascular múltiplos (diabetes, hipertensão, dislipidemia, tabagismo prévio, história familiar) sustentam a alta probabilidade pré-teste de doença coronariana.",
+  "learning_points": [
+    "Reconhecer o padrão de dor torácica anginosa típica e sua evolução em crescendo como sinal de instabilização coronariana.",
+    "Diferenciar SCA com e sem supradesnivelamento do ST pelo eletrocardiograma.",
+    "Reconhecer o papel da troponina seriada na confirmação de lesão miocárdica em SCA sem supra.",
+    "Identificar fatores de risco cardiovascular relevantes para estratificação de probabilidade pré-teste."
+  ],
+  "references": [
+    {
+      "title": "ESC Guidelines for the management of acute coronary syndromes",
+      "url": ""
+    }
+  ],
+  "avisos_para_revisor": [
+    "Caso original; valores de ECG/troponina descritos de forma qualitativa e didática — confirmar se seria útil adicionar valores numéricos de referência de troponina na etapa de revisão clínica.",
+    "Avaliar se vale complementar com escore de risco (ex.: GRACE ou TIMI) como conteúdo pedagógico adicional."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}

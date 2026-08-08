@@ -21,6 +21,7 @@ import { bestClassification } from '@/lib/score';
 import { buildShareText } from '@/lib/daily-share';
 import { DIFFICULTY_LABELS } from '@/lib/labels';
 import ReportDialog from '@/components/play/report-dialog';
+import EducationalDisclaimer from '@/components/educational-disclaimer';
 
 type Difficulty = 'facil' | 'medio' | 'dificil';
 type SourceType = 'humano' | 'ia_assistida' | 'importado';
@@ -293,10 +294,7 @@ export default function ResultView({ attemptId }: { attemptId: string }) {
         <ReportDialog caseId={result.case.id} attemptId={result.id} />
       </div>
 
-      <p className="mt-4 text-center text-xs text-[var(--muted)]">
-        Conteúdo educacional para treino de raciocínio clínico. Não substitui protocolos, diretrizes
-        ou supervisão profissional.
-      </p>
+      <EducationalDisclaimer className="mt-4 text-xs" />
     </div>
   );
 }

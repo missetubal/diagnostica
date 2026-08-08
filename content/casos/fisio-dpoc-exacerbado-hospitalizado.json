@@ -1,0 +1,66 @@
+{
+  "id": "dpoc-exacerbado-diagnostico-fisioterapeutico-hipoventilacao",
+  "title": "Homem internado por exacerbação de DPOC, encaminhado para avaliação fisioterapêutica",
+  "objective": "A partir da avaliação fisioterapêutica de paciente já com diagnóstico médico de exacerbação de DPOC, identificar o diagnóstico cinético-funcional que deve orientar a conduta de fisioterapia respiratória.",
+  "professions": ["fisioterapia"],
+  "area": "fisioterapia-cardiorrespiratoria",
+  "difficulty": "medio",
+  "patient": {
+    "age": 68,
+    "sex": "masculino"
+  },
+  "stages": [
+    {
+      "order": 1,
+      "type": "queixa_principal",
+      "content": "Homem de 68 anos, internado há 2 dias com diagnóstico médico de exacerbação aguda de DPOC, é encaminhado para avaliação da fisioterapia."
+    },
+    {
+      "order": 2,
+      "type": "historia",
+      "content": "Tabagista de longa data (45 anos-maço), com DPOC diagnosticada há 10 anos. Refere piora da dispneia e aumento da expectoração purulenta na última semana, motivo da internação. Em uso de antibioticoterapia, broncodilatador inalatório e corticoide sistêmico prescritos pela equipe médica. Relata dificuldade para eliminar secreção, principalmente pela manhã."
+    },
+    {
+      "order": 3,
+      "type": "exame_fisico",
+      "content": "Padrão respiratório com predomínio de musculatura acessória, tórax em tonel, tempo expiratório prolongado. Tosse presente, mas pouco eficaz na eliminação de secreção. Ausculta pulmonar com roncos difusos e sibilos expiratórios em bases. Sinais vitais: FR 26 irpm, FC 92 bpm, SpO2 90% em ar ambiente, PA 130x80 mmHg. Permanece a maior parte do tempo em decúbito no leito, com pouca mobilização espontânea."
+    },
+    {
+      "order": 4,
+      "type": "exames_complementares",
+      "content": "Radiografia de tórax com hiperinsuflação pulmonar e retificação diafragmática, sem consolidação focal. Gasometria arterial com discreta retenção de CO2 compensada."
+    }
+  ],
+  "main_answer": {
+    "canonical_term": "diagnóstico fisioterapêutico de retenção de secreção brônquica associada a limitação ao fluxo aéreo e risco de descondicionamento por imobilismo no leito",
+    "accepted_terms": [
+      "disfunção cinético-funcional respiratória obstrutiva com hipersecreção e risco de descondicionamento",
+      "quadro de hipersecreção brônquica com padrão obstrutivo e mobilização reduzida"
+    ],
+    "partial_terms": ["apenas broncoespasmo", "apenas limitação ventilatória obstrutiva (sem diagnóstico fisioterapêutico específico)"]
+  },
+  "differentials": [
+    {
+      "name": "quadro dominado apenas por broncoespasmo, sem componente secretivo relevante",
+      "explanation": "Os sibilos expiratórios indicam broncoespasmo, mas a presença de roncos difusos, tosse ineficaz e relato de dificuldade para eliminar secreção mostram que a retenção de secreção é componente central do quadro, não apenas broncoespasmo isolado."
+    },
+    {
+      "name": "comprometimento respiratório restrito à troca gasosa, sem repercussão em via aérea",
+      "explanation": "A SpO2 reduzida reflete comprometimento de troca gasosa associado à hiperinsuflação, mas a ausculta e a tosse ineficaz indicam que também há componente obstrutivo/secretivo de via aérea a ser abordado com técnicas específicas."
+    }
+  ],
+  "explanation": "Ainda que o diagnóstico médico de exacerbação de DPOC já esteja estabelecido, cabe à fisioterapia construir o diagnóstico cinético-funcional a partir da avaliação: padrão respiratório obstrutivo com uso de musculatura acessória, tosse ineficaz, ausculta sugestiva de secreção retida (roncos) associada a broncoespasmo (sibilos), e baixa mobilização espontânea no leito, o que gera risco de descondicionamento. Esse diagnóstico orienta a escolha de técnicas de higiene brônquica (manobras de desobstrução, estímulo de tosse assistida, uso de dispositivos de pressão expiratória positiva quando indicado) associadas a mobilização precoce progressiva, distintas do tratamento farmacológico já em curso.",
+  "learning_points": [
+    "Diferenciar diagnóstico médico (exacerbação de DPOC) de diagnóstico fisioterapêutico (cinético-funcional) na prática hospitalar.",
+    "Reconhecer achados de ausculta que indicam retenção de secreção (roncos) versus broncoespasmo (sibilos), e a coexistência de ambos.",
+    "Identificar o risco de descondicionamento por imobilismo como parte do diagnóstico fisioterapêutico em pacientes hospitalizados."
+  ],
+  "references": [],
+  "avisos_para_revisor": [
+    "Caso original, seguindo o mesmo padrão de escopo já aprovado para fisioterapia hospitalar (ver caso icc-diagnostico-fisioterapeutico-hipersecrecao-bronquica): diagnóstico médico já revelado no encaminhamento, main_answer construído em torno do diagnóstico cinético-funcional.",
+    "Confirmar se a gasometria descrita (retenção de CO2 compensada) é consistente com o nível de dificuldade médio atribuído."
+  ],
+  "status": "rascunho",
+  "source_type": "ia_assistida",
+  "version": 1
+}
